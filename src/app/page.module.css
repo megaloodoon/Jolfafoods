@@ -34,6 +34,12 @@
   grid-row-start: 2;
 }
 
+.mazesta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
@@ -68,10 +74,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -167,15 +170,6 @@ a.secondary {
   }
 }
 
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  /* Light background */
-  color: #333;
-}
-
 /* Coffee list container */
 .coffeeList {
   display: flex;
@@ -183,8 +177,7 @@ body {
   justify-content: space-between;
   padding: 20px;
   gap: 20px;
-  background-color: #f4e1d2;
-  /* Light coffee background */
+  background-color: var(--background-color);
   height: auto;
   /* Adjust to content height */
 }

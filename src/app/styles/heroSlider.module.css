@@ -1,0 +1,214 @@
+.hero {
+  width: min(80vw, 1720px);
+  height: clamp(420px, 60vh, 720px);
+  margin: 0 auto;
+  padding-inline: 0;
+  position: relative;
+  color: var(--text-color);
+  overflow: hidden;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  border-radius: 20px;
+  }
+
+  
+  .swiper {
+    height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  border-radius: 5%;
+  }
+
+@media (min-width: 1025px) {
+  .swiper { min-height: 500px; }
+}
+  
+  .slide {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+  isolation: isolate;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    /* overlay removed: keep element harmless if present */
+    background: transparent;
+    z-index: 0;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+  padding: 0 6%;
+  max-width: 680px;
+  color: #f8fafc;
+  text-shadow: none;
+  }
+  
+  .content h1 {
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  margin-bottom: 18px;
+  line-height: 1.15;
+  font-weight: 800;
+  }
+  
+  .content p {
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  margin-bottom: 30px;
+  opacity: 0.92;
+  max-width: 520px;
+  }
+  
+  .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--btn-primary-bg, #f5c451);
+  color: var(--btn-primary-text, #1f1f1f);
+    padding: 14px 28px;
+  border-radius: 14px;
+  font-weight: 700;
+    text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  box-shadow: none;
+  border: 2px solid var(--btn-primary-bg, #f5c451);
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: none;
+    background: var(--btn-secondary-bg, rgba(245, 196, 81, 0.06));
+    color: var(--btn-primary-bg, #f5c451);
+}
+
+.hero :global(.swiper-pagination-bullet) {
+  background: rgba(255, 255, 255, 0.6);
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero :global(.swiper-pagination-bullet-active) {
+  background: var(--btn-primary-bg, #f5c451);
+  transform: scale(1.2);
+}
+
+
+
+
+@media (max-width: 1440px) {
+  .hero {
+    height: clamp(500px, 38vh, 800px);
+    width: min(94vw, auto);
+    margin: 0 auto;
+    transform: none;
+    border-radius: 12px;
+    padding: 6px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  
+
+  .swiper {
+    border-radius: 0;
+    min-height: unset;
+  }
+}
+
+@media (max-width: 1025px) {
+  .hero {
+    height: clamp(400px, 38vh, 600px);
+    width: min(94vw, auto);
+    margin: 0 auto;
+    transform: none;
+    border-radius: 12px;
+    padding: 6px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    
+  }
+  
+
+  .swiper {
+    border-radius: 0;
+    min-height: unset;
+  }
+}
+
+@media (min-width: 850px) {
+  .hero {
+    /* compact framed hero on phones */
+    height: clamp(620px, 38vh, 560px);
+    width: min(94vw, auto);
+    margin: 0 auto;
+    transform: none;
+    border-radius: 12px;
+    padding: 6px;
+
+    /* box-shadow: 0 6px 20px rgba(0,0,0,0.08); */
+  }
+
+  .content {
+    padding: 0 5%;
+  }
+
+  .content p {
+    max-width: none;
+    font-size: 0.95rem;
+  }
+
+  /* show full image scaled to fit inside the frame on phones */
+  .slide {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content h1 { font-size: clamp(1.2rem, 5.5vw, 1.8rem); }
+  .button { padding: 10px 14px; border-radius: 10px; font-size: 0.95rem; }
+}
+
+
+@media (max-width: 849px) {
+  .hero {
+    /* compact framed hero on phones */
+    height: clamp(220px, 38vh, 360px);
+    width: min(94vw, 680px);
+    margin: 0 auto;
+    transform: none;
+    border-radius: 12px;
+    padding: 6px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+
+  .content {
+    padding: 0 5%;
+  }
+
+  .content p {
+    max-width: none;
+    font-size: 0.95rem;
+  }
+
+  /* show full image scaled to fit inside the frame on phones */
+  .slide {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content h1 { font-size: clamp(1.2rem, 5.5vw, 1.8rem); }
+  .button { padding: 10px 14px; border-radius: 10px; font-size: 0.95rem; }
+}
+  

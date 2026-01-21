@@ -1,20 +1,57 @@
 /* کانتینر اصلی صفحه بارگذاری */
 .loadingContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    width: 100%;
+    background: var(--background-color, #fffdf6);
+    color: var(--text-color, #1f2937);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
-/* دایره‌های چرخشی */
+/* رپر اسپینر */
+.spinnerWrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+}
+
+/* دایره چرخشی اصلی */
 .spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid rgba(0, 0, 0, 0.1);
-    border-top: 5px solid #0070f3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent;
+    border-top: 4px solid var(--btn-primary-bg, #f5c451);
+    border-right: 4px solid var(--btn-primary-bg, #f5c451);
     border-radius: 50%;
     animation: spin 1s linear infinite;
+}
+
+/* حلقه خارجی */
+.spinnerRing {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid rgba(245, 196, 81, 0.2);
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite reverse;
+}
+
+/* متن بارگذاری */
+.loadingText {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color, #1f2937);
+    opacity: 0.8;
+    animation: pulse 1.5s ease-in-out infinite;
 }
 
 /* انیمیشن چرخش */
@@ -24,5 +61,40 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* انیمیشن پالس برای متن */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* حالت دارک مود */
+@media (prefers-color-scheme: dark) {
+    .loadingContainer {
+        background: var(--background-color, #0b1424);
+        color: var(--text-color, #fef3c7);
+    }
+    
+    .loadingText {
+        color: var(--text-color, #fef3c7);
+    }
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    .spinnerWrapper {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .loadingText {
+        font-size: 1rem;
     }
 }

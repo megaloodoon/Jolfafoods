@@ -1,0 +1,423 @@
+/* products.module.css */
+
+:global(.theme-light) .wrapper {
+  background: url("/Image/Light.jpg") center center / cover no-repeat;
+  color: var(--text-color);
+}
+
+:global(.theme-dark) .wrapper {
+  background: url("/Image/dark-blue.jpg") center center / cover no-repeat;
+  color: var(--text-color);
+}
+
+.wrapper {
+  padding: 80px 6%;
+  color: var(--text-color);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: inherit;
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 60px;
+}
+
+.mazesta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+:global(.theme-light) .card {
+  background: #f5f5bf;
+  background: radial-gradient(
+    circle,
+    rgba(255, 247, 247, 1) 0%,
+    rgba(207, 255, 247, 1) 0%,
+    rgba(240, 255, 254, 1) 19%,
+    rgba(237, 237, 237, 1) 89%,
+    rgba(191, 225, 255, 1) 100%
+  );
+  color: #1f1f1f;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+}
+
+:global(.theme-dark) .card {
+  background: #0c0c61;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100%
+  );
+  color: #f4f4f4;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
+  border-radius: 18px;
+}
+
+.card {
+  border-radius: 18px;
+  padding: 18px;
+  text-decoration: none;
+  transition: all 0.35s ease;
+}
+
+/* make card a column so we can push title/description toward the bottom */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 14px;
+}
+
+.imageWrapper img {
+  width: auto;
+  height: 260px;
+  padding-left: 13px;
+  object-fit: cover;
+  transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.card:hover img {
+  transform: scale(1.12);
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #6b6b6b;
+}
+
+/* wrapper for the textual content inside card to align it toward bottom */
+.cardContent {
+  margin-top: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.cardContent p {
+  font-size: 15px;
+}
+
+/* Swiper "spring" look: smaller cards, centered active slide scales up */
+.wrapper :global(.spring-swiper) {
+  padding-bottom: 44px;
+}
+
+.wrapper :global(.spring-swiper .swiper-slide) {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper :global(.spring-swiper .swiper-slide) .card {
+  width: 240px;
+  transform-origin: center center;
+  transition: transform 600ms cubic-bezier(0.22, 0.8, 0.36, 1), box-shadow 420ms;
+}
+
+.wrapper :global(.spring-swiper .swiper-slide-active) .card {
+  transform: scale(1.08);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16);
+}
+
+.wrapper :global(.spring-swiper .swiper-slide-next) .card,
+.wrapper :global(.spring-swiper .swiper-slide-prev) .card {
+  transform: scale(0.97);
+  opacity: 0.96;
+}
+
+.wrapper :global(.spring-swiper .swiper-pagination-bullet) {
+  width: 10px;
+  height: 10px;
+}
+
+:global(.theme-light) .detail {
+  background: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+:global(.theme-dark) .detail {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100%
+  );
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
+}
+
+.detail {
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.detailImageWrapper {
+  flex: 0 0 320px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.detailImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailContent {
+  flex: 1;
+}
+
+.detailContent h1 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
+.detailSubtitle {
+  margin: 0 0 16px;
+  color: #6b6b6b;
+  font-weight: 600;
+}
+
+.detailDescription {
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 16px;
+  color: #d77a3b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: #b3622f;
+}
+
+:global(.theme-light) .mazestaList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
+  height: auto;
+}
+
+:global(.theme-dark) .mazestaList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100% height: auto;
+  );
+}
+
+:global(.theme-light) .mazestaItem {
+  background-color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 47%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+:global(.theme-dark) .mazestaItem {
+  background-color: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100% height: auto;
+  );
+  border-radius: 10px;
+  overflow: hidden;
+  width: 47%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 2.1);
+  transition: transform 0.3s;
+}
+
+.mazestaItem:hover {
+  transform: scale(1.05);
+  /* Scale up effect on hover */
+}
+
+.mazestaImage {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+/* Text content container */
+.textContent {
+  padding: 15px;
+  color: #4e3629;
+  /* Dark brown text */
+}
+
+:global(.theme-light) .mazestaName {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  /* Dark coffee color */
+  margin-bottom: 10px;
+}
+
+:global(.theme-dark) .mazestaName {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+:global(.theme-light) .mazestaDetails {
+  font-size: 16px;
+  line-height: 1.6;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+:global(.theme-dark) .mazestaDetails {
+  font-size: 16px;
+  line-height: 1.6;
+  color: skyblue;
+  margin-bottom: 15px;
+}
+
+/* Link styling */
+:global(.theme-light) .link {
+  text-decoration: none;
+  color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
+  font-weight: bold;
+  border: 1px solid #9999;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+:global(.theme-dark) .link {
+  text-decoration: none;
+  color: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100% height: auto;
+  );
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link:hover {
+  background-color: #d77a3b;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+  }
+
+  .detailImageWrapper {
+    width: 100%;
+  }
+
+  .detailImageWrapper img {
+    height: auto;
+  }
+
+  /* smaller product thumbnails on narrow screens */
+  .imageWrapper img {
+    height: 120px;
+  }
+}
+
+/* Ensure product detail images are fully visible (not cropped) on tablets and small laptops */
+@media (max-width: 1024px) {
+  .detail {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .detailImageWrapper {
+    width: 100%;
+    flex: 0 0 auto;
+    max-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .detailImageWrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain; /* show full image */
+  }
+
+  .detailContent {
+    width: 100%;
+  }
+}
+
+/* Per-product thumbnail overrides (apply by adding class to imageWrapper)
+   Usage in JSX: className={`${styles.imageWrapper} ${product.id == 7 ? styles.imgSize7 : product.id == 9 ? styles.imgSize9 : ''}`} */
+.imageWrapper.imgSize7 img {
+  height: auto;
+}
+
+.imageWrapper.imgSize9 img {
+  height: auto;
+}

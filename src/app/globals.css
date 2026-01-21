@@ -1,446 +1,568 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Diodrum Arabic (place font files in `public/fonts/4photoshop-ir-Font-Diodrum/`)
+   - DiodrumArabic-Regular.woff2
+   - DiodrumArabic-Bold.woff2
+   If files are placed elsewhere, update the `url(...)` paths below accordingly. */
+@font-face {
+  font-family: "DiodrumArabic";
+  src: url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Regular.woff2")
+      format("woff2"),
+    url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "DiodrumArabic";
+  src: url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Bold.woff2")
+      format("woff2"),
+    url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Bold.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Use DiodrumArabic-Bold for titles/headings; keep existing body font for content */
+h1,
+h2,
+h3,
+.hero-title {
+  font-family: "DiodrumArabic", var(--font-vazir);
+  font-weight: 700;
+}
+
+/* Local Gandom font for Persian/Arabic */
+/* Use B-Zar font for Persian/Arabic */
+@font-face {
+  font-family: "B-Zar";
+  src: url("/B-Zar/B-Zar/B Zar_0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "B-Zar";
+  src: url("/B-Zar/B-Zar/B Zar Bold_0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ensure RTL pages use local B-Zar font */
+@font-face {
+  font-family: "B-Zar";
+  src: url("/B-Zar/B-Zar/B%20Zar_0.ttf") format("truetype"),
+    url("/B-Zar/B-Zar/B Zar_0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "B-Zar";
+  src: url("/B-Zar/B-Zar/B%20Zar%20Bold_0.ttf") format("truetype"),
+    url("/B-Zar/B-Zar/B Zar Bold_0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html[lang="fa"],
+html[lang="ar"],
+[dir="rtl"] {
+  --font-vazir: "B-Zar", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+/* Force RTL pages to use B-Zar at the body level to ensure the font is applied */
+html[lang="fa"] body,
+html[lang="ar"] body,
+body[dir="rtl"] {
+  font-family: "B-Zar", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial !important;
+}
+
+/* Fallback tokens so site keeps styling if theme classes are missing briefly */
+:root {
+  --color: #1f2937;
+  --text-color: #1f2937;
+  --text-secondary: #5a3d31;
+  --background-color: #fffdf6;
+  --btn-translate: translateX(-25px);
+  --nav-background: radial-gradient(
+      circle at 20% 20%,
+      #fff2b3 0%,
+      transparent 40%
+    ),
+    radial-gradient(circle at 78% 8%, #ffe9a3 0%, transparent 32%),
+    linear-gradient(180deg, #fffaf0 0%, #fff7e0 100%);
+  --switch-knob: #f59e0b;
+  --switch-track: rgba(255, 184, 28, 0.25);
+  --btn-primary-bg: #f59e0b;
+  --btn-primary-text: #ffffff;
+  --btn-secondary-bg: rgba(245, 158, 11, 0.15);
+  --btn-secondary-text: #1f2937;
+}
+
+.theme-dark {
+  --color: #fef3c7; /* متن زرد مایل به کرم روی پس‌زمینه سرمه‌ای */
+  --text-color: #fef3c7; /* متن روشن برای تم تاریک */
+  --text-secondary: #fbbf24; /* متن ثانویه روشن */
+  --background-color: #0b1424; /* سرمه‌ای تیره */
+  --btn-translate: translateX(7px);
+  --nav-background: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100%
+  );
+  --switch-knob: #fbbf24; /* زرد گرم برای تم تاریک */
+  --switch-track: rgba(255, 193, 59, 0.18);
+  --btn-primary-bg: #f59e0b;
+  --btn-primary-text: #0b1424;
+  --btn-secondary-bg: rgba(251, 191, 36, 0.2);
+  --btn-secondary-text: #fef3c7;
+}
+
+.theme-light {
+  --color: #1f2937; /* خاکستری تیره برای متن */
+  --text-color: #1f2937; /* متن تیره برای تم روشن */
+  --text-secondary: #5a3d31; /* متن ثانویه تیره */
+  --background-color: #ffff6d; /* سفید با ته‌مایه زرد بسیار ملایم */
+  --btn-translate: translateX(-25px);
+  --nav-background: radial-gradient(
+    circle,
+    rgba(255, 247, 247, 1) 0%,
+    rgba(207, 255, 247, 1) 0%,
+    rgba(240, 255, 254, 1) 19%,
+    rgba(237, 237, 237, 1) 89%,
+    rgba(191, 225, 255, 1) 100%
+  );
+  --switch-knob: #f59e0b;
+  --switch-track: rgba(255, 184, 28, 0.25);
+  --btn-primary-bg: #f59e0b;
+  --btn-primary-text: #ffffff;
+  --btn-secondary-bg: rgba(245, 158, 11, 0.15);
+  --btn-secondary-text: #1f2937;
 }
 
 html,
 body {
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--text-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p {
+  color: var(--text-color);
 }
 
-.nav {
-  background-color: #8b4513;
-  /* رنگ پس‌زمینه */
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color);
 }
 
-.nav a {
-  color: white;
-  /* رنگ متن */
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-vazir);
 }
 
-.nav a:hover {
-  color: #f59e0b;
-  /* تغییر رنگ هنگام هاور */
-}
-
-.nav a:active {
-  color: #d97706;
-  /* تغییر رنگ هنگام کلیک */
-}
-
-/* استایل برای بخش Hero */
-.hero {
-  background-image: url('./Coffe.jpg');
-  /* لینک به تصویر */
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* استایل برای متن داخل Hero */
-.hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.hero p {
-  margin-top: 1rem;
-  font-size: 1.25rem;
-}
-
-/* دکمه‌ها */
-.hero button {
-  margin: 1rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.hero .btn-primary {
-  background-color: #b5651d;
-  /* قهوه‌ای روشن */
-  color: white;
-}
-
-.hero .btn-primary:hover {
-  background-color: #8b4513;
-  /* قهوه‌ای تیره‌تر */
-}
-
-.hero .btn-secondary {
-  background-color: #3c3c3c;
-  /* خاکستری تیره */
-  color: white;
-}
-
-.hero .btn-secondary:hover {
-  background-color: #2a2a2a;
-  /* خاکستری تیره‌تر */
-}
-
-/* بخش‌های اصلی */
-.introduction,
-.highlights,
-.blog {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.introduction h2,
-.blog h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4e342e;
-  /* قهوه‌ای تیره */
-}
-
-.introduction p,
-.blog p {
-  margin-top: 1rem;
-  color: #6d4c41;
-  /* قهوه‌ای ملایم */
-}
-
-/* بخش‌های برجسته */
-.highlights {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.highlights .highlight {
-  background-color: #efebe9;
-  /* کرم روشن */
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 10px;
-  flex: 1 1 30%;
-}
-
-.highlights .highlight h3 {
-  color: #5d4037;
-  /* قهوه‌ای تیره */
-}
-
-.highlights .highlight p {
-  color: #8d6e63;
-  /* قهوه‌ای ملایم */
-}
-
-/* فوتر */
-.footer {
-  background-color: #3e2723;
-  /* قهوه‌ای تیره */
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* 
-.home-page  {
-  background-image: url('./Coffe.jpg');
-} */
-/* کانتینر اصلی */
-.container {
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* فایل page.module.css */
-.containerB {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  direction: rtl;
-  text-align: right;
-}
-
-.simbol {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.mini-simbol {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.mini-simbol img {
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
   width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-left: 15px;
+  overflow-x: hidden;
 }
 
-.mini-simbol h3 {
-  font-size: 16px;
-  line-height: 1.8;
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 
-.mother-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  list-style: none;
-  padding: 0;
+.hero-content {
+  animation: fadeInUp 0.8s ease-out;
 }
 
-.mother-list li {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.mother-list li:hover {
-  transform: translateY(-5px);
-}
-
-.mother-list h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.mother-list img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.mother-list p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #555;
-}
-
-
-/* انیمیشن فید این */
-@keyframes fadeIn {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.coffee-detail {
+.hero-title {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: 2px solid var(--btn-primary-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  border: 2px solid var(--btn-primary-bg);
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+nav {
+  background: var(--nav-background);
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+nav .logo img {
+  width: 200px;
+}
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-switch img {
+  width: 25px;
+}
+
+.theme-switch button {
+  position: relative;
+  height: 25px;
+  width: 60px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--switch-track);
+  cursor: pointer;
+  transition: transform 0.15s ease-out;
+}
+
+.theme-switch button::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--switch-knob);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%) var(--btn-translate);
+  transition: 0.3s ease;
+}
+
+.theme-switch button:active {
+  transform: scale(0.96);
+}
+
+/* Ensure theme-switch keeps its own space and doesn't overlap nearby icons */
+.theme-switch {
+  flex-shrink: 0;
+  min-width: 76px; /* reserve space for sun, toggle and moon */
+  padding: 2px 6px;
+  box-sizing: border-box;
+}
+
+.theme-switch img {
+  flex-shrink: 0;
+}
+
+.theme-switch button {
+  flex-shrink: 0;
+  margin: 0 4px;
+  z-index: 2;
+}
+
+
+
+
+
+@media (max-width: 1020px) {
+  .theme-switch {
+    min-width: 64px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .theme-switch {
+    min-width: 56px;
+    gap: 6px;
+  }
+}
+
+.product-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #f4ede2, #e5d4c5);
-  /* پس زمینه گرادیان قهوه‌ای ملایم */
-  color: #5b4636;
-  /* رنگ متن قهوه‌ای تیره */
-  padding: 20px;
-  font-family: 'Arial', sans-serif;
-  position: relative;
-  overflow: hidden;
 }
 
-.coffee-detail::before {
-  content: "";
+/* گرادینت مخصوص دارک مود برای کارت محصولات */
+.dark-gradient-bg {
+  background: linear-gradient(180deg, #0d1a30 0%, #0a1223 100%) !important;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Responsive tweaks for mobile / tablet / small laptops */
+
+/* Make nav wrap and reduce height on small screens */
+@media (max-width: 1024px) {
+  nav {
+    height: 120px;
+    padding: 8px 0;
+  }
+
+  nav .container {
+    width: 92%;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  nav .logo img {
+    width: 140px;
+  }
+
+  .theme-switch img {
+    width: 20px;
+  }
+
+  .theme-switch button {
+    height: 20px;
+    width: 48px;
+  }
+}
+
+/* Tighter theme-switch sizes for small tablets and phones */
+@media (max-width: 1020px) {
+  .theme-switch img {
+    width: 18px;
+  }
+  .theme-switch button {
+    height: 18px;
+    width: 44px;
+  }
+  .theme-switch button::before {
+    width: 16px;
+    height: 16px;
+    left: 62%;
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-switch img {
+    width: 16px;
+  }
+  .theme-switch button {
+    height: 16px;
+    width: 40px;
+  }
+  .theme-switch button::before {
+    width: 14px;
+    height: 14px;
+    left: 75%;
+  }
+}
+
+@media (max-width: 420px) {
+  .theme-switch img {
+    width: 14px;
+  }
+  .theme-switch button {
+    height: 14px;
+    width: 36px;
+  }
+  .theme-switch button::before {
+    width: 12px;
+    height: 12px;
+    left: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav .container {
+    width: 96%;
+    justify-content: space-between;
+  }
+
+  nav .logo img {
+    width: 110px;
+  }
+
+  /* Nav links: allow wrap and smaller font on phones */
+  nav a {
+    font-size: 0.95rem;
+    padding: 6px 8px;
+  }
+
+  /* Hero typography scales smoothly */
+  .hero-title {
+    font-size: clamp(1.25rem, 4vw, 1.8rem);
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.9rem, 3vw, 1.05rem);
+  }
+
+  .hero-section {
+    padding: 1.25rem 0.75rem;
+  }
+
+  /* Product cards: stack and make images responsive */
+  .product-card {
+    gap: 0.5rem;
+  }
+
+  .product-card img,
+  .product-card picture,
+  .product-card video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reduce large container widths on small laptops */
+  @media (max-width: 1100px) {
+    .container {
+      width: 94%;
+    }
+  }
+}
+
+/* Small tweak for very small phones */
+@media (max-width: 420px) {
+  nav .logo img {
+    width: 90px;
+  }
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+  .theme-switch img {
+    width: 18px;
+  }
+}
+
+/* Mobile menu slide-over panel */
+.mobile-menu .mobile-menu-backdrop {
   position: absolute;
-  top: -50px;
-  left: -50px;
-  width: 200px;
-  height: 200px;
-  background: rgba(255, 236, 179, 0.5);
-  border-radius: 50%;
-  z-index: 0;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.coffee-detail img {
-  width: 600px;
-  height: auto;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-  z-index: 1;
+.mobile-menu > div[role="panel"],
+.mobile-menu > .relative {
+  transition: transform 0.25s ease;
 }
 
-.coffee-detail img:hover {
-  transform: scale(1.05);
+/* small tweaks for the slide-over content */
+.mobile-menu .btn-ghost {
+  background: transparent;
+  border: none;
 }
 
-.coffee-detail h1 {
-  font-size: 2.5em;
-  margin: 15px 0;
-  color: #3e2723;
-  background: linear-gradient(to right, #8d6e63, #4e342e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 1;
+/* Control hamburger visibility and desktop links breakpoint.
+   Use hamburger for widths <= 1020px and normal nav for >= 1024px.
+*/
+.hamburger-btn {
+  display: none;
+}
+.desktop-links {
+  display: flex;
 }
 
-.coffee-detail p {
-  font-size: 1.2em;
-  line-height: 1.8;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+@media (max-width: 1020px) {
+  .hamburger-btn {
+    display: inline-flex;
+  }
+  .desktop-links {
+    display: none !important;
+  }
+
+  /* ensure nav items stack nicely when hamburger replaces links */
+  nav .container {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
-.button-link {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1em;
-  text-decoration: none;
-  color: #fff;
-  background: #6d4c41;
-  border-radius: 5px;
-  transition: background 0.3s ease, transform 0.3s ease;
-  z-index: 1;
-}
-
-.button-link:hover {
-  background: #5d4037;
-  transform: translateY(-2px);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-
-.coffee-container {
-  font-family: 'Arial, sans-serif';
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.coffee-container h1 {
-  color: #6B4F4F;
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.coffee-container h3 {
-  color: #8B5E3C;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.coffee-types {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 آیتم در هر ردیف */
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.coffee-type {
-  margin: 0 auto;
-  width: 500px;
-  /* برای مرکز قرار گرفتن آیتم‌ها */
-  padding: 15px;
-  background-color: #f0ebe4;
-  border-radius: 20px;
-  /* گوشه‌های گرد */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  /* افکت هاور */
-}
-
-.coffee-type:hover {
-  transform: scale(1.05);
-  /* بزرگ‌تر شدن در هاور */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  /* تغییر سایه در هاور */
-}
-
-.coffee-type h2 {
-  color: #4A3F35;
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-.coffee-type p {
-  color: #6B4F4F;
-  font-size: 14px;
-}
-
-.coffee-type img {
-  margin: 10px;
-  width: 100%;
-  max-width: 200px;
-  height: 150px;
-  /* کاهش ارتفاع برای تناسب */
-  border-radius: 15px;
-  /* گوشه‌های گرد تصویر */
-  object-fit: cover;
-  /* حفظ نسبت تصویر */
-  margin-bottom: 10px;
+@media (min-width: 1024px) {
+  .hamburger-btn {
+    display: none;
+  }
+  .desktop-links {
+    display: flex !important;
+  }
 }

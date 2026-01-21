@@ -1,0 +1,2584 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Shredded Mozzarella Cheese",
+      "image": "/Image/Prudoct/Mozzarella.jpg",
+      "title": "پنیر پیتزا موزارلا رنده شده",
+      "description": "ایتالیا زادگاه پنیرهای خوب است. یکی از مهم ترین پنیرهای نرم ایتالیایی، موزارلا است که مصرف کنندگان زیادی دارد. پیتزایی که خمیر آن به طرز ماهرانه ای با پنیر موزارلا، گوجه فرنگی و گوشت تزیین می شود، به یک غذای بین المللی تبدیل شده است. پنیر موزارلا در ایران از شیر گاو به دست می آید. واکنش هایی که بین پروتئین شیر و کلسیم در اثر حرارت ایجاد می شود باعث ایجاد طعم و عطر دلخواه می شود. پنیر پیتزا از لحاظ ارزش غذایی منبع غنی کلسیم،پروتئین و چربی می‌باشد که برای رشد کودکان بسیار مفید خواهد بود در حالی که استفاده ی بیش از حد آن برای افرادی که دچار اضافه وزن هستند و یا مشکلات قلبی دارند توصیه نمی شود. پروتئین، لاکتوز، ویتامین ها و فسفر موجود در این پنیر، باعث افزایش جذب کلسیم می شود. همان‌طور که می دانید وجود کلسیم برای استحکام استخوان ها و دندان ها در هر سنی ضروری است.",
+      "titleEn": "Shredded mozzarella pizza cheese",
+      "descriptionEn": "Italy is the birthplace of good cheeses. One of the most important soft Italian cheeses is mozzarella, which has a large consumer base. Pizza, whose dough is skillfully topped with mozzarella cheese, tomatoes, and meat, has become an international dish. Mozzarella cheese in Iran is made from cow’s milk. The reactions between milk proteins and calcium under heat create a desirable flavor and aroma. Pizza cheese is nutritionally rich in calcium, protein, and fat, which will be very beneficial for children’s growth, although excessive consumption is not recommended for individuals who are overweight or have heart problems. The protein, lactose, vitamins, and phosphorus present in this cheese enhance calcium absorption. As you know, calcium is essential for bone and tooth strength at any age.",
+      "titleAr": "جبنة بيتزا موزاريلا مبشورة",
+      "descriptionAr": "إيطاليا هي موطن الجبنة الجيدة. واحدة من أهم الجبنة اللينة الإيطالية هي الموزاريلا، التي تتمتع بقاعدة مستهلكة كبيرة. البيتزا، التي تُزين عجينةها بمهارة بالجبن الموزاريلا والطماطم واللحوم، تحولت إلى طبق عالمي. يُصنع جبنة الموزاريلا في إيران من حليب البقر. التفاعلات بين بروتينات الحليب والكالسيوم تحت التسخين تؤدي إلى إنتاج نكهة ورائحة مرغوبة. جبنة البيتزا غنية من الناحية الغذائية بالكالسيوم والبروتين والدهون، وهي مفيدة جدًا لنمو الأطفال، في حين لا يُنصح بتناولها بكميات زائدة للأشخاص الذين يعانون من زيادة الوزن أو مشاكل قلبية. البروتين واللاكتوز والفيتامينات والفوسفور الموجودة في هذه الجبنة تعزز امتصاص الكالسيوم. كما تعلمون، فإن وجود الكالسيوم ضروري لقوة العظام والأسنان في أي عمر.",
+      "titleFr": "Fromage à pizza mozzarella râpé",
+      "descriptionFr": "L’Italie est le berceau des bonnes fromages. L’une des fromages doux italiens les plus importants est la mozzarella, qui possède une large base de consommateurs. La pizza, dont la pâte est habilement garnie de fromage mozzarella, de tomates et de viande, est devenue un plat international. Le fromage mozzarella en Iran est fabriqué à partir de lait de vache. Les réactions entre les protéines du lait et le calcium sous l’effet de la chaleur créent une saveur et une odeur souhaitées. Le fromage à pizza est une source riche en calcium, protéines et graisses, ce qui sera très bénéfique pour la croissance des enfants, bien que sa consommation excessive ne soit pas recommandée pour les personnes souffrant d’obésité ou de problèmes cardiaques. Les protéines, le lactose, les vitamines et le phosphore présents dans ce fromage favorisent l’absorption du calcium. Comme vous le savez, le calcium est essentiel pour la solidité des os et des dents à tout âge.",
+      "titleRu": "Натертый моцарелла для пиццы",
+      "descriptionRu": "Италия — родина хороших сыров. Одним из самых важных мягких итальянских сыров является моцарелла, которая пользуется большой популярностью у потребителей. Пицца, тесто которой искусно украшено сыром моцарелла, помидорами и мясом, превратилась в международное блюдо. Сыр моцарелла в Иране производится из коровьего молока. Реакции между белками молока и кальцием при нагревании создают желаемый вкус и аромат. Сыр для пиццы является питательным источником кальция, белка и жира, что будет очень полезно для роста детей, в то время как чрезмерное употребление не рекомендуется для людей, страдающих ожирением или сердечными заболеваниями. Протеины, лактоза, витамины и фосфор, содержащиеся в этом сыре, способствуют усвоению кальция. Как вы знаете, кальций необходим для прочности костей и зубов в любом возрасте."
+    },
+    {
+      "id": 2,
+      "name": "Processed Cheese",
+      "image": "/Image/Prudoct/Process.jpg",
+      "title": "پنیر پیتزای پروسس رنده شده",
+      "description": "پنیر پیتزای پروسس نوعی پنیر پاستوریزه است که در تهیه پیتزا از آن استفاده می شود. این نوع پنیر به دو صورت صنعتی و سنتی وجود دارد و برای استفاده از آن به اشکال مختلف رشته ای، ورقه ای و ... استفاده می شود. این پنیر در مراحل تهیه پیتزا با ذوب شدن روی سطح غذا خاصیت کشسانی و چسبندگی خود را نشان می دهد. پنیر فرآوری شده از مخلوط یک یا چند نوع پنیر مختلف (با درجات رسیدن متفاوت) با پنیر اولیه به عنوان ماده اصلی و افزودن امولسیفرهای مجاز و حرارت دادن آنها در شرایط مناسب جهت به دست آوردن مخلوطی یکنواخت تولید می شود.",
+      "titleEn": "Shredded processed mozzarella pizza cheese",
+      "descriptionEn": "Processed pizza cheese is a type of pasteurized cheese used in pizza preparation. This type of cheese exists in both industrial and traditional forms and is used in various shapes such as shredded, sliced, and others. During pizza preparation, this cheese exhibits elasticity and adhesion as it melts on the surface of the food. Processed cheese is produced by mixing one or more types of different cheeses (with varying degrees of ripeness), using primary cheese as the main ingredient, adding approved emulsifiers, and heating them under suitable conditions to obtain a uniform mixture.",
+      "titleAr": "جبنة بيتزا موزاريلا معالجة مبشورة",
+      "descriptionAr": "جبن بيتزا المعالج هو نوع من الجبن المبستر المستخدم في تحضير البيتزا. يوجد هذا النوع من الجبن بنسختين، صناعية وتقليدية، ويُستخدم بأشكال مختلفة مثل المبشور، المقطع، وغيرها. أثناء تحضير البيتزا، يُظهر هذا الجبن مرونة وتماسكًا عند ذوبانه على سطح الطعام. يتم إنتاج الجبن المعالج من خلال خلط نوع أو أكثر من أنواع مختلفة من الجبن (بدرجات نضج مختلفة)، باستخدام الجبن الأساسي كعنصر رئيسي، وإضافة مُحَلِّلات مُوَافَقٍ عليها، وتسخينها في ظروف مناسبة للحصول على مزيج متجانس.",
+      "titleFr": "Fromage à pizza mozzarella râpé, façonné",
+      "descriptionFr": "Le fromage à pizza transformé est un type de fromage pasteurisé utilisé dans la préparation de la pizza. Ce type de fromage existe sous deux formes, industrielle et traditionnelle, et est utilisé sous différentes formes comme râpé, tranché, etc. Lors de la préparation de la pizza, ce fromage présente une élasticité et une adhérence en se fondant sur la surface du plat. Le fromage transformé est produit en mélangeant un ou plusieurs types de fromages différents (à différents degrés de maturation), en utilisant le fromage primaire comme ingrédient principal, en ajoutant des émulsifiants autorisés, et en le chauffant dans des conditions appropriées pour obtenir un mélange homogène.",
+      "titleRu": "Натертый обработанный моцарелла для пиццы",
+      "descriptionRu": "Обработанный сыр для пиццы — это вид пастеризованного сыра, используемого при приготовлении пиццы. Этот вид сыра существует в двух формах — промышленной и традиционной — и используется в различных формах: натёртый, ломтики и др. При приготовлении пиццы этот сыр проявляет эластичность и адгезию, плавясь на поверхности блюда. Обработанный сыр производится путём смешивания одного или нескольких видов различных сыров (с разной степенью созревания), используя первичный сыр в качестве основного ингредиента, добавления разрешённых эмульгаторов и нагревания при подходящих условиях для получения однородной смеси."
+    },
+    {
+      "id": 3,
+      "name": "Shredded Topping Cheese",
+      "image": "/Image/Prudoct/Topping.jpg",
+      "title": "پنیر پیتزای تاپینگ رنده شده ",
+      "description": "محصولی است که از پنیر پاستوریزه اولیه بدون چربی به عنوان ماده اصلی یا مخلوط آن با یک یا چند نوع مختلف پنیر به همراه افزودن امولسیفرهای مجاز و حرارت دادن آنها در شرایط مناسب جهت به دست آوردن مخلوطی یکنواخت تهیه می شود. عناصر پروتئینی مورد استفاده در تولید این محصول شامل کازئین و انواع کشک پنیر می باشد. بخشی از چربی مصرفی در تولید این محصول منشا گیاهی دارد که در برخی از کارخانه های تولید پنیر پیتزا به دلیل کاهش هزینه ها از روغن گیاهی بی کیفیت با اسیدهای چرب ترانس بالا به عنوان جایگزین چربی شیر استفاده می شود، اما در شرکت عصر طلایی برتر اسپادانا از مارگارین گیاهی مرغوب و با حداکثر 1 درصد اسیدهای چرب ترانس استفاده می کنیم. همانطور که می دانید افزایش کلسترول خون که منجر به سندرم متابولیک، بیماری های قلبی عروقی، دیابت نوع دو و حتی برخی سرطان ها می شود، نتیجه مصرف اسیدهای چرب ترانس است. برای کاهش اثرات منفی این چربی ها باید به چربی های سالم روی آورد، که بنا بر اعلامیه ی سازمان جهانی بهداشت اسیدهای چرب ترانس موجود در مواد غذایی نباید بیشتر از 1 درصد باشد. در همین راستا شرکت عصر طلایی برتر اسپادانا سعی بر آن داشته است که از بهترین نوع مارگارین گیاهی با کمترین میزان اسیدهای چرب ترانس استفاده کند.",
+      "titleEn": "Shredded topping pizza cheese",
+      "descriptionEn": "This product is made from primary fat-free pasteurized cheese as the main ingredient, or a mixture of it with one or more different types of cheese, along with the addition of approved emulsifiers and heating under suitable conditions to obtain a uniform mixture. The protein components used in the production of this product include casein and various types of cheese whey. Some of the fats used in the production of this product are of plant origin; however, in some pizza cheese factories, low-quality vegetable oil with high trans fatty acids is used as a substitute for dairy fat to reduce costs. In contrast, Spadana Golden Age Superior Company uses high-quality plant-based margarine with a maximum of 1% trans fatty acids. As you know, elevated blood cholesterol—leading to metabolic syndrome, cardiovascular diseases, type 2 diabetes, and even certain cancers—is a result of trans fatty acid consumption. To reduce the negative effects of these fats, one should shift to healthy fats. According to the World Health Organization, trans fatty acids in food should not exceed 1%. In this regard, Spadana Golden Age Superior Company has made efforts to use the best type of plant-based margarine with the lowest level of trans fatty acids.",
+      "titleAr": "جبنة بيتزا للتزيين مبشورة",
+      "descriptionAr": "هذا المنتج مصنوع من جبنة بسترة أولية خالية من الدهون كعنصر أساسي، أو مزيج منها مع نوع أو أكثر من أنواع مختلفة من الجبنة، بالإضافة إلى إضافة مُحَلِّلات مُوَافَقٍ عليها وتسخينها في ظروف مناسبة للحصول على مزيج متجانس. تشمل المكونات البروتينية المستخدمة في إنتاج هذا المنتج الكازين وأنواع مختلفة من مصل الجبن. يُستخدم جزء من الدهون المستخدمة في إنتاج هذا المنتج من أصل نباتي؛ ومع ذلك، في بعض مصانع جبن البيتزا، تُستخدم زيوت نباتية منخفضة الجودة ذات أحماض دهنية متحولة عالية كبديل للدهون الحيوانية لتقليل التكاليف. أما شركة عصر طلایی برتر اسپادانا، فتستخدم مارغريناً نباتية عالية الجودة تحتوي على 1% كحد أقصى من الأحماض الدهنية المتحولة. كما تعلمون، فإن ارتفاع الكوليسترول في الدم، الذي يؤدي إلى متلازمة الأيض وأمراض القلب والأوعية الدموية ومرض السكري من النوع الثاني وحتى بعض أنواع السرطان، هو نتيجة لاستهلاك الأحماض الدهنية المتحولة. ولتقليل الآثار السلبية لهذه الدهون، يجب التحول إلى الدهون الصحية. وفقًا لإعلان منظمة الصحة العالمية، يجب ألا تتجاوز الأحماض الدهنية المتحولة الموجودة في الأطعمة 1%. وفي هذا السياق، بذلت شركة عصر طلایی برتر اسپادانا جهودًا لاستخدام أفضل نوع من المارغرينا النباتية بأقل نسبة من الأحماض الدهنية المتحولة.",
+      "titleFr": "Fromage râpé pour garniture de pizza",
+      "descriptionFr": "Ce produit est fabriqué à partir de fromage pasteurisé sans matière grasse comme ingrédient principal, ou d’un mélange de celui-ci avec un ou plusieurs types différents de fromage, accompagné de l’ajout d’émulsifiants autorisés et d’un chauffage dans des conditions appropriées pour obtenir un mélange homogène. Les composants protéiques utilisés dans la production de ce produit incluent la caséine et divers types de lactosérum de fromage. Une partie des graisses utilisées dans la fabrication de ce produit est d’origine végétale ; cependant, dans certaines usines de fromage à pizza, des huiles végétales de faible qualité, riches en acides gras trans, sont utilisées comme substitut de la matière grasse animale afin de réduire les coûts. En revanche, la société Spadana Golden Age Superior utilise une margarine végétale de haute qualité contenant un maximum de 1 % d’acides gras trans. Comme vous le savez, l’augmentation du cholestérol sanguin, qui conduit au syndrome métabolique, aux maladies cardiovasculaires, au diabète de type 2 et même à certains cancers, est due à la consommation d’acides gras trans. Pour réduire les effets négatifs de ces graisses, il faut opter pour des graisses saines. Selon l’Organisation mondiale de la santé, les acides gras trans présents dans les aliments ne devraient pas dépasser 1 %. Dans ce sens, la société Spadana Golden Age Superior s’est efforcée d’utiliser le meilleur type de margarine végétale avec le taux le plus faible d’acides gras trans.",
+      "titleRu": "Натертый сыр для посыпки пиццы",
+      "descriptionRu": "Этот продукт производится из первичного пастеризованного сыра без жира в качестве основного ингредиента или из смеси его с одним или несколькими видами различных сыров, с добавлением разрешённых эмульгаторов и нагреванием при подходящих условиях для получения однородной смеси. Белковые компоненты, используемые при производстве этого продукта, включают казеин и различные виды сывороточного белка. Часть жиров, используемых при производстве этого продукта, имеет растительное происхождение; однако в некоторых фабриках по производству сыра для пиццы для снижения затрат используется низкокачественное растительное масло с высоким содержанием трансжиров в качестве заменителя молочного жира. В отличие от этого, компания «Спадана Золотой Век Превосходный» использует высококачественный растительный маргарин с максимальным содержанием 1% трансжиров. Как известно, повышение уровня холестерина в крови, приводящее к метаболическому синдрому, сердечно-сосудистым заболеваниям, диабету 2 типа и даже некоторым видам рака, является результатом потребления трансжиров. Для уменьшения негативных последствий этих жиров необходимо перейти на здоровые жиры. Согласно заявлению Всемирной организации здравоохранения, трансжиры в пищевых продуктах не должны превышать 1%. В этом контексте компания «Спадана Золотой Век Превосходный» стремилась использовать лучший вид растительного маргарина с минимальным содержанием трансжиров."
+    },
+    {
+      "id": 4,
+      "name": "Grill Cheese",
+      "image": "/Image/Prudoct/Grill.jpg",
+      "title": "پنیر  موزارلا کبابی",
+      "description": "پنیر موزارلا کبابی جلفا نوعی پنیر فرآوری‌شده بر پایه‌ی موزارلاست که به‌گونه‌ای فرمولاسیون شده تا در برابر حرارت مستقیم پایداری بافتی داشته باشد. این پنیر با حرارت دچار آب‌اندازی یا ذوب بیش‌ازحد نمی‌گردد بلکه  به‌صورت یکنواخت نرم و سطح آن طلایی می‌شود و طعمی ملایم و کنترل‌شده ارائه می‌دهد؛ ازاین‌رو گزینه‌ای مناسب برای گریل، کباب، سرخ کردن و کاربردهای حرارتی مستقیم محسوب می‌شود.",
+      "titleEn": "Grilled Mozzarella Cheese",
+      "descriptionEn": "Jolfa grilled mozzarella is a processed cheese based on mozzarella, formulated to maintain textural stability under direct heat. It doesn’t melt excessively but softens evenly and develops a golden surface, offering a mild, controlled flavor. Therefore, it’s suitable for grilling, kebabs, frying, and other direct heat applications.",
+      "titleAr": "جبنة موزاريلا مشوية",
+      "descriptionAr": "جبنة موزاريلا جلفا المشوية هي جبنة معالجة تعتمد على الموزاريلا، ومصممة للحفاظ على استقرار الملمس تحت الحرارة المباشرة. لا تذوب بشكل مفرط بل تليّن بالتساوي وتكتسب سطحًا ذهبيًا، مما يوفر نكهة خفيفة ومتحكم بها. ولهذا السبب، فهي خيار مناسب للتحمير والشوي والقلي والتطبيقات الحرارية المباشرة.",
+      "titleFr": "Mozzarella grillée",
+      "descriptionFr": "La mozzarella grillée Jolfa est un fromage transformé à base de mozzarella, formulé pour maintenir une stabilité de texture sous chaleur directe. Elle ne fond pas excessivement mais ramollit uniformément et développe une surface dorée, offrant une saveur douce et contrôlée. C’est donc une option adaptée au grillage, aux kebabs, à la friture et aux autres applications à chaleur directe.",
+      "titleRu": "Жареный сыр моцарелла",
+      "descriptionRu": "Жареный моцарелла Jolfa — это обработанный сыр на основе моцареллы, разработанный для сохранения текстурной стабильности при воздействии прямых высоких температур. Он не плавится чрезмерно, а равномерно размягчается и приобретает золотистую поверхность, предлагая мягкий, контролируемый вкус. Поэтому он идеально подходит для гриля, шашлыков, жарки и других применений при прямом нагреве."
+    },
+    {
+      "id": 5,
+      "name": "Processed Cheese Sauce",
+      "image": "/Image/Prudoct/Cheese-Sauce.webp",
+      "title": "سس پنیر پیتزا پروسس",
+      "description": "سس پنیر پیتزای جلفا، محصولی با کیفیت بالا و مبتنی بر فرآوری پنیر با استفاده از فناوری‌های پیشرفته است. این سس با ترکیب پنیر طبیعی، شیر و افزودنی‌های مجاز و سالم، دارای طعم غنی و بافتی یکنواخت و لطیف می باشد. فرآیند تولید این محصول تحت شرایط بهداشتی و استاندارد صنعتی انجام می‌شود و با آزمایش‌های شیمیایی و میکروبی، ایمنی و دوام محصول تضمین شده است. این سس به عنوان گزینه‌ای مناسب در تهیه و سرو انواع خوراکی ها و مزه ها از جمله ساندویچ، انواع اسنک و سالاد مورد استفاده قرار می گیرد.این سس، ترکیبی از کیفیت، سالم بودن و تنوع مزه‌ای است که مناسب برای صنعت غذایی و مصرف‌کنندگان حساس به کیفیت است.این محصول در بسته بندی های ۹۰۰ و ۱۵۰۰ گرمی قابل عرضه میباشد",
+      "titleEn": "Creamy cheese sauce with balanced flavor",
+      "descriptionEn": "Jolfa Cheese Sauce is a high-quality product developed using advanced cheese processing technologies. Made with natural cheese, milk, and approved, safe additives, it offers a rich flavor and smooth, consistent texture. Produced under strict hygienic and industrial standards, the product undergoes rigorous chemical and microbiological testing to ensure safety and shelf stability. Ideal for use in a wide range of food applications, including sandwiches, snacks, and salads, this sauce combines quality, health, and flavor diversity—perfect for the food industry and health-conscious consumers.This product is available in 900g and 1500g packages",
+      "titleAr": "صلصة جبن كريمية بنكهة متوازنة",
+      "descriptionAr": "صلصة جلفا للجبن هي منتج عالي الجودة مُعد باستخدام تقنيات متقدمة في معالجة الجبن. وتتكون من جبن طبيعي، حليب، وإضافات آمنة ومرخصة، مما يمنحها نكهة غنية وقوامًا متجانسًا وناعمًا. يتم إنتاج هذا المنتج في ظل ظروف صحية ومعايير صناعية صارمة، ويُخضع لاختبارات كيميائية وميكروبيولوجية لضمان سلامة المنتج وطول عمره. تُستخدم هذه الصلصة كخيار مناسب في تحضير وتقديم أنواع مختلفة من الأطعمة، مثل السندويتشات، والوجبات الخفيفة، والسلطات. وهي تجمع بين الجودة، والصحة، وتنوع النكهات، مما يجعلها مناسبة لصناعة الأغذية والمستهلكين الحريصين على الجودة. يتوفر هذا المنتج في عبوات بوزن  900جرام و 1500 جرام. ",
+      "titleFr": "Sauce au fromage crémeuse avec saveur équilibrée",
+      "descriptionFr": "La sauce au fromage de Jelfa est un produit de haute qualité fabriqué grâce à des technologies avancées de transformation fromagère. Composée de fromage naturel, de lait et d’additifs autorisés et sains, elle offre une saveur riche et une texture lisse et homogène. Ce produit est fabriqué dans des conditions hygiéniques et industrielles strictes, et soumis à des analyses chimiques et microbiologiques pour garantir sa sécurité et sa durée de conservation. Idéale pour la préparation et la présentation de divers aliments, comme les sandwichs, les collations et les salades, cette sauce allie qualité, sécurité alimentaire et diversité gustative, répondant ainsi aux besoins de l’industrie alimentaire et des consommateurs soucieux de qualité.Ce produit est disponible en emballages de 900 et 1500 grammes",
+      "titleRu": "Сливочный сырный соус со сбалансированным вкусом",
+      "descriptionRu": "Соус из сыра «Джелфа» — высококачественный продукт, созданный с использованием передовых технологий переработки сыра. Состоит из натурального сыра, молока и разрешённых, безопасных добавок, обладает насыщенным вкусом и однородной, гладкой текстурой. Производство осуществляется в строгих гигиенических и промышленных условиях, продукт проходит химические и микробиологические анализы для обеспечения безопасности и долговечности. Этот соус идеально подходит для приготовления и подачи различных блюд, включая сэндвичи, закуски и салаты. Он сочетает в себе качество, безопасность и разнообразие вкусов, что делает его подходящим для пищевой промышленности и потребителей, заботящихся о качестве.Данный продукт доступен в упаковках по 900 и 1500 грамм. ",
+      "titleFa": "سس پنیر پیتزا پروسس",
+      "slug": "",
+      "imageFile": {},
+      "descriptionFa": "سس پنیر پیتزای جلفا، محصولی با کیفیت بالا و مبتنی بر فرآوری پنیر با استفاده از فناوری‌های پیشرفته است. این سس با ترکیب پنیر طبیعی، شیر و افزودنی‌های مجاز و سالم، دارای طعم غنی و بافتی یکنواخت و لطیف می باشد. فرآیند تولید این محصول تحت شرایط بهداشتی و استاندارد صنعتی انجام می‌شود و با آزمایش‌های شیمیایی و میکروبی، ایمنی و دوام محصول تضمین شده است. این سس به عنوان گزینه‌ای مناسب در تهیه و سرو انواع خوراکی ها و مزه ها از جمله ساندویچ، انواع اسنک و سالاد مورد استفاده قرار می گیرد.این سس، ترکیبی از کیفیت، سالم بودن و تنوع مزه‌ای است که مناسب برای صنعت غذایی و مصرف‌کنندگان حساس به کیفیت است.این محصول در بسته بندی های ۹۰۰ گرمی و ۱۵۰۰ گرمی قابل عرضه میباشد"
+    },
+    {
+      "id": 6,
+      "name": "Processed Cheddar Cheese Sauce",
+      "image": "/Image/Prudoct/Cheddar-Dip.webp",
+      "title": "سس پنیر پیتزا پروسس با طعم چدار",
+      "description": " این سس محصولی بر پایه پنیر چدار است که طعمی قوی و بافتی نرم دارد. این دیپ به‌صورت گرم یا سرد قابل استفاده بوده و انتخابی مناسب برای سرو در کنار ناچو، سیب‌زمینی سرخ‌کرده و انواع اسنک‌هاست. فرمولاسیون آن به‌گونه‌ای است که در زمان مصرف، قوام و طعم یکنواخت خود را حفظ می‌کند.",
+      "titleEn": "Processed Pizza Cheese Sauce with Cheddar Flavor",
+      "descriptionEn": "This cheddar-based sauce has a strong flavor and smooth texture. It can be served warm or cold and is a great dip for nachos, french fries, and various snacks. The formulation ensures consistent consistency and flavor upon consumption.",
+      "titleAr": "صلصة جبنة بيتزا معالجة بنكهة الشيدر",
+      "descriptionAr": "هذه الصلصة تعتمد على جبنة الشيدر، ولها نكهة قوية وملمس ناعم. يمكن تقديم هذا التغميس ساخنًا أو باردًا وهو خيار رائع للتقديم مع الناتشوز والبطاطس المقلية وأنواع مختلفة من الوجبات الخفيفة. يضمن تركيبه ثبات القوام والنكهة عند الاستهلاك.",
+      "titleFr": "Sauce fromagère pour pizza transformée au goût cheddar",
+      "descriptionFr": "Cette sauce à base de cheddar a une saveur forte et une texture lisse. Elle peut être servie chaude ou froide et constitue une excellente sauce pour les nachos, les frites et divers snacks. Sa formulation garantit une consistance et une saveur uniformes lors de la consommation.",
+      "titleRu": "Процессированная сырная приправа для пиццы со вкусом чеддера",
+      "descriptionRu": "Эта приправа на основе чеддера обладает насыщенным вкусом и гладкой текстурой. Ее можно подавать как теплой, так и холодной, и она отлично подходит для подачи с начос, картофелем фри и различными закусками. Формула гарантирует сохранение однородной консистенции и вкуса при употреблении.",
+      "titleFa": "سس پنیر پیتزا پروسس با طعم چدار",
+      "slug": "",
+      "imageFile": {},
+      "descriptionFa": " این سس محصولی بر پایه پنیر چدار است که طعمی قوی و بافتی نرم دارد. این دیپ به‌صورت گرم یا سرد قابل استفاده بوده و انتخابی مناسب برای سرو در کنار ناچو، سیب‌زمینی سرخ‌کرده و انواع اسنک‌هاست. فرمولاسیون آن به‌گونه‌ای است که در زمان مصرف، قوام و طعم یکنواخت خود را حفظ می‌کند."
+    },
+    {
+      "id": 7,
+      "name": "Block-form Topping Cheese",
+      "image": "/Image/Prudoct/Molded-Cheese-Topping.webp",
+      "title": "پنیر قالبی تاپینگ مناسب پخت و گریل",
+      "description": "پنیر قالبی تاپینگ نوعی پنیر فرآوری‌شده است که به‌صورت قالبی تولید شده و برای رنده یا برش در مصارف پخت و گریل کاربرد دارد. این پنیر در برابر حرارت، ذوب یکنواختی دارد و بدون ایجاد روغن‌زدگی بیش‌ازحد، سطح غذا را به‌خوبی پوشش می‌دهد.",
+      "titleEn": "Topping Molded Cheese",
+      "descriptionEn": "Topping molded cheese is a processed cheese produced in molds, designed for grating or slicing in various applications. It melts evenly under heat and provides a good coverage of food without excessive greasiness.",
+      "titleAr": "جبنة قالب للتزيين",
+      "descriptionAr": "جبنة قالب للتزيين هي جبنة معالجة يتم إنتاجها في قوالب، وهي مصممة للرشه أو التقطيع في تطبيقات مختلفة. وهي تذوب بالتساوي تحت الحرارة وتوفر تغطية جيدة للطعام دون زيادة إحمرار الزيت.",
+      "titleFr": "Fromage moulé pour garniture",
+      "descriptionFr": "Le fromage moulé pour garniture est un fromage transformé produit en moules, conçu pour être râpé ou tranché dans diverses applications. Il fond uniformément sous la chaleur et offre une bonne couverture des aliments sans excès de gras.",
+      "titleRu": "Формованный сыр для начинки",
+      "descriptionRu": "Формованный сыр для начинки — это обработанный сыр, производимый в формах, предназначенный для натирания или нарезки в различных блюдах. Он равномерно плавится при нагревании и обеспечивает хорошее покрытие пищи без излишней жирности.",
+      "titleFa": "پنیر قالبی تاپینگ    ",
+      "slug": "",
+      "imageFile": {},
+      "descriptionFa": "پنیر قالبی تاپینگ نوعی پنیر فرآوری‌شده است که به‌صورت قالبی تولید شده و برای رنده یا برش در مصارف مختلف کاربرد دارد. این پنیر در برابر حرارت، ذوب یکنواختی دارد و بدون ایجاد روغن‌زدگی بیش‌ازحد، سطح غذا را به‌خوبی پوشش می‌دهد."
+    },
+    {
+      "id": 8,
+      "name": "Stuffed Crust",
+      "image": "/Image/Prudoct/Stuffed-Crust.webp",
+      "title": "پنیر استاف کراست  ",
+      "description": "پنیر استاف کراست نوعی پنیر پیتزای فرآوری‌شده است که به‌طور خاص برای استفاده در لبه‌های پیتزا طراحی شده است. این پنیر در برابر حرارت مستقیم فر مقاومت بالایی دارد و پس از پخت، بافتی کشسان و یکنواخت ایجاد می‌کند که بدون نشت یا سوختگی، طعم مطلوبی به خمیر پیتزا می‌بخشد.",
+      "titleEn": "Staff Crust Cheese",
+      "descriptionEn": "Staff Crust cheese is a processed pizza cheese specifically designed for pizza crust edges. It’s highly resistant to oven heat and creates a stretchy, uniform texture after baking, providing a good flavor without leaking or burning.",
+      "titleAr": "جبنة استاف كرست",
+      "descriptionAr": "جبنة استاف كرست هي جبنة بيتزا معالجة مصممة خصيصًا للاستخدام في حواف البيتزا. وهي مقاومة للغاية للحرارة المباشرة في الفرن وتنتج ملمسًا مطاطيًا موحدًا بعد الخبز، مما يوفر نكهة جيدة دون تسرب أو احتراق.",
+      "titleFr": "Fromage Staff Crust",
+      "descriptionFr": "Le fromage Staff Crust est un fromage à pizza transformé spécialement conçu pour les bords de la croûte de pizza. Il résiste très bien à la chaleur directe du four et crée une texture élastique et uniforme après la cuisson, offrant une bonne saveur sans fuite ni brûlure.",
+      "titleRu": "Сыр Стэф Крэст",
+      "descriptionRu": "Сыр Staff Crust — это обработанный сыр для пиццы, специально разработанный для краев корочки пиццы. Он обладает высокой устойчивостью к прямому теплу в духовке и после выпечки создает эластичную, однородную текстуру, обеспечивая хороший вкус без вытекания или подгорания.",
+      "titleFa": "پنیر استاف کراست  ",
+      "slug": "",
+      "imageFile": {},
+      "descriptionFa": "پنیر استاف کراست نوعی پنیر پیتزای فرآوری‌شده است که به‌طور خاص برای استفاده در لبه‌های پیتزا طراحی شده است. این پنیر در برابر حرارت مستقیم فر مقاومت بالایی دارد و پس از پخت، بافتی کشسان و یکنواخت ایجاد می‌کند که بدون نشت یا سوختگی، طعم مطلوبی به خمیر پیتزا می‌بخشد."
+    },
+    {
+      "id": 9,
+      "name": "Block-form Mozzarella Cheese",
+      "image": "/Image/Prudoct/Molded-Cheese-Mozzarella.webp",
+      "title": "پنیر موزارلای قالبی با ذوب یکنواخت",
+      "description": "پنیر قالبی موزارلا یکی دیگر از محصولات محبوب جلفا می باشد که با استفاده از چربی حیوانی و چربی گیاهی (بنا بر سفارش مشتری) تولید میشود و در قالب بلوک های 2کیلوگرمی در بازارهای داخلی و به ویژه خارجی عرضه می‌شود.",
+      "titleEn": "Molded Mozzarella Cheese",
+      "descriptionEn": "Molded Mozzarella Cheese is another popular product of Jelfa, produced using animal and vegetable fats (according to customer order), and marketed in 2-kilogram blocks in domestic and especially international markets.",
+      "titleAr": "جبنة الموزاريلا القالبية",
+      "descriptionAr": "جبنة الموزاريلا القالبية هي منتج شهير آخر من جلفا، يتم إنتاجه باستخدام الدهون الحيوانية والنباتية (حسب طلب العميل)، ويُباع في كتل بوزن 2 كيلوغرام في الأسواق المحلية وخاصة الخارجية.",
+      "titleFr": "Fromage Mozzarella Moulé",
+      "descriptionFr": "Le fromage Mozzarella moulé est un autre produit populaire de Jelfa, fabriqué à partir de graisses animales et végétales (selon la commande du client), et vendu en blocs de 2 kilogrammes sur les marchés nationaux et surtout internationaux.",
+      "titleRu": "Формованный сыр Моцарелла",
+      "descriptionRu": "Формованный сыр Моцарелла — это еще один популярный продукт компании Jelfa, производимый с использованием животных и растительных жиров (по заказу клиента), и реализуемый в блоках по 2 килограмма на внутренних и, особенно, внешних рынках.",
+      "titleFa": "پنیر موزارلای قالبی   ",
+      "slug": "",
+      "imageFile": {},
+      "descriptionFa": "پنیر قالبی موزارلا یکی دیگر از محصولات محبوب جلفا می باشد که با استفاده از چربی حیوانی و چربی گیاهی (بنا بر سفارش مشتری) تولید میشود و در قالب بلوک های 2کیلوگرمی در بازارهای داخلی و به ویژه خارجی عرضه می‌شود."
+    },
+    {
+      "id": 10,
+      "name": "Pasteurized Cream",
+      "image": "/Image/Prudoct/Cooking_Cream.webp",
+      "title": "خامه پاستوریزه با بافت یکنواخت و طعم طبیعی",
+      "description": "خامه پاستوریزه جلفا فود با چربی کنترل‌شده و بافت کاملاً یکنواخت، انتخابی مطمئن برای مصارف خانگی و حرفه‌ای است. این خامه بدون ایجاد دانه‌دانه شدن، در حرارت پایدار می‌ماند و طعم طبیعی و ملایم آن، کیفیت انواع سس‌ها، دسرها و غذاهای گرم را به‌طور محسوسی ارتقا می‌دهد.",
+      "titleEn": "Pasteurized cream with smooth texture and natural taste",
+      "descriptionEn": "Jolfa pasteurized cream is produced entirely from fresh milk and is available with fat content ranging from 27% to 38%, based on customer requirements, in any volume or tonnage. With a smooth texture and consistent quality, this product is an ideal choice for professional cooking, breakfast use, hotels and restaurants, as well as for preparing sauces, creamy desserts, and cakes, delivering reliable performance in industrial and specialized applications.",
+      "titleAr": "كريمة مبسترة بقوام ناعم وطعم طبيعي",
+      "descriptionAr": "تُنتج كريمة جلفا المبسترة بالكامل من الحليب الطازج، وهي متوفرة بنسبة دهون تتراوح بين 27% و38% وفقًا لطلب العميل، وبأي كمية أو حمولة. وبفضل قوامها المتجانس وجودتها المستقرة، تُعد خيارًا مثاليًا للطهي الاحترافي، والاستخدام على مائدة الإفطار، وفي الفنادق والمطاعم، وكذلك لتحضير مختلف أنواع الصلصات والحلويات والكعك الكريمي، مع أداء موثوق في الاستخدامات الصناعية والمتخصصة.",
+      "titleFr": "Crème pasteurisée à texture lisse et goût naturel",
+      "descriptionFr": "La crème pasteurisée Jolfa est entièrement produite à partir de lait frais et est disponible avec un taux de matière grasse de 27 % à 38 %, selon la demande du client, en toute quantité ou tonnage. Grâce à sa texture homogène et à sa qualité constante, ce produit constitue un choix idéal pour la cuisine professionnelle, le petit-déjeuner, l’utilisation dans les hôtels et restaurants, ainsi que pour la préparation de sauces, desserts crémeux et gâteaux, offrant des performances fiables pour les usages industriels et spécialisés.",
+      "titleRu": "Пастеризованные сливки с однородной текстурой и натуральным вкусом",
+      "descriptionRu": "Пастеризованные сливки Jolfa полностью производятся из свежего молока и доступны с содержанием жира от 27% до 38% в соответствии с требованиями заказчика, в любом объеме и тоннаже. Благодаря однородной текстуре и стабильному качеству, продукт идеально подходит для профессиональной кулинарии, завтраков, использования в отелях и ресторанах, а также для приготовления соусов, сливочных десертов и тортов, обеспечивая надежную работу в промышленных и специализированных применениях.",
+      "titleFa": "خامه پاستوریزه ",
+      "descriptionFa": "خامه پاستوریزه چرب جلفا از شیر تازه و تحت فرآیند پاستوریزاسیون کنترل‌شده تولید می‌شود که با کاهش بار میکروبی، ایمنی و پایداری محصول را تضمین می‌کند. درصد چربی استاندارد و یکنواخت، رطوبت کنترل‌شده،خامه را از نظر کیفیت و کاربرد صنعتی و خانگی در سطح بالایی قرار می‌دهد.",
+      "slug": "",
+      "imageFile": null
+    },
+    {
+      "id": 11,
+      "slug": "11",
+      "name": "Pasteurized Butter",
+      "image": "/Image/Prudoct/Pasteurized_Butter.webp",
+      "title": "کره پاستوریزه جلفا",
+      "titleFa": "کره پاستوریزه جلفا",
+      "titleEn": "Jolfa Pasteurized Butter",
+      "titleAr": "زبدة جلفا المبسترة",
+      "titleFr": "Beurre pasteurisé Jolfa",
+      "titleRu": "Пастеризованное сливочное масло Jolfa",
+      "description": "کره پاستوریزه  جلفا محصولی کاملاً حیوانی و باکیفیت است که با طعم طبیعی و بافتی یکنواخت، انتخابی مطمئن برای مصارف حرفه‌ای محسوب می‌شود. این کره گزینه‌ای ایده‌آل برای آشپزی، شیرینی‌پزی و پخت‌وپز بوده و در تهیه انواع غذاها و محصولات قنادی، کیفیت و طعم مطلوبی به همراه دارد.",
+      "descriptionFa": "کره پاستوریزه حیوانی جلفا از چربی شیر پس از انجام فرآیند پاستوریزاسیون و کنترل‌های بهداشتی تولید می‌شود. این فرآیند با کاهش بار میکروبی، ایمنی محصول را تضمین کرده و در عین حال ساختار تری‌گلیسریدی چربی، عطر طبیعی و ارزش تغذیه‌ای کره حفظ می‌گردد. درصد چربی استاندارد، رطوبت کنترل‌شده و پایداری اکسیداتیو مناسب، از شاخص‌های اصلی کیفیت این محصول محسوب می‌شوند.این محصول در هر تناژ و مقدار قابل تأمین است.",
+      "descriptionEn": "Jolfa pasteurized butter is a high-quality, fully animal-based product with a natural taste and a smooth, uniform texture, making it a reliable choice for professional use. This butter is ideal for cooking, baking, and pastry applications, adding desirable flavor and consistent quality to a wide range of dishes and confectionery products.\nThis product is available in any quantity and tonnage.",
+      "descriptionAr": "زبدة جلفا المبسترة هي منتج عالي الجودة ومصنوع بالكامل من مصادر حيوانية، تتميز بطعم طبيعي وقوام متجانس، مما يجعلها خيارًا موثوقًا للاستخدامات المهنية. تُعد مثالية للطهي والخبز وصناعة الحلويات، حيث تضيف نكهة مرغوبة وجودة ثابتة لمختلف الأطعمة والمنتجات المخبوزة.\nهذا المنتج متوفر بأي كمية وبأي حمولة مطلوبة.",
+      "descriptionFr": "Le beurre pasteurisé Jolfa est un produit entièrement d’origine animale et de haute qualité, offrant un goût naturel et une texture homogène, ce qui en fait un choix fiable pour les usages professionnels. Idéal pour la cuisine, la pâtisserie et la cuisson, il apporte une saveur agréable et une qualité constante à une large variété de plats et de produits de boulangerie-pâtisserie.\nCe produit est disponible en toute quantité et pour tout tonnage.",
+      "descriptionRu": "Пастеризованное сливочное масло Jolfa — это высококачественный продукт полностью животного происхождения с натуральным вкусом и однородной текстурой, что делает его надежным выбором для профессионального использования. Оно идеально подходит для приготовления пищи, выпечки и кондитерских изделий, придавая блюдам и кондитерской продукции стабильное качество и насыщенный вкус.\nЭтот продукт доступен в любом объёме и при любой тоннажности."
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "slug": "1766762908241",
+      "title": "",
+      "titleFa": "",
+      "titleEn": "",
+      "subtitle": "",
+      "image": "/Image/banner/1.jpg",
+      "link": "",
+      "order": 0
+    },
+    {
+      "id": 2,
+      "slug": "1766762950938",
+      "title": "",
+      "titleFa": "",
+      "titleEn": "",
+      "subtitle": "",
+      "image": "/Image/banner/2.jpg",
+      "link": "",
+      "order": 0
+    },
+    {
+      "id": 3,
+      "slug": "1766763157429",
+      "title": "",
+      "titleFa": "",
+      "titleEn": "",
+      "subtitle": "",
+      "image": "/Image/banner/3.jpg",
+      "link": "",
+      "order": 0
+    },
+    {
+      "id": 4,
+      "slug": "1766845496021",
+      "title": "",
+      "titleFa": "",
+      "titleEn": "",
+      "subtitle": "",
+      "image": "/Image/banner/4.jpg",
+      "link": "",
+      "order": 0
+    },
+    {
+      "id": 5,
+      "slug": "1766845496021",
+      "title": "",
+      "titleFa": "",
+      "titleEn": "",
+      "subtitle": "",
+      "image": "/Image/banner/5.jpg",
+      "link": "",
+      "order": 0
+    },
+    {
+      "id": 6,
+      "slug": "6",
+      "image": "/Image/banner/6.jpg"
+    }
+  ],
+  "banners_fa": [
+    {
+      "id": 1,
+      "title": "پنیر پیتزا حرفه‌ای",
+      "image": "/Image/banner/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "طعم و کیفیت ثابت",
+      "image": "/Image/banner/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "بنر ۳",
+      "image": "/Image/banner/3.jpg",
+      "titleFa": "",
+      "titleEn": "",
+      "imageFile": {},
+      "locale": "fa"
+    },
+    {
+      "id": 4,
+      "title": "بنر ۴",
+      "image": "/Image/banner/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "بنر ۵",
+      "image": "/Image/banner/5.jpg",
+      "titleFa": "",
+      "titleEn": "",
+      "imageFile": {},
+      "locale": "fa"
+    },
+    {
+      "id": 6,
+      "slug": "1766868593311",
+      "title": "",
+      "titleFa": "",
+      "titleEn": "",
+      "subtitle": "",
+      "image": "/Image/banner/6.jpg",
+      "link": "",
+      "order": 0
+    }
+  ],
+  "banners_en": [
+    {
+      "id": 1,
+      "title": "Professional pizza cheese",
+      "image": "/Image/banner/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Reliable quality",
+      "image": "/Image/banner/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Banner 3",
+      "image": "/Image/banner/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Banner 4",
+      "image": "/Image/banner/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Banner 5",
+      "image": "/Image/banner/5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Banner 6",
+      "image": "/Image/banner/6.jpg"
+    }
+  ],
+  "banners_ar": [
+    {
+      "id": 1,
+      "title": "جبن بيتزا احترافي",
+      "image": "/Image/banner/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "جودة موثوقة",
+      "image": "/Image/banner/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "بانر ٣",
+      "image": "/Image/banner/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "بانر ٤",
+      "image": "/Image/banner/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "بانر ٥",
+      "image": "/Image/banner/5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "بانر ٦",
+      "image": "/Image/banner/6.jpg"
+    }
+  ],
+  "banners_ru": [
+    {
+      "id": 1,
+      "title": "Профессиональный сыр для пиццы",
+      "image": "/Image/banner/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Надежное качество",
+      "image": "/Image/banner/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Баннер 3",
+      "image": "/Image/banner/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Баннер 4",
+      "image": "/Image/banner/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Баннер 5",
+      "image": "/Image/banner/5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Баннер 6",
+      "image": "/Image/banner/6.jpg"
+    }
+  ],
+  "banners_fr": [
+    {
+      "id": 1,
+      "title": "Fromage professionnel pour pizza",
+      "image": "/Image/banner/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Qualité fiable",
+      "image": "/Image/banner/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Bannière 3",
+      "image": "/Image/banner/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Bannière 4",
+      "image": "/Image/banner/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Bannière 5",
+      "image": "/Image/banner/5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Bannière 6",
+      "image": "/Image/banner/6.jpg"
+    }
+  ],
+  "posts_fa": [
+    {
+      "id": 1,
+      "title": "اخبار شرکت",
+      "image": "/Image/Prudoct/Mozzarella.jpg"
+    },
+    {
+      "id": 2,
+      "title": "رویدادها",
+      "image": "/Image/Prudoct/Process.jpg"
+    }
+  ],
+  "posts_en": [
+    {
+      "id": 1,
+      "title": "Company News",
+      "image": "/Image/Prudoct/Mozzarella.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Events",
+      "image": "/Image/Prudoct/Process.jpg"
+    }
+  ],
+  "posts_ar": [
+    {
+      "id": 1,
+      "title": "أخبار الشركة",
+      "image": "/Image/Prudoct/Mozzarella.jpg"
+    },
+    {
+      "id": 2,
+      "title": "الفعاليات",
+      "image": "/Image/Prudoct/Process.jpg"
+    }
+  ],
+  "posts_ru": [
+    {
+      "id": 1,
+      "title": "Новости компании",
+      "image": "/Image/Prudoct/Mozzarella.jpg"
+    },
+    {
+      "id": 2,
+      "title": "События",
+      "image": "/Image/Prudoct/Process.jpg"
+    }
+  ],
+  "posts_fr": [
+    {
+      "id": 1,
+      "title": "Actualités de l'entreprise",
+      "image": "/Image/Prudoct/Mozzarella.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Événements",
+      "image": "/Image/Prudoct/Process.jpg"
+    }
+  ],
+  "articles_fa": [
+    {
+      "id": 1,
+      "slug": "3",
+      "image": "/Image/Articles/mozzarella.jpg",
+      "titleFa": "چطور کیفیت پنیر پیتزا را حفظ کنیم؟ راهکارهای ساده برای کشسانی و طعم بهتر",
+      "summaryFa": "نگهداری درست پنیر پیتزا تأثیر مستقیم روی طعم، بافت و کشسانی آن دارد. در این مقاله یاد می‌گیرید پنیر را در چه دمایی نگهداری کنید، چطور فریز و یخ‌زدایی شود و چه نکات ساده‌ای باعث می‌شود هنگام پخت، پنیر بهترین عملکرد را داشته باشد.",
+      "contentFa": "برای حفظ کیفیت پنیر پیتزا، آن را در فریزر و در دمای ۱۸- درجه سانتی‌گراد نگهداری کنید. قبل از فریز کردن، پنیر را به بسته‌های کوچک تقسیم کرده و داخل کیسه‌های زیپ‌دار یا بسته‌بندی وکیوم‌شده قرار دهید تا هوا به آن نفوذ نکند.\nدر زمان مصرف، پنیر را به‌صورت تدریجی از فریزر به یخچال منتقل کنید و از یخ‌زدایی در دمای محیط خودداری کنید. هرگز پنیر ذوب‌شده را دوباره فریز نکنید، چون بافت و کشسانی آن به‌طور محسوسی کاهش پیدا می‌کند.\nبرای افزایش کشسانی و ذوب یکنواخت‌تر، می‌توانید کمی اسپری آب سرد درست قبل از پخت روی پنیر بزنید. همچنین بهتر است پس از باز شدن بسته، پنیر برای مدت طولانی در معرض هوا قرار نگیرد تا رطوبت و کیفیت اولیه‌اش حفظ شود."
+    },
+    {
+      "id": 2,
+      "slug": "2",
+      "image": "/Image/Articles/topping-cheese.jpg",
+      "titleFa": "تفاوت پنیر تاپینگ جلفا با پنیرهای مشابه چیست؟",
+      "summaryFa": "پنیر تاپینگ جلفا با فرمولاسیونی متعادل از چربی‌های گیاهی و حیوانی طراحی شده تا هم طعم و کشسانی مطلوبی داشته باشد و هم گزینه‌ای منطقی‌تر برای مصرف روزمره باشد. این ترکیب هوشمندانه باعث شده محصول، عملکرد قابل اعتماد و کیفیتی پایدار در پخت ارائه دهد.",
+      "contentFa": "تفاوت اصلی پنیر تاپینگ جلفا با بسیاری از پنیرهای مشابه، در فرمولاسیون دقیق و متعادل آن نهفته است. در این محصول، بخشی از چربی‌های مورد استفاده از منابع گیاهی تأمین شده‌اند تا در کنار چربی‌های حیوانی، ترکیبی هماهنگ و کارآمد ایجاد شود.\n\nاین تعادل باعث می‌شود پنیر، در زمان پخت کشسانی مناسب، ذوب یکنواخت و طعمی قابل قبول داشته باشد، بدون اینکه بافت آن سنگین یا ناپایدار شود. استفاده از چربی‌های گیاهی همچنین می‌تواند به ایجاد گزینه‌ای متنوع‌تر برای مصرف‌کنندگان با اولویت‌های غذایی متفاوت کمک کند.\n\nچربی‌های گیاهی به‌طور طبیعی حاوی اسیدهای چرب مفیدی هستند که در چارچوب یک رژیم متعادل، می‌توانند انتخابی سبک‌تر نسبت به محصولات کاملاً مبتنی بر چربی حیوانی باشند. به همین دلیل، پنیر تاپینگ جلفا برای افرادی که به دنبال تنوع در سبد غذایی خود هستند یا مصرف کنترل‌شده‌تری از چربی‌های حیوانی دارند، گزینه‌ای منطقی محسوب می‌شود.\n\nدر نهایت، پنیر تاپینگ جلفا با حفظ تعادل بین عملکرد، طعم و ترکیب مواد اولیه، انتخابی هوشمندانه در کنار سایر پنیرهای باکیفیت برای مصارف خانگی و حرفه‌ای است."
+    },
+    {
+      "id": 3,
+      "slug": "3",
+      "image": "/Image/Articles/Cheese2.jpg",
+      "titleFa": "تاریخچه پنیر؛ از دامداری‌های باستان تا پیتزای امروزی",
+      "summaryFa": "پنیر مسیری چند هزار ساله را از یک کشف اتفاقی در دامداری‌های باستانی تا تبدیل‌شدن به قلب پیتزای مدرن طی کرده است. شناخت این مسیر نشان می‌دهد چرا کیفیت، فرمولاسیون و کنترل رفتار پنیر در پخت، امروز اهمیتی حیاتی دارد.",
+      "contentFa": "پنیر یکی از قدیمی‌ترین مواد غذایی ساخته‌شده توسط انسان است؛ محصولی که به‌احتمال زیاد نه با برنامه‌ریزی، بلکه بر اثر یک اتفاق ساده متولد شد. زمانی که انسان‌های اولیه شیر دام را در مشک‌هایی از پوست حیوانات نگهداری می‌کردند، آنزیم‌های طبیعی موجود در پوست باعث لخته‌شدن شیر می‌شد. نتیجه، ماده‌ای مغذی، ماندگارتر از شیر و قابل‌حمل بود؛ چیزی که امروز آن را پنیر می‌نامیم.\n\nشواهد باستان‌شناسی نشان می‌دهد تولید پنیر دست‌کم به هفت هزار سال پیش بازمی‌گردد. تمدن‌هایی مانند سومر، مصر، یونان و روم باستان نه‌تنها پنیر مصرف می‌کردند، بلکه روش‌های متفاوتی برای تولید، نمک‌سودکردن و نگهداری آن توسعه دادند. به‌تدریج، پنیر از یک ماده غذایی ساده به بخشی از فرهنگ غذایی ملت‌ها تبدیل شد.\n\nتولد پنیرهای کش‌دار و مسیر رسیدن به پنیر پیتزا\n\nبا پیشرفت دانش دامداری و لبنیات در اروپا، به‌ویژه در ایتالیا، پنیرهایی با بافت نرم‌تر و قابلیت ذوب‌شدن بهتر شکل گرفتند. پنیر موزارلا یکی از مهم‌ترین نتایج این مسیر بود؛ پنیری که ابتدا از شیر بوفالو تهیه می‌شد و به‌دلیل بافت لطیف و کشسان خود، به‌سرعت محبوب شد.\n\nهمزمان با شکل‌گیری پیتزا به‌عنوان غذایی مردمی در ناپل، موزارلا به انتخاب اصلی روی نان پیتزا تبدیل شد. ذوب یکنواخت، طعم ملایم و کش‌آمدن طبیعی پنیر هنگام پخت، پیتزا را از یک نان ساده به غذایی جهانی تبدیل کرد.\n\nپنیر پیتزا در دنیای مدرن\n\nبا صنعتی‌شدن تولید مواد غذایی، مفهوم «پنیر پیتزا» فراتر از موزارلای سنتی رفت. امروزه پنیر پیتزا معمولاً ترکیبی مهندسی‌شده از چند نوع پنیر است که برای ذوب کنترل‌شده، کشسانی پایدار و طعمی متعادل طراحی می‌شود. هدف، تولید پنیری است که در دمای فر پخش نشود، نسوزد و رفتار قابل پیش‌بینی داشته باشد.\n\nچرا دانستن این تاریخ برای جلفا فودز مهم است؟\n\nوقتی درباره تاریخ پنیر صحبت می‌کنیم، در واقع از یک مسیر چند هزار ساله آزمون‌وخطا حرف می‌زنیم؛ مسیری که امروز به استانداردهای دقیق تولید پنیر پیتزا رسیده است.\nدر جلفا فودز، پنیر فقط یک محصول صنعتی نیست، بلکه ادامه‌ی همین مسیر تاریخی با ابزار دقیق‌تر، فرمولاسیون حساب‌شده و کنترل کیفی سخت‌گیرانه‌تر است. دانشی که نسل‌به‌نسل شکل گرفته، امروز با استانداردهای مدرن ترکیب شده تا تجربه‌ای یکنواخت و قابل اعتماد ارائه دهد."
+    }
+  ],
+  "articles_en": [
+    {
+      "id": 1,
+      "slug": "3",
+      "image": "/Image/Articles/mozzarella.jpg",
+      "titleEn": "How to Preserve Pizza Cheese Quality: Simple Tips for Better Stretch and Flavor",
+      "summaryEn": "Proper storage plays a key role in the taste, texture, and stretch of pizza cheese. This article explains the best freezing conditions, correct thawing methods, and small but effective tips to ensure your cheese melts evenly and performs perfectly during baking.",
+      "contentEn": "To keep pizza cheese at its best, store it in the freezer at -18°C. Before freezing, divide the cheese into small portions and place them in zip-lock bags or vacuum-sealed packaging to prevent air from getting in.\nWhen you’re ready to use it, let the cheese thaw slowly in the refrigerator, never at room temperature, and never refreeze thawed cheese.\nFor better stretch and melt, lightly spray the cheese with cold water just before baking. Also, avoid long exposure to air after opening the package, as this can dry out the cheese and affect its texture."
+    },
+    {
+      "id": 2,
+      "slug": "1766930239069",
+      "image": "/Image/Articles/topping-cheese.jpg",
+      "titleEn": "What Makes Jolfa Topping Cheese Different from Similar Products?",
+      "summaryEn": "Jolfa Topping Cheese is developed with a balanced formulation of plant-based and animal fats, offering reliable melt, good stretch, and consistent flavor. This thoughtful combination delivers stable performance while supporting diverse dietary preferences.",
+      "contentEn": "The key difference between Jolfa Topping Cheese and many similar products lies in its carefully balanced formulation. A portion of the fats used in this cheese comes from plant-based sources, combined with animal fats to create a well-rounded and functional product.\n\nThis balance allows the cheese to deliver smooth melting, desirable stretch, and a stable texture during baking, without becoming overly heavy. The inclusion of plant-based fats also makes it a more flexible option for consumers seeking variety or moderation in their dietary choices.\n\nPlant-based fats naturally contain beneficial fatty acids and, when consumed as part of a balanced diet, can offer a lighter alternative to products made exclusively with animal fats.\nAs a result, Jolfa Topping Cheese stands as a practical and smart choice for both home cooking and professional use, alongside other high-quality cheeses."
+    },
+    {
+      "id": 3,
+      "slug": "1766930673888",
+      "image": "/Image/Articles/Cheese2.jpg",
+      "titleEn": "The History of Cheese: From Ancient Herding to Modern Pizza",
+      "summaryEn": "Cheese has traveled a long journey from an accidental discovery in ancient livestock cultures to becoming the heart of modern pizza. Understanding this evolution explains why formulation and performance matter so much today.",
+      "contentEn": "Cheese is one of the oldest foods created by humans, likely discovered by chance rather than design. When early humans stored milk in containers made from animal skins, natural enzymes caused the milk to coagulate, creating a nutritious, portable, and longer-lasting food: cheese.\n\nArchaeological evidence shows that cheese production dates back at least 7,000 years. Civilizations such as Sumer, Egypt, Ancient Greece, and Rome developed various methods for producing and preserving cheese, gradually embedding it into their culinary cultures.\n\nWith advancements in dairy science—particularly in Italy—softer, better-melting cheeses emerged. Mozzarella became a turning point, especially as pizza developed in Naples. Its mild flavor, even melt, and natural stretch helped transform pizza into a global food.\n\nToday, pizza cheese goes beyond traditional mozzarella. Modern formulations are engineered to provide controlled melt, consistent stretch, and balanced flavor, ensuring reliable performance at high baking temperatures.\n\nAt Jolfa Foods, cheese is not merely an industrial product but the continuation of a centuries-old tradition—refined through modern quality control and precise formulation."
+    }
+  ],
+  "articles_ar": [
+    {
+      "id": 1,
+      "slug": "3",
+      "image": "/Image/Articles/mozzarella.jpg",
+      "titleAr": "كيف تحافظ على جودة جبن البيتزا؟ نصائح بسيطة لذوبان وتمدد أفضل",
+      "summaryAr": "طريقة تخزين جبن البيتزا تؤثر بشكل مباشر على الطعم والقوام والتمدد. في هذا المقال ستتعرف على أفضل طرق التجميد وإذابة الجبن، بالإضافة إلى نصائح عملية تساعدك على الحصول على ذوبان مثالي أثناء الخَبز",
+      "contentAr": "للحفاظ على جودة جبن البيتزا، يُفضَّل تخزينه في الفريزر عند درجة حرارة -18 مئوية. قبل التجميد، قسّم الجبن إلى كميات صغيرة وضعه في أكياس محكمة الإغلاق أو عبوات مفرغة من الهواء لمنع دخول الهواء.\nعند الاستخدام، أخرج الجبن من الفريزر واتركه يذوب تدريجيًا داخل الثلاجة، وتجنب تمامًا إعادة تجميد الجبن بعد ذوبانه.\nلتحسين المطّ والذوبان، يمكن رش القليل من الماء البارد على الجبن قبل الخَبز مباشرة، كما يُنصح بعدم ترك الجبن مكشوفًا لفترة طويلة بعد فتح العبوة"
+    },
+    {
+      "id": 2,
+      "slug": "1766930239069",
+      "image": "/Image/Articles/topping-cheese.jpg",
+      "titleAr": "ما الذي يميز جبن التوبينغ جلفا عن المنتجات المشابهة؟",
+      "summaryAr": "يكمن الفرق الأساسي في جبن التوبينغ جلفا في تركيبته المدروسة بعناية، حيث يتم استخدام مزيج متوازن من الدهون النباتية والحيوانية لتحقيق أداء موثوق وجودة ثابتة",
+      "contentAr": "يكمن الفرق الأساسي في جبن التوبينغ جلفا في تركيبته المدروسة بعناية، حيث يتم استخدام مزيج متوازن من الدهون النباتية والحيوانية لتحقيق أداء موثوق وجودة ثابتة.\n\nيساعد هذا التوازن على الحصول على ذوبان متجانس وقوام مستقر وتمدد مناسب عند الخَبز. كما أن إدخال الدهون النباتية يجعل المنتج خيارًا مناسبًا للأشخاص الذين يفضلون التنويع أو الاعتدال في استهلاك الدهون الحيوانية.\n\nوفي إطار نظام غذائي متوازن، يمكن اعتبار الدهون النباتية خيارًا أخف مع الحفاظ على الخصائص الوظيفية المطلوبة لجبن التوبينغ عالي الجودة"
+    },
+    {
+      "id": 3,
+      "slug": "1766930673888",
+      "image": "/Image/Articles/Cheese2.jpg",
+      "titleAr": "تاريخ الجبن: من تربية الماشية القديمة إلى بيتزا العصر الحديث",
+      "summaryAr": "مرّ الجبن برحلة طويلة من اكتشاف عفوي في الحضارات القديمة إلى مكوّن أساسي في البيتزا الحديثة، مما يبرز أهمية الجودة والتركيب في وقتنا الحاضر",
+      "contentAr": "نشأ الجبن نتيجة تخزين الحليب في أوعية مصنوعة من جلود الحيوانات، حيث أدت الإنزيمات الطبيعية إلى تخثّره. ومع مرور الزمن، طوّرت الحضارات المختلفة طرق إنتاجه.\n\nفي إيطاليا، أدى تطور صناعة الألبان إلى ظهور جبن الموزاريلا، الذي أصبح لاحقًا حجر الأساس في البيتزا. اليوم يُصمَّم جبن البيتزا ليقدّم ذوبانًا متوازنًا وسلوكًا ثابتًا أثناء الخَبز، وهو ما تلتزم به جلفا فودز ضمن معايير دقيقة للجودة"
+    }
+  ],
+  "articles_ru": [
+    {
+      "id": 1,
+      "slug": "3",
+      "image": "/Image/Articles/mozzarella.jpg",
+      "titleRu": "Как сохранить качество сыра для пиццы: простые советы для лучшего результата",
+      "summaryRu": "Правильное хранение сыра для пиццы напрямую влияет на его вкус, текстуру и тягучесть. В этой статье вы узнаете, как правильно замораживать и размораживать сыр, а также какие простые приёмы помогут добиться равномерного плавления при выпекании.",
+      "contentRu": "Чтобы сохранить качество пицца-сыра, храните его в морозильной камере при температуре –18 °C. Перед заморозкой разделите сыр на небольшие порции и упакуйте их в пакеты с застёжкой или вакуумную упаковку, чтобы исключить контакт с воздухом.\nПеред использованием размораживайте сыр постепенно в холодильнике, не при комнатной температуре, и никогда не замораживайте его повторно.\nДля лучшей тягучести и равномерного плавления слегка распылите холодную воду на сыр перед выпеканием. Также не оставляйте сыр открытым на воздухе надолго после вскрытия упаковки."
+    },
+    {
+      "id": 2,
+      "slug": "1766930239069",
+      "image": "/Image/Articles/topping-cheese.jpg",
+      "titleRu": "В чём отличие топпинг-сыра Jolfa от аналогичных продуктов?",
+      "summaryRu": "Топпинг-сыр Jolfa разработан с использованием сбалансированного сочетания растительных и животных жиров, что обеспечивает стабильное плавление, хорошую тягучесть и приятный вкус.",
+      "contentRu": "Основное отличие топпинг-сыра Jolfa заключается в его продуманной формуле. Часть жиров в составе получена из растительных источников и сочетается с животными жирами для достижения оптимальных функциональных свойств.\n\nТакой баланс обеспечивает равномерное плавление, стабильную текстуру и хорошую тягучесть при запекании. Использование растительных жиров также делает продукт более универсальным для потребителей с различными пищевыми предпочтениями.\n\nВ рамках сбалансированного рациона растительные жиры могут рассматриваться как более лёгкий вариант, не уступающий по качеству и функциональности."
+    },
+    {
+      "id": 3,
+      "slug": "1766930673888",
+      "image": "/Image/Articles/Cheese2.jpg",
+      "titleRu": "История сыра: от древнего скотоводства до современной пиццы",
+      "summaryRu": "Сыр прошёл путь длиной в тысячи лет — от случайного открытия до ключевого ингредиента современной пиццы. Эта история объясняет важность качества и стабильности продукта сегодня.",
+      "contentRu": "Сыр появился благодаря случайному процессу, когда молоко хранилось в сосудах из шкуры животных. Со временем цивилизации усовершенствовали производство, а в Италии появились сыры с лучшими свойствами плавления.\n\nСегодня сыр для пиццы — это результат точных формул, обеспечивающих равномерное плавление и предсказуемое поведение при высокой температуре. Jolfa Foods продолжает эту традицию, используя современные стандарты качества."
+    }
+  ],
+  "articles_fr": [
+    {
+      "id": 1,
+      "slug": "3",
+      "image": "/Image/Articles/mozzarella.jpg",
+      "titleFr": "Comment préserver la qualité du fromage à pizza : astuces simples pour une meilleure texture",
+      "summaryFr": "La bonne conservation du fromage à pizza influence directement son goût, son élasticité et sa fonte. Dans cet article, découvrez les bonnes pratiques de congélation, de décongélation et quelques conseils essentiels pour obtenir un résultat optimal à la cuisson.",
+      "contentFr": "Pour préserver la qualité du fromage à pizza, conservez-le au congélateur à -18 °C. Avant congélation, divisez-le en petites portions et placez-les dans des sacs zip ou des emballages sous vide afin d’éviter tout contact avec l’air.\nLors de l’utilisation, laissez le fromage décongeler progressivement au réfrigérateur, jamais à température ambiante, et ne recongelez jamais un fromage déjà décongelé.\nPour une meilleure élasticité et une fonte plus homogène, vaporisez légèrement le fromage avec de l’eau froide juste avant la cuisson. Évitez également de laisser le fromage à l’air libre trop longtemps après ouverture."
+    },
+    {
+      "id": 2,
+      "slug": "1766930239069",
+      "image": "/Image/Articles/topping-cheese.jpg",
+      "titleFr": "Quelle est la différence entre le fromage topping Jolfa et les produits similaires ?",
+      "summaryFr": "Le fromage topping Jolfa est élaboré à partir d’un équilibre précis entre matières grasses végétales et animales, garantissant une bonne fonte, une élasticité maîtrisée et une saveur constante.",
+      "contentFr": "La principale différence du fromage topping Jolfa réside dans sa formulation équilibrée. Une partie des matières grasses est issue de sources végétales, combinée à des graisses animales afin d’obtenir un produit performant et stable.\n\nCette combinaison permet au fromage d’offrir une fonte homogène, une élasticité satisfaisante et une texture fiable à la cuisson. L’intégration de graisses végétales en fait également une option intéressante pour les consommateurs recherchant plus de diversité dans leur alimentation.\n\nDans le cadre d’une alimentation équilibrée, les matières grasses végétales peuvent représenter une alternative plus légère, tout en conservant les qualités fonctionnelles attendues d’un fromage topping de qualité."
+    },
+    {
+      "id": 3,
+      "slug": "1766930673888",
+      "image": "/Image/Articles/Cheese2.jpg",
+      "titleFr": "L’histoire du fromage : des élevages anciens à la pizza moderne",
+      "summaryFr": "Du hasard des premières civilisations à la maîtrise industrielle moderne, le fromage a évolué pendant des millénaires. Comprendre cette histoire permet de mieux saisir l’importance de la qualité et de la performance du fromage à pizza aujourd’hui.",
+      "contentFr": "Le fromage est l’un des aliments les plus anciens créés par l’homme, probablement découvert par accident. En conservant le lait dans des récipients en peau animale, les enzymes naturelles provoquaient sa coagulation, donnant naissance à un produit nutritif et durable.\n\nDes preuves archéologiques montrent que la fabrication du fromage remonte à plus de 7 000 ans. Avec le temps, notamment en Italie, des fromages à meilleure fonte comme la mozzarella sont apparus, devenant essentiels dans l’évolution de la pizza.\n\nAujourd’hui, le fromage à pizza est conçu pour offrir une fonte maîtrisée, une élasticité stable et un goût équilibré, répondant aux exigences de la cuisson moderne."
+    }
+  ],
+  "recipes": [
+    {
+      "id": 1,
+      "slug": "cheddar-pasta",
+      "title": "Cheddar Pasta",
+      "summary": "Creamy pasta made with Jolfa cheddar sauce",
+      "thumbnail": "/Image/recipes/cheddar-pasta.webp",
+      "image": "/Image/recipes/cheddar-pasta.webp",
+      "gallery": [
+        "/Image/recipes/cheddar-pasta-2.webp",
+        "/Image/recipes/cheddar-pasta-3.webp"
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta (fusilli or similar)",
+          "quantity": "1/2 pack"
+        },
+        {
+          "name": "Jolfa Cheddar Cheese Sauce",
+          "quantity": "5 tbsp"
+        },
+        {
+          "name": "Butter",
+          "quantity": "30 g"
+        },
+        {
+          "name": "Milk",
+          "quantity": "1.5 cups"
+        },
+        {
+          "name": "Flour",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Garlic",
+          "quantity": "1 clove, minced"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black Pepper",
+          "quantity": "to taste"
+        }
+      ],
+      "steps": [
+        {
+          "description": "Boil the pasta in salted water with a little oil until slightly tender, then drain.",
+          "time": "8–10m"
+        },
+        {
+          "description": "In a pan, sauté the garlic with butter over medium heat. Add flour and cook briefly to remove raw taste.",
+          "time": "2–3m"
+        },
+        {
+          "description": "Gradually add milk while stirring constantly until the sauce becomes smooth.",
+          "time": "3–4m"
+        },
+        {
+          "description": "Add cheddar cheese sauce, stir gently over low heat, then season with salt and black pepper.",
+          "time": "3m"
+        },
+        {
+          "description": "Add pasta to the sauce and mix until desired consistency is reached. Serve warm.",
+          "time": "2m"
+        }
+      ],
+      "notes": "Serve immediately. You can add mushrooms or grilled chicken for extra flavor.",
+      "descriptionEn": "Creamy pasta made with Jolfa cheddar sauce",
+      "descriptionFa": " مک اند چیز تهیه‌شده با سس چدار جلفا",
+      "descriptionAr": "باستا كريمية محضّرة بصلصة تشيدر جلفا",
+      "descriptionFr": "Pâtes crémeuses au cheddar Jolfa",
+      "descriptionRu": "Кремовая паста с соусом чеддера Jolfa",
+      "titleFa": "مک اند چیز",
+      "summaryFa": " مک اند چیز تهیه‌شده با سس چدار جلفا",
+      "ingredientsFa": [
+        {
+          "name": "پاستا (فوسیلی یا مشابه)",
+          "quantity": "نصف بسته"
+        },
+        {
+          "name": "سس چدار جلفا",
+          "quantity": "5 قاشق غذاخوری"
+        },
+        {
+          "name": "کره",
+          "quantity": "30 گرم"
+        },
+        {
+          "name": "شیر",
+          "quantity": "1.5 پیمانه"
+        },
+        {
+          "name": "آرد",
+          "quantity": "2 قاشق غذاخوری"
+        },
+        {
+          "name": "سیر",
+          "quantity": "1 حبه، ریز شده"
+        },
+        {
+          "name": "نمک",
+          "quantity": "به میزان لازم"
+        },
+        {
+          "name": "فلفل سیاه",
+          "quantity": "به میزان لازم"
+        }
+      ],
+      "stepsFa": [
+        {
+          "description": "پاستا را در آب نمک جوشانده تا کمی نرم شود، سپس آبکش کنید.",
+          "time": "8–10m"
+        },
+        {
+          "description": "در یک تابه، سیر را با کره روی حرارت متوسط تفت دهید. آرد را اضافه کرده و کمی تفت دهید.",
+          "time": "2–3m"
+        },
+        {
+          "description": "به‌تدریج شیر را اضافه کرده و هم بزنید تا سس صاف و یکدست شود.",
+          "time": "3–4m"
+        },
+        {
+          "description": "سس چدار را اضافه کنید، روی حرارت کم هم بزنید و با نمک و فلفل مزه‌دار کنید.",
+          "time": "3m"
+        },
+        {
+          "description": "پاستا را با سس مخلوط کرده و گرم سرو کنید.",
+          "time": "2m"
+        }
+      ],
+      "notesFa": "فوری سرو شود. می‌توانید قارچ یا مرغ گریل‌شده اضافه کنید.",
+      "titleAr": "باستا تشيدر",
+      "summaryAr": "باستا كريمية محضّرة بصلصة تشيدر جلفا",
+      "ingredientsAr": [
+        {
+          "name": "باستا (فوسيلي أو مشابه)",
+          "quantity": "نصف عبوة"
+        },
+        {
+          "name": "صلصة تشيدر جلفا",
+          "quantity": "5 ملاعق"
+        },
+        {
+          "name": "زبدة",
+          "quantity": "30 غ"
+        },
+        {
+          "name": "حليب",
+          "quantity": "1.5 كوب"
+        },
+        {
+          "name": "طحين",
+          "quantity": "2 ملاعق"
+        },
+        {
+          "name": "ثوم",
+          "quantity": "1 فص، مفروم"
+        },
+        {
+          "name": "ملح",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "فلفل أسود",
+          "quantity": "حسب الذوق"
+        }
+      ],
+      "stepsAr": [
+        {
+          "description": "اسلق المعكرونة في ماء مملح حتى تصبح شبه ناضجة، ثم صفّها.",
+          "time": "8–10m"
+        },
+        {
+          "description": "في مقلاة، اقلي الثوم مع الزبدة على نار متوسطة. أضف الطحين واطبخه قليلاً.",
+          "time": "2–3m"
+        },
+        {
+          "description": "أضف الحليب تدريجياً مع التحريك حتى يصبح الصوص ناعماً.",
+          "time": "3–4m"
+        },
+        {
+          "description": "أضف صلصة التشيدر وحرّك على نار هادئة ثم تبّل بالملح والفلفل.",
+          "time": "3m"
+        },
+        {
+          "description": "اخلط المعكرونة مع الصلصة وقدّمها ساخنة.",
+          "time": "2m"
+        }
+      ],
+      "notesAr": "قدّمها فوراً. يمكنك إضافة فطر أو دجاج مشوي لزيادة النكهة.",
+      "titleFr": "Pâtes au cheddar",
+      "summaryFr": "Pâtes crémeuses au cheddar Jolfa",
+      "ingredientsFr": [
+        {
+          "name": "Pâtes (fusilli ou similaire)",
+          "quantity": "1/2 paquet"
+        },
+        {
+          "name": "Sauce cheddar Jolfa",
+          "quantity": "5 c. à soupe"
+        },
+        {
+          "name": "Beurre",
+          "quantity": "30 g"
+        },
+        {
+          "name": "Lait",
+          "quantity": "1.5 tasse"
+        },
+        {
+          "name": "Farine",
+          "quantity": "2 c. à soupe"
+        },
+        {
+          "name": "Ail",
+          "quantity": "1 gousse, émincée"
+        },
+        {
+          "name": "Sel",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Poivre noir",
+          "quantity": "à goût"
+        }
+      ],
+      "stepsFr": [
+        {
+          "description": "Faites bouillir les pâtes dans de l'eau salée jusqu'à ce qu'elles soient légèrement tendres, puis égouttez.",
+          "time": "8–10m"
+        },
+        {
+          "description": "Dans une poêle, faites revenir l'ail avec le beurre à feu moyen. Ajoutez la farine et faites cuire brièvement.",
+          "time": "2–3m"
+        },
+        {
+          "description": "Ajoutez progressivement le lait en remuant constamment jusqu'à obtenir une sauce lisse.",
+          "time": "3–4m"
+        },
+        {
+          "description": "Ajoutez la sauce cheddar, mélangez à feu doux, puis assaisonnez de sel et de poivre.",
+          "time": "3m"
+        },
+        {
+          "description": "Mélangez les pâtes à la sauce et servez chaud.",
+          "time": "2m"
+        }
+      ],
+      "notesFr": "Servez immédiatement. Vous pouvez ajouter des champignons ou du poulet grillé.",
+      "titleRu": "Паста с чеддером",
+      "summaryRu": "Кремовая паста с соусом чеддера Jolfa",
+      "ingredientsRu": [
+        {
+          "name": "Паста (фузилли или похожая)",
+          "quantity": "1/2 упаковки"
+        },
+        {
+          "name": "Соус чеддер Jolfa",
+          "quantity": "5 ст. ложек"
+        },
+        {
+          "name": "Масло",
+          "quantity": "30 г"
+        },
+        {
+          "name": "Молоко",
+          "quantity": "1.5 стакана"
+        },
+        {
+          "name": "Мука",
+          "quantity": "2 ст. ложки"
+        },
+        {
+          "name": "Чеснок",
+          "quantity": "1 зубчик, измельчённый"
+        },
+        {
+          "name": "Соль",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Чёрный перец",
+          "quantity": "по вкусу"
+        }
+      ],
+      "stepsRu": [
+        {
+          "description": "Отварите пасту в подсоленной воде до полуготовности, затем слейте.",
+          "time": "8–10m"
+        },
+        {
+          "description": "На сковороде обжарьте чеснок с маслом на среднем огне. Добавьте муку и слегка обжарьте.",
+          "time": "2–3m"
+        },
+        {
+          "description": "Постепенно добавляйте молоко, постоянно помешивая, пока соус не станет гладким.",
+          "time": "3–4m"
+        },
+        {
+          "description": "Добавьте соус чеддер, аккуратно помешивайте на слабом огне и приправьте солью и перцем.",
+          "time": "3m"
+        },
+        {
+          "description": "Смешайте пасту с соусом и подавайте горячей.",
+          "time": "2m"
+        }
+      ],
+      "notesRu": "Подавайте немедленно. Можно добавить грибы или жареную курицу для аромата."
+    },
+    {
+      "id": 2,
+      "slug": "potato-souffle",
+      "title": "Potato Soufflé",
+      "summary": "A golden and fluffy potato soufflé made with cheese and parsley",
+      "thumbnail": "/Image/recipes/potato-souffle.webp",
+      "image": "/Image/recipes/potato-souffle.webp",
+      "gallery": [
+        "/Image/recipes/potato-souffle-2.webp",
+        "/Image/recipes/potato-souffle-3.webp"
+      ],
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "quantity": "400 g"
+        },
+        {
+          "name": "Butter",
+          "quantity": "30 g"
+        },
+        {
+          "name": "Breakfast Cream",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Eggs",
+          "quantity": "2"
+        },
+        {
+          "name": "Parsley",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Jolfa Mozzarella Cheese",
+          "quantity": "100 g"
+        },
+        {
+          "name": "Breadcrumbs",
+          "quantity": "as needed"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black Pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Garlic Powder",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Thyme",
+          "quantity": "to taste"
+        }
+      ],
+      "steps": [
+        {
+          "description": "Mash the boiled potatoes, then add butter and cream until smooth.",
+          "time": "5m"
+        },
+        {
+          "description": "Add egg yolks, mozzarella cheese, and chopped parsley.",
+          "time": "3m"
+        },
+        {
+          "description": "Season with salt, black pepper, garlic powder, and thyme.",
+          "time": "2m"
+        },
+        {
+          "description": "Whip the egg whites with salt until stiff peaks form.",
+          "time": "4–5m"
+        },
+        {
+          "description": "Gently fold the whipped egg whites into the potato mixture in two stages.",
+          "time": "3m"
+        },
+        {
+          "description": "Grease soufflé cups, coat with breadcrumbs, fill with mixture, top with cheese, and bake at 220°C until cooked.",
+          "time": "25–30m"
+        }
+      ],
+      "notes": "Do not open the oven during baking to keep the soufflé fluffy.",
+      "descriptionEn": "A golden and fluffy potato soufflé made with cheese and parsley",
+      "descriptionFa": "سوفله‌ای طلایی و پف‌دار از سیب‌زمینی، پنیر و جعفری",
+      "descriptionAr": "سوفليه بطاطس ذهبية وهشة محضّرة بالجبن والبقدونس",
+      "descriptionFr": "Soufflé de pommes de terre doré et moelleux au fromage et au persil",
+      "descriptionRu": "Золотистое и воздушное картофельное суфле с сыром и петрушкой",
+      "titleFa": "سوفله سیب‌زمینی",
+      "summaryFa": "سوفله‌ای طلایی و اشتهابرانگیز با سیب‌زمینی، پنیر و جعفری",
+      "ingredientsFa": [
+        {
+          "name": "سیب‌زمینی",
+          "quantity": "400 گرم"
+        },
+        {
+          "name": "کره",
+          "quantity": "30 گرم"
+        },
+        {
+          "name": "خامه صبحانه",
+          "quantity": "1 قاشق غذاخوری"
+        },
+        {
+          "name": "تخم مرغ",
+          "quantity": "2 عدد"
+        },
+        {
+          "name": "جعفری",
+          "quantity": "1 قاشق غذاخوری"
+        },
+        {
+          "name": "پنیر موزارلا جلفا",
+          "quantity": "100 گرم"
+        },
+        {
+          "name": "پودر سوخاری",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "نمک",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "فلفل سیاه",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "پودر سیر",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "آویشن",
+          "quantity": "به مقدار لازم"
+        }
+      ],
+      "stepsFa": [
+        {
+          "description": "سیب‌زمینی‌های پخته را له کرده و کره و خامه را اضافه کنید تا یکدست شود.",
+          "time": "5m"
+        },
+        {
+          "description": "زرده تخم‌مرغ، پنیر موزارلا و جعفری را اضافه کنید.",
+          "time": "3m"
+        },
+        {
+          "description": "نمک، فلفل سیاه، پودر سیر و آویشن را اضافه کنید.",
+          "time": "2m"
+        },
+        {
+          "description": "سفیده‌ها را با کمی نمک بزنید تا کاملاً فرم بگیرند.",
+          "time": "4–5m"
+        },
+        {
+          "description": "سفیده‌ها را در دو مرحله به مواد اضافه کرده و آرام مخلوط کنید.",
+          "time": "3m"
+        },
+        {
+          "description": "مواد را در فنجان‌های چرب‌شده و آغشته به پودر سوخاری بریزید، پنیر اضافه کنید و در فر 220 درجه بپزید.",
+          "time": "25–30m"
+        }
+      ],
+      "notesFa": "در طول پخت درِ فر را باز نکنید.",
+      "titleAr": "سوفليه البطاطس",
+      "summaryAr": "سوفليه ذهبية وهشة من البطاطس والجبن والبقدونس",
+      "ingredientsAr": [
+        {
+          "name": "بطاطس",
+          "quantity": "400 غ"
+        },
+        {
+          "name": "زبدة",
+          "quantity": "30 غ"
+        },
+        {
+          "name": "كريمة",
+          "quantity": "1 ملعقة كبيرة"
+        },
+        {
+          "name": "بيض",
+          "quantity": "2"
+        },
+        {
+          "name": "بقدونس",
+          "quantity": "1 ملعقة كبيرة"
+        },
+        {
+          "name": "جبن موزاريلا جلفا",
+          "quantity": "100 غ"
+        },
+        {
+          "name": "بقسماط",
+          "quantity": "حسب الحاجة"
+        },
+        {
+          "name": "ملح",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "فلفل أسود",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "بودرة ثوم",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "زعتر",
+          "quantity": "حسب الذوق"
+        }
+      ],
+      "stepsAr": [
+        {
+          "description": "اهرسي البطاطس المسلوقة وأضيفي الزبدة والكريمة حتى تصبح ناعمة.",
+          "time": "5m"
+        },
+        {
+          "description": "أضيفي صفار البيض والجبن والبقدونس.",
+          "time": "3m"
+        },
+        {
+          "description": "تبّلي بالملح والفلفل وبودرة الثوم والزعتر.",
+          "time": "2m"
+        },
+        {
+          "description": "اخفقي بياض البيض مع الملح حتى يتماسك.",
+          "time": "4–5m"
+        },
+        {
+          "description": "اخلطي بياض البيض بلطف مع الخليط على مرحلتين.",
+          "time": "3m"
+        },
+        {
+          "description": "اسكبي الخليط في قوالب مدهونة ومغطاة بالبقسماط واخبزي على 220 درجة.",
+          "time": "25–30m"
+        }
+      ],
+      "notesAr": "لا تفتحي الفرن أثناء الخَبز.",
+      "titleFr": "Soufflé de pommes de terre",
+      "summaryFr": "Soufflé doré et moelleux aux pommes de terre, fromage et persil",
+      "ingredientsFr": [
+        {
+          "name": "Pommes de terre",
+          "quantity": "400 g"
+        },
+        {
+          "name": "Beurre",
+          "quantity": "30 g"
+        },
+        {
+          "name": "Crème",
+          "quantity": "1 c. à soupe"
+        },
+        {
+          "name": "Œufs",
+          "quantity": "2"
+        },
+        {
+          "name": "Persil",
+          "quantity": "1 c. à soupe"
+        },
+        {
+          "name": "Fromage mozzarella Jolfa",
+          "quantity": "100 g"
+        },
+        {
+          "name": "Chapelure",
+          "quantity": "au besoin"
+        },
+        {
+          "name": "Sel",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Poivre noir",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Ail en poudre",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Thym",
+          "quantity": "à goût"
+        }
+      ],
+      "stepsFr": [
+        {
+          "description": "Écrasez les pommes de terre cuites et ajoutez le beurre et la crème.",
+          "time": "5m"
+        },
+        {
+          "description": "Ajoutez les jaunes d'œufs, le fromage et le persil.",
+          "time": "3m"
+        },
+        {
+          "description": "Assaisonnez avec le sel, le poivre, l'ail et le thym.",
+          "time": "2m"
+        },
+        {
+          "description": "Montez les blancs d'œufs en neige avec du sel.",
+          "time": "4–5m"
+        },
+        {
+          "description": "Incorporez délicatement les blancs en deux fois.",
+          "time": "3m"
+        },
+        {
+          "description": "Versez dans des moules beurrés et enfournez à 220°C.",
+          "time": "25–30m"
+        }
+      ],
+      "notesFr": "N'ouvrez pas le four pendant la cuisson.",
+      "titleRu": "Картофельное суфле",
+      "summaryRu": "Золотистое и воздушное картофельное суфле с сыром и петрушкой",
+      "ingredientsRu": [
+        {
+          "name": "Картофель",
+          "quantity": "400 г"
+        },
+        {
+          "name": "Сливочное масло",
+          "quantity": "30 г"
+        },
+        {
+          "name": "Сливки",
+          "quantity": "1 ст. ложка"
+        },
+        {
+          "name": "Яйца",
+          "quantity": "2"
+        },
+        {
+          "name": "Петрушка",
+          "quantity": "1 ст. ложка"
+        },
+        {
+          "name": "Сыр моцарелла Jolfa",
+          "quantity": "100 г"
+        },
+        {
+          "name": "Панировочные сухари",
+          "quantity": "по необходимости"
+        },
+        {
+          "name": "Соль",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Чёрный перец",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Чесночный порошок",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Тимьян",
+          "quantity": "по вкусу"
+        }
+      ],
+      "stepsRu": [
+        {
+          "description": "Разомните отварной картофель, добавьте масло и сливки.",
+          "time": "5m"
+        },
+        {
+          "description": "Добавьте желтки, сыр и петрушку.",
+          "time": "3m"
+        },
+        {
+          "description": "Приправьте солью, перцем, чесноком и тимьяном.",
+          "time": "2m"
+        },
+        {
+          "description": "Взбейте белки с солью до устойчивых пиков.",
+          "time": "4–5m"
+        },
+        {
+          "description": "Аккуратно вмешайте белки в массу в два этапа.",
+          "time": "3m"
+        },
+        {
+          "description": "Разложите по формам и запекайте при 220°C.",
+          "time": "25–30m"
+        }
+      ],
+      "notesRu": "Не открывайте духовку во время выпечки."
+    },
+    {
+      "id": 3,
+      "slug": "zucchini-gratin-topping-cheese",
+      "title": "Zucchini Gratin with Topping Cheese",
+      "summary": "A healthy vegetarian zucchini gratin layered with béchamel sauce, stretchy topping cheese, and fresh spring onions",
+      "thumbnail": "/Image/recipes/zucchini-gratin.webp",
+      "image": "/Image/recipes/zucchini-gratin.webp",
+      "gallery": [
+        "/Image/recipes/zucchini-gratin-2.webp",
+        "/Image/recipes/zucchini-gratin-3.webp"
+      ],
+      "ingredients": [
+        {
+          "name": "Zucchini",
+          "quantity": "2 medium"
+        },
+        {
+          "name": "Olive Oil",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Jolfa Topping Cheese",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Béchamel Sauce",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black Pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Thyme",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Spring Onions (chopped)",
+          "quantity": "1 tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "description": "Sauté sliced or cubed zucchini in olive oil over low heat until softened.",
+          "time": "6–8m"
+        },
+        {
+          "description": "Spread a layer of béchamel sauce in an oven-safe dish, then arrange the zucchini on top.",
+          "time": "2m"
+        },
+        {
+          "description": "Cover zucchini with another layer of béchamel sauce, add topping cheese, and sprinkle thyme.",
+          "time": "2m"
+        },
+        {
+          "description": "Bake in a preheated oven at 180°C until the cheese is melted and golden.",
+          "time": "20–25m"
+        },
+        {
+          "description": "Remove from oven, let cool slightly, then garnish with chopped spring onions before serving.",
+          "time": "3–5m"
+        }
+      ],
+      "notes": "Let the gratin rest a few minutes before serving for better texture.",
+      "descriptionEn": "A healthy vegetarian zucchini gratin with béchamel sauce and Jolfa topping cheese",
+      "descriptionFa": "گراتن گیاهی و سالم کدو سبز با سس بشامل و پنیر تاپینگ جلفا",
+      "descriptionAr": "غراتان كوسا نباتي وصحي مع صلصة البشاميل وجبن التوبينغ",
+      "descriptionFr": "Gratin de courgettes végétarien et sain avec sauce béchamel et fromage topping",
+      "descriptionRu": "Полезный овощной гратен из кабачков с соусом бешамель и сыром топпинг",
+      "titleFa": "گراتن کدو سبز با پنیر تاپینگ",
+      "summaryFa": "گراتن گیاهی و سالم با لایه‌های سس بشامل، پنیر کش‌دار و پیازچه تازه",
+      "ingredientsFa": [
+        {
+          "name": "کدو سبز",
+          "quantity": "2 عدد متوسط"
+        },
+        {
+          "name": "روغن زیتون",
+          "quantity": "نصف فنجان"
+        },
+        {
+          "name": "پنیر تاپینگ جلفا",
+          "quantity": "2 فنجان"
+        },
+        {
+          "name": "سس بشامل",
+          "quantity": "1 فنجان"
+        },
+        {
+          "name": "نمک",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "فلفل سیاه",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "آویشن",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "پیازچه خرد شده",
+          "quantity": "1 قاشق غذاخوری"
+        }
+      ],
+      "stepsFa": [
+        {
+          "description": "کدوهای خردشده را با کمی روغن زیتون روی حرارت ملایم تفت دهید تا نرم شوند.",
+          "time": "6–8m"
+        },
+        {
+          "description": "در ظرف مخصوص فر کمی سس بشامل بریزید و کدوها را روی آن بچینید.",
+          "time": "2m"
+        },
+        {
+          "description": "روی کدوها را با سس بپوشانید، پنیر تاپینگ بریزید و آویشن بپاشید.",
+          "time": "2m"
+        },
+        {
+          "description": "ظرف را در فر 180 درجه قرار دهید تا پنیر آب شده و طلایی شود.",
+          "time": "20–25m"
+        },
+        {
+          "description": "پس از پخت، چند دقیقه صبر کرده و با پیازچه خردشده تزیین کنید.",
+          "time": "3–5m"
+        }
+      ],
+      "notesFa": "قبل از سرو چند دقیقه صبر کنید تا بافت گراتن بهتر شود.",
+      "titleAr": "غراتان الكوسا بجبن التوبينغ",
+      "summaryAr": "غراتان نباتي صحي بطبقات من البشاميل والجبن المطاطي والبصل الأخضر",
+      "ingredientsAr": [
+        {
+          "name": "كوسا",
+          "quantity": "2 حبة متوسطة"
+        },
+        {
+          "name": "زيت زيتون",
+          "quantity": "نصف كوب"
+        },
+        {
+          "name": "جبن توبينغ جلفا",
+          "quantity": "2 كوب"
+        },
+        {
+          "name": "صلصة بشاميل",
+          "quantity": "1 كوب"
+        },
+        {
+          "name": "ملح",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "فلفل أسود",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "زعتر",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "بصل أخضر مفروم",
+          "quantity": "1 ملعقة كبيرة"
+        }
+      ],
+      "stepsAr": [
+        {
+          "description": "اقلي الكوسا المقطعة بزيت الزيتون على نار هادئة حتى تطرى.",
+          "time": "6–8m"
+        },
+        {
+          "description": "ضعي طبقة من البشاميل في صينية ثم وزعي الكوسا فوقها.",
+          "time": "2m"
+        },
+        {
+          "description": "غطي الكوسا بالبشاميل وأضيفي الجبن ورشي الزعتر.",
+          "time": "2m"
+        },
+        {
+          "description": "اخبزي في فرن محمى على 180 درجة حتى يذوب الجبن ويصبح ذهبياً.",
+          "time": "20–25m"
+        },
+        {
+          "description": "اتركي الغراتان يبرد قليلاً ثم زيّنيه بالبصل الأخضر.",
+          "time": "3–5m"
+        }
+      ],
+      "notesAr": "يُفضل تركه دقائق قبل التقديم.",
+      "titleFr": "Gratin de courgettes au fromage topping",
+      "summaryFr": "Gratin végétarien aux courgettes avec sauce béchamel, fromage fondant et oignons verts",
+      "ingredientsFr": [
+        {
+          "name": "Courgettes",
+          "quantity": "2 moyennes"
+        },
+        {
+          "name": "Huile d'olive",
+          "quantity": "1/2 tasse"
+        },
+        {
+          "name": "Fromage topping Jolfa",
+          "quantity": "2 tasses"
+        },
+        {
+          "name": "Sauce béchamel",
+          "quantity": "1 tasse"
+        },
+        {
+          "name": "Sel",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Poivre noir",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Thym",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Oignons verts hachés",
+          "quantity": "1 c. à soupe"
+        }
+      ],
+      "stepsFr": [
+        {
+          "description": "Faites revenir les courgettes coupées avec l'huile d'olive à feu doux.",
+          "time": "6–8m"
+        },
+        {
+          "description": "Étalez un peu de béchamel dans un plat et ajoutez les courgettes.",
+          "time": "2m"
+        },
+        {
+          "description": "Recouvrez de béchamel, ajoutez le fromage et le thym.",
+          "time": "2m"
+        },
+        {
+          "description": "Enfournez à 180°C jusqu'à ce que le fromage soit doré.",
+          "time": "20–25m"
+        },
+        {
+          "description": "Laissez tiédir puis garnissez d'oignons verts avant de servir.",
+          "time": "3–5m"
+        }
+      ],
+      "notesFr": "Laissez reposer quelques minutes avant de servir.",
+      "titleRu": "Гратен из кабачков с сыром топпинг",
+      "summaryRu": "Полезный овощной гратен с соусом бешамель, тянущимся сыром и зелёным луком",
+      "ingredientsRu": [
+        {
+          "name": "Кабачки",
+          "quantity": "2 средних"
+        },
+        {
+          "name": "Оливковое масло",
+          "quantity": "1/2 чашки"
+        },
+        {
+          "name": "Сыр топпинг Jolfa",
+          "quantity": "2 чашки"
+        },
+        {
+          "name": "Соус бешамель",
+          "quantity": "1 чашка"
+        },
+        {
+          "name": "Соль",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Чёрный перец",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Тимьян",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Зелёный лук (нарезанный)",
+          "quantity": "1 ст. ложка"
+        }
+      ],
+      "stepsRu": [
+        {
+          "description": "Обжарьте нарезанные кабачки в оливковом масле до мягкости.",
+          "time": "6–8m"
+        },
+        {
+          "description": "Выложите слой соуса бешамель в форму и добавьте кабачки.",
+          "time": "2m"
+        },
+        {
+          "description": "Покройте бешамелем, добавьте сыр и тимьян.",
+          "time": "2m"
+        },
+        {
+          "description": "Запекайте при 180°C до золотистой корочки.",
+          "time": "20–25m"
+        },
+        {
+          "description": "Дайте немного остыть и посыпьте зелёным луком перед подачей.",
+          "time": "3–5m"
+        }
+      ],
+      "notesRu": "Дайте блюду немного постоять перед подачей."
+    },
+    {
+      "id": 4,
+      "slug": "chicken-eggplant-gratin",
+      "title": "Chicken and Eggplant Gratin",
+      "summary": "Golden fried eggplants layered with shredded chicken and creamy processed cheese for a rich and comforting gratin",
+      "thumbnail": "/Image/recipes/chicken-eggplant-gratin.webp",
+      "image": "/Image/recipes/chicken-eggplant-gratin.webp",
+      "gallery": [
+        "/Image/recipes/chicken-eggplant-gratin-2.webp",
+        "/Image/recipes/chicken-eggplant-gratin-3.webp"
+      ],
+      "ingredients": [
+        {
+          "name": "Eggplants",
+          "quantity": "5"
+        },
+        {
+          "name": "Cooked Chicken Breast",
+          "quantity": "2 pieces"
+        },
+        {
+          "name": "Jolfa Processed Cheese",
+          "quantity": "400 g"
+        },
+        {
+          "name": "Béchamel Sauce",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black Pepper",
+          "quantity": "to taste"
+        }
+      ],
+      "steps": [
+        {
+          "description": "Wash the eggplants well and slice them into rounds.",
+          "time": "5m"
+        },
+        {
+          "description": "Fry the eggplant slices in oil until golden.",
+          "time": "8–10m"
+        },
+        {
+          "description": "Grease the bottom of an oven-safe dish lightly.",
+          "time": "1m"
+        },
+        {
+          "description": "Arrange a layer of eggplants in the dish and pour some béchamel sauce over them.",
+          "time": "2m"
+        },
+        {
+          "description": "Shred the cooked chicken breasts and spread them over the eggplants.",
+          "time": "3m"
+        },
+        {
+          "description": "Add another layer of béchamel sauce and cover with processed cheese.",
+          "time": "2m"
+        },
+        {
+          "description": "Repeat with another layer of eggplants, béchamel sauce, and cheese.",
+          "time": "3m"
+        },
+        {
+          "description": "Bake in a preheated oven at 180°C until fully cooked and golden.",
+          "time": "35–40m"
+        }
+      ],
+      "notes": "Let the gratin rest a few minutes after baking before serving.",
+      "descriptionEn": "A rich and comforting chicken and eggplant gratin with béchamel sauce and Jolfa processed cheese",
+      "descriptionFa": "گراتن مرغ و بادمجان با سس بشامل و پنیر پروسس جلفا",
+      "descriptionAr": "غراتان الدجاج والباذنجان مع صلصة البشاميل وجبن جلفا المعالج",
+      "descriptionFr": "Gratin d’aubergines et de poulet avec sauce béchamel et fromage fondu Jolfa",
+      "descriptionRu": "Гратен из курицы и баклажанов с соусом бешамель и плавленым сыром Jolfa",
+      "titleFa": "گراتن مرغ و بادمجان",
+      "summaryFa": "بادمجان‌های طلایی، مرغ ریش‌شده و پنیر پروسس؛ گراتنی خوش‌عطر و لذیذ",
+      "ingredientsFa": [
+        {
+          "name": "بادمجان",
+          "quantity": "5 عدد"
+        },
+        {
+          "name": "سینه مرغ پخته‌شده",
+          "quantity": "2 تکه"
+        },
+        {
+          "name": "پنیر پروسس جلفا",
+          "quantity": "400 گرم"
+        },
+        {
+          "name": "سس بشامل",
+          "quantity": "1 فنجان"
+        },
+        {
+          "name": "نمک",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "فلفل سیاه",
+          "quantity": "به مقدار لازم"
+        }
+      ],
+      "stepsFa": [
+        {
+          "description": "بادمجان‌ها را شسته و حلقه‌حلقه کنید.",
+          "time": "5m"
+        },
+        {
+          "description": "حلقه‌های بادمجان را در روغن سرخ کنید تا طلایی شوند.",
+          "time": "8–10m"
+        },
+        {
+          "description": "کف ظرف مناسب فر را کمی چرب کنید.",
+          "time": "1m"
+        },
+        {
+          "description": "یک لایه بادمجان چیده و روی آن سس بشامل بریزید.",
+          "time": "2m"
+        },
+        {
+          "description": "سینه مرغ پخته را خرد و ریش‌ریش کرده و روی مواد بریزید.",
+          "time": "3m"
+        },
+        {
+          "description": "دوباره سس بشامل و پنیر پروسس اضافه کنید.",
+          "time": "2m"
+        },
+        {
+          "description": "لایه دیگری بادمجان چیده و مجدداً سس و پنیر اضافه کنید.",
+          "time": "3m"
+        },
+        {
+          "description": "ظرف را در فر 180 درجه سانتی‌گراد قرار دهید تا بپزد.",
+          "time": "35–40m"
+        }
+      ],
+      "notesFa": "بعد از پخت چند دقیقه صبر کنید تا گراتن کمی خنک شود.",
+      "titleAr": "غراتان الدجاج والباذنجان",
+      "summaryAr": "باذنجان ذهبي مع دجاج مفروم وجبن معالج بطعم غني",
+      "ingredientsAr": [
+        {
+          "name": "باذنجان",
+          "quantity": "5 حبات"
+        },
+        {
+          "name": "صدر دجاج مطبوخ",
+          "quantity": "2 قطع"
+        },
+        {
+          "name": "جبن جلفا المعالج",
+          "quantity": "400 غ"
+        },
+        {
+          "name": "صلصة بشاميل",
+          "quantity": "1 كوب"
+        },
+        {
+          "name": "ملح",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "فلفل أسود",
+          "quantity": "حسب الذوق"
+        }
+      ],
+      "stepsAr": [
+        {
+          "description": "اغسل الباذنجان وقطّعه إلى شرائح.",
+          "time": "5m"
+        },
+        {
+          "description": "اقلي شرائح الباذنجان بالزيت حتى تصبح ذهبية.",
+          "time": "8–10m"
+        },
+        {
+          "description": "ادهني صينية الفرن بقليل من الزيت.",
+          "time": "1m"
+        },
+        {
+          "description": "رتّبي طبقة من الباذنجان واسكبي فوقها البشاميل.",
+          "time": "2m"
+        },
+        {
+          "description": "أضيفي الدجاج المطبوخ والمفتّت فوقها.",
+          "time": "3m"
+        },
+        {
+          "description": "أضيفي طبقة أخرى من البشاميل والجبن.",
+          "time": "2m"
+        },
+        {
+          "description": "كرّري الطبقات حسب الحاجة.",
+          "time": "3m"
+        },
+        {
+          "description": "اخبزي في فرن 180 درجة حتى ينضج الغراتان.",
+          "time": "35–40m"
+        }
+      ],
+      "notesAr": "اتركيه بضع دقائق قبل التقديم.",
+      "titleFr": "Gratin de poulet et aubergines",
+      "summaryFr": "Aubergines dorées, poulet effiloché et fromage fondu pour un gratin irrésistible",
+      "ingredientsFr": [
+        {
+          "name": "Aubergines",
+          "quantity": "5"
+        },
+        {
+          "name": "Blanc de poulet cuit",
+          "quantity": "2 morceaux"
+        },
+        {
+          "name": "Fromage fondu Jolfa",
+          "quantity": "400 g"
+        },
+        {
+          "name": "Sauce béchamel",
+          "quantity": "1 tasse"
+        },
+        {
+          "name": "Sel",
+          "quantity": "à goût"
+        },
+        {
+          "name": "Poivre noir",
+          "quantity": "à goût"
+        }
+      ],
+      "stepsFr": [
+        {
+          "description": "Lavez et coupez les aubergines en rondelles.",
+          "time": "5m"
+        },
+        {
+          "description": "Faites frire les aubergines jusqu'à ce qu'elles soient dorées.",
+          "time": "8–10m"
+        },
+        {
+          "description": "Beurrez légèrement un plat allant au four.",
+          "time": "1m"
+        },
+        {
+          "description": "Disposez une couche d'aubergines et ajoutez la béchamel.",
+          "time": "2m"
+        },
+        {
+          "description": "Ajoutez le poulet effiloché.",
+          "time": "3m"
+        },
+        {
+          "description": "Ajoutez de la béchamel et du fromage.",
+          "time": "2m"
+        },
+        {
+          "description": "Répétez les couches.",
+          "time": "3m"
+        },
+        {
+          "description": "Enfournez à 180°C jusqu'à cuisson complète.",
+          "time": "35–40m"
+        }
+      ],
+      "notesFr": "Laissez reposer quelques minutes avant de servir.",
+      "titleRu": "Гратен из курицы и баклажанов",
+      "summaryRu": "Золотистые баклажаны, куриное филе и плавленый сыр в сытном гратене",
+      "ingredientsRu": [
+        {
+          "name": "Баклажаны",
+          "quantity": "5"
+        },
+        {
+          "name": "Отварная куриная грудка",
+          "quantity": "2 куска"
+        },
+        {
+          "name": "Плавленый сыр Jolfa",
+          "quantity": "400 г"
+        },
+        {
+          "name": "Соус бешамель",
+          "quantity": "1 чашка"
+        },
+        {
+          "name": "Соль",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Чёрный перец",
+          "quantity": "по вкусу"
+        }
+      ],
+      "stepsRu": [
+        {
+          "description": "Вымойте баклажаны и нарежьте кружочками.",
+          "time": "5m"
+        },
+        {
+          "description": "Обжарьте баклажаны до золотистого цвета.",
+          "time": "8–10m"
+        },
+        {
+          "description": "Смажьте форму для запекания.",
+          "time": "1m"
+        },
+        {
+          "description": "Выложите слой баклажанов и добавьте соус бешамель.",
+          "time": "2m"
+        },
+        {
+          "description": "Добавьте измельчённую курицу.",
+          "time": "3m"
+        },
+        {
+          "description": "Добавьте ещё соус и сыр.",
+          "time": "2m"
+        },
+        {
+          "description": "Повторите слои.",
+          "time": "3m"
+        },
+        {
+          "description": "Запекайте при 180°C до готовности.",
+          "time": "35–40m"
+        }
+      ],
+      "notesRu": "Перед подачей дайте блюду немного остыть."
+    },
+    {
+      "id": 5,
+      "slug": "potato-mozzarella-balls",
+      "title": "Potato Balls with Mozzarella Cheese",
+      "summary": "Crispy potato balls filled with stretchy mozzarella cheese, perfect as a snack or appetizer",
+      "thumbnail": "/Image/recipes/potato-mozzarella-balls.webp",
+      "image": "/Image/recipes/potato-mozzarella-balls.webp",
+      "gallery": [
+        "/Image/recipes/potato-mozzarella-balls-2.webp",
+        "/Image/recipes/potato-mozzarella-balls-3.webp"
+      ],
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "quantity": "3"
+        },
+        {
+          "name": "Egg",
+          "quantity": "1"
+        },
+        {
+          "name": "Jolfa Mozzarella Cheese",
+          "quantity": "as needed"
+        },
+        {
+          "name": "Breadcrumbs",
+          "quantity": "3 cups"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black Pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Turmeric",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Frying Oil",
+          "quantity": "as needed"
+        }
+      ],
+      "steps": [
+        {
+          "description": "Grate the boiled potatoes and add the egg.",
+          "time": "5m"
+        },
+        {
+          "description": "Add salt, black pepper, and turmeric, then mix until smooth.",
+          "time": "2m"
+        },
+        {
+          "description": "Take a walnut-sized portion, add mozzarella in the center, and shape into a ball.",
+          "time": "5m"
+        },
+        {
+          "description": "Coat the balls with breadcrumbs.",
+          "time": "3m"
+        },
+        {
+          "description": "Refrigerate the balls for 1 hour to firm up.",
+          "time": "60m"
+        },
+        {
+          "description": "Fry in hot oil until golden on all sides.",
+          "time": "5–7m"
+        }
+      ],
+      "notes": "Serve hot with your favorite sauces and fresh vegetables.",
+      "descriptionEn": "Crispy potato balls filled with Jolfa mozzarella cheese, golden outside and stretchy inside",
+      "descriptionFa": "توپک سیب زمینی ترد با پنیر موزارلا جلفا، طلایی و کش‌دار",
+      "descriptionAr": "كرات البطاطس المقرمشة المحشوة بجبنة موزاريلا جلفا",
+      "descriptionFr": "Boulettes de pommes de terre croustillantes farcies à la mozzarella Jolfa",
+      "descriptionRu": "Хрустящие картофельные шарики с сыром моцарелла Jolfa",
+      "titleFa": "توپک سیب زمینی با پنیر موزارلا",
+      "summaryFa": "توپک‌های سیب زمینی با مغز پنیر موزارلا؛ ترد، کش‌دار و خوش‌طعم",
+      "ingredientsFa": [
+        {
+          "name": "سیب زمینی",
+          "quantity": "3 عدد"
+        },
+        {
+          "name": "تخم مرغ",
+          "quantity": "1 عدد"
+        },
+        {
+          "name": "پنیر موزارلا جلفا",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "آرد سوخاری",
+          "quantity": "3 فنجان"
+        },
+        {
+          "name": "نمک",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "فلفل سیاه",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "زردچوبه",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "روغن سرخ‌کردنی",
+          "quantity": "به مقدار لازم"
+        }
+      ],
+      "stepsFa": [
+        {
+          "description": "سیب زمینی‌های پخته را رنده کرده و تخم مرغ را اضافه کنید.",
+          "time": "5m"
+        },
+        {
+          "description": "نمک، فلفل سیاه و زردچوبه را اضافه کرده و مخلوط کنید.",
+          "time": "2m"
+        },
+        {
+          "description": "از مواد برداشته، پنیر موزارلا داخل آن قرار داده و گرد کنید.",
+          "time": "5m"
+        },
+        {
+          "description": "توپک‌ها را در آرد سوخاری بغلتانید.",
+          "time": "3m"
+        },
+        {
+          "description": "به مدت 1 ساعت در یخچال قرار دهید.",
+          "time": "60m"
+        },
+        {
+          "description": "در روغن داغ سرخ کنید تا طلایی شوند.",
+          "time": "5–7m"
+        }
+      ],
+      "notesFa": "این توپک‌ها را داغ و همراه با سس دلخواه سرو کنید.",
+      "titleAr": "كرات البطاطس بجبنة الموزاريلا",
+      "summaryAr": "كرات بطاطس ذهبية محشوة بجبنة موزاريلا مطاطية",
+      "ingredientsAr": [
+        {
+          "name": "بطاطس",
+          "quantity": "3 حبات"
+        },
+        {
+          "name": "بيضة",
+          "quantity": "1"
+        },
+        {
+          "name": "جبنة موزاريلا جلفا",
+          "quantity": "حسب الحاجة"
+        },
+        {
+          "name": "بقسماط",
+          "quantity": "3 أكواب"
+        },
+        {
+          "name": "ملح",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "فلفل أسود",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "كركم",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "زيت للقلي",
+          "quantity": "حسب الحاجة"
+        }
+      ],
+      "stepsAr": [
+        {
+          "description": "ابشر البطاطس المسلوقة وأضف البيضة.",
+          "time": "5m"
+        },
+        {
+          "description": "أضف التوابل واخلط جيدًا.",
+          "time": "2m"
+        },
+        {
+          "description": "شكّل كرات وضع الجبنة بداخلها.",
+          "time": "5m"
+        },
+        {
+          "description": "غلف الكرات بالبقسماط.",
+          "time": "3m"
+        },
+        {
+          "description": "ضعها في الثلاجة لمدة ساعة.",
+          "time": "60m"
+        },
+        {
+          "description": "اقليها حتى تصبح ذهبية.",
+          "time": "5–7m"
+        }
+      ],
+      "notesAr": "تُقدّم ساخنة مع الصلصات.",
+      "titleFr": "Boulettes de pommes de terre à la mozzarella",
+      "summaryFr": "Boulettes dorées de pommes de terre farcies à la mozzarella fondante",
+      "ingredientsFr": [
+        {
+          "name": "Pommes de terre",
+          "quantity": "3"
+        },
+        {
+          "name": "Œuf",
+          "quantity": "1"
+        },
+        {
+          "name": "Mozzarella Jolfa",
+          "quantity": "au besoin"
+        },
+        {
+          "name": "Chapelure",
+          "quantity": "3 tasses"
+        },
+        {
+          "name": "Sel",
+          "quantity": "au goût"
+        },
+        {
+          "name": "Poivre noir",
+          "quantity": "au goût"
+        },
+        {
+          "name": "Curcuma",
+          "quantity": "au goût"
+        },
+        {
+          "name": "Huile de friture",
+          "quantity": "au besoin"
+        }
+      ],
+      "stepsFr": [
+        {
+          "description": "Râpez les pommes de terre et ajoutez l’œuf.",
+          "time": "5m"
+        },
+        {
+          "description": "Ajoutez les épices et mélangez.",
+          "time": "2m"
+        },
+        {
+          "description": "Formez des boulettes avec la mozzarella au centre.",
+          "time": "5m"
+        },
+        {
+          "description": "Enrobez de chapelure.",
+          "time": "3m"
+        },
+        {
+          "description": "Réfrigérez pendant 1 heure.",
+          "time": "60m"
+        },
+        {
+          "description": "Faites frire jusqu’à doré.",
+          "time": "5–7m"
+        }
+      ],
+      "notesFr": "À servir chaud avec des sauces.",
+      "titleRu": "Картофельные шарики с моцареллой",
+      "summaryRu": "Золотистые картофельные шарики с тянущимся сыром моцарелла",
+      "ingredientsRu": [
+        {
+          "name": "Картофель",
+          "quantity": "3 шт."
+        },
+        {
+          "name": "Яйцо",
+          "quantity": "1"
+        },
+        {
+          "name": "Моцарелла Jolfa",
+          "quantity": "по необходимости"
+        },
+        {
+          "name": "Панировочные сухари",
+          "quantity": "3 стакана"
+        },
+        {
+          "name": "Соль",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Чёрный перец",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Куркума",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Масло для жарки",
+          "quantity": "по необходимости"
+        }
+      ],
+      "stepsRu": [
+        {
+          "description": "Натрите отварной картофель и добавьте яйцо.",
+          "time": "5m"
+        },
+        {
+          "description": "Добавьте специи и перемешайте.",
+          "time": "2m"
+        },
+        {
+          "description": "Сформируйте шарики с сыром внутри.",
+          "time": "5m"
+        },
+        {
+          "description": "Обваляйте в сухарях.",
+          "time": "3m"
+        },
+        {
+          "description": "Охладите в течение 1 часа.",
+          "time": "60m"
+        },
+        {
+          "description": "Обжарьте до золотистой корочки.",
+          "time": "5–7m"
+        }
+      ],
+      "notesRu": "Подавайте горячими с соусами."
+    },
+    {
+      "id": 6,
+      "slug": "cheesy-potato-muffins",
+      "title": "Cheesy Potato Muffins",
+      "summary": "Soft and cheesy potato muffins made with mozzarella, perfect for gatherings and quick snacks",
+      "thumbnail": "/Image/recipes/cheesy-potato-muffins.webp",
+      "image": "/Image/recipes/cheesy-potato-muffins.webp",
+      "gallery": [
+        "/Image/recipes/cheesy-potato-muffins-2.webp",
+        "/Image/recipes/cheesy-potato-muffins-3.webp"
+      ],
+      "ingredients": [
+        {
+          "name": "Mashed Potatoes",
+          "quantity": "3 cups"
+        },
+        {
+          "name": "Egg",
+          "quantity": "1"
+        },
+        {
+          "name": "Jolfa Mozzarella Cheese",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Chopped Green Onions",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black Pepper",
+          "quantity": "to taste"
+        }
+      ],
+      "steps": [
+        {
+          "description": "Combine mashed potatoes, egg, chopped green onions, and 3/4 cup of mozzarella cheese in a bowl.",
+          "time": "5m"
+        },
+        {
+          "description": "Season the mixture with salt and black pepper and mix well.",
+          "time": "2m"
+        },
+        {
+          "description": "Scoop equal portions of the mixture into muffin molds and press gently.",
+          "time": "5m"
+        },
+        {
+          "description": "Bake in a preheated oven until golden and crispy on top.",
+          "time": "30–35m"
+        },
+        {
+          "description": "Remove from oven, top each muffin with remaining mozzarella, and bake again.",
+          "time": "3m"
+        },
+        {
+          "description": "Let the muffins cool slightly before removing from the molds.",
+          "time": "5m"
+        }
+      ],
+      "notes": "Serve warm and garnish with chopped green onions.",
+      "descriptionEn": "Cheesy potato muffins made with Jolfa mozzarella, soft inside and golden on top",
+      "descriptionFa": "مافین سیب زمینی پنیری با پنیر موزارلا جلفا، نرم و طلایی",
+      "descriptionAr": "مافن البطاطس بالجبن مع موزاريلا جلفا",
+      "descriptionFr": "Muffins de pommes de terre au fromage avec mozzarella Jolfa",
+      "descriptionRu": "Картофельные маффины с сыром моцарелла Jolfa",
+      "titleFa": "مافین سیب زمینی پنیری",
+      "summaryFa": "مافین‌های پنیری جلفا؛ انتخابی سریع، لذیذ و مناسب دورهمی‌ها",
+      "ingredientsFa": [
+        {
+          "name": "پوره سیب زمینی",
+          "quantity": "3 فنجان"
+        },
+        {
+          "name": "تخم مرغ",
+          "quantity": "1 عدد"
+        },
+        {
+          "name": "پنیر موزارلا جلفا",
+          "quantity": "2 فنجان"
+        },
+        {
+          "name": "پیازچه خرد شده",
+          "quantity": "2 قاشق غذاخوری"
+        },
+        {
+          "name": "نمک",
+          "quantity": "به مقدار لازم"
+        },
+        {
+          "name": "فلفل سیاه",
+          "quantity": "به مقدار لازم"
+        }
+      ],
+      "stepsFa": [
+        {
+          "description": "پوره سیب زمینی، تخم مرغ، پیازچه و 3/4 فنجان پنیر موزارلا را مخلوط کنید.",
+          "time": "5m"
+        },
+        {
+          "description": "مواد را با نمک و فلفل مزه‌دار کرده و خوب هم بزنید.",
+          "time": "2m"
+        },
+        {
+          "description": "مواد را به طور مساوی داخل قالب مافین بریزید و کمی فشار دهید.",
+          "time": "5m"
+        },
+        {
+          "description": "قالب را در فر از پیش گرم‌شده قرار دهید تا طلایی شود.",
+          "time": "30–35m"
+        },
+        {
+          "description": "پنیر باقی‌مانده را روی مافین‌ها بریزید و دوباره داخل فر بگذارید.",
+          "time": "3m"
+        },
+        {
+          "description": "بعد از خروج، اجازه دهید کمی خنک شوند.",
+          "time": "5m"
+        }
+      ],
+      "notesFa": "مافین‌ها را گرم و با پیازچه تازه سرو کنید.",
+      "titleAr": "مافن البطاطس بالجبن",
+      "summaryAr": "مافن بطاطس طري محشو بجبنة موزاريلا لذيذة",
+      "ingredientsAr": [
+        {
+          "name": "بطاطس مهروسة",
+          "quantity": "3 أكواب"
+        },
+        {
+          "name": "بيضة",
+          "quantity": "1"
+        },
+        {
+          "name": "جبنة موزاريلا جلفا",
+          "quantity": "2 كوب"
+        },
+        {
+          "name": "بصل أخضر مفروم",
+          "quantity": "2 ملعقة كبيرة"
+        },
+        {
+          "name": "ملح",
+          "quantity": "حسب الذوق"
+        },
+        {
+          "name": "فلفل أسود",
+          "quantity": "حسب الذوق"
+        }
+      ],
+      "stepsAr": [
+        {
+          "description": "اخلط البطاطس المهروسة مع البيضة والبصل الأخضر و3/4 كوب جبن.",
+          "time": "5m"
+        },
+        {
+          "description": "تبّل بالملح والفلفل وامزج جيدًا.",
+          "time": "2m"
+        },
+        {
+          "description": "وزّع الخليط في قوالب المافن.",
+          "time": "5m"
+        },
+        {
+          "description": "اخبز حتى يصبح السطح ذهبيًا.",
+          "time": "30–35m"
+        },
+        {
+          "description": "أضف الجبن المتبقي واخبز مجددًا.",
+          "time": "3m"
+        },
+        {
+          "description": "اتركه يبرد قليلًا قبل التقديم.",
+          "time": "5m"
+        }
+      ],
+      "notesAr": "يُقدّم ساخنًا ومزينًا بالبصل الأخضر.",
+      "titleFr": "Muffins de pommes de terre au fromage",
+      "summaryFr": "Muffins moelleux aux pommes de terre et mozzarella, parfaits pour les réunions",
+      "ingredientsFr": [
+        {
+          "name": "Purée de pommes de terre",
+          "quantity": "3 tasses"
+        },
+        {
+          "name": "Œuf",
+          "quantity": "1"
+        },
+        {
+          "name": "Mozzarella Jolfa",
+          "quantity": "2 tasses"
+        },
+        {
+          "name": "Oignons verts hachés",
+          "quantity": "2 c. à soupe"
+        },
+        {
+          "name": "Sel",
+          "quantity": "au goût"
+        },
+        {
+          "name": "Poivre noir",
+          "quantity": "au goût"
+        }
+      ],
+      "stepsFr": [
+        {
+          "description": "Mélangez la purée, l’œuf, les oignons verts et 3/4 tasse de fromage.",
+          "time": "5m"
+        },
+        {
+          "description": "Assaisonnez et mélangez.",
+          "time": "2m"
+        },
+        {
+          "description": "Répartissez dans les moules à muffins.",
+          "time": "5m"
+        },
+        {
+          "description": "Faites cuire jusqu’à ce qu’ils soient dorés.",
+          "time": "30–35m"
+        },
+        {
+          "description": "Ajoutez le fromage restant et enfournez à nouveau.",
+          "time": "3m"
+        },
+        {
+          "description": "Laissez tiédir avant de démouler.",
+          "time": "5m"
+        }
+      ],
+      "notesFr": "À servir chaud, garni d’oignons verts.",
+      "titleRu": "Картофельные маффины с сыром",
+      "summaryRu": "Нежные картофельные маффины с тянущейся моцареллой",
+      "ingredientsRu": [
+        {
+          "name": "Картофельное пюре",
+          "quantity": "3 стакана"
+        },
+        {
+          "name": "Яйцо",
+          "quantity": "1"
+        },
+        {
+          "name": "Моцарелла Jolfa",
+          "quantity": "2 стакана"
+        },
+        {
+          "name": "Зелёный лук",
+          "quantity": "2 ст. ложки"
+        },
+        {
+          "name": "Соль",
+          "quantity": "по вкусу"
+        },
+        {
+          "name": "Чёрный перец",
+          "quantity": "по вкусу"
+        }
+      ],
+      "stepsRu": [
+        {
+          "description": "Смешайте пюре, яйцо, зелёный лук и 3/4 стакана сыра.",
+          "time": "5m"
+        },
+        {
+          "description": "Добавьте соль и перец.",
+          "time": "2m"
+        },
+        {
+          "description": "Разложите массу по формам.",
+          "time": "5m"
+        },
+        {
+          "description": "Запекайте до золотистой корочки.",
+          "time": "30–35m"
+        },
+        {
+          "description": "Добавьте оставшийся сыр и запекайте ещё раз.",
+          "time": "3m"
+        },
+        {
+          "description": "Дайте немного остыть перед подачей.",
+          "time": "5m"
+        }
+      ],
+      "notesRu": "Подавайте горячими, украсив зелёным луком."
+    }
+  ]
+}
