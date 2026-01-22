@@ -96,13 +96,6 @@ body[dir="rtl"] {
   --text-secondary: #5a3d31;
   --background-color: #fffdf6;
   --btn-translate: translateX(-25px);
-  --nav-background: radial-gradient(
-      circle at 20% 20%,
-      #fff2b3 0%,
-      transparent 40%
-    ),
-    radial-gradient(circle at 78% 8%, #ffe9a3 0%, transparent 32%),
-    linear-gradient(180deg, #fffaf0 0%, #fff7e0 100%);
   --switch-knob: #f59e0b;
   --switch-track: rgba(255, 184, 28, 0.25);
   --btn-primary-bg: #f59e0b;
@@ -137,7 +130,7 @@ body[dir="rtl"] {
   --color: #1f2937; /* خاکستری تیره برای متن */
   --text-color: #1f2937; /* متن تیره برای تم روشن */
   --text-secondary: #5a3d31; /* متن ثانویه تیره */
-  --background-color: #ffff6d; /* سفید با ته‌مایه زرد بسیار ملایم */
+  --background-color: #f9f9ff; /* سفید با ته‌مایه زرد بسیار ملایم */
   --btn-translate: translateX(-25px);
   --nav-background: radial-gradient(
     circle,
