@@ -90,7 +90,7 @@ export default function ContactPage({
           </div>
           <div className="flex items-center gap-2">
             <img
-              src={`${iconPathPrefix}/telegram.png`}
+              src={`${iconPathPrefix}/Telegram.png`}
               alt="telegram"
               className="w-10 h-10 object-contain"
             />
