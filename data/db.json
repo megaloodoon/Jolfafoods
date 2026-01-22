@@ -201,7 +201,7 @@
       "titleFa": "",
       "titleEn": "",
       "subtitle": "",
-      "image": "/Image/banner/1.jpg",
+      "image": "/Image/Banner/1.jpg",
       "link": "",
       "order": 0
     },
@@ -212,7 +212,7 @@
       "titleFa": "",
       "titleEn": "",
       "subtitle": "",
-      "image": "/Image/banner/2.jpg",
+      "image": "/Image/Banner/2.jpg",
       "link": "",
       "order": 0
     },
@@ -223,7 +223,7 @@
       "titleFa": "",
       "titleEn": "",
       "subtitle": "",
-      "image": "/Image/banner/3.jpg",
+      "image": "/Image/Banner/3.jpg",
       "link": "",
       "order": 0
     },
@@ -234,7 +234,7 @@
       "titleFa": "",
       "titleEn": "",
       "subtitle": "",
-      "image": "/Image/banner/4.jpg",
+      "image": "/Image/Banner/4.jpg",
       "link": "",
       "order": 0
     },
@@ -245,31 +245,31 @@
       "titleFa": "",
       "titleEn": "",
       "subtitle": "",
-      "image": "/Image/banner/5.jpg",
+      "image": "/Image/Banner/5.jpg",
       "link": "",
       "order": 0
     },
     {
       "id": 6,
       "slug": "6",
-      "image": "/Image/banner/6.jpg"
+      "image": "/Image/Banner/6.jpg"
     }
   ],
   "banners_fa": [
     {
       "id": 1,
       "title": "پنیر پیتزا حرفه‌ای",
-      "image": "/Image/banner/1.jpg"
+      "image": "/Image/Banner/1.jpg"
     },
     {
       "id": 2,
       "title": "طعم و کیفیت ثابت",
-      "image": "/Image/banner/2.jpg"
+      "image": "/Image/Banner/2.jpg"
     },
     {
       "id": 3,
       "title": "بنر ۳",
-      "image": "/Image/banner/3.jpg",
+      "image": "/Image/Banner/3.jpg",
       "titleFa": "",
       "titleEn": "",
       "imageFile": {},
@@ -278,12 +278,12 @@
     {
       "id": 4,
       "title": "بنر ۴",
-      "image": "/Image/banner/4.jpg"
+      "image": "/Image/Banner/4.jpg"
     },
     {
       "id": 5,
       "title": "بنر ۵",
-      "image": "/Image/banner/5.jpg",
+      "image": "/Image/Banner/5.jpg",
       "titleFa": "",
       "titleEn": "",
       "imageFile": {},
@@ -296,7 +296,7 @@
       "titleFa": "",
       "titleEn": "",
       "subtitle": "",
-      "image": "/Image/banner/6.jpg",
+      "image": "/Image/Banner/6.jpg",
       "link": "",
       "order": 0
     }
@@ -305,128 +305,128 @@
     {
       "id": 1,
       "title": "Professional pizza cheese",
-      "image": "/Image/banner/1.jpg"
+      "image": "/Image/Banner/1.jpg"
     },
     {
       "id": 2,
       "title": "Reliable quality",
-      "image": "/Image/banner/2.jpg"
+      "image": "/Image/Banner/2.jpg"
     },
     {
       "id": 3,
       "title": "Banner 3",
-      "image": "/Image/banner/3.jpg"
+      "image": "/Image/Banner/3.jpg"
     },
     {
       "id": 4,
       "title": "Banner 4",
-      "image": "/Image/banner/4.jpg"
+      "image": "/Image/Banner/4.jpg"
     },
     {
       "id": 5,
       "title": "Banner 5",
-      "image": "/Image/banner/5.jpg"
+      "image": "/Image/Banner/5.jpg"
     },
     {
       "id": 6,
       "title": "Banner 6",
-      "image": "/Image/banner/6.jpg"
+      "image": "/Image/Banner/6.jpg"
     }
   ],
   "banners_ar": [
     {
       "id": 1,
       "title": "جبن بيتزا احترافي",
-      "image": "/Image/banner/1.jpg"
+      "image": "/Image/Banner/1.jpg"
     },
     {
       "id": 2,
       "title": "جودة موثوقة",
-      "image": "/Image/banner/2.jpg"
+      "image": "/Image/Banner/2.jpg"
     },
     {
       "id": 3,
       "title": "بانر ٣",
-      "image": "/Image/banner/3.jpg"
+      "image": "/Image/Banner/3.jpg"
     },
     {
       "id": 4,
       "title": "بانر ٤",
-      "image": "/Image/banner/4.jpg"
+      "image": "/Image/Banner/4.jpg"
     },
     {
       "id": 5,
       "title": "بانر ٥",
-      "image": "/Image/banner/5.jpg"
+      "image": "/Image/Banner/5.jpg"
     },
     {
       "id": 6,
       "title": "بانر ٦",
-      "image": "/Image/banner/6.jpg"
+      "image": "/Image/Banner/6.jpg"
     }
   ],
   "banners_ru": [
     {
       "id": 1,
       "title": "Профессиональный сыр для пиццы",
-      "image": "/Image/banner/1.jpg"
+      "image": "/Image/Banner/1.jpg"
     },
     {
       "id": 2,
       "title": "Надежное качество",
-      "image": "/Image/banner/2.jpg"
+      "image": "/Image/Banner/2.jpg"
     },
     {
       "id": 3,
       "title": "Баннер 3",
-      "image": "/Image/banner/3.jpg"
+      "image": "/Image/Banner/3.jpg"
     },
     {
       "id": 4,
       "title": "Баннер 4",
-      "image": "/Image/banner/4.jpg"
+      "image": "/Image/Banner/4.jpg"
     },
     {
       "id": 5,
       "title": "Баннер 5",
-      "image": "/Image/banner/5.jpg"
+      "image": "/Image/Banner/5.jpg"
     },
     {
       "id": 6,
       "title": "Баннер 6",
-      "image": "/Image/banner/6.jpg"
+      "image": "/Image/Banner/6.jpg"
     }
   ],
   "banners_fr": [
     {
       "id": 1,
       "title": "Fromage professionnel pour pizza",
-      "image": "/Image/banner/1.jpg"
+      "image": "/Image/Banner/1.jpg"
     },
     {
       "id": 2,
       "title": "Qualité fiable",
-      "image": "/Image/banner/2.jpg"
+      "image": "/Image/Banner/2.jpg"
     },
     {
       "id": 3,
       "title": "Bannière 3",
-      "image": "/Image/banner/3.jpg"
+      "image": "/Image/Banner/3.jpg"
     },
     {
       "id": 4,
       "title": "Bannière 4",
-      "image": "/Image/banner/4.jpg"
+      "image": "/Image/Banner/4.jpg"
     },
     {
       "id": 5,
       "title": "Bannière 5",
-      "image": "/Image/banner/5.jpg"
+      "image": "/Image/Banner/5.jpg"
     },
     {
       "id": 6,
       "title": "Bannière 6",
-      "image": "/Image/banner/6.jpg"
+      "image": "/Image/Banner/6.jpg"
     }
   ],
   "posts_fa": [
