@@ -90,7 +90,7 @@ export function LanguageNav() {
   }, [pathname]);
 
   return (
-    <nav className="nav flex justify-center items-center gap-4 w-full">
+    <nav className="nav flex justify-center items-center gap-1 w-full">
       <div className="container w-full flex items-center justify-between px-2">
         {/* Hamburger button for small screens */}
         <button
@@ -117,25 +117,24 @@ export function LanguageNav() {
         </button>
 
         {/* Logo: centered between hamburger and language menu on mobile, left on desktop */}
-        <div className="logo flex-1 flex justify-center md:justify-start order-2 md:order-none">
+        <div className="logo shrink-0 flex items-center justify-center md:justify-start order-2 md:order-none">
           <Link href={base}>
             <Image
               src="/Image/Jolfa-logo.png"
               alt="Jolfa Foods"
-              width={160}
-              height={48}
+              width={180}
+              height={54}
               priority
-              sizes="(max-width: 768px) 140px, (max-width: 1024px) 160px, 180px"
-              className="h-auto w-auto"
-              unoptimized
+              sizes="(max-width: 360px) 90px, (max-width: 640px) 100px, (max-width: 768px) 140px, 180px"
+              className="w-[90px] xs:w-[50px] sm:w-[100px] md:w-[110px] h-auto"
             />
           </Link>
         </div>
 
         {/* Language menu and desktop links */}
-        <div className="flex items-center gap-4 order-3 md:order-none">
+        <div className="flex items-center order-3 md:order-none">
           {/* Inline links for desktop screens (hidden under 1020px) */}
-          <div className="desktop-links items-center gap-6 hidden md:flex">
+          <div className="desktop-links items-center gap-1 hidden md:flex">
             {/* Use a slightly smaller, cleaner style by default; tweak for Persian */}
             {(() => {
               const baseClass =
@@ -176,7 +175,7 @@ export function LanguageNav() {
             <button
               aria-haspopup="listbox"
               onClick={() => setOpen((s) => !s)}
-              className="flex items-center gap-2 px-3 py-2 rounded-md bg-white/10 hover:bg-white/20 text-lg font-semibold"
+              className="flex items-center px-3 py-2 rounded-md bg-white/10 hover:bg-white/20 text-lg font-semibold"
             >
               {langNames[currentLang] || currentLang.toUpperCase()}
               <svg

@@ -257,9 +257,10 @@ nav .container {
   width: 80%;
 }
 
-nav .logo img {
+
+/* nav .logo img {
   width: 200px;
-}
+} */
 
 .theme-switch {
   display: flex;
@@ -378,10 +379,10 @@ nav .logo img {
     gap: 8px;
     align-items: center;
   }
-
+/* 
   nav .logo img {
     width: 140px;
-  }
+  } */
 
   .theme-switch img {
     width: 20px;
@@ -450,9 +451,9 @@ nav .logo img {
     justify-content: space-between;
   }
 
-  nav .logo img {
+  /* nav .logo img {
     width: 110px;
-  }
+  } */
 
   /* Nav links: allow wrap and smaller font on phones */
   nav a {
@@ -495,7 +496,7 @@ nav .logo img {
 }
 
 /* Small tweak for very small phones */
- @media (max-width: 480px) {
+ /* @media (max-width: 480px) {
   nav .logo img {
     width: 100px;
   }
@@ -505,7 +506,7 @@ nav .logo img {
   nav .logo img {
     width: 90px;
   }
-}
+} */
   nav a {
     font-size: 0.9rem;
     padding: 6px;
