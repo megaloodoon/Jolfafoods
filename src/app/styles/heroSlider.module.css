@@ -9,84 +9,88 @@
   overflow-x: hidden;
   box-sizing: border-box;
   border-radius: 20px;
-  }
+}
 
-  
-  .swiper {
-    height: 100%;
+.swiper {
+  height: 100%;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
   overflow-x: hidden;
   box-sizing: border-box;
   border-radius: 5%;
-  }
+}
 
 @media (min-width: 1025px) {
-  .swiper { min-height: 500px; }
+  .swiper {
+    min-height: 500px;
+  }
 }
-  
-  .slide {
-    position: relative;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
+
+.slide {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
   isolation: isolate;
-  }
-  
-  .overlay {
-    position: absolute;
-    inset: 0;
-    /* overlay removed: keep element harmless if present */
-    background: transparent;
-    z-index: 0;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  /* overlay removed: keep element harmless if present */
+  background: transparent;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
   padding: 0 6%;
   max-width: 680px;
   color: #f8fafc;
   text-shadow: none;
-  }
-  
-  .content h1 {
+}
+
+.content h1 {
   font-size: clamp(2.2rem, 4vw, 3.6rem);
   margin-bottom: 18px;
   line-height: 1.15;
   font-weight: 800;
-  }
-  
-  .content p {
+}
+
+.content p {
   font-size: clamp(1rem, 2.4vw, 1.35rem);
   margin-bottom: 30px;
   opacity: 0.92;
   max-width: 520px;
-  }
-  
-  .button {
+}
+
+.button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   background: var(--btn-primary-bg, #f5c451);
   color: var(--btn-primary-text, #1f1f1f);
-    padding: 14px 28px;
+  padding: 14px 28px;
   border-radius: 14px;
   font-weight: 700;
-    text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
   box-shadow: none;
   border: 2px solid var(--btn-primary-bg, #f5c451);
-  }
-  
-  .button:hover {
-    transform: translateY(-3px);
-    box-shadow: none;
-    background: var(--btn-secondary-bg, rgba(245, 196, 81, 0.06));
-    color: var(--btn-primary-bg, #f5c451);
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: none;
+  background: var(--btn-secondary-bg, rgba(245, 196, 81, 0.06));
+  color: var(--btn-primary-bg, #f5c451);
 }
 
 .hero :global(.swiper-pagination-bullet) {
@@ -94,16 +98,15 @@
   width: 10px;
   height: 10px;
   opacity: 1;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .hero :global(.swiper-pagination-bullet-active) {
   background: var(--btn-primary-bg, #f5c451);
   transform: scale(1.2);
 }
-
-
-
 
 @media (max-width: 1440px) {
   .hero {
@@ -113,9 +116,8 @@
     transform: none;
     border-radius: 12px;
     padding: 6px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   }
-  
 
   .swiper {
     border-radius: 0;
@@ -131,10 +133,8 @@
     transform: none;
     border-radius: 12px;
     padding: 6px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   }
-  
 
   .swiper {
     border-radius: 0;
@@ -173,25 +173,42 @@
     justify-content: center;
   }
 
-  .content h1 { font-size: clamp(1.2rem, 5.5vw, 1.8rem); }
-  .button { padding: 10px 14px; border-radius: 10px; font-size: 0.95rem; }
+  .content h1 {
+    font-size: clamp(1.2rem, 5.5vw, 1.8rem);
+  }
+  .button {
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
 }
 
 
 @media (max-width: 849px) {
   .hero {
-    /* compact framed hero on phones */
-    height: clamp(220px, 38vh, 360px);
+    /* 1. حذف ارتفاع ثابت و استفاده از نسبت تصویر */
+    /* ارتفاع ثابت باعث ایجاد فضای خالی می‌شد، آن را به auto تغییر می‌دهیم */
+    height: auto;
+
+    /* نسبت تصویر (Aspect Ratio) را تنظیم کنید. 
+    اگر بنر شما مستطیلی استاندارد است معمولا 16/9 یا 2/1 مناسب است.
+       این خط باعث می‌شود کادر دقیقاً هم‌شکل بنر شود */
+    aspect-ratio: 10 / 4.5;
     width: min(94vw, 680px);
-    margin: 0 auto;
+    margin: auto;
     transform: none;
     border-radius: 12px;
-    padding: 6px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
+    /* پدینگ را حذف یا کم کنید تا عکس کامل به لبه‌ها بچسبد */
+    padding: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* جلوگیری از بیرون زدن عکس از گوشه‌های گرد */
   }
 
   .content {
+    /* اگر محتوای متنی روی عکس دارید، پدینگ آن را اینجا تنظیم کنید */
     padding: 0 5%;
+    height: 100%; /* اطمینان از پر کردن ارتفاع */
   }
 
   .content p {
@@ -199,16 +216,30 @@
     font-size: 0.95rem;
   }
 
-  /* show full image scaled to fit inside the frame on phones */
+  /* 3. تغییر نحوه نمایش عکس */
   .slide {
     background-position: center center;
-    background-size: contain;
+
+    /* تغییر contain به cover باعث می‌شود عکس کل کادر را پر کند */
+    /* چون در بالا aspect-ratio دادیم، عکس بریده نمی‌شود و واضح دیده می‌شود */
+    background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
+
+    /* اطمینان از اینکه اسلاید کل فضای hero را می‌گیرد */
+    width: 100%;
+    height: 100%;
+    display: flex; /* برای وسط چین ماندن محتوا */
   }
 
-  .content h1 { font-size: clamp(1.2rem, 5.5vw, 1.8rem); }
-  .button { padding: 10px 14px; border-radius: 10px; font-size: 0.95rem; }
+  .content h1 {
+    font-size: clamp(1.2rem, 5.5vw, 1.8rem);
+  }
+
+  .button {
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
 }
-  
