@@ -4,6 +4,11 @@ import HeroSlider from "@/app/components/HeroSlider";
 import SuggestedRecipes from "@/app/components/SuggestedRecipes";
 import ProductsCarousel from "@/app/components/ProductsCarousel";
 
+export const metadata = {
+  alternates:{
+    canonical:"https://jolfafoods.com/pages/ar",
+  },
+};
 export default function Page() {
   return (
     <main 
@@ -11,7 +16,7 @@ export default function Page() {
 
     >
       <div className="hero-section relative min-h-screen flex items-center justify-center">
-       
+      
         <div className="relative z-10 text-center px-4 mx-auto flex flex-col items-center gap-6">
           <HeroSlider locale="ar" />
           <h1 className="hero-title text-4xl md:text-6xl font-bold text-white mt-4">

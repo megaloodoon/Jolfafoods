@@ -4,7 +4,11 @@ import HeroSlider from "@/app/components/HeroSlider";
 import SuggestedRecipes from "@/app/components/SuggestedRecipes";
 import ProductsCarousel from "@/app/components/ProductsCarousel";
 
-
+export const metadata = {
+  alternates:{
+    canonical:"https://jolfafoods.com/pages/ru",
+  },
+};
 
 export default function Page() {
   return (

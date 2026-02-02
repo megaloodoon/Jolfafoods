@@ -5,6 +5,12 @@ import SuggestedRecipes from "@/app/components/SuggestedRecipes";
 import ProductsCarousel from "@/app/components/ProductsCarousel";
 import StoreBrandsCarousel from "@/app/components/StoreBrandsCarousel";
 
+export const metadata = {
+  alternates:{
+    canonical:"https://jolfafoods.com/pages/fa",
+  },
+};
+
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col font-sans bg-cover bg-center bg-no-repeat bg-fixed">

@@ -4,39 +4,11 @@ import HeroSlider from "@/app/components/HeroSlider";
 import SuggestedRecipes from "@/app/components/SuggestedRecipes";
 import ProductsCarousel from "@/app/components/ProductsCarousel";
 
-const enSlides = [
-  // This line is kept for context
-  {
-    image: "/Image/banner/1.jpg",
-    title: "Professional pizza cheese",
-    subtitle: "High stretch, clean melt",
+export const metadata = {
+  alternates:{
+    canonical:"https://jolfafoods.com/pages/en",
   },
-  {
-    image: "/Image/banner/2.jpg",
-    title: "Designed for fast food",
-    subtitle: "Consistent flavor, stable performance",
-  },
-  {
-    image: "/Image/banner/3.jpg",
-    title: "Reliable quality",
-    subtitle: "Suitable for industrial and home baking",
-  },
-  {
-    image: "/Image/banner/4.jpg",
-    title: "Even results every bake",
-    subtitle: "Controlled melt and standard stretch for QSR kitchens",
-  },
-  {
-    image: "/Image/banner/5.jpg",
-    title: "Stable production, precise formula",
-    subtitle: "Quality you can repeat in every order",
-  },
-  {
-    image: "/Image/banner/6.jpg",
-    title: "Professional results at home",
-    subtitle: "Ideal texture for oven and pan cooking",
-  },
-];
+};
 
 export default function Page() {
   return (

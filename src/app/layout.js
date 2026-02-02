@@ -63,7 +63,7 @@ const Diodrum = localFont({
 
 export const metadata = {
   title: "Jolfa Foods",
-  description: "پنیر پیتزا جولفا فودز",
+  description: "پنیر پیتزا جولفا",
   icons: {
     icon: "/Image/Jolfa-logo.png",
     shortcut: "/Image/Jolfa-logo.png",

@@ -4,18 +4,12 @@ import HeroSlider from "@/app/components/HeroSlider";
 import SuggestedRecipes from "@/app/components/SuggestedRecipes";
 import ProductsCarousel from "@/app/components/ProductsCarousel";
 
-const frSlides = [
-  {
-    image: "/Image/banner/1.jpg",
-    title: "Fromage pour pizza professionnel",
-    subtitle: "Bonne extensibilité, fonte propre",
+
+export const metadata = {
+  alternates:{
+    canonical:"https://jolfafoods.com/pages/fr",
   },
-  {
-    image: "/Image/banner/2.jpg",
-    title: "Conçu pour la restauration rapide",
-    subtitle: "Goût constant, performance stable",
-  },
-];
+};
 
 export default function Page() {
   return (
