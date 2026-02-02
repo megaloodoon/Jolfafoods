@@ -14,6 +14,7 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col font-sans bg-cover bg-center bg-no-repeat bg-fixed">
+          <link rel="canonical" href="https://jolfafoods.com/pages/fa" />
       <div className="hero-section relative min-h-screen flex items-center justify-center">
         <div className="relative z-10 text-center p-4 max-w-auto mx-auto flex flex-col items-center gap-6">
           <HeroSlider />
