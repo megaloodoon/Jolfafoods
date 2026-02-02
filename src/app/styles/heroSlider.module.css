@@ -127,59 +127,98 @@
 
 @media (max-width: 1025px) {
   .hero {
-    height: clamp(400px, 38vh, 600px);
+    /* تغییر ارتفاع به اتوماتیک برای کار کردن Aspect Ratio */
+    height: auto;
+    
+    /* نسبت تصویر برای تبلت: کمی عریض‌تر از موبایل (مثلا 2 به 1) */
+    aspect-ratio: 2 / 1;
+    
     width: min(94vw, auto);
-    margin: 0 auto;
+    margin: 10px auto; /* تنظیم فاصله */
     transform: none;
     border-radius: 12px;
-    padding: 6px;
+    
+    /* حذف پدینگ برای چسبیدن عکس به لبه‌ها */
+    padding: 0;
+    
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* جلوگیری از بیرون زدن عکس */
   }
 
   .swiper {
     border-radius: 0;
     min-height: unset;
   }
+  
+  /* تنظیم عکس برای پر کردن کامل کادر */
+  .slide {
+    background-position: center center;
+    background-size: cover; /* تغییر به cover برای حذف فضای خالی */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (min-width: 850px) {
   .hero {
-    /* compact framed hero on phones */
-    height: clamp(620px, 38vh, 560px);
-    width: min(94vw, auto);
-    margin: 0 auto;
+    /* ارتفاع اتوماتیک */
+    height: auto;
+    
+    /* نسبت تصویر برای دسکتاپ: */
+    /* معمولا در دسکتاپ بنرها خیلی عریض هستند (مثلا 2.4 به 1 یا 3 به 1) */
+    /* این باعث می‌شود بنر کل صفحه را نگیرد و کاربر نیاز به اسکرول زیاد نداشته باشد */
+    aspect-ratio: 2.4 / 1; 
+    
+    /* محدود کردن حداکثر عرض تا عکس در مانیتورهای خیلی بزرگ دفرمه نشود */
+    width: min(96vw, 1200px);
+    
+    margin: 20px auto;
     transform: none;
-    border-radius: 12px;
-    padding: 6px;
-
-    /* box-shadow: 0 6px 20px rgba(0,0,0,0.08); */
+    border-radius: 16px; /* گردی گوشه کمی بیشتر برای سایز بزرگ */
+    
+    /* حذف پدینگ */
+    padding: 0;
+    
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* کمی سایه نرم‌تر برای دسکتاپ */
   }
 
   .content {
     padding: 0 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* متن وسط‌چین عمودی شود */
   }
 
   .content p {
-    max-width: none;
-    font-size: 0.95rem;
+    max-width: 600px; /* جلوگیری از دراز شدن بیش از حد خطوط متن */
+    font-size: 1.1rem; /* کمی بزرگتر برای دسکتاپ */
+    line-height: 1.6;
   }
 
-  /* show full image scaled to fit inside the frame on phones */
+  /* تنظیم عکس برای پر کردن کامل کادر */
   .slide {
     background-position: center center;
-    background-size: contain;
+    background-size: cover; /* کلیدی‌ترین تغییر: cover */
     background-repeat: no-repeat;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* در دسکتاپ معمولا متن سمت راست است */
+    width: 100%;
+    height: 100%;
   }
 
   .content h1 {
-    font-size: clamp(1.2rem, 5.5vw, 1.8rem);
+    font-size: 2.5rem; /* فونت بزرگ و خوانا */
+    margin-bottom: 15px;
   }
+  
   .button {
-    padding: 10px 14px;
+    padding: 12px 20px;
     border-radius: 10px;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    align-self: flex-start; /* دکمه هم سمت راست تراز شود */
   }
 }
 
