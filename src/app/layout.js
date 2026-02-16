@@ -42,7 +42,7 @@
 //     </html>
 //   );
 // }
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from "next/font/local"; // 1. اضافه کردن localFont
 import "./globals.css";
 import { LanguageNav } from "./components/LanguageNav";
