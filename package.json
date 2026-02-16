@@ -11,17 +11,20 @@
   "dependencies": {
     "@types/node": "^22.10.10",
     "@types/react": "^19.0.8",
+    "daisyui": "^3.1.6",
     "framer-motion": "^12.23.26",
-    "next": "15.1.11",
+    "fuse.js": "^6.6.2",
+    "lucide-react": "^0.564.0",
+    "next": "^15.5.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^12.0.3",
     "react-masonry-css": "^1.0.16",
-    "fuse.js": "^6.6.2",
-    "typescript": "^5.7.3",
-    "daisyui": "^3.1.6"
+    "react-server-dom-webpack": "^19.2.4",
+    "swiper": "^12.0.3",
+    "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.19",
     "json-server": "^1.0.0-beta.3",
     "postcss": "^8.4.47",

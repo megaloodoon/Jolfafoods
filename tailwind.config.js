@@ -10,7 +10,7 @@ module.exports = {
         xs: '360px',
       },},
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"),('@tailwindcss/typography')],
   daisyui: {
     themes: [
       {

@@ -492,7 +492,7 @@
   "articles_fa": [
     {
       "id": 1,
-      "slug": "3",
+      "slug": "1",
       "image": "/Image/Articles/mozzarella.jpg",
       "titleFa": "چطور کیفیت پنیر پیتزا را حفظ کنیم؟ راهکارهای ساده برای کشسانی و طعم بهتر",
       "summaryFa": "نگهداری درست پنیر پیتزا تأثیر مستقیم روی طعم، بافت و کشسانی آن دارد. در این مقاله یاد می‌گیرید پنیر را در چه دمایی نگهداری کنید، چطور فریز و یخ‌زدایی شود و چه نکات ساده‌ای باعث می‌شود هنگام پخت، پنیر بهترین عملکرد را داشته باشد.",
@@ -513,12 +513,20 @@
       "titleFa": "تاریخچه پنیر؛ از دامداری‌های باستان تا پیتزای امروزی",
       "summaryFa": "پنیر مسیری چند هزار ساله را از یک کشف اتفاقی در دامداری‌های باستانی تا تبدیل‌شدن به قلب پیتزای مدرن طی کرده است. شناخت این مسیر نشان می‌دهد چرا کیفیت، فرمولاسیون و کنترل رفتار پنیر در پخت، امروز اهمیتی حیاتی دارد.",
       "contentFa": "پنیر یکی از قدیمی‌ترین مواد غذایی ساخته‌شده توسط انسان است؛ محصولی که به‌احتمال زیاد نه با برنامه‌ریزی، بلکه بر اثر یک اتفاق ساده متولد شد. زمانی که انسان‌های اولیه شیر دام را در مشک‌هایی از پوست حیوانات نگهداری می‌کردند، آنزیم‌های طبیعی موجود در پوست باعث لخته‌شدن شیر می‌شد. نتیجه، ماده‌ای مغذی، ماندگارتر از شیر و قابل‌حمل بود؛ چیزی که امروز آن را پنیر می‌نامیم.\n\nشواهد باستان‌شناسی نشان می‌دهد تولید پنیر دست‌کم به هفت هزار سال پیش بازمی‌گردد. تمدن‌هایی مانند سومر، مصر، یونان و روم باستان نه‌تنها پنیر مصرف می‌کردند، بلکه روش‌های متفاوتی برای تولید، نمک‌سودکردن و نگهداری آن توسعه دادند. به‌تدریج، پنیر از یک ماده غذایی ساده به بخشی از فرهنگ غذایی ملت‌ها تبدیل شد.\n\nتولد پنیرهای کش‌دار و مسیر رسیدن به پنیر پیتزا\n\nبا پیشرفت دانش دامداری و لبنیات در اروپا، به‌ویژه در ایتالیا، پنیرهایی با بافت نرم‌تر و قابلیت ذوب‌شدن بهتر شکل گرفتند. پنیر موزارلا یکی از مهم‌ترین نتایج این مسیر بود؛ پنیری که ابتدا از شیر بوفالو تهیه می‌شد و به‌دلیل بافت لطیف و کشسان خود، به‌سرعت محبوب شد.\n\nهمزمان با شکل‌گیری پیتزا به‌عنوان غذایی مردمی در ناپل، موزارلا به انتخاب اصلی روی نان پیتزا تبدیل شد. ذوب یکنواخت، طعم ملایم و کش‌آمدن طبیعی پنیر هنگام پخت، پیتزا را از یک نان ساده به غذایی جهانی تبدیل کرد.\n\nپنیر پیتزا در دنیای مدرن\n\nبا صنعتی‌شدن تولید مواد غذایی، مفهوم «پنیر پیتزا» فراتر از موزارلای سنتی رفت. امروزه پنیر پیتزا معمولاً ترکیبی مهندسی‌شده از چند نوع پنیر است که برای ذوب کنترل‌شده، کشسانی پایدار و طعمی متعادل طراحی می‌شود. هدف، تولید پنیری است که در دمای فر پخش نشود، نسوزد و رفتار قابل پیش‌بینی داشته باشد.\n\nچرا دانستن این تاریخ برای جلفا فودز مهم است؟\n\nوقتی درباره تاریخ پنیر صحبت می‌کنیم، در واقع از یک مسیر چند هزار ساله آزمون‌وخطا حرف می‌زنیم؛ مسیری که امروز به استانداردهای دقیق تولید پنیر پیتزا رسیده است.\nدر جلفا فودز، پنیر فقط یک محصول صنعتی نیست، بلکه ادامه‌ی همین مسیر تاریخی با ابزار دقیق‌تر، فرمولاسیون حساب‌شده و کنترل کیفی سخت‌گیرانه‌تر است. دانشی که نسل‌به‌نسل شکل گرفته، امروز با استانداردهای مدرن ترکیب شده تا تجربه‌ای یکنواخت و قابل اعتماد ارائه دهد."
+    },
+    {
+      "id": 4,
+      "slug": "4",
+      "image": "/Image/Articles/4.png",
+      "titleFa": "هر پنیری برای چه غذایی مناسب تره؟",
+      "summaryFa": "انتخاب نوع پنیر پیتزا تأثیر مستقیمی بر کیفیت نهایی غذا، بافت، طعم و عملکرد حرارتی محصول دارد. هر یک از انواع پنیرهای پیتزایی با توجه به ترکیب، میزان رطوبت و نقطه ذوب، برای کاربردهای مشخصی در آشپزی طراحی شده‌اند.",
+      "contentFa": "پنیر موزارلا که از شیر تازه تهیه می‌شود، دارای طعم و عطر مشخص، رطوبت پایین و نقطه ذوب نسبتاً بالا است. این پنیر در دمای ذوب خود کشسانی مطلوبی ایجاد می‌کند و به دلیل ذوب تدریجی، گزینه‌ای مناسب برای غذاهایی با رطوبت بالاتر مانند لازانیا و پیتزاهای کلاسیک به شمار می‌رود. پنیر پروسس بر پایه پنیر طبیعی و با فرمولاسیون کنترل‌شده تولید می‌شود و دارای نقطه ذوب پایین‌تری نسبت به موزارلا است. این ویژگی باعث ذوب یکنواخت، بافت نرم و پایداری مناسب در فرآیند حرارت‌دهی می‌شود. از این رو، پنیر پروسس انتخابی مناسب برای استفاده در انواع برگرها، پاستا و همچنین تهیه سس‌های متنوع بر پایه پنیر محسوب می‌شود. پنیر تاپینگ که بر پایه چربی‌های حیوانی و گیاهی تولید می‌شود، دارای رطوبت کنترل‌شده و بالاتر نسبت به سایر پنیرهای پیتزایی است. این پنیر در بازه دمایی حدود ۵۵ تا ۶۵ درجه سانتی‌گراد به‌صورت یکنواخت ذوب شده و پوشش‌دهی مناسبی ایجاد می‌کند. به همین دلیل، پنیر تاپینگ گزینه‌ای اقتصادی و کاربردی برای انواع فست‌فود و پیتزاهای اقتصادی در مقیاس صنعتی به شمار می‌رود. در نهایت، شناخت ویژگی‌های فنی هر نوع پنیر، امکان انتخاب آگاهانه و افزایش کیفیت محصول نهایی را فراهم می‌سازد."
     }
   ],
   "articles_en": [
     {
       "id": 1,
-      "slug": "3",
+      "slug": "1",
       "image": "/Image/Articles/mozzarella.jpg",
       "titleEn": "How to Preserve Pizza Cheese Quality: Simple Tips for Better Stretch and Flavor",
       "summaryEn": "Proper storage plays a key role in the taste, texture, and stretch of pizza cheese. This article explains the best freezing conditions, correct thawing methods, and small but effective tips to ensure your cheese melts evenly and performs perfectly during baking.",
@@ -526,7 +534,7 @@
     },
     {
       "id": 2,
-      "slug": "1766930239069",
+      "slug": "2",
       "image": "/Image/Articles/topping-cheese.jpg",
       "titleEn": "What Makes Jolfa Topping Cheese Different from Similar Products?",
       "summaryEn": "Jolfa Topping Cheese is developed with a balanced formulation of plant-based and animal fats, offering reliable melt, good stretch, and consistent flavor. This thoughtful combination delivers stable performance while supporting diverse dietary preferences.",
@@ -534,17 +542,25 @@
     },
     {
       "id": 3,
-      "slug": "1766930673888",
+      "slug": "3",
       "image": "/Image/Articles/Cheese2.jpg",
       "titleEn": "The History of Cheese: From Ancient Herding to Modern Pizza",
       "summaryEn": "Cheese has traveled a long journey from an accidental discovery in ancient livestock cultures to becoming the heart of modern pizza. Understanding this evolution explains why formulation and performance matter so much today.",
       "contentEn": "Cheese is one of the oldest foods created by humans, likely discovered by chance rather than design. When early humans stored milk in containers made from animal skins, natural enzymes caused the milk to coagulate, creating a nutritious, portable, and longer-lasting food: cheese.\n\nArchaeological evidence shows that cheese production dates back at least 7,000 years. Civilizations such as Sumer, Egypt, Ancient Greece, and Rome developed various methods for producing and preserving cheese, gradually embedding it into their culinary cultures.\n\nWith advancements in dairy science—particularly in Italy—softer, better-melting cheeses emerged. Mozzarella became a turning point, especially as pizza developed in Naples. Its mild flavor, even melt, and natural stretch helped transform pizza into a global food.\n\nToday, pizza cheese goes beyond traditional mozzarella. Modern formulations are engineered to provide controlled melt, consistent stretch, and balanced flavor, ensuring reliable performance at high baking temperatures.\n\nAt Jolfa Foods, cheese is not merely an industrial product but the continuation of a centuries-old tradition—refined through modern quality control and precise formulation."
+    },
+    {
+      "id": 4,
+      "slug": "4",
+      "image": "/Image/Articles/4.png",
+      "titleEn": "What food is each cheese best suited for?",
+      "summaryEn": "The selection of pizza cheese has a direct impact on the final product’s quality, texture, flavor, and thermal performance. Each type of pizza cheese is formulated for specific culinary applications based on its composition, moisture content, and melting point.",
+      "contentEn": "Mozzarella cheese, produced from fresh milk, is characterized by a distinctive flavor, relatively low moisture content, and a comparatively high melting point. During melting, it provides desirable stretch and gradual melt behavior, making it an ideal choice for high-moisture dishes such as lasagna and classic-style pizzas.Processed cheese is manufactured using natural cheese with a controlled formulation and features a lower melting point than mozzarella. This results in uniform melting, a smooth texture, and good stability under heat, making it suitable for burgers, pasta dishes, and a wide range of cheese-based sauces.Topping cheese, produced from a combination of animal and vegetable fats, has a controlled and generally higher moisture content than other pizza cheeses. It melts evenly within a temperature range of approximately 55–65°C and provides effective surface coverage.As a result, topping cheese is considered a cost-effective and practical option for fast-food operations and large-scale production of economy pizzas. Understanding the technical properties of each cheese type enables informed selection and enhances overall product quality."
     }
   ],
   "articles_ar": [
     {
       "id": 1,
-      "slug": "3",
+      "slug": "1",
       "image": "/Image/Articles/mozzarella.jpg",
       "titleAr": "كيف تحافظ على جودة جبن البيتزا؟ نصائح بسيطة لذوبان وتمدد أفضل",
       "summaryAr": "طريقة تخزين جبن البيتزا تؤثر بشكل مباشر على الطعم والقوام والتمدد. في هذا المقال ستتعرف على أفضل طرق التجميد وإذابة الجبن، بالإضافة إلى نصائح عملية تساعدك على الحصول على ذوبان مثالي أثناء الخَبز",
@@ -552,7 +568,7 @@
     },
     {
       "id": 2,
-      "slug": "1766930239069",
+      "slug": "2",
       "image": "/Image/Articles/topping-cheese.jpg",
       "titleAr": "ما الذي يميز جبن التوبينغ جلفا عن المنتجات المشابهة؟",
       "summaryAr": "يكمن الفرق الأساسي في جبن التوبينغ جلفا في تركيبته المدروسة بعناية، حيث يتم استخدام مزيج متوازن من الدهون النباتية والحيوانية لتحقيق أداء موثوق وجودة ثابتة",
@@ -560,17 +576,24 @@
     },
     {
       "id": 3,
-      "slug": "1766930673888",
+      "slug": "3",
       "image": "/Image/Articles/Cheese2.jpg",
       "titleAr": "تاريخ الجبن: من تربية الماشية القديمة إلى بيتزا العصر الحديث",
       "summaryAr": "مرّ الجبن برحلة طويلة من اكتشاف عفوي في الحضارات القديمة إلى مكوّن أساسي في البيتزا الحديثة، مما يبرز أهمية الجودة والتركيب في وقتنا الحاضر",
       "contentAr": "نشأ الجبن نتيجة تخزين الحليب في أوعية مصنوعة من جلود الحيوانات، حيث أدت الإنزيمات الطبيعية إلى تخثّره. ومع مرور الزمن، طوّرت الحضارات المختلفة طرق إنتاجه.\n\nفي إيطاليا، أدى تطور صناعة الألبان إلى ظهور جبن الموزاريلا، الذي أصبح لاحقًا حجر الأساس في البيتزا. اليوم يُصمَّم جبن البيتزا ليقدّم ذوبانًا متوازنًا وسلوكًا ثابتًا أثناء الخَبز، وهو ما تلتزم به جلفا فودز ضمن معايير دقيقة للجودة"
-    }
+    },
+    {
+      "id": 4,
+      "slug": "4",
+      "image": "/Image/Articles/4.png",
+      "titleAr": "ما هي الأطعمة التي يناسبها كل نوع من أنواع الجبن؟",
+      "summaryAr": "اختيار نوع جبن البيتزا يؤثر بشكل مباشر على جودة المنتج النهائي، من حيث القوام، النكهة، والأداء الحراري. كل نوع من أجبان البيتزا يتم تطويره لاستخدامات محددة اعتمادًا على تركيبه، نسبة الرطوبة، ودرجة الانصهار.",
+      "contentAr": "جبن الموزاريلا المصنوع من الحليب الطازج يتميز بنكهة واضحة، نسبة رطوبة منخفضة نسبيًا، ودرجة انصهار مرتفعة نسبيًا. عند الذوبان، يوفر مطاطية مناسبة وذوبانًا تدريجيًا، مما يجعله خيارًا مثاليًا للأطعمة ذات المحتوى الرطوبي الأعلى مثل اللازانيا والبيتزا الكلاسيكية.الجبن المعالج (Processed Cheese) يُنتَج على أساس الجبن الطبيعي وبتركيبة مُتحكم بها، ويتميز بدرجة انصهار أقل مقارنة بالموزاريلا. تتيح هذه الخاصية ذوبانًا متجانسًا، قوامًا ناعمًا، وثباتًا جيدًا أثناء المعالجة الحرارية، مما يجعله مناسبًا للاستخدام في البرغر، الباستا، وتحضير مختلف أنواع صلصات الجبن.جبن التوبينغ، المصنوع من دهون حيوانية ونباتية، يتميز بنسبة رطوبة مضبوطة وأعلى مقارنة بأنواع أجبان البيتزا الأخرى. يذوب بشكل متجانس في نطاق حراري يتراوح بين 55 و65 درجة مئوية، ويوفر تغطية جيدة للسطح.وبناءً عليه، يُعد جبن التوبينغ خيارًا اقتصاديًا وعمليًا لمطاعم الوجبات السريعة وإنتاج البيتزا الاقتصادية على نطاق صناعي. إن فهم الخصائص التقنية لكل نوع من الجبن يساهم في اختيار واعٍ وتحسين جودة المنتج النهائي." }
   ],
   "articles_ru": [
     {
       "id": 1,
-      "slug": "3",
+      "slug": "1",
       "image": "/Image/Articles/mozzarella.jpg",
       "titleRu": "Как сохранить качество сыра для пиццы: простые советы для лучшего результата",
       "summaryRu": "Правильное хранение сыра для пиццы напрямую влияет на его вкус, текстуру и тягучесть. В этой статье вы узнаете, как правильно замораживать и размораживать сыр, а также какие простые приёмы помогут добиться равномерного плавления при выпекании.",
@@ -578,7 +601,7 @@
     },
     {
       "id": 2,
-      "slug": "1766930239069",
+      "slug": "2",
       "image": "/Image/Articles/topping-cheese.jpg",
       "titleRu": "В чём отличие топпинг-сыра Jolfa от аналогичных продуктов?",
       "summaryRu": "Топпинг-сыр Jolfa разработан с использованием сбалансированного сочетания растительных и животных жиров, что обеспечивает стабильное плавление, хорошую тягучесть и приятный вкус.",
@@ -586,17 +609,25 @@
     },
     {
       "id": 3,
-      "slug": "1766930673888",
+      "slug": "3",
       "image": "/Image/Articles/Cheese2.jpg",
       "titleRu": "История сыра: от древнего скотоводства до современной пиццы",
       "summaryRu": "Сыр прошёл путь длиной в тысячи лет — от случайного открытия до ключевого ингредиента современной пиццы. Эта история объясняет важность качества и стабильности продукта сегодня.",
       "contentRu": "Сыр появился благодаря случайному процессу, когда молоко хранилось в сосудах из шкуры животных. Со временем цивилизации усовершенствовали производство, а в Италии появились сыры с лучшими свойствами плавления.\n\nСегодня сыр для пиццы — это результат точных формул, обеспечивающих равномерное плавление и предсказуемое поведение при высокой температуре. Jolfa Foods продолжает эту традицию, используя современные стандарты качества."
+    },
+    {
+      "id": 4,
+      "slug": "4",
+      "image": "/Image/Articles/4.png",
+      "titleRu": "Какой сыр подходит для какого блюда?",
+      "summaryRu": "Выбор типа сыра для пиццы напрямую влияет на качество конечного блюда, его текстуру, вкус и тепловое поведение. Каждый тип пиццового сыра разработан с учётом состава, содержания влаги и температуры плавления для определённых кулинарных применений.",
+      "contentRu": "Моззарелла, производимая из свежего молока, обладает характерным вкусом и ароматом, низкой влажностью и относительно высокой температурой плавления. Этот сыр создаёт хорошую эластичность при своей температуре плавления и благодаря постепенному плавлению является подходящим выбором для блюд с высокой влажностью, таких как лазанья и классические пиццы. Сыр процессинговый, основанный на натуральном сыре с контролируемой формулой, имеет более низкую температуру плавления по сравнению с моззареллой. Эта особенность обеспечивает равномерное плавление, мягкую структуру и надёжную стабильность при термической обработке. Таким образом, сыр процессинговый является подходящим выбором для использования в различных гамбургерах, пастах и приготовлении различных соусов на основе сыра. Топпинг-сыр, производимый на основе животных и растительных жиров, имеет контролируемую высокую влажность по сравнению с другими пиццовыми сортами. Этот сыр равномерно плавится в диапазоне температур от 55 до 65 градусов Цельсия и обеспечивает хорошее покрытие. По этой причине топпинг-сыр является экономичным и практичным выбором для различных фастфудов и экономичных пицц в промышленном масштабе. В конечном счёте знание технических характеристик каждого типа сыра позволяет осознанно выбирать продукт и повышать качество конечного продукта."
     }
   ],
   "articles_fr": [
     {
       "id": 1,
-      "slug": "3",
+      "slug": "1",
       "image": "/Image/Articles/mozzarella.jpg",
       "titleFr": "Comment préserver la qualité du fromage à pizza : astuces simples pour une meilleure texture",
       "summaryFr": "La bonne conservation du fromage à pizza influence directement son goût, son élasticité et sa fonte. Dans cet article, découvrez les bonnes pratiques de congélation, de décongélation et quelques conseils essentiels pour obtenir un résultat optimal à la cuisson.",
@@ -604,7 +635,7 @@
     },
     {
       "id": 2,
-      "slug": "1766930239069",
+      "slug": "2",
       "image": "/Image/Articles/topping-cheese.jpg",
       "titleFr": "Quelle est la différence entre le fromage topping Jolfa et les produits similaires ?",
       "summaryFr": "Le fromage topping Jolfa est élaboré à partir d’un équilibre précis entre matières grasses végétales et animales, garantissant une bonne fonte, une élasticité maîtrisée et une saveur constante.",
@@ -612,11 +643,19 @@
     },
     {
       "id": 3,
-      "slug": "1766930673888",
+      "slug": "3",
       "image": "/Image/Articles/Cheese2.jpg",
       "titleFr": "L’histoire du fromage : des élevages anciens à la pizza moderne",
       "summaryFr": "Du hasard des premières civilisations à la maîtrise industrielle moderne, le fromage a évolué pendant des millénaires. Comprendre cette histoire permet de mieux saisir l’importance de la qualité et de la performance du fromage à pizza aujourd’hui.",
       "contentFr": "Le fromage est l’un des aliments les plus anciens créés par l’homme, probablement découvert par accident. En conservant le lait dans des récipients en peau animale, les enzymes naturelles provoquaient sa coagulation, donnant naissance à un produit nutritif et durable.\n\nDes preuves archéologiques montrent que la fabrication du fromage remonte à plus de 7 000 ans. Avec le temps, notamment en Italie, des fromages à meilleure fonte comme la mozzarella sont apparus, devenant essentiels dans l’évolution de la pizza.\n\nAujourd’hui, le fromage à pizza est conçu pour offrir une fonte maîtrisée, une élasticité stable et un goût équilibré, répondant aux exigences de la cuisson moderne."
+    },
+    {
+      "id": 4,
+      "slug": "4",
+      "image": "/Image/Articles/4.png",
+      "titleFr": "Quel fromage est le plus adapté à quel aliment ?",
+      "summaryFr": "Le choix du fromage pour la pizza a un impact direct sur la qualité finale du plat, sa texture, son goût et ses performances thermiques. Chaque type de fromage pizza est conçu pour des applications spécifiques en fonction de sa composition, de son taux d'humidité et de sa température de fusion.",
+      "contentFr": "Le mozzarella, fabriqué à partir de lait frais, possède un goût et une odeur distincts, une humidité faible et une température de fusion relativement élevée. Ce fromage produit une élasticité optimale à sa température de fusion et, en raison de sa fusion progressive, constitue un choix idéal pour les plats à haute humidité comme les lasagnes ou les pizzas classiques. Le fromage processé, basé sur un fromage naturel avec une formule contrôlée, présente une température de fusion plus basse que celle du mozzarella. Cette caractéristique permet une fusion uniforme, une texture douce et une stabilité thermique appropriée lors du processus de cuisson. Par conséquent, le fromage processé est un choix idéal pour l'utilisation dans diverses hamburgers, pâtes et préparation de sauces variées à base de fromage. Le fromage topping Jolfa est fabriqué à partir d'une combinaison d'huiles animales et végétales avec un taux d'humidité contrôlé plus élevé que les autres fromages pizza. Ce fromage fond uniformément dans la plage thermique allant de 55 à 65°C et fournit un revêtement adéquat. En conséquence, le fromage topping Jolfa constitue une option économique et pratique pour les fast-foods et les pizzas économiques à grande échelle. Enfin, connaître les caractéristiques techniques des différents types de fromages permet d’effectuer un choix éclairé et d’améliorer la qualité du produit final."
     }
   ],
   "recipes": [
