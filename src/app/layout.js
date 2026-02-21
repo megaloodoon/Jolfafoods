@@ -1,47 +1,4 @@
-// import "./globals.css";
-// import { LanguageNav } from "./components/LanguageNav";
-// import { Vazir } from "/src/app/fonts/vazir-font-v16.1.0/Vazir.ttf";
-// import Footer from "./components/Footer";
-// import {DiodrumArabicRegular} from "/public/Fonts/4photoshop-ir-Font-Diodrum/DiodrumArabicRegular.ttf"
 
-// const vazir = Vazir({
-//   subsets: ["arabic"],
-//   weight: ["300", "400", "500"],
-//   variable: "--font-vazir",
-// });
-
-// const Diod = DiodrumArabicRegular({
-//   subsets: ["arabic"],
-//   weight: ["300", "400", "500"],
-//   variable: "--font-vazir",
-// });
-
-// export const metadata = {
-//   title: "Jolfa Foods",
-//   description: "پنیر پیتزا جولفا فودز",
-//   icons: {
-//     icon: "/Image/Jolfa-logo.png",
-//     shortcut: "/Image/Jolfa-logo.png",
-//     apple: "/Image/Jolfa-logo.png",
-//   },
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="fa">
-//       {/* Theme is applied on the client after hydration by ThemeSwitcher to avoid SSR/CSR mismatch */}
-//       <body
-//         className={`${Diod.variable} ${vazir.variable}  antialiased font-sans transition-colors duration-300 bg-[url('/Image/Light.jpg')] dark:bg-[url('/Image/dark-blue.jpg')] bg-cover bg-center bg-no-repeat`}
-//       >
-//         <LanguageNav />
-
-//         {children}
-
-//         <Footer />
-//       </body>
-//     </html>
-//   );
-// }
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from "next/font/local"; // 1. اضافه کردن localFont
 import "./globals.css";
