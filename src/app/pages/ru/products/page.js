@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import styles from "@/app/styles/products.module.css";
+import styles from "../../../styles/products.module.css";
 import { useEffect, useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";

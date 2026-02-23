@@ -11,10 +11,11 @@ const GlobalSearch = dynamic(() => import("@/app/components/GlobalSearch"), {
   ssr: false,
 });
 
-export function LanguageNav() {
+export default function LanguageNav() {
   const pathname = usePathname() || "/";
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [doostaneOpen, setDoostaneOpen] = useState(false);
   let currentLang = "fa";
   const segments = pathname.split("/").filter(Boolean);
   const supported = ["fa", "en", "ar", "ru", "fr"];
@@ -35,6 +36,8 @@ export function LanguageNav() {
       Mazesta_Products: "محصولات مازستا",
       articles: "مقالات",
       recipes: "دستور پخت‌ها",
+      doostane: "دوستانه با جلفا",
+      news: "اخبار",
       about: "درباره ما",
       contact: "تماس با ما",
     },
@@ -46,6 +49,8 @@ export function LanguageNav() {
       about: "About Us",
       contact: "Contact",
       recipes: "Recipes",
+      doostane: "Doostane-ba-Jolfa",
+      news: "News",
     },
     ar: {
       home: "الرئيسية",
@@ -55,6 +60,8 @@ export function LanguageNav() {
       recipes: "وصفات",
       about: "من نحن",
       contact: "اتصال",
+      doostane: "دوستانه با جلفا",
+      news: "أخبار",
     },
     ru: {
       home: "Главная",
@@ -64,6 +71,8 @@ export function LanguageNav() {
       recipes: "Рецепты",
       about: "О нас",
       contact: "Контакты",
+      doostane: "Doostane-ba-Jolfa",
+      news: "Новости",
     },
     fr: {
       home: "Accueil",
@@ -73,6 +82,8 @@ export function LanguageNav() {
       recipes: "Recettes",
       about: "À propos",
       contact: "Contact",
+      doostane: "Doostane-ba-Jolfa",
+      news: "Actualités",
     },
   }[currentLang];
 
@@ -153,14 +164,50 @@ export function LanguageNav() {
                   <Link href={`${base}/Mazesta_Products`} className={linkClass}>
                     {labels.Mazesta_Products}
                   </Link>
-                  <Link href={`${base}/recipes`} className={linkClass}>
-                    {labels.recipes}
-                  </Link>
+                  
+                  {/* Doostane-ba-Jolfa dropdown */}
+                  <div className="relative group">
+                    <button className={`${linkClass} flex items-center gap-1`}>
+                      {labels.doostane}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    
+                    {/* Dropdown menu */}
+                    <div className="absolute left-0 mt-0 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                      <Link
+                        href={`${base}/Doostane-ba-Jolfa/Articles`}
+                        className="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-md"
+                      >
+                        {labels.articles}
+                      </Link>
+                      <Link
+                        href={`${base}/Doostane-ba-Jolfa/recipes`}
+                        className="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                      >
+                        {labels.recipes}
+                      </Link>
+                      <Link
+                        href={`${base}/Doostane-ba-Jolfa/News`}
+                        className="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 last:rounded-b-md"
+                      >
+                        {labels.news}
+                      </Link>
+                    </div>
+                  </div>
+                  
                   <Link href={`${base}/About-us`} className={linkClass}>
                     {labels.about}
-                  </Link>
-                  <Link href={`${base}/Articles`} className={linkClass}>
-                    {labels.articles}
                   </Link>
                   <Link href={`${base}/Contact-us`} className={linkClass}>
                     {labels.contact}
@@ -336,26 +383,70 @@ export function LanguageNav() {
                 {labels.Mazesta_Products}
               </Link>
 
-              <Link
-                href={`${base}/recipes`}
-                onClick={() => setMobileOpen(false)}
-                className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                {labels.recipes}
-              </Link>
+              {/* Doostane-ba-Jolfa expandable menu */}
+              <div>
+                <button
+                  onClick={() => setDoostaneOpen((s) => !s)}
+                  className="w-full text-left py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center justify-between"
+                >
+                  {labels.doostane}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className={`h-4 w-4 transition-transform ${
+                      doostaneOpen ? "rotate-180" : ""
+                    }`}
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+                {doostaneOpen && (
+                  <div className="flex flex-col gap-2 ps-4 mt-2">
+                    <Link
+                      href={`${base}/Doostane-ba-Jolfa/Articles`}
+                      onClick={() => {
+                        setMobileOpen(false);
+                        setDoostaneOpen(false);
+                      }}
+                      className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      {labels.articles}
+                    </Link>
+                    <Link
+                      href={`${base}/Doostane-ba-Jolfa/recipes`}
+                      onClick={() => {
+                        setMobileOpen(false);
+                        setDoostaneOpen(false);
+                      }}
+                      className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      {labels.recipes}
+                    </Link>
+                    <Link
+                      href={`${base}/Doostane-ba-Jolfa/News`}
+                      onClick={() => {
+                        setMobileOpen(false);
+                        setDoostaneOpen(false);
+                      }}
+                      className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      {labels.news}
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link
                 href={`${base}/About-us`}
                 onClick={() => setMobileOpen(false)}
                 className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 {labels.about}
-              </Link>
-              <Link
-                href={`${base}/Articles`}
-                onClick={() => setMobileOpen(false)}
-                className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                {labels.articles}
               </Link>
               <Link
                 href={`${base}/Contact-us`}

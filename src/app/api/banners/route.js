@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getBanners } from '@/app/lib/cheeseData';
+import { getBanners } from '../../lib/cheeseData';
 
 export async function GET(req) {
   try {

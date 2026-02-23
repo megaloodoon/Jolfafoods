@@ -7,14 +7,14 @@ export default function Page() {
     title: "تماس با ما",
     phoneLabel: "تلفن",
     addressLabel: "آدرس کارخانه",
-    phonePlaceholder: "+989134441269",
+    phonePlaceholder: "09134441269",
     addressPlaceholder: "ایران - اصفهان - شهرک صنعتی رازی - خیابان چهارم",
     
     // فرم تماس
     formNameLabel: "نام و نام خانوادگی",
     formNamePlaceholder: "نام خود را وارد کنید",
     formPhoneLabel: "شماره تماس",
-    formPhonePlaceholder: "09123456789",
+    formPhonePlaceholder: "09121234567",
     formMsgLabel: "متن پیام",
     formMsgPlaceholder: "پیام یا درخواست خود را بنویسید...",
     submitBtn: "ارسال پیام",
