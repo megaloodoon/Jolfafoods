@@ -49,7 +49,7 @@ export default function LanguageNav() {
       about: "About Us",
       contact: "Contact",
       recipes: "Recipes",
-      doostane: "Doostane-ba-Jolfa",
+      doostane: "Friendly with Jolfa",
       news: "News",
     },
     ar: {
@@ -60,7 +60,7 @@ export default function LanguageNav() {
       recipes: "وصفات",
       about: "من نحن",
       contact: "اتصال",
-      doostane: "دوستانه با جلفا",
+      doostane: "ودية مع جلفا",
       news: "أخبار",
     },
     ru: {
@@ -71,7 +71,7 @@ export default function LanguageNav() {
       recipes: "Рецепты",
       about: "О нас",
       contact: "Контакты",
-      doostane: "Doostane-ba-Jolfa",
+      doostane: "Дружеские отношения с Джульфой",
       news: "Новости",
     },
     fr: {
@@ -82,7 +82,7 @@ export default function LanguageNav() {
       recipes: "Recettes",
       about: "À propos",
       contact: "Contact",
-      doostane: "Doostane-ba-Jolfa",
+      doostane: "Amical avec Jolfa",
       news: "Actualités",
     },
   }[currentLang];
