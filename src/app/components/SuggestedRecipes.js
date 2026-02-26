@@ -33,7 +33,7 @@ export default async function SuggestedRecipes({ locale = "fa", limit = 6 }) {
                 </p>
               )}
               <Link
-                href={`/pages/${locale}/recipes/${r.slug || r.id}`}
+                href={`/pages/${locale}/Doostane-ba-Jolfa/recipes/${r.slug || r.id}`}
                 className="btn btn-sm btn-primary"
               >
                 {locale === "fa" ? "مشاهده" : "View"}

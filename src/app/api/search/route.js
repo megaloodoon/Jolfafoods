@@ -97,7 +97,7 @@ export async function GET(req) {
           ...(Object.values(a.descriptions || {})),
           ...(Object.values(a.contents || {})),
         ].join(' ').toLowerCase();
-        pool.push({ type: "article", id: a.id, title, description: description || '', image: a.image, url: `/pages/${locale}/Articles/${a.slug || a.id}`, searchText });
+        pool.push({ type: "article", id: a.id, title, description: description || '', image: a.image, url: `/pages/${locale}/Doostane-ba-Jolfa/Articles/${a.slug || a.id}`, searchText });
       });
 
     posts.forEach((p) => {
@@ -119,7 +119,7 @@ export async function GET(req) {
       const desc = getLocalized(r, 'summary', locale) || getLocalized(r, 'description', locale) || r.summary || r.description || "";
       const slug = r.slug || r.id;
       const searchText = [title, desc, r.titleFa || '', r.titleEn || '', r.summaryFa || '', r.summaryEn || ''].join(' ').toLowerCase();
-      pool.push({ type: "recipe", id: r.id || slug, title: title, description: desc, image: r.image || r.thumbnail || "", url: `/pages/${locale}/recipes/${slug}`, searchText });
+      pool.push({ type: "recipe", id: r.id || slug, title: title, description: desc, image: r.image || r.thumbnail || "", url: `/pages/${locale}/Doostane-ba-Jolfa/recipes/${slug}`, searchText });
     });
 
     if (!q) {

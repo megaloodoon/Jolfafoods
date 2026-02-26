@@ -40,7 +40,7 @@ export default function RecipesSwiperGridClient({
               return (
                 <Link
                   key={slug}
-                  href={`/pages/${locale}/recipes/${slug}`}
+                  href={`/pages/${locale}/Doostane-ba-Jolfa/recipes/${slug}`}
                   className="block"
                 >
                   <div className="bg-white dark:bg-[radial-gradient(circle,rgba(0,0,48,1)_0%,rgba(9,0,56,1)_20%,rgba(0,28,74,1)_50%,rgba(4,17,51,1)_80%,rgba(1,1,59,1)_100%)] rounded-lg p-3 border border-gray-100 dark:border-gray-800 shadow-sm h-full">

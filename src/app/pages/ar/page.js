@@ -17,7 +17,7 @@ export default function Page() {
         <div className="relative z-10 text-center px-4 mx-auto flex flex-col items-center gap-6">
           <HeroSlider locale="ar" />
           <h1 className="hero-title text-4xl md:text-6xl font-bold text-white mt-4">
-            مرحباً بكم في جولفا فودز
+            جلفا، بداية نكهة جديدة
           </h1>
           <p className="hero-subtitle text-lg md:text-2xl text-white/90 max-w-2xl mx-auto">
             جبنة بيتزا عالية الجودة لتجربة لا تُنسى
