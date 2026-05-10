@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { getRecipes } from "@/app/lib/cheeseData";
 
-export default async function SuggestedRecipes({ locale = "fa", limit = 6 }) {
+export default async function SuggestedRecipes({ locale = "fa", limit = 3 }) {
   const recipes = await getRecipes(locale);
   const items = recipes.slice(0, limit);
 
   return (
     <section className="max-w-6xl mx-auto my-12 px-6">
-      <h2 className="text-2xl font-bold mb-6">
+      <h2 className="text-2xl text-white font-bold mb-6">
         {locale === "fa" ? "دستور پخت‌های پیشنهادی" : "Recommended recipes"}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

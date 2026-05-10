@@ -4,13 +4,16 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
-    extend: {  screens: {
-        xs: '360px',
-      },},
+    extend: {
+      screens: {
+        xs: "360px",
+        xxlg: "1450px",
+      },
+    },
   },
-  plugins: [require("daisyui"),('@tailwindcss/typography')],
+  plugins: [require("daisyui"), "@tailwindcss/typography"],
   daisyui: {
     themes: [
       {
@@ -24,4 +27,3 @@ module.exports = {
     ],
   },
 };
-
