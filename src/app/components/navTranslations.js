@@ -3,6 +3,7 @@ export const navTranslations = {
     home: "صفحه اصلی",
     products: "محصولات ما",
     about: "درباره جلفا",
+    gallery: "گالری",
     contact: "تماس با ما",
     friendly: "دوستانه با جلفا",
     articles: "مقالات",

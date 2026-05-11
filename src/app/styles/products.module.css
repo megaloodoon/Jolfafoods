@@ -1,3 +1,5 @@
+/* products.module.css */
+
 :global(.theme-light) .wrapper {
   background: url("/Image/Light.jpg") center center / cover no-repeat;
   color: var(--text-color);
@@ -9,107 +11,118 @@
 }
 
 .wrapper {
-  padding: clamp(2.5rem, 4vw, 5rem) clamp(1rem, 5vw, 6%);
+  padding: 80px 6%;
   color: var(--text-color);
 }
 
 .title {
   text-align: center;
-  font-size: clamp(1.6rem, 2.2vw, 2.4rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  font-size: 2.2rem;
+  color: inherit;
+  margin-bottom: 60px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: clamp(1.2rem, 2.5vw, 3rem);
+  gap: 60px;
 }
 
 .mazesta {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 1rem;
 }
 
-/* Card */
 :global(.theme-light) .card {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-  color: #111827;
-  border: 1px solid rgba(17, 24, 39, 0.08);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
+  background: #f5f5bf;
+  background: radial-gradient(
+    circle,
+    rgba(255, 247, 247, 1) 0%,
+    rgba(207, 255, 247, 1) 0%,
+    rgba(240, 255, 254, 1) 19%,
+    rgba(237, 237, 237, 1) 89%,
+    rgba(191, 225, 255, 1) 100%
+  );
+  color: #1f1f1f;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
 }
 
 :global(.theme-dark) .card {
-  background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
-  color: #f9fafb;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0c0c61;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100%
+  );
+  color: #f4f4f4;
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
-  border-radius: 20px;
+  border-radius: 18px;
 }
 
 .card {
-  border-radius: 20px;
-  padding: 16px;
+  border-radius: 18px;
+  padding: 18px;
   text-decoration: none;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+/* make card a column so we can push title/description toward the bottom */
+.card {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
 .imageWrapper {
   overflow: hidden;
   border-radius: 16px;
   margin-bottom: 14px;
-  background: rgba(0, 0, 0, 0.04);
 }
 
 .imageWrapper img {
-  width: 100%;
+  width: auto;
   height: 260px;
+  padding-left: 13px;
   object-fit: cover;
   transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
 .card:hover img {
-  transform: scale(1.06);
+  transform: scale(1.12);
 }
 
 .card h3 {
   font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 0.92rem;
-  color: #6b7280;
+  font-size: 0.9rem;
+  color: #6b6b6b;
 }
 
-:global(.theme-dark) .card p {
-  color: #9ca3af;
-}
-
+/* wrapper for the textual content inside card to align it toward bottom */
 .cardContent {
   margin-top: auto;
   padding-top: 8px;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 
 .cardContent p {
-  font-size: 0.95rem;
+  font-size: 15px;
 }
 
-/* Swiper */
+/* Swiper "spring" look: smaller cards, centered active slide scales up */
 .wrapper :global(.spring-swiper) {
   padding-bottom: 44px;
 }
@@ -126,143 +139,100 @@
 }
 
 .wrapper :global(.spring-swiper .swiper-slide-active) .card {
-  transform: scale(1.06);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.16);
+  transform: scale(1.08);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16);
 }
 
 .wrapper :global(.spring-swiper .swiper-slide-next) .card,
 .wrapper :global(.spring-swiper .swiper-slide-prev) .card {
-  transform: scale(0.98);
+  transform: scale(0.97);
   opacity: 0.96;
 }
 
 .wrapper :global(.spring-swiper .swiper-pagination-bullet) {
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
 }
 
-/* Detail */
 :global(.theme-light) .detail {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-  border: 1px solid rgba(17, 24, 39, 0.06);
+  background: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
 }
 
 :global(.theme-dark) .detail {
-  background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100%
+  );
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
 }
 
 .detail {
-  max-width: 1120px;
+  max-width: 1080px;
   margin: 0 auto;
-  border-radius: 24px;
-  padding: clamp(1rem, 2vw, 2rem);
-  display: grid;
-  grid-template-columns: minmax(280px, 380px) 1fr;
-  gap: clamp(1rem, 2vw, 2rem);
-  align-items: stretch;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
 }
 
 .detailImageWrapper {
-  position: relative;
+  flex: 0 0 320px;
   overflow: hidden;
-  border-radius: 18px;
-  min-height: 320px;
-  background: rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
 }
 
 .detailImageWrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.detail:hover .detailImageWrapper img {
-  transform: scale(1.03);
 }
 
 .detailContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1;
 }
 
 .detailContent h1 {
-  margin: 0;
-  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  font-weight: 800;
+  margin: 0 0 8px;
+  font-size: 1.8rem;
 }
 
 .detailSubtitle {
-  margin: 0.75rem 0 0;
-  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
-  color: #6b7280;
+  margin: 0 0 16px;
+  color: #6b6b6b;
   font-weight: 600;
 }
 
-:global(.theme-dark) .detailSubtitle {
-  color: #9ca3af;
-}
-
 .detailDescription {
-  margin-top: 1rem;
-  font-size: clamp(1rem, 1.2vw, 1.125rem);
-  line-height: 1.9;
-  color: inherit;
-  max-width: 70ch;
+  line-height: 1.7;
+  font-size: 18px;
 }
 
 .backLink {
-  margin-top: 1.5rem;
-  width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
+  display: inline-block;
+  margin-top: 16px;
+  color: #d77a3b;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-  border-radius: 999px;
-  padding: 0.62rem 1rem;
-  transition: all 0.25s ease;
+  transition: color 0.3s ease;
 }
 
-:global(.theme-light) .backLink {
-  color: #111827;
-  border: 1px solid rgba(17, 24, 39, 0.15);
-  background: #ffffff;
+.backLink:hover {
+  color: #b3622f;
 }
 
-:global(.theme-light) .backLink:hover {
-  background: #111827;
-  color: #ffffff;
-  transform: translateY(-1px);
-}
-
-:global(.theme-dark) .backLink {
-  color: #f9fafb;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.02);
-}
-
-:global(.theme-dark) .backLink:hover {
-  background: #f9fafb;
-  color: #111827;
-  transform: translateY(-1px);
-}
-
-/* Mazesta */
 :global(.theme-light) .mazestaList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   gap: 20px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  background-color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
   height: auto;
 }
 
@@ -272,135 +242,182 @@
   justify-content: center;
   padding: 20px;
   gap: 20px;
-  background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
-  height: auto;
+  background-color: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100% height: auto;
+  );
 }
 
 :global(.theme-light) .mazestaItem {
-  background: #ffffff;
-  border: 1px solid rgba(17, 24, 39, 0.08);
-  border-radius: 14px;
+  background-color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
+  border-radius: 10px;
   overflow: hidden;
-  width: min(47%, 520px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 47%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
 }
 
 :global(.theme-dark) .mazestaItem {
-  background: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  height: auto;
-  border-radius: 14px;
+  background-color: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100% height: auto;
+  );
+  border-radius: 10px;
   overflow: hidden;
-  width: min(47%, 520px);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 47%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 2.1);
+  transition: transform 0.3s;
 }
 
 .mazestaItem:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+  transform: scale(1.05);
+  /* Scale up effect on hover */
 }
 
 .mazestaImage {
-  width: 100%;
-  height: 240px;
+  width: 250px;
+  height: 250px;
   padding: 10px;
   object-fit: cover;
 }
 
+/* Text content container */
 .textContent {
   padding: 15px;
   color: #4e3629;
-}
-
-:global(.theme-dark) .textContent {
-  color: #e5e7eb;
+  /* Dark brown text */
 }
 
 :global(.theme-light) .mazestaName {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #111827;
-  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  /* Dark coffee color */
+  margin-bottom: 10px;
 }
 
 :global(.theme-dark) .mazestaName {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
 }
 
 :global(.theme-light) .mazestaDetails {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: #6b7280;
-  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: gray;
+  margin-bottom: 15px;
 }
 
 :global(.theme-dark) .mazestaDetails {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: #a5b4fc;
-  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: skyblue;
+  margin-bottom: 15px;
 }
 
+/* Link styling */
 :global(.theme-light) .link {
   text-decoration: none;
-  background: #ffffff;
-  color: #111827;
-  font-weight: 700;
-  border: 1px solid rgba(17, 24, 39, 0.15);
-  padding: 6px 14px;
-  border-radius: 999px;
-  transition: all 0.25s ease;
+  color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
+  font-weight: bold;
+  border: 1px solid #9999;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
-
 :global(.theme-dark) .link {
   text-decoration: none;
-  background: #0f172a;
-  color: #ffffff;
-  font-weight: 700;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 6px 14px;
-  border-radius: 999px;
-  transition: all 0.25s ease;
+  color: radial-gradient(
+    circle,
+    rgba(0, 0, 48, 1) 0%,
+    rgba(9, 0, 56, 1) 20%,
+    rgba(0, 28, 74, 1) 50%,
+    rgba(4, 17, 51, 1) 80%,
+    rgba(1, 1, 59, 1) 100% height: auto;
+  );
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .link:hover {
-  background-color: #111827;
+  background-color: #d77a3b;
   color: #fff;
 }
 
-/* Responsive */
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .detail {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    flex-direction: column;
   }
+
   .detailImageWrapper {
-    min-height: 260px;
-    max-height: 460px;
+    width: 100%;
+  }
+
+  .detailImageWrapper img {
+    height: auto;
+  }
+
+  /* smaller product thumbnails on narrow screens */
+  .imageWrapper img {
+    height: 120px;
   }
 }
 
-@media (max-width: 768px) {
-  .imageWrapper img {
-    height: 180px;
+/* Ensure product detail images are fully visible (not cropped) on tablets and small laptops */
+@media (max-width: 1024px) {
+  .detail {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
   }
-  .mazestaItem {
+
+  .detailImageWrapper {
+    width: 100%;
+    flex: 0 0 auto;
+    max-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .detailImageWrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain; /* show full image */
+  }
+
+  .detailContent {
     width: 100%;
   }
 }
 
-.imageWrapper.imgSize7 img,
+/* Per-product thumbnail overrides (apply by adding class to imageWrapper)
+   Usage in JSX: className={`${styles.imageWrapper} ${product.id == 7 ? styles.imgSize7 : product.id == 9 ? styles.imgSize9 : ''}`} */
+.imageWrapper.imgSize7 img {
+  height: auto;
+}
+
 .imageWrapper.imgSize9 img {
   height: auto;
 }

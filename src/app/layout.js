@@ -20,7 +20,7 @@ const Diodrum = localFont({
 
 export const metadata = {
   title: "Jolfa Foods",
-  description: "پنیر پیتزا جلفا",
+  description: "پنیر پیتزا جولفا",
   icons: {
     icon: "/Image/Jolfa-logo.png",
     shortcut: "/Image/Jolfa-logo.png",
@@ -28,8 +28,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children, params: { lang } } ) {
-  
+export default function RootLayout({ children }) {
   return (
     <html lang="fa">
       <meta
