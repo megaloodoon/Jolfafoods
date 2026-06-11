@@ -268,7 +268,7 @@ export default function Footer() {
           alt="Location"
           width={28}
           height={28}
-          className="w-6 h-6 xs:h-4 xs:w-4 sm:h-6 sm:w-6 md:h-8 md:w-8 shrink-0"
+          className="w-4 h-6 xs:h-4 xs:w-3 sm:h-6 sm:w-5 md:h-8 md:w-7 shrink-0"
         />
         {/* حذف text-center و تغییر به text-start */}
         <span className="leading-tight text-start">{t.addressText}</span>

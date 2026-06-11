@@ -14,7 +14,7 @@ export default function AboutUsFa() {
 
       {/* بخش توضیحات زیگزاگی با پس‌زمینه */}
       <section
-        className="w-full lg:w-[calc(100%-80px)] lg:mx-[40px] py-16 xs:-mt-3 md:py-24 font-kalame text-white relative overflow-hidden bg-cover bg-center bg-no-repeat"
+        className="w-full py-16 xs:-mt-3 md:py-24 font-kalame text-white relative overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/Image/About-Us/About-us-background.png')",
         }}

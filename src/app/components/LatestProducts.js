@@ -98,7 +98,7 @@ export default function LatestProducts({ lang = "fa" }) {
     <section className="w-full  py-6 sm:py-16 overflow-hidden">
       <div
         className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16"
-        style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')" }}
+        style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background3.svg')" }}
       >
         {/* Title */}
         <div
@@ -136,7 +136,7 @@ export default function LatestProducts({ lang = "fa" }) {
             <div
               key={p.id}
               className="relative w-full bg-cover"
-              style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')" }}
+              style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')" }}
             >
               <img src={p.image} className="w-full h-auto" alt={t.title} />
 
@@ -168,7 +168,7 @@ export default function LatestProducts({ lang = "fa" }) {
         {/* Swiper Gallery */}
         <div
           className="pt-10 md:pt-16 relative px-4 sm:px-12 xs:pt-[6px] bg-cover"
-          style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background3.svg')" }}
+          style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')" }}
         >
           <Swiper
             modules={[Autoplay]}
