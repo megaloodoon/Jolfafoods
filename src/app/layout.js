@@ -1,26 +1,37 @@
-
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local"; // 1. اضافه کردن localFont
 import "./globals.css";
 import LanguageNav from "./components/LanguageNav";
 import Footer from "./components/Footer";
 
-const vazir = localFont({
-  src: "./fonts/Vazir.ttf", // مسیر نسبی به layout.js
-  weight: "400", // وزن مورد نیاز را تنظیم کنید
-  variable: "--font-vazir",
-});
-
 // اگر DiodrumArabicRegular یک فایل مجزا است، آن را هم تعریف کنید
 const Diodrum = localFont({
-  src: "./fonts/DiodrumArabicRegular.ttf", // مسیر نسبی
+  src: "../../public/Fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Light.ttf",
   weight: "400",
   variable: "--font-diodrum",
 });
 
+const Kalame = localFont({
+  src: "../../public/Fonts/Kalame/TTF/Kalameh-Regular.ttf",
+  weight: "400",
+  variable: "--font-kalame",
+});
+
+const Bold = localFont({
+  src: "../../public/Fonts/Kalame/TTF/Kalameh-Bold.ttf",
+  weight: "400",
+  variable: "--font-bold",
+});
+
+const SemiBold = localFont({
+  src: "../../public/Fonts/Kalame/TTF/Kalameh-SemiBold.ttf",
+  weight: "400",
+  variable: "--font-semibold",
+});
+
 export const metadata = {
   title: "Jolfa Foods",
-  description: "پنیر پیتزا جولفا",
+  description: "پنیر پیتزا جلفا",
   icons: {
     icon: "/Image/Jolfa-logo.png",
     shortcut: "/Image/Jolfa-logo.png",
@@ -28,7 +39,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { lang } }) {
   return (
     <html lang="fa">
       <meta
@@ -37,7 +48,7 @@ export default function RootLayout({ children }) {
       />
 
       <body
-        className={`${Diodrum.variable} ${vazir.variable}  antialiased font-sans transition-colors duration-300 bg-[url('/Image/Light.jpg')] dark:bg-[url('/Image/dark-blue.jpg')] bg-cover bg-center bg-no-repeat`}
+        className={`${Kalame.variable} ${Diodrum.variable} ${SemiBold.variable} ${Bold.variable} ${SemiBold.variable} antialiased font-kalame transition-colors duration-300 bg-center bg-no-repeat`}
       >
         <LanguageNav />
         {children}

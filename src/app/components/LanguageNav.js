@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ThemeSwitcher } from "./ThemeSwitcher";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
@@ -32,8 +31,7 @@ export default function LanguageNav() {
   const labels = {
     fa: {
       home: "خانه",
-      products: " محصولات جلفا",
-      Mazesta_Products: "محصولات مازستا",
+      products: "محصولات",
       articles: "مقالات",
       recipes: "دستور پخت‌ها",
       doostane: "دوستانه با جلفا",
@@ -43,8 +41,7 @@ export default function LanguageNav() {
     },
     en: {
       home: "Home",
-      products: "Products of Jolfa",
-      Mazesta_Products: "Products of Mazesta",
+      products: "Products",
       articles: "Articles",
       about: "About Us",
       contact: "Contact",
@@ -54,8 +51,7 @@ export default function LanguageNav() {
     },
     ar: {
       home: "الرئيسية",
-      products: "المنتجات جلفا",
-      Mazesta_Products: "المنتجات مازستا",
+      products: "منتجات",
       articles: "مقالات",
       recipes: "وصفات",
       about: "من نحن",
@@ -65,8 +61,7 @@ export default function LanguageNav() {
     },
     ru: {
       home: "Главная",
-      products: "Продукция Jolfa",
-      Mazesta_Products: "Продукция Mazesta",
+      products: "Продукция",
       articles: "Статьи",
       recipes: "Рецепты",
       about: "О нас",
@@ -76,8 +71,7 @@ export default function LanguageNav() {
     },
     fr: {
       home: "Accueil",
-      products: "Produits Jolfa",
-      Mazesta_Products: "Produits Mazesta",
+      products: "Produits",
       articles: "Articles",
       recipes: "Recettes",
       about: "À propos",
@@ -87,147 +81,147 @@ export default function LanguageNav() {
     },
   }[currentLang];
 
-  const langNames = {
-    fa: "فارسی",
-    en: "English",
-    ar: "العربية",
-    ru: "Русский",
-    fr: "Français",
-  };
+  // تعریف لیست زبان‌ها به همراه آدرس عکس پرچم
+  const langNames = [
+    { code: "fa", name: "فارسی", flag: "/Image/Flag/Iran.png" },
+    { code: "en", name: "English", flag: "/Image/Flag/United_Kingdom.png" },
+    { code: "ar", name: "العربية", flag: "/Image/Flag/Saudi_Arabia.png" },
+    { code: "ru", name: "Русский", flag: "/Image/Flag/Russia.png" },
+    { code: "fr", name: "Français", flag: "/Image/Flag/France.png" },
+  ];
+
+  const isRtl = ["fa", "ar"].includes(currentLang);
 
   useEffect(() => {
-    // close menu on route change
     setOpen(false);
+    setMobileOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [mobileOpen]);
+
   return (
-    <nav className="nav flex justify-center items-center gap-1 w-full">
-      <div className="container w-full flex items-center justify-between px-2">
-        {/* Hamburger button for small screens */}
-        <button
-          onClick={() => setMobileOpen(true)}
-          className="hamburger-btn btn btn-ghost p-1 order-1 md:order-none"
-        >
-          {/* Show white hamburger icon in dark mode, default in light mode */}
-          <span className="block dark:hidden">
-            <Image
-              src="/Image/Hamburger_icon.png"
-              alt="menu"
-              width={28}
-              height={28}
-            />
-          </span>
-          <span className="hidden dark:block">
+    <nav className="nav w-full bg-[#154994] text-white py-1 xs:py-1 sm:py-2 lg:py-3 relative z-50 shadow-md">
+      <div className="container mx-auto px-4 flex items-center justify-between min-h-[30px] md:min-h-[40px]">
+        {/* === بخش چپ === */}
+        <div className="flex-1 flex items-center justify-start lg:hidden">
+          <button
+            onClick={() => setMobileOpen(true)}
+            className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+          >
             <Image
               src="/Image/hamburger-png-white.png"
               alt="menu"
-              width={35}
-              height={35}
+              width={30}
+              height={30}
             />
-          </span>
-        </button>
+          </button>
+        </div>
 
-        {/* Logo: centered between hamburger and language menu on mobile, left on desktop */}
-        <div className="logo shrink-0 flex items-center justify-center md:justify-start order-2 md:order-none">
-          <Link href={base}>
+        <div className="hidden lg:flex flex-1 gap-8 items-center justify-start">
+          <Link
+            href={`${base}/Contact-us`}
+            className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
+          >
+            {labels.contact}
+          </Link>
+          <Link
+            href={`${base}/About-us`}
+            className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
+          >
+            {labels.about}
+          </Link>
+        </div>
+
+        {/* === بخش مرکزی (لوگو) === */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-1/2 z-[60]">
+          <Link href={base} className="block">
             <Image
               src="/Image/Jolfa-logo.png"
               alt="Jolfa Foods"
-              width={180}
-              height={54}
+              width={140}
+              height={70}
               priority
-              sizes="(max-width: 360px) 90px, (max-width: 640px) 100px, (max-width: 768px) 140px, 180px"
-              className="w-[90px] xs:w-[50px] sm:w-[100px] md:w-[110px] h-auto"
+              className="w-[100px] md:w-[140px] h-auto object-contain drop-shadow-xl"
             />
           </Link>
         </div>
 
-        {/* Language menu and desktop links */}
-        <div className="flex items-center order-3 md:order-none">
-          {/* Inline links for desktop screens (hidden under 1020px) */}
-          <div className="desktop-links items-center gap-1 hidden md:flex">
-            {/* Use a slightly smaller, cleaner style by default; tweak for Persian */}
-            {(() => {
-              const baseClass =
-                "text-lg font-semibold text-white-800 hover:text-amber-700";
-              const faAdjust =
-                currentLang === "fa" ? "tracking-tight ms-1" : "";
-              const linkClass = `${baseClass} ${faAdjust}`;
-              return (
-                <>
-                  <Link href={base} className={linkClass}>
-                    {labels.home}
-                  </Link>
-                  <Link href={`${base}/products`} className={linkClass}>
-                    {labels.products}
-                  </Link>
-                  <Link href={`${base}/Mazesta_Products`} className={linkClass}>
-                    {labels.Mazesta_Products}
-                  </Link>
-                  
-                  {/* Doostane-ba-Jolfa dropdown */}
-                  <div className="relative group">
-                    <button className={`${linkClass} flex items-center gap-1`}>
-                      {labels.doostane}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </button>
-                    
-                    {/* Dropdown menu */}
-                    <div className="absolute left-0 mt-0 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                      <Link
-                        href={`${base}/Doostane-ba-Jolfa/Articles`}
-                        className="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-md"
-                      >
-                        {labels.articles}
-                      </Link>
-                      <Link
-                        href={`${base}/Doostane-ba-Jolfa/recipes`}
-                        className="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-                      >
-                        {labels.recipes}
-                      </Link>
-                      <Link
-                        href={`${base}/Doostane-ba-Jolfa/News`}
-                        className="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 last:rounded-b-md"
-                      >
-                        {labels.news}
-                      </Link>
-                    </div>
-                  </div>
-                  
-                  <Link href={`${base}/About-us`} className={linkClass}>
-                    {labels.about}
-                  </Link>
-                  <Link href={`${base}/Contact-us`} className={linkClass}>
-                    {labels.contact}
-                  </Link>
-                </>
-              );
-            })()}
+        {/* === بخش راست === */}
+        <div className="hidden lg:flex flex-1 gap-6 items-center justify-end">
+          <Link
+            href={`${base}/products`}
+            className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
+          >
+            {labels.products}
+          </Link>
+
+          {/* دراپ‌داون دوستانه با جلفا (دسکتاپ) */}
+          <div className="relative group">
+            <Link
+              href={`${base}/Doostane-ba-Jolfa`}
+              className="font-semibold text-base text-white hover:text-blue-200 transition-colors flex items-center gap-1 py-2"
+            >
+              {labels.doostane}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 transition-transform group-hover:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
+
+            {/* زیرمنوهای دسکتاپ */}
+            <ul className="absolute right-0 mt-0 w-48 bg-white text-[#1a4b8c] rounded-lg shadow-xl list-none py-2 z-50 border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+              <li>
+                <Link
+                  href={`${base}/Doostane-ba-Jolfa/Articles`}
+                  className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
+                >
+                  {labels.articles}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`${base}/Doostane-ba-Jolfa/recipes`}
+                  className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
+                >
+                  {labels.recipes}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`${base}/Doostane-ba-Jolfa/News`}
+                  className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
+                >
+                  {labels.news}
+                </Link>
+              </li>
+            </ul>
           </div>
 
-          {/* زیبا سازی انتخاب زبان: دکمه‌ی دراپ‌داون */}
-          <div className="relative ms-2">
+          {/* دراپ‌داون زبان */}
+          <div className="relative">
             <button
               aria-haspopup="listbox"
               onClick={() => setOpen((s) => !s)}
-              className="flex items-center px-3 py-2 rounded-md bg-white/10 hover:bg-white/20 text-lg font-semibold"
+              className="font-semibold text-base text-white hover:text-blue-200 transition-colors flex items-center gap-1"
             >
-              {langNames[currentLang] || currentLang.toUpperCase()}
+              Language
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
+                className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -240,161 +234,140 @@ export default function LanguageNav() {
             </button>
 
             {open && (
-              <ul className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-md shadow-lg list-none p-1 z-50">
-                <li>
-                  <Link
-                    href="/pages/fa"
-                    onClick={() => setOpen(false)}
-                    className={`block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white ${
-                      currentLang === "fa" ? "font-bold underline" : ""
-                    }`}
-                  >
-                    فارسی
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pages/en"
-                    onClick={() => setOpen(false)}
-                    className={`block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white ${
-                      currentLang === "en" ? "font-bold underline" : ""
-                    }`}
-                  >
-                    English
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pages/ar"
-                    onClick={() => setOpen(false)}
-                    className={`block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white ${
-                      currentLang === "ar" ? "font-bold underline" : ""
-                    }`}
-                  >
-                    العربية
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pages/ru"
-                    onClick={() => setOpen(false)}
-                    className={`block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white ${
-                      currentLang === "ru" ? "font-bold underline" : ""
-                    }`}
-                  >
-                    Русский
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pages/fr"
-                    onClick={() => setOpen(false)}
-                    className={`block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white ${
-                      currentLang === "fr" ? "font-bold underline" : ""
-                    }`}
-                  >
-                    Français
-                  </Link>
-                </li>
+              <ul className="absolute right-0 mt-3 w-36 bg-white text-gray-800 rounded-lg shadow-xl list-none py-2 z-50 border border-gray-100">
+                {langNames.map((lang) => (
+                  <li key={lang.code}>
+                    <Link
+                      href={`/pages/${lang.code}`}
+                      onClick={() => setOpen(false)}
+                      className={`flex items-center gap-3 px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${
+                        currentLang === lang.code
+                          ? "font-bold text-[#1a4b8c] bg-blue-50"
+                          : ""
+                      }`}
+                    >
+                      <img
+                        src={lang.flag}
+                        alt={`${lang.name} flag`}
+                        className="w-5 h-auto rounded-sm shadow-sm"
+                      />
+                      <span>{lang.name}</span>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             )}
           </div>
 
-          <div className="ms-2 md:ms-4 lg:ms-6 flex items-center gap-3 sm:gap-4 md:gap-5">
-            <button
-              onClick={() => setSearchOpen(true)}
-              aria-label="Open search"
-              className="btn btn-ghost p-2"
+          <button
+            onClick={() => setSearchOpen(true)}
+            aria-label="Open search"
+            className="p-2 text-white hover:text-blue-200 hover:bg-white/10 rounded-full transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z"
-                />
-              </svg>
-            </button>
-            <div className="flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px]">
-              <ThemeSwitcher />
-            </div>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex flex-1 lg:hidden items-center justify-end">
+          <button
+            onClick={() => setSearchOpen(true)}
+            aria-label="Open search"
+            className="p-2 text-white hover:bg-white/10 rounded-full transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
-      {/* Mobile slide-over menu */}
+      {/* منوی کشویی موبایل */}
       {mobileOpen && (
-        <div className="mobile-menu fixed  inset-0 z-50 flex items-stretch">
+        <div className="fixed inset-0 z-[100] flex" dir={isRtl ? "rtl" : "ltr"}>
           <div
-            className="absolute inset-0 bg-black/50"
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
             onClick={() => setMobileOpen(false)}
           />
           <div
-            className={`relative h-full w-72 p-4 bg-white dark:bg-[radial-gradient(circle,rgba(0,0,48,1)_0%,rgba(9,0,56,1)_20%,rgba(0,28,74,1)_50%,rgba(4,17,51,1)_80%,rgba(1,1,59,1)_100%)] ${
-              ["fa", "ar"].includes(currentLang) ? "right-0" : "left-0"
-            }`}
-            style={{ boxShadow: "0 8px 24px rgba(0,0,0,0.25)" }}
+            className={`relative w-[80%] max-w-[320px] h-full bg-white text-[#1a4b8c] shadow-2xl flex flex-col ${isRtl ? "right-0" : "left-0"}`}
           >
-            <div className="flex items-center justify-between mb-4">
-              <Link href={base} className="flex items-center gap-2">
-                <Image
-                  src="/Image/Jolfa-logo.png"
-                  alt="Jolfa"
-                  width={100}
-                  height={32}
-                />
-              </Link>
+            <div className="flex items-center justify-between p-5 border-b border-gray-100 bg-[#1a4b8c] text-white">
+              <Image
+                src="/Image/Jolfa-logo.png"
+                alt="Jolfa"
+                width={90}
+                height={30}
+                className="object-contain"
+              />
               <button
                 onClick={() => setMobileOpen(false)}
-                className="btn btn-ghost"
+                className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
               >
-                Close
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
               </button>
             </div>
 
-            <nav className="flex flex-col gap-3 ">
-              <Link
-                href={base}
-                onClick={() => setMobileOpen(false)}
-                className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                {labels.home}
-              </Link>
+            <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-1">
+              {[
+                { href: base, label: labels.home },
+                { href: `${base}/products`, label: labels.products },
+              ].map((item, idx) => (
+                <Link
+                  key={idx}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block py-3 px-4 rounded-xl font-medium hover:bg-[#f0f4f8] transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
 
-              <Link
-                href={`${base}/products`}
-                onClick={() => setMobileOpen(false)}
-                className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                {labels.products}
-              </Link>
-
-              <Link
-                href={`${base}/Mazesta_Products`}
-                onClick={() => setMobileOpen(false)}
-                className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                {labels.Mazesta_Products}
-              </Link>
-
-              {/* Doostane-ba-Jolfa expandable menu */}
-              <div>
+              <div className="border-t border-b border-gray-100 my-2 py-2">
                 <button
                   onClick={() => setDoostaneOpen((s) => !s)}
-                  className="w-full text-left py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center justify-between"
+                  className="w-full text-start py-3 px-4 rounded-xl font-medium hover:bg-[#f0f4f8] transition-colors flex items-center justify-between"
                 >
                   {labels.doostane}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-4 w-4 transition-transform ${
-                      doostaneOpen ? "rotate-180" : ""
-                    }`}
+                    className={`h-5 w-5 transition-transform ${doostaneOpen ? "rotate-180 text-blue-600" : "text-gray-400"}`}
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -405,90 +378,80 @@ export default function LanguageNav() {
                     />
                   </svg>
                 </button>
-                {doostaneOpen && (
-                  <div className="flex flex-col gap-2 ps-4 mt-2">
+
+                <div
+                  className={`flex flex-col gap-1 overflow-hidden transition-all duration-300 ${doostaneOpen ? "max-h-48 opacity-100 mt-1" : "max-h-0 opacity-0"}`}
+                >
+                  {[
+                    {
+                      href: `${base}/Doostane-ba-Jolfa/Articles`,
+                      label: labels.articles,
+                    },
+                    {
+                      href: `${base}/Doostane-ba-Jolfa/recipes`,
+                      label: labels.recipes,
+                    },
+                    {
+                      href: `${base}/Doostane-ba-Jolfa/News`,
+                      label: labels.news,
+                    },
+                  ].map((sub, idx) => (
                     <Link
-                      href={`${base}/Doostane-ba-Jolfa/Articles`}
-                      onClick={() => {
-                        setMobileOpen(false);
-                        setDoostaneOpen(false);
-                      }}
-                      className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                      key={idx}
+                      href={sub.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`block py-2 ${isRtl ? "pr-8" : "pl-8"} px-4 text-sm rounded-lg hover:bg-[#f0f4f8] text-gray-700 transition-colors`}
                     >
-                      {labels.articles}
+                      • {sub.label}
                     </Link>
-                    <Link
-                      href={`${base}/Doostane-ba-Jolfa/recipes`}
-                      onClick={() => {
-                        setMobileOpen(false);
-                        setDoostaneOpen(false);
-                      }}
-                      className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      {labels.recipes}
-                    </Link>
-                    <Link
-                      href={`${base}/Doostane-ba-Jolfa/News`}
-                      onClick={() => {
-                        setMobileOpen(false);
-                        setDoostaneOpen(false);
-                      }}
-                      className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      {labels.news}
-                    </Link>
-                  </div>
-                )}
+                  ))}
+                </div>
               </div>
 
-              <Link
-                href={`${base}/About-us`}
-                onClick={() => setMobileOpen(false)}
-                className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                {labels.about}
-              </Link>
-              <Link
-                href={`${base}/Contact-us`}
-                onClick={() => setMobileOpen(false)}
-                className="py-2 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                {labels.contact}
-              </Link>
-            </nav>
+              {[
+                { href: `${base}/About-us`, label: labels.about },
+                { href: `${base}/Contact-us`, label: labels.contact },
+              ].map((item, idx) => (
+                <Link
+                  key={idx}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block py-3 px-4 rounded-xl font-medium hover:bg-[#f0f4f8] transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
 
-            {/* <div className="mt-6">
-              <div className="text-sm text-gray-500 mb-2">
-                {labels.fa} / {labels.en} / {labels.ar}
+            <div className="p-4 border-t border-gray-100 bg-gray-50">
+              <div className="text-sm text-gray-500 mb-3 font-medium">
+                Select Language:
               </div>
-              <div className="flex gap-2">
-                <Link
-                  href="/pages/fa"
-                  onClick={() => setMobileOpen(false)}
-                  className="px-2 py-1 rounded hover:bg-gray-100"
-                >
-                  فارسی
-                </Link>
-                <Link
-                  href="/pages/en"
-                  onClick={() => setMobileOpen(false)}
-                  className="px-2 py-1 rounded hover:bg-gray-100"
-                >
-                  English
-                </Link>
-                <Link
-                  href="/pages/ar"
-                  onClick={() => setMobileOpen(false)}
-                  className="px-2 py-1 rounded hover:bg-gray-100"
-                >
-                  العربية
-                </Link>
+              <div className="flex flex-wrap gap-2">
+                {langNames.map((lang) => (
+                  <Link
+                    key={lang.code}
+                    href={`/pages/${lang.code}`}
+                    onClick={() => setMobileOpen(false)}
+                    className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm border transition-colors ${
+                      currentLang === lang.code
+                        ? "border-[#1a4b8c] bg-[#1a4b8c] text-white"
+                        : "border-gray-200 hover:border-[#1a4b8c] text-gray-700 bg-white"
+                    }`}
+                  >
+                    <img
+                      src={lang.flag}
+                      alt={`${lang.name} flag`}
+                      className="w-4 h-auto rounded-sm"
+                    />
+                    <span>{lang.name}</span>
+                  </Link>
+                ))}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       )}
-
       <GlobalSearch
         locale={currentLang}
         open={searchOpen}

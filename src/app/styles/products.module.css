@@ -1,128 +1,90 @@
-/* products.module.css */
-
-:global(.theme-light) .wrapper {
-  background: url("/Image/Light.jpg") center center / cover no-repeat;
-  color: var(--text-color);
-}
-
-:global(.theme-dark) .wrapper {
-  background: url("/Image/dark-blue.jpg") center center / cover no-repeat;
-  color: var(--text-color);
-}
-
 .wrapper {
-  padding: 80px 6%;
-  color: var(--text-color);
+  padding: clamp(2.5rem, 4vw, 5rem) clamp(1rem, 5vw, 6%);
+  color: #111827;
+  background-color: #ffffff;
 }
 
 .title {
   text-align: center;
-  font-size: 2.2rem;
-  color: inherit;
-  margin-bottom: 60px;
+  font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 60px;
+  gap: clamp(1.2rem, 2.5vw, 3rem);
 }
 
 .mazesta {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 1rem;
 }
 
-:global(.theme-light) .card {
-  background: #f5f5bf;
-  background: radial-gradient(
-    circle,
-    rgba(255, 247, 247, 1) 0%,
-    rgba(207, 255, 247, 1) 0%,
-    rgba(240, 255, 254, 1) 19%,
-    rgba(237, 237, 237, 1) 89%,
-    rgba(191, 225, 255, 1) 100%
-  );
-  color: #1f1f1f;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-  border-radius: 18px;
-}
-
-:global(.theme-dark) .card {
-  background: #0c0c61;
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 48, 1) 0%,
-    rgba(9, 0, 56, 1) 20%,
-    rgba(0, 28, 74, 1) 50%,
-    rgba(4, 17, 51, 1) 80%,
-    rgba(1, 1, 59, 1) 100%
-  );
-  color: #f4f4f4;
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
-  border-radius: 18px;
-}
-
+/* Card */
 .card {
-  border-radius: 18px;
-  padding: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #111827;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 16px;
   text-decoration: none;
-  transition: all 0.35s ease;
-}
-
-/* make card a column so we can push title/description toward the bottom */
-.card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.12);
 }
 
 .imageWrapper {
   overflow: hidden;
   border-radius: 16px;
   margin-bottom: 14px;
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .imageWrapper img {
-  width: auto;
+  width: 100%;
   height: 260px;
-  padding-left: 13px;
   object-fit: cover;
   transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
 .card:hover img {
-  transform: scale(1.12);
+  transform: scale(1.06);
 }
 
 .card h3 {
   font-size: 1.05rem;
-  margin-bottom: 8px;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .card p {
-  font-size: 0.9rem;
-  color: #6b6b6b;
+  font-size: 0.92rem;
+  color: #6b7280;
 }
 
-/* wrapper for the textual content inside card to align it toward bottom */
 .cardContent {
   margin-top: auto;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .cardContent p {
-  font-size: 15px;
+  font-size: 0.95rem;
 }
 
-/* Swiper "spring" look: smaller cards, centered active slide scales up */
+/* Swiper */
 .wrapper :global(.spring-swiper) {
   padding-bottom: 44px;
 }
@@ -139,285 +101,203 @@
 }
 
 .wrapper :global(.spring-swiper .swiper-slide-active) .card {
-  transform: scale(1.08);
-  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16);
+  transform: scale(1.06);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.16);
 }
 
 .wrapper :global(.spring-swiper .swiper-slide-next) .card,
 .wrapper :global(.spring-swiper .swiper-slide-prev) .card {
-  transform: scale(0.97);
+  transform: scale(0.98);
   opacity: 0.96;
 }
 
 .wrapper :global(.spring-swiper .swiper-pagination-bullet) {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
 }
 
-:global(.theme-light) .detail {
-  background: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
-}
-
-:global(.theme-dark) .detail {
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 48, 1) 0%,
-    rgba(9, 0, 56, 1) 20%,
-    rgba(0, 28, 74, 1) 50%,
-    rgba(4, 17, 51, 1) 80%,
-    rgba(1, 1, 59, 1) 100%
-  );
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
-}
-
+/* Detail */
 .detail {
-  max-width: 1080px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  max-width: 1120px;
   margin: 0 auto;
-  border-radius: 20px;
-  padding: 28px;
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
+  border-radius: 24px;
+  padding: clamp(1rem, 2vw, 2rem);
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) 1fr;
+  gap: clamp(1rem, 2vw, 2rem);
+  align-items: stretch;
 }
 
 .detailImageWrapper {
-  flex: 0 0 320px;
+  position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 18px;
+  min-height: 320px;
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .detailImageWrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.detail:hover .detailImageWrapper img {
+  transform: scale(1.03);
 }
 
 .detailContent {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .detailContent h1 {
-  margin: 0 0 8px;
-  font-size: 1.8rem;
+  margin: 0;
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  font-weight: 800;
 }
 
 .detailSubtitle {
-  margin: 0 0 16px;
-  color: #6b6b6b;
+  margin: 0.75rem 0 0;
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  color: #6b7280;
   font-weight: 600;
 }
 
 .detailDescription {
-  line-height: 1.7;
-  font-size: 18px;
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.9;
+  color: inherit;
+  max-width: 70ch;
 }
 
 .backLink {
-  display: inline-block;
-  margin-top: 16px;
-  color: #d77a3b;
-  font-weight: 600;
+  margin-top: 1.5rem;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  padding: 0.62rem 1rem;
+  transition: all 0.25s ease;
+  color: #111827;
+  border: 1px solid rgba(17, 24, 39, 0.15);
+  background: #ffffff;
 }
 
 .backLink:hover {
-  color: #b3622f;
+  background: #111827;
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
-:global(.theme-light) .mazestaList {
+/* Mazesta */
+.mazestaList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   gap: 20px;
-  background-color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   height: auto;
 }
 
-:global(.theme-dark) .mazestaList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  gap: 20px;
-  background-color: radial-gradient(
-    circle,
-    rgba(0, 0, 48, 1) 0%,
-    rgba(9, 0, 56, 1) 20%,
-    rgba(0, 28, 74, 1) 50%,
-    rgba(4, 17, 51, 1) 80%,
-    rgba(1, 1, 59, 1) 100% height: auto;
-  );
-}
-
-:global(.theme-light) .mazestaItem {
-  background-color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
-  border-radius: 10px;
+.mazestaItem {
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 14px;
   overflow: hidden;
-  width: 47%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
-}
-
-:global(.theme-dark) .mazestaItem {
-  background-color: radial-gradient(
-    circle,
-    rgba(0, 0, 48, 1) 0%,
-    rgba(9, 0, 56, 1) 20%,
-    rgba(0, 28, 74, 1) 50%,
-    rgba(4, 17, 51, 1) 80%,
-    rgba(1, 1, 59, 1) 100% height: auto;
-  );
-  border-radius: 10px;
-  overflow: hidden;
-  width: 47%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 2.1);
-  transition: transform 0.3s;
+  width: min(47%, 520px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mazestaItem:hover {
-  transform: scale(1.05);
-  /* Scale up effect on hover */
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
 }
 
 .mazestaImage {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 240px;
   padding: 10px;
   object-fit: cover;
 }
 
-/* Text content container */
 .textContent {
   padding: 15px;
   color: #4e3629;
-  /* Dark brown text */
 }
 
-:global(.theme-light) .mazestaName {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  /* Dark coffee color */
-  margin-bottom: 10px;
+.mazestaName {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 8px;
 }
 
-:global(.theme-dark) .mazestaName {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 10px;
+.mazestaDetails {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #6b7280;
+  margin-bottom: 14px;
 }
 
-:global(.theme-light) .mazestaDetails {
-  font-size: 16px;
-  line-height: 1.6;
-  color: gray;
-  margin-bottom: 15px;
-}
-
-:global(.theme-dark) .mazestaDetails {
-  font-size: 16px;
-  line-height: 1.6;
-  color: skyblue;
-  margin-bottom: 15px;
-}
-
-/* Link styling */
-:global(.theme-light) .link {
+.link {
   text-decoration: none;
-  color: linear-gradient(180deg, #ffffff 0%, #f9f4ea 100%);
-  font-weight: bold;
-  border: 1px solid #9999;
-  padding: 5px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-:global(.theme-dark) .link {
-  text-decoration: none;
-  color: radial-gradient(
-    circle,
-    rgba(0, 0, 48, 1) 0%,
-    rgba(9, 0, 56, 1) 20%,
-    rgba(0, 28, 74, 1) 50%,
-    rgba(4, 17, 51, 1) 80%,
-    rgba(1, 1, 59, 1) 100% height: auto;
-  );
-  font-weight: bold;
-  border: 1px solid #fff;
-  padding: 5px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  background: #ffffff;
+  color: #111827;
+  font-weight: 700;
+  border: 1px solid rgba(17, 24, 39, 0.15);
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: all 0.25s ease;
 }
 
 .link:hover {
-  background-color: #d77a3b;
+  background-color: #111827;
   color: #fff;
 }
 
+/* Responsive */
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 768px) {
-  .detail {
-    flex-direction: column;
-  }
-
-  .detailImageWrapper {
-    width: 100%;
-  }
-
-  .detailImageWrapper img {
-    height: auto;
-  }
-
-  /* smaller product thumbnails on narrow screens */
-  .imageWrapper img {
-    height: 120px;
-  }
-}
-
-/* Ensure product detail images are fully visible (not cropped) on tablets and small laptops */
 @media (max-width: 1024px) {
   .detail {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 16px;
-    padding: 20px;
   }
-
   .detailImageWrapper {
-    width: 100%;
-    flex: 0 0 auto;
-    max-height: 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    min-height: 260px;
+    max-height: 460px;
   }
+}
 
-  .detailImageWrapper img {
-    width: 100%;
-    height: auto;
-    max-height: 420px;
-    object-fit: contain; /* show full image */
+@media (max-width: 768px) {
+  .imageWrapper img {
+    height: 180px;
   }
-
-  .detailContent {
+  .mazestaItem {
     width: 100%;
   }
 }
 
-/* Per-product thumbnail overrides (apply by adding class to imageWrapper)
-   Usage in JSX: className={`${styles.imageWrapper} ${product.id == 7 ? styles.imgSize7 : product.id == 9 ? styles.imgSize9 : ''}`} */
-.imageWrapper.imgSize7 img {
-  height: auto;
-}
-
+.imageWrapper.imgSize7 img,
 .imageWrapper.imgSize9 img {
   height: auto;
 }

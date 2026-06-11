@@ -1,124 +1,165 @@
 "use client";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import LatestProducts from "./LatestProducts";
+import CategoryNav from "./CategoryNav";
+import ProductGrid from "./ProductGrid";
 
-import Link from "next/link";
-import styles from "@/app/styles/products.module.css";
-import { useEffect, useState, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import React from "react";
+const DICTIONARY = {
+  fa: {
+    cheese: "پنیر",
+    sauce: "سس",
+    butter: "کره",
+    cream: "خامه",
+    loading: "در حال بارگذاری...",
+    noProducts: "محصولی یافت نشد.",
+    gratedCheese: "پنیرهای رنده شده",
+    blockCheese: "پنیرهای قالبی",
+    otherCheese: "سایر پنیرها",
+    creams: "خامه‌ها",
+    allProducts: "محصولات",
+  },
+  en: {
+    cheese: "Cheese",
+    sauce: "Sauce",
+    butter: "Butter",
+    cream: "Cream",
+    loading: "Loading...",
+    noProducts: "No products found.",
+    gratedCheese: "Grated Cheeses",
+    blockCheese: "Block Cheeses",
+    otherCheese: "Other Cheeses",
+    creams: "Creams",
+    allProducts: "Products",
+  },
+  ar: {
+    cheese: "جبنة",
+    sauce: "صلصة",
+    butter: "زبدة",
+    cream: "قشطة",
+    loading: "جارٍ التحميل...",
+    noProducts: "لم يتم العثور على منتجات.",
+    gratedCheese: "جبن مبشور",
+    blockCheese: "جبن قوالب",
+    otherCheese: "أجبان أخرى",
+    creams: "قشطة",
+    allProducts: "منتجات",
+  },
+  fr: {
+    cheese: "Fromage",
+    sauce: "Sauce",
+    butter: "Beurre",
+    cream: "Crème",
+    loading: "Chargement...",
+    noProducts: "Aucun produit trouvé.",
+    gratedCheese: "Fromages Râpés",
+    blockCheese: "Fromages en Bloc",
+    otherCheese: "Autres Fromages",
+    creams: "Crèmes",
+    allProducts: "Produits",
+  },
+  ru: {
+    cheese: "Сыр",
+    sauce: "Соус",
+    butter: "Масло",
+    cream: "Сливки",
+    loading: "Загрузка...",
+    noProducts: "Продукты не найдены.",
+    gratedCheese: "Тертый Сыр",
+    blockCheese: "Кусковой Сыр",
+    otherCheese: "Другие Сыры",
+    creams: "Сливки",
+    allProducts: "Продукты",
+  },
+};
 
-export default function Productsj() {
+const getProductCategory = (id) => {
+  const numId = parseInt(String(id).match(/\d+/)?.[0]);
+  if ([1, 2, 3, 4, 7, 8, 9, 12, 14].includes(numId)) return "cheese";
+  if ([5, 6].includes(numId)) return "sauce";
+  if ([10, 13].includes(numId)) return "cream";
+  if ([11].includes(numId)) return "butter";
+  return "other";
+};
+
+export default function Productsj({ lang = "fa" }) {
+  const searchParams = useSearchParams();
+  const categoryFromUrl = searchParams.get("category") || null;
+  const [activeCategory, setActiveCategory] = useState(categoryFromUrl);
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const containerRef = useRef(null);
-  const [visible, setVisible] = useState(false);
+
+  const currentLang = typeof lang === "string" ? lang : "fa";
+  const t = DICTIONARY[currentLang] || DICTIONARY["fa"];
 
   useEffect(() => {
-    if (!containerRef.current) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisible(true);
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-    io.observe(containerRef.current);
-    return () => io.disconnect();
-  }, [loading]);
+    setActiveCategory(categoryFromUrl);
+  }, [categoryFromUrl]);
 
   useEffect(() => {
     fetch("/api/products")
       .then((res) => res.json())
       .then((data) => {
-        setProducts(data.products || data);
+        const productList = data.products || data;
+        const formatted = productList.map((p) => ({
+          ...p,
+          category: p.category || getProductCategory(p.id),
+        }));
+        setProducts(formatted);
         setLoading(false);
       })
       .catch(() => setLoading(false));
   }, []);
 
-  if (loading) {
-    return <div className="text-center py-20">در حال بارگذاری...</div>;
-  }
+  const filteredProducts = activeCategory
+    ? products.filter((p) => p.category === activeCategory)
+    : [];
 
-  const productsPerPage = 6;
-  const pages = [];
-  for (let i = 0; i < products.length; i += productsPerPage) {
-    pages.push(products.slice(i, i + productsPerPage));
-  }
   return (
-    <div>
-      <div ref={containerRef}>
-        {visible ? (
-          <Swiper
-            modules={[Pagination]}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
-            className="w-full spring-swiper"
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            spaceBetween={28}
-            grabCursor={true}
-            speed={700}
-            slideToClickedSlide={true}
-            style={{
-              paddingBottom: "60px",
-            }}
-          >
-            {pages.map((pageProducts, pageIndex) => (
-              <SwiperSlide key={pageIndex}>
-                <div className={styles.grid}>
-                  {pageProducts.map((product) => (
-                    <Link
-                      key={product.id}
-                      href={`/pages/fa/products/${product.id}`}
-                      className={styles.card}
-                    >
-                      <div
-                        className={`${styles.imageWrapper} ${
-                          product.id == 7
-                            ? styles.imgSize7
-                            : product.id == 9
-                            ? styles.imgSize9
-                            : ""
-                        }`}
-                      >
-                        <img src={product.image} alt={product.name} />
-                      </div>
-                      <div className={styles.cardContent}>
-                        <h3>{product.name}</h3>
-                        <p>
-                          {product.titleFa || product.title || product.titleEn}
-                        </p>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+    <section
+      /* تغییر رنگ بک‌گراند به رنگ درخواستی شما هنگام انتخاب دسته‌بندی */
+      className={`w-full -mt-4 sm:-mt-8 flex flex-col items-center transition-colors duration-500 min-h-screen ${
+        activeCategory ? "bg-[#d8e6fe]" : "bg-white"
+      }`}
+    >
+      {/* ارسال مقدار متغیر به showBanner بر اساس انتخاب یا عدم انتخاب دسته‌بندی */}
+      <CategoryNav
+        currentLang={currentLang}
+        t={t}
+        showBanner={!activeCategory}
+      />
+
+      {!activeCategory && <LatestProducts lang={currentLang} />}
+
+      {activeCategory &&
+        (loading ? (
+          <div className="text-center py-20 text-[#1a4b8c] font-medium">
+            {t.loading}
+          </div>
         ) : (
-          <div style={{ minHeight: 300 }} />
-        )}
-      </div>
+          <ProductGrid
+            products={filteredProducts}
+            currentLang={currentLang}
+            t={t}
+            activeCategory={activeCategory}
+          />
+        ))}
 
       <style jsx global>{`
-        .swiper-pagination-bullet {
-          background: var(--text-color);
-          opacity: 0.5;
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
-        .swiper-pagination-bullet-active {
-          background: var(--text-color);
-          opacity: 1;
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
         }
       `}</style>
-    </div>
+    </section>
   );
 }

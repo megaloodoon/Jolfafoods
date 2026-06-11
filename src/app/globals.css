@@ -2,146 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Diodrum Arabic (place font files in `public/fonts/4photoshop-ir-Font-Diodrum/`)
-   - DiodrumArabic-Regular.woff2
-   - DiodrumArabic-Bold.woff2
-   If files are placed elsewhere, update the `url(...)` paths below accordingly. */
-@font-face {
-  font-family: "DiodrumArabic";
-  src: url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Regular.woff2")
-      format("woff2"),
-    url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Regular.woff")
-      format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DiodrumArabic";
-  src: url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Bold.woff2")
-      format("woff2"),
-    url("/fonts/4photoshop-ir-Font-Diodrum/DiodrumArabic-Bold.woff")
-      format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Use DiodrumArabic-Bold for titles/headings; keep existing body font for content */
-h1,
-h2,
-h3,
-.hero-title {
-  font-family: "DiodrumArabic", var(--font-vazir);
-  font-weight: 700;
-}
-
-/* Local Gandom font for Persian/Arabic */
-/* Use B-Zar font for Persian/Arabic */
-@font-face {
-  font-family: "B-Zar";
-  src: url("/B-Zar/B-Zar/B Zar_0.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "B-Zar";
-  src: url("/B-Zar/B-Zar/B Zar Bold_0.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Ensure RTL pages use local B-Zar font */
-@font-face {
-  font-family: "B-Zar";
-  src: url("/B-Zar/B-Zar/B%20Zar_0.ttf") format("truetype"),
-    url("/B-Zar/B-Zar/B Zar_0.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "B-Zar";
-  src: url("/B-Zar/B-Zar/B%20Zar%20Bold_0.ttf") format("truetype"),
-    url("/B-Zar/B-Zar/B Zar Bold_0.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-html[lang="fa"],
-html[lang="ar"],
-[dir="rtl"] {
-  --font-vazir: "B-Zar", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
-}
-
-/* Force RTL pages to use B-Zar at the body level to ensure the font is applied */
-html[lang="fa"] body,
-html[lang="ar"] body,
-body[dir="rtl"] {
-  font-family: "B-Zar", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial !important;
-}
-
-/* Fallback tokens so site keeps styling if theme classes are missing briefly */
+/* Standard Light Theme Variables */
 :root {
   --color: #1f2937;
   --text-color: #1f2937;
-  --text-secondary: #5a3d31;
-  --background-color: #fffdf6;
-  --btn-translate: translateX(-25px);
-  --switch-knob: #f59e0b;
-  --switch-track: rgba(255, 184, 28, 0.25);
-  --btn-primary-bg: #f59e0b;
-  --btn-primary-text: #ffffff;
-  --btn-secondary-bg: rgba(245, 158, 11, 0.15);
-  --btn-secondary-text: #1f2937;
-}
-
-.theme-dark {
-  --color: #fef3c7; /* متن زرد مایل به کرم روی پس‌زمینه سرمه‌ای */
-  --text-color: #fef3c7; /* متن روشن برای تم تاریک */
-  --text-secondary: #fbbf24; /* متن ثانویه روشن */
-  --background-color: #0b1424; /* سرمه‌ای تیره */
-  --btn-translate: translateX(7px);
-  --nav-background: radial-gradient(
-    circle,
-    rgba(0, 0, 48, 1) 0%,
-    rgba(9, 0, 56, 1) 20%,
-    rgba(0, 28, 74, 1) 50%,
-    rgba(4, 17, 51, 1) 80%,
-    rgba(1, 1, 59, 1) 100%
-  );
-  --switch-knob: #fbbf24; /* زرد گرم برای تم تاریک */
-  --switch-track: rgba(255, 193, 59, 0.18);
-  --btn-primary-bg: #f59e0b;
-  --btn-primary-text: #0b1424;
-  --btn-secondary-bg: rgba(251, 191, 36, 0.2);
-  --btn-secondary-text: #fef3c7;
-}
-
-.theme-light {
-  --color: #1f2937; /* خاکستری تیره برای متن */
-  --text-color: #1f2937; /* متن تیره برای تم روشن */
-  --text-secondary: #5a3d31; /* متن ثانویه تیره */
-  --background-color: #f9f9ff; /* سفید با ته‌مایه زرد بسیار ملایم */
-  --btn-translate: translateX(-25px);
-  --nav-background: radial-gradient(
-    circle,
-    rgba(255, 247, 247, 1) 0%,
-    rgba(207, 255, 247, 1) 0%,
-    rgba(240, 255, 254, 1) 19%,
-    rgba(237, 237, 237, 1) 89%,
-    rgba(191, 225, 255, 1) 100%
-  );
-  --switch-knob: #f59e0b;
-  --switch-track: rgba(255, 184, 28, 0.25);
+  --background-color: #ffffff;
+  --nav-background: #1a4b8c;
   --btn-primary-bg: #f59e0b;
   --btn-primary-text: #ffffff;
   --btn-secondary-bg: rgba(245, 158, 11, 0.15);
@@ -154,10 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  color: var(--text-color);
-}
-
+a,
 p {
   color: var(--text-color);
 }
@@ -176,8 +39,6 @@ body {
   background-color: var(--background-color);
   margin: 0;
   min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: var(--font-vazir);
 }
 
 /* Hero Section Styles */
@@ -244,7 +105,7 @@ body {
 
 nav {
   background: var(--nav-background);
-  height: 170px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,186 +118,39 @@ nav .container {
   width: 80%;
 }
 
-
-/* nav .logo img {
-  width: 200px;
-} */
-
-.theme-switch {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.theme-switch img {
-  width: 25px;
-}
-
-.theme-switch button {
-  position: relative;
-  height: 25px;
-  width: 60px;
-  border-radius: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background: var(--switch-track);
-  cursor: pointer;
-  transition: transform 0.15s ease-out;
-}
-
-.theme-switch button::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: var(--switch-knob);
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%, -50%) var(--btn-translate);
-  transition: 0.3s ease;
-}
-
-.theme-switch button:active {
-  transform: scale(0.96);
-}
-
-/* Ensure theme-switch keeps its own space and doesn't overlap nearby icons */
-.theme-switch {
-  flex-shrink: 0;
-  min-width: 76px; /* reserve space for sun, toggle and moon */
-  padding: 2px 6px;
-  box-sizing: border-box;
-}
-
-.theme-switch img {
-  flex-shrink: 0;
-}
-
-.theme-switch button {
-  flex-shrink: 0;
-  margin: 0 4px;
-  z-index: 2;
-}
-
-
-
-
-
-@media (max-width: 1020px) {
-  .theme-switch {
-    min-width: 64px;
-    gap: 8px;
-  }
-}
-
-@media (max-width: 420px) {
-  .theme-switch {
-    min-width: 56px;
-    gap: 6px;
-  }
-}
-
 .product-card {
   display: flex;
   flex-direction: column;
 }
 
-/* گرادینت مخصوص دارک مود برای کارت محصولات */
-.dark-gradient-bg {
-  background: linear-gradient(180deg, #0d1a30 0%, #0a1223 100%) !important;
-}
-
+/* Breakpoints for Container */
 @media (min-width: 768px) {
   .container {
     max-width: 1100px;
   }
 }
-
 @media (min-width: 1280px) {
   .container {
     max-width: 1240px;
   }
 }
-
 @media (min-width: 1536px) {
   .container {
     max-width: 1320px;
   }
 }
 
-/* Responsive tweaks for mobile / tablet / small laptops */
-
-/* Make nav wrap and reduce height on small screens */
+/* Responsive tweaks */
 @media (max-width: 1024px) {
   nav {
     height: 120px;
     padding: 8px 0;
   }
-
   nav .container {
     width: 92%;
     flex-wrap: wrap;
     gap: 8px;
     align-items: center;
-  }
-/* 
-  nav .logo img {
-    width: 140px;
-  } */
-
-  .theme-switch img {
-    width: 20px;
-  }
-
-  .theme-switch button {
-    height: 20px;
-    width: 48px;
-  }
-}
-
-/* Tighter theme-switch sizes for small tablets and phones */
-@media (max-width: 1020px) {
-  .theme-switch img {
-    width: 18px;
-  }
-  .theme-switch button {
-    height: 18px;
-    width: 44px;
-  }
-  .theme-switch button::before {
-    width: 16px;
-    height: 16px;
-    left: 62%;
-  }
-}
-
-@media (max-width: 768px) {
-  .theme-switch img {
-    width: 16px;
-  }
-  .theme-switch button {
-    height: 16px;
-    width: 40px;
-  }
-  .theme-switch button::before {
-    width: 14px;
-    height: 14px;
-    left: 75%;
-  }
-}
-
-@media (max-width: 420px) {
-  .theme-switch img {
-    width: 14px;
-  }
-  .theme-switch button {
-    height: 14px;
-    width: 36px;
-  }
-  .theme-switch button::before {
-    width: 12px;
-    height: 12px;
-    left: 65%;
   }
 }
 
@@ -445,49 +159,33 @@ nav .container {
     height: auto;
     padding: 10px 0;
   }
-
   nav .container {
     width: 96%;
     justify-content: space-between;
   }
-
-  /* nav .logo img {
-    width: 110px;
-  } */
-
-  /* Nav links: allow wrap and smaller font on phones */
   nav a {
     font-size: 0.95rem;
     padding: 6px 8px;
   }
-
-  /* Hero typography scales smoothly */
   .hero-title {
     font-size: clamp(1.25rem, 4vw, 1.8rem);
     line-height: 1.15;
   }
-
   .hero-subtitle {
     font-size: clamp(0.9rem, 3vw, 1.05rem);
   }
-
   .hero-section {
     padding: 1.25rem 0.75rem;
   }
-
-  /* Product cards: stack and make images responsive */
   .product-card {
     gap: 0.5rem;
   }
-
   .product-card img,
   .product-card picture,
   .product-card video {
     max-width: 100%;
     height: auto;
   }
-
-  /* Reduce large container widths on small laptops */
   @media (max-width: 1100px) {
     .container {
       width: 94%;
@@ -495,26 +193,10 @@ nav .container {
   }
 }
 
-/* Small tweak for very small phones */
- /* @media (max-width: 480px) {
-  nav .logo img {
-    width: 100px;
-  }
+nav a {
+  font-size: 0.9rem;
+  padding: 6px;
 }
-
-@media (max-width: 360px) {
-  nav .logo img {
-    width: 90px;
-  }
-} */
-  nav a {
-    font-size: 0.9rem;
-    padding: 6px;
-  }
-  .theme-switch img {
-    width: 18px;
-  }
-
 
 /* Mobile menu slide-over panel */
 .mobile-menu .mobile-menu-backdrop {
@@ -528,15 +210,12 @@ nav .container {
   transition: transform 0.25s ease;
 }
 
-/* small tweaks for the slide-over content */
 .mobile-menu .btn-ghost {
   background: transparent;
   border: none;
 }
 
-/* Control hamburger visibility and desktop links breakpoint.
-   Use hamburger for widths <= 1020px and normal nav for >= 1024px.
-*/
+/* Hamburger & Desktop links */
 .hamburger-btn {
   display: none;
 }
@@ -551,8 +230,6 @@ nav .container {
   .desktop-links {
     display: none !important;
   }
-
-  /* ensure nav items stack nicely when hamburger replaces links */
   nav .container {
     flex-wrap: nowrap;
     align-items: center;
@@ -566,4 +243,53 @@ nav .container {
   .desktop-links {
     display: flex !important;
   }
+}
+
+/* فقط روی همین اسلایدر اعمال شود */
+.recipeSwiper {
+  /* اگر خواستی فلش‌ها بیرون کارت‌ها برن، این پدینگ‌ها کمک می‌کنه */
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+/* دکمه‌های ناوبری */
+.recipeSwiper .swiper-button-next,
+.recipeSwiper .swiper-button-prev {
+  color: #fff !important;            /* فلش سفید */
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.35);   /* پس‌زمینه برای خوانایی */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  /* فاصله از آیتم‌ها (نسبت به اسلایدر) */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* اندازه آیکون فلش */
+.recipeSwiper .swiper-button-next::after,
+.recipeSwiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* فاصله افقی از کناره‌ها (اینجا تنظیمش کن) */
+.recipeSwiper .swiper-button-prev { left: 12px; }
+.recipeSwiper .swiper-button-next { right: 12px; }
+
+/* موبایل: کمی کوچک‌تر و نزدیک‌تر */
+@media (max-width: 640px) {
+  .recipeSwiper {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .recipeSwiper .swiper-button-next,
+  .recipeSwiper .swiper-button-prev {
+    width: 38px;
+    height: 38px;
+  }
+  .recipeSwiper .swiper-button-prev { left: 8px; }
+  .recipeSwiper .swiper-button-next { right: 8px; }
 }

@@ -1,4 +1,3 @@
-
 import ContactPage from "@/app/components/ContactPage";
 
 export default function Page() {
@@ -9,7 +8,7 @@ export default function Page() {
     addressLabel: "آدرس کارخانه",
     phonePlaceholder: "09134441269",
     addressPlaceholder: "ایران - اصفهان - شهرک صنعتی رازی - خیابان چهارم",
-    
+
     // فرم تماس
     formNameLabel: "نام و نام خانوادگی",
     formNamePlaceholder: "نام خود را وارد کنید",
@@ -20,24 +19,33 @@ export default function Page() {
     submitBtn: "ارسال پیام",
     submitting: "در حال ارسال...",
     successTitle: "پیام شما ارسال شد!",
-    successMessage: "از ارتباط شما سپاسگزاریم. همکاران ما به زودی پیام شما را بررسی خواهند کرد.",
+    successMessage:
+      "از ارتباط شما سپاسگزاریم. همکاران ما به زودی پیام شما را بررسی خواهند کرد.",
     newMsgBtn: "ارسال پیام جدید",
     emailSubject: "پیام جدید از سایت جلفا فودز (فارسی)",
+    formEmailLabel: "ایمیل",
+    formEmailPlaceholder: "info@example.com",
+    formSocialLabel: "آیدی شبکه اجتماعی",
+    formSocialPlaceholder: "آیدی خود را وارد کنید...",
+    formCountryLabel: "کشور",
+    formCountryPlaceholder: "مثال: ایران",
+    formCityLabel: "شهر",
+    formCityPlaceholder: "مثال: اصفهان",
   };
 
   return (
-    <main dir="rtl" className="min-h-screen p-8">
+    <main dir="rtl" className="min-h-screen ">
       <ContactPage
         phone={"09134441269"}
         instagram={"https://www.instagram.com/jolfacheese"}
         telegram={"https://t.me/jolfacheese"}
         whatsapp={"https://wa.me/989134441269"}
         address={"ایران - اصفهان - شهرک صنعتی رازی - خیابان چهارم"}
-        description={"برای ارتباط با واحد فروش، همکاری یا سوالات عمومی می‌توانید از طریق شماره تلفن یا شبکه‌های اجتماعی با ما در تماس باشید. پیام‌ها در ساعات اداری پاسخ داده می‌شوند. لطفاً جزئیات درخواست خود را ذکر کنید تا سریع‌تر راهنمایی شوید."}
-        labels={labels}   
+        description={
+          "برای ارتباط با واحد فروش، همکاری یا سوالات عمومی می‌توانید از طریق شماره تلفن یا شبکه‌های اجتماعی با ما در تماس باشید. پیام‌ها در ساعات اداری پاسخ داده می‌شوند. لطفاً جزئیات درخواست خود را ذکر کنید تا سریع‌تر راهنمایی شوید."
+        }
+        labels={labels}
       />
-      
-   
     </main>
   );
 }

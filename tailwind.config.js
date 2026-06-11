@@ -4,24 +4,26 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
-    extend: {  screens: {
-        xs: '360px',
-      },},
-  },
-  plugins: [require("daisyui"),('@tailwindcss/typography')],
-  daisyui: {
-    themes: [
-      {
-        jolfa: {
-          primary: "#f5c451",
-          secondary: "#bbc5d9",
-          accent: "#f43f5e",
-          neutral: "#111827",
-        },
+    extend: {
+      fontFamily: {
+        semibold: ["var(--font-bold)"],
+        bold: ["var(--font-bold)"],
+        kalame: ["var(--font-kalame)"],
+        diodrum: ["var(--font-diodrum)"],
       },
-    ],
+      screens: {
+        xxs: "288px",
+        xs: "360px",
+        xxlg: "1450px",
+        xxxlg: "2000px",
+      },
+    },
+  },
+  plugins: [require("daisyui"), "@tailwindcss/typography"],
+  daisyui: {
+    themes: false, // غیرفعال کردن تم‌های پیش‌فرض
+    logs: false,   // غیرفعال کردن پیام‌های کنسول/ترمینال
   },
 };
-
