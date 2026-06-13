@@ -106,8 +106,8 @@ export default function LanguageNav() {
   }, [mobileOpen]);
 
   return (
-    <nav className="nav w-full bg-[#154994] text-white py-1 xs:py-1 sm:py-2 lg:py-3 relative z-50 shadow-md">
-      <div className="container mx-auto px-4 flex items-center justify-between min-h-[30px] md:min-h-[40px]">
+    <nav className="nav w-full bg-[#154994] text-white py-1 xs:py-1 sm:py-2 md:py-2 lg:py-4 relative z-50 shadow-md">
+      <div className="container mx-auto px-4 flex items-center justify-between min-h-[30px] md:min-h-[40px] lg:min-h-[40px]">
         {/* === بخش چپ === */}
         <div className="flex-1 flex items-center justify-start lg:hidden">
           <button
@@ -147,7 +147,7 @@ export default function LanguageNav() {
               width={140}
               height={70}
               priority
-              className="w-[100px] md:w-[140px] h-auto object-contain drop-shadow-xl"
+              className="w-[100px] xs:w-[80px] md:w-[110px] h-auto object-contain drop-shadow-xl"
             />
           </Link>
         </div>

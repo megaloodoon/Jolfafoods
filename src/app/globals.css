@@ -7,7 +7,6 @@
   --color: #1f2937;
   --text-color: #1f2937;
   --background-color: #ffffff;
-  --nav-background: #1a4b8c;
   --btn-primary-bg: #f59e0b;
   --btn-primary-text: #ffffff;
   --btn-secondary-bg: rgba(245, 158, 11, 0.15);
@@ -103,21 +102,6 @@ body {
   color: var(--btn-primary-text);
 }
 
-nav {
-  background: var(--nav-background);
-  height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-nav .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-}
-
 .product-card {
   display: flex;
   flex-direction: column;
@@ -141,32 +125,7 @@ nav .container {
 }
 
 /* Responsive tweaks */
-@media (max-width: 1024px) {
-  nav {
-    height: 120px;
-    padding: 8px 0;
-  }
-  nav .container {
-    width: 92%;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
-  }
-}
-
 @media (max-width: 768px) {
-  nav {
-    height: auto;
-    padding: 10px 0;
-  }
-  nav .container {
-    width: 96%;
-    justify-content: space-between;
-  }
-  nav a {
-    font-size: 0.95rem;
-    padding: 6px 8px;
-  }
   .hero-title {
     font-size: clamp(1.25rem, 4vw, 1.8rem);
     line-height: 1.15;
@@ -190,58 +149,6 @@ nav .container {
     .container {
       width: 94%;
     }
-  }
-}
-
-nav a {
-  font-size: 0.9rem;
-  padding: 6px;
-}
-
-/* Mobile menu slide-over panel */
-.mobile-menu .mobile-menu-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.mobile-menu > div[role="panel"],
-.mobile-menu > .relative {
-  transition: transform 0.25s ease;
-}
-
-.mobile-menu .btn-ghost {
-  background: transparent;
-  border: none;
-}
-
-/* Hamburger & Desktop links */
-.hamburger-btn {
-  display: none;
-}
-.desktop-links {
-  display: flex;
-}
-
-@media (max-width: 1020px) {
-  .hamburger-btn {
-    display: inline-flex;
-  }
-  .desktop-links {
-    display: none !important;
-  }
-  nav .container {
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hamburger-btn {
-    display: none;
-  }
-  .desktop-links {
-    display: flex !important;
   }
 }
 

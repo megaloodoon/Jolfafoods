@@ -117,9 +117,11 @@ export default function Productsj({ lang = "fa" }) {
 
   return (
     <section
-      /* تغییر رنگ بک‌گراند به رنگ درخواستی شما هنگام انتخاب دسته‌بندی */
-      className={`w-full -mt-4 sm:-mt-8 flex flex-col items-center transition-colors duration-500 min-h-screen ${
-        activeCategory ? "bg-[#d8e6fe]" : "bg-white"
+      /* تغییر رنگ و فاصله از بالا هنگام انتخاب دسته‌بندی */
+      className={`w-full flex flex-col items-center transition-all duration-500 min-h-screen ${
+        activeCategory
+          ? "bg-[#d8e6fe] pt-4 xs:pt-4 sm:pt-6 md:pt-9 lg:pt-10" /* اگر دسته‌بندی انتخاب شده: پدینگ بالا برای فاصله از نوبار */
+          : "bg-white -mt-4 sm:-mt-8" /* اگر بنر هست: همان مارجین منفی قبلی */
       }`}
     >
       {/* ارسال مقدار متغیر به showBanner بر اساس انتخاب یا عدم انتخاب دسته‌بندی */}

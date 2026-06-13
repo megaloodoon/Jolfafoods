@@ -95,7 +95,7 @@ export default function ContactPage({
       {/* ---------------------------------- */}
 
       {/* کارت فرم تماس */}
-      <div className="relative z-10 max-w-5xl mx-auto bg-white rounded-[1.5rem] sm:rounded-[2rem] shadow-xl overflow-hidden p-5 sm:p-8 mt-10 md:p-12">
+      <div className="relative z-10 max-w-5xl mx-auto bg-white rounded-[1.5rem] sm:rounded-[2rem] shadow-xl overflow-hidden p-5 sm:p-8 mt-40 md:p-12">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
           {/* ستون اطلاعات تماس */}
           <div className="w-full lg:w-1/2 flex flex-col justify-between">
