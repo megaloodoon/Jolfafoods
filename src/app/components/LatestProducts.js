@@ -21,19 +21,31 @@ const PRODUCTS_DATA = [
     image: "/Image/New/LatestProducts-first.png",
     textBox: {
       top: "28%",
-      left: "52%", 
-      width: "38%", 
-      mdWidth: "32%", 
+      left: "52%",
+      width: "38%",
+      mdWidth: "32%",
     },
     lang: {
       fa: {
         title: "سس پنیر پیتزای پروسس چدار",
         desc: "طعم بی‌نظیر و اصیل چدار، انتخابی عالی برای لذیذتر کردن انواع پیتزا و ساندویچ.",
       },
-      en: { title: "Cheddar Pizza Cheese Sauce", desc: "Authentic cheddar flavor perfect for pizzas." },
-      ar: { title: "صلصة جبن الشيدر للبيتزا", desc: "نكهة شيدر أصلية مثالية للبيتزا." },
-      fr: { title: "Sauce cheddar pour pizza", desc: "Saveur cheddar authentique parfaite pour les pizzas." },
-      ru: { title: "Сырный соус чеддер для пиццы", desc: "Аутентичный вкус чеддера, идеально подходящий для пиццы." },
+      en: {
+        title: "Cheddar Pizza Cheese Sauce",
+        desc: "Authentic cheddar flavor perfect for pizzas.",
+      },
+      ar: {
+        title: "صلصة جبن الشيدر للبيتزا",
+        desc: "نكهة شيدر أصلية مثالية للبيتزا.",
+      },
+      fr: {
+        title: "Sauce cheddar pour pizza",
+        desc: "Saveur cheddar authentique parfaite pour les pizzas.",
+      },
+      ru: {
+        title: "Сырный соус чеддер для пиццы",
+        desc: "Аутентичный вкус чеддера, идеально подходящий для пиццы.",
+      },
     },
   },
   {
@@ -46,11 +58,26 @@ const PRODUCTS_DATA = [
       mdWidth: "34%",
     },
     lang: {
-      fa: { title: "خامه پاستوریزه پرچرب", desc: "تهیه شده از شیر تازه گاو مناسب صبحانه و دسر." },
-      en: { title: "Full Fat Cream", desc: "Premium cream made from fresh milk." },
-      ar: { title: "قشطة كاملة الدسم", desc: "قشطة فاخرة مصنوعة من الحليب الطازج." },
-      fr: { title: "Crème entière", desc: "Crème premium à base de lait frais." },
-      ru: { title: "Жирные сливки", desc: "Премиальные сливки из свежего молока." },
+      fa: {
+        title: "خامه پاستوریزه پرچرب",
+        desc: "تهیه شده از شیر تازه گاو مناسب صبحانه و دسر.",
+      },
+      en: {
+        title: "Full Fat Cream",
+        desc: "Premium cream made from fresh milk.",
+      },
+      ar: {
+        title: "قشطة كاملة الدسم",
+        desc: "قشطة فاخرة مصنوعة من الحليب الطازج.",
+      },
+      fr: {
+        title: "Crème entière",
+        desc: "Crème premium à base de lait frais.",
+      },
+      ru: {
+        title: "Жирные сливки",
+        desc: "Премиальные сливки из свежего молока.",
+      },
     },
   },
   {
@@ -64,11 +91,26 @@ const PRODUCTS_DATA = [
       mdWidth: "30%",
     },
     lang: {
-      fa: { title: "سس پنیر پیتزای پروسس", desc: "بافتی نرم و کشدار با طعمی ملایم مناسب انواع غذاهای فست فودی." },
-      en: { title: "Pizza Processed Cheese Sauce", desc: "Soft texture perfect for fast food." },
-      ar: { title: "صلصة جبن البيتزا المطبوخة", desc: "قوام ناعم ومطاطي مثالي للوجبات السريعة." },
-      fr: { title: "Sauce fromage fondu pour pizza", desc: "Texture douce et fondante idéale pour le fast-food." },
-      ru: { title: "Плавленый сырный соус для пиццы", desc: "Мягкая текстура, идеально подходит для фастфуда." },
+      fa: {
+        title: "سس پنیر پیتزای پروسس",
+        desc: "بافتی نرم و کشدار با طعمی ملایم مناسب انواع غذاهای فست فودی.",
+      },
+      en: {
+        title: "Pizza Processed Cheese Sauce",
+        desc: "Soft texture perfect for fast food.",
+      },
+      ar: {
+        title: "صلصة جبن البيتزا المطبوخة",
+        desc: "قوام ناعم ومطاطي مثالي للوجبات السريعة.",
+      },
+      fr: {
+        title: "Sauce fromage fondu pour pizza",
+        desc: "Texture douce et fondante idéale pour le fast-food.",
+      },
+      ru: {
+        title: "Плавленый сырный соус для пиццы",
+        desc: "Мягкая текстура, идеально подходит для фастфуда.",
+      },
     },
   },
   {
@@ -76,34 +118,86 @@ const PRODUCTS_DATA = [
     image: "/Image/New/LatestProducts-forth.png",
     special: true,
     lang: {
-      fa: { title: "پنیر موزارلا کبابی", desc: "پنیر موزارلا کبابی جلفا نوعی پنیر فرآوری‌شده بر پایه موزارلاست که به‌گونه‌ای فرمولاسیون شده تا در برابر حرارت مستقیم پایداری بافتی داشته باشد. این پنیر با حرارت دچار آب‌اندازی یا ذوب بیش از حد نمی‌گردد بلکه به صورت یکنواخت نرم و..." },
-      en: { title: "Grill Mozzarella", desc: "Perfect for grilling without losing texture or melting excessively." },
-      ar: { title: "موزاريلا للشواء", desc: "مثالية للشواء دون فقدان القوام أو الذوبان المفرط." },
-      fr: { title: "Mozzarella à griller", desc: "Parfaite pour griller sans perdre sa texture ni fondre excessivement." },
-      ru: { title: "Моцарелла для гриля", desc: "Идеально подходит для жарки на гриле без потери текстуры." },
+      fa: {
+        title: "پنیر موزارلا کبابی",
+        desc: "پنیر موزارلا کبابی جلفا نوعی پنیر فرآوری‌شده بر پایه موزارلاست که به‌گونه‌ای فرمولاسیون شده تا در برابر حرارت مستقیم پایداری بافتی داشته باشد. این پنیر با حرارت دچار آب‌اندازی یا ذوب بیش از حد نمی‌گردد بلکه به صورت یکنواخت نرم و...",
+      },
+      en: {
+        title: "Grill Mozzarella",
+        desc: "Perfect for grilling without losing texture or melting excessively.",
+      },
+      ar: {
+        title: "موزاريلا للشواء",
+        desc: "مثالية للشواء دون فقدان القوام أو الذوبان المفرط.",
+      },
+      fr: {
+        title: "Mozzarella à griller",
+        desc: "Parfaite pour griller sans perdre sa texture ni fondre excessivement.",
+      },
+      ru: {
+        title: "Моцарелла для гриля",
+        desc: "Идеально подходит для жарки на гриле без потери текстуры.",
+      },
     },
   },
 ];
 
 const GALLERY_DATA = [
-  { id: "g1", image: "/Image/New/LatestProducts-gallery1.png", lang: { fa: "پنیر خامه ای", en: "Cream Cheese", ar: "جبنة كريمية", fr: "Fromage à la crème", ru: "Сливочный сыр" } },
-  { id: "g2", image: "/Image/New/LatestProducts-gallery2.png", lang: { fa: "پنیر پیتزا", en: "Pizza Cheese", ar: "جبنة بيتزا", fr: "Fromage pizza", ru: "Сыр для пиццы" } },
-  { id: "g3", image: "/Image/New/LatestProducts-gallery3.png", lang: { fa: "کره حیوانی", en: "Butter", ar: "زبدة", fr: "Beurre", ru: "Сливочное масло" } },
+  {
+    id: "g1",
+    image: "/Image/New/LatestProducts-gallery1.png",
+    lang: {
+      fa: "پنیر خامه ای",
+      en: "Cream Cheese",
+      ar: "جبنة كريمية",
+      fr: "Fromage à la crème",
+      ru: "Сливочный сыр",
+    },
+  },
+  {
+    id: "g2",
+    image: "/Image/New/LatestProducts-gallery2.png",
+    lang: {
+      fa: "پنیر پیتزا",
+      en: "Pizza Cheese",
+      ar: "جبنة بيتزا",
+      fr: "Fromage pizza",
+      ru: "Сыр для пиццы",
+    },
+  },
+  {
+    id: "g3",
+    image: "/Image/New/LatestProducts-gallery3.png",
+    lang: {
+      fa: "کره حیوانی",
+      en: "Butter",
+      ar: "زبدة",
+      fr: "Beurre",
+      ru: "Сливочное масло",
+    },
+  },
 ];
 
 export default function LatestProducts({ lang = "fa" }) {
   const rtl = ["fa", "ar"].includes(lang);
 
   return (
-    <section className="w-full  py-6 sm:py-16 overflow-hidden">
+    <section className="w-full py-6 sm:py-16 overflow-hidden">
       <div
-        className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16"
-        style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background3.svg')" }}
+        className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16 bg-center"
+        style={{
+          backgroundImage:
+            "url('/Image/New/Backgrounds/LatestProducts-pattern-background3.svg')",
+          backgroundSize:
+            "50%" /* این مقدار را می‌توانید به درصد یا پیکسل مثل 300px تغییر دهید */,
+        }}
       >
         {/* Title */}
         <div
           className="relative text-center w-full flex items-center justify-center bg-center bg-no-repeat bg-contain py-4 sm:py-8 md:py-12"
-          style={{ backgroundImage: "url('/Image/New/Backgrounds/Home-recepie.png')" }}
+          style={{
+            backgroundImage: "url('/Image/New/Backgrounds/Home-recepie.png')",
+          }}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a4b8c] drop-shadow-sm">
             {SECTION_TITLE[lang] || SECTION_TITLE.en}
@@ -115,11 +209,21 @@ export default function LatestProducts({ lang = "fa" }) {
 
           if (p.special) {
             return (
-              <div key={p.id} className="flex flex-col items-center pt-4 md:pt-10">
-                <img src={p.image} className="w-full max-w-4xl z-10 relative" alt={t.title} />
+              <div
+                key={p.id}
+                className="flex flex-col items-center pt-4 md:pt-10"
+              >
+                <img
+                  src={p.image}
+                  className="w-full max-w-4xl z-10 relative"
+                  alt={t.title}
+                />
                 <div
                   className="w-full max-w-6xl p-6 sm:p-16 text-center flex flex-col justify-center min-h-[180px] sm:min-h-[220px] xs:mt-4 mt-10 sm:mt-8 pt-16 sm:pt-32 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/Image/New/LatestProducts-Grill-mozarella-background.png')" }}
+                  style={{
+                    backgroundImage:
+                      "url('/Image/New/LatestProducts-Grill-mozarella-background.png')",
+                  }}
                 >
                   <h3 className="text-xl sm:text-3xl font-bold text-[#c4122f] mb-2 sm:mb-4 drop-shadow-sm">
                     {t.title}
@@ -136,7 +240,10 @@ export default function LatestProducts({ lang = "fa" }) {
             <div
               key={p.id}
               className="relative w-full bg-cover"
-              style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')" }}
+              style={{
+                backgroundImage:
+                  "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')",
+              }}
             >
               <img src={p.image} className="w-full h-auto" alt={t.title} />
 
@@ -144,7 +251,10 @@ export default function LatestProducts({ lang = "fa" }) {
                 className="absolute flex flex-col gap-1 sm:gap-4"
                 style={{
                   top: p.textBox.top,
-                  left: rtl && p.textBox.rtlLeft ? p.textBox.rtlLeft : p.textBox.left,
+                  left:
+                    rtl && p.textBox.rtlLeft
+                      ? p.textBox.rtlLeft
+                      : p.textBox.left,
                 }}
               >
                 <div className="w-[38vw] md:w-[32vw] lg:w-[28vw] max-w-md">
@@ -168,7 +278,10 @@ export default function LatestProducts({ lang = "fa" }) {
         {/* Swiper Gallery */}
         <div
           className="pt-10 md:pt-16 relative px-4 sm:px-12 xs:pt-[6px] bg-cover"
-          style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')" }}
+          style={{
+            backgroundImage:
+              "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')",
+          }}
         >
           <Swiper
             modules={[Autoplay]}

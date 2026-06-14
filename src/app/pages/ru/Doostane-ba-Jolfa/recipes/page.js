@@ -1,22 +1,18 @@
 import path from 'path';
 import { readFile } from 'fs/promises';
+// اگر برای انگلیسی کامپوننت جداگانه دارید، نام آن را جایگزین کنید
 import RecipesSwiperGridClient from '@/app/components/RecipesSwiperGridClientRu';
 
-const SUFFIX_MAP = { en: 'En', ar: 'Ar', fr: 'Fr', ru: 'Ru', fa: 'Fa' };
-
-export default async function RecipesPage() {
+export default async function RecipesPagefr() {
   const file = path.join(process.cwd(), 'data', 'db.json');
   const raw = await readFile(file, 'utf8');
   const data = JSON.parse(raw);
   const recipes = data.recipes || [];
 
-  const locale = 'ru';
-  const suf = SUFFIX_MAP[locale];
-
   return (
-    <main className="mx-auto max-w-6xl p-6 md:p-10">
-      <h1 className="text-3xl font-extrabold mb-6">Рецепты</h1>
-      <RecipesSwiperGridClient recipes={recipes} />
+    // برای انگلیسی dir="ltr" تنظیم شده است
+    <main dir="ltr" className="w-full">
+      <RecipesSwiperGridClient recipes={recipes} locale="Ru" />
     </main>
   );
 }

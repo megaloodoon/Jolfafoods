@@ -1,17 +1,37 @@
-export default function NewsPage() {
+import path from "path";
+import { readFile } from "fs/promises";
+import Image from "next/image";
+import NewsListClient from "@/app/components/NewsListClient";
+
+export default async function NewsPageFr() {
+  // دریافت داده‌ها از JSON
+  const filePath = path.join(process.cwd(), "data", "news.json");
+  const jsonData = await readFile(filePath, "utf8");
+  const data = JSON.parse(jsonData);
+  const newsList = data.news || [];
+
   return (
-    <main className="mx-auto max-w-6xl p-6 md:p-10">
-      <div className="mb-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">Actualités Doostane-ba-Jolfa</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">Suivez les dernières nouvelles et événements de Jolfa Iran.</p>
-      </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-t-4 border-amber-500">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">À venir...</h2>
-          <p className="text-gray-600 dark:text-gray-400">De nouveaux articles seront publiés bientôt.</p>
+    <main dir="ltr" className="w-full">
+      {/* بنر تمام عرض اخبار */}
+      <section className="relative w-full h-[40vh] min-h-[300px]">
+        <Image
+          src="/Image/New/News/news-banner.png"
+          alt="خبرهای جلفا"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* لایه تاریک روی عکس برای خوانایی متن */}
+        <div className="absolute inset-0 bg-blue-900/40"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-lg text-center px-4">
+            Read more Jolfa's News
+          </h1>
         </div>
-      </div>
+      </section>
+
+      {/* لیست اخبار */}
+      <NewsListClient newsList={newsList} locale="fr" />
     </main>
   );
 }

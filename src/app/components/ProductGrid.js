@@ -52,7 +52,7 @@ export default function ProductGrid({
       {Object.entries(groupedProducts).map(([subCategoryKey, items]) => (
         <div key={subCategoryKey} className="mb-10 xs:mb-16">
           {/* ریسپانسیو کردن سایز سرتیترها */}
-          <h2 className="text-xl xs:text-2xl md:text-3xl font-bold text-[#1a4b8c] mb-6 xs:mb-8 border-b-2 border-[#1a4b8c]/20 pb-2 inline-block">
+          <h2 className="text-xl xs:text-2xl md:text-3xl font-bold text-[#1a4b8c] mb-6 mt-4 xs:mb-8 border-b-2 border-[#1a4b8c]/20 pb-4 inline-block">
             {t[subCategoryKey]}
           </h2>
 

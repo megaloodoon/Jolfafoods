@@ -1,0 +1,91 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "image": "/Image/New/News/exhibition-dubai.png",
+
+      "title_fa": "حضور جلفا در نمایشگاه بین المللی گلفود 2026 دبی",
+      "excerpt_fa": "شرکت عصر طلایی برتر اسپادانا در نمایشگاه بزرگ صنایع غذایی و نوشیدنی دبی حضور یافت...",
+      "content_fa": "متن کامل خبر به زبان فارسی در اینجا قرار می‌گیرد...",
+      "date_fa": "۱۴۰۴/۱۲/۰۵",
+
+      "title_en": "Jolfa's Presence at Gulfood 2026 Dubai",
+      "excerpt_en": "Asr Talaei Bartar Espadana company participated in the great food industry exhibition...",
+      "content_en": "Full news content in English goes here...",
+      "date_en": "Feb 24, 2026",
+
+      "title_ar": "حضور جلفا في معرض جلفود 2026 الدولي في دبي",
+      "excerpt_ar": "شاركت شركة عصر طلائي برتر إسبادانا في المعرض الكبير لصناعة الأغذية والمشروبات...",
+      "content_ar": "النص الكامل للخبر باللغة العربية يوضع هنا...",
+      "date_ar": "٢٤ فبراير ٢٠٢٦",
+
+      "title_fr": "Présence de Jolfa au salon Gulfood 2026 à Dubaï",
+      "excerpt_fr": "La société Asr Talaei Bartar Espadana a participé à la grande exposition de l'industrie alimentaire...",
+      "content_fr": "Le texte complet de l'actualité en français va ici...",
+      "date_fr": "24 Fév 2026",
+
+      "title_ru": "Участие Jolfa в международной выставке Gulfood 2026 в Дубае",
+      "excerpt_ru": "Компания Asr Talaei Bartar Espadana приняла участие в крупнейшей выставке пищевой промышленности...",
+      "content_ru": "Полный текст новости на русском языке находится здесь...",
+      "date_ru": "24 Фев 2026"
+    },
+    {
+      "id": "2",
+      "image": "/Image/New/News/exhibition-tehran.png",
+
+      "title_fa": "حضور جلفا در هفتمین نمایشگاه بین المللی اکسپو تهران",
+      "excerpt_fa": "شرکت عصر طلایی برتر اسپادانا در نمایشگاه توانمندی‌های صادراتی ایران (ایران اکسپو) حضور یافت...",
+      "content_fa": "متن کامل خبر دوم به زبان فارسی...",
+      "date_fa": "۱۴۰۵/۰۲/۱۰",
+
+      "title_en": "Jolfa at the 7th International Tehran Expo",
+      "excerpt_en": "Participating in the great export capabilities exhibition of Iran (Iran Expo)...",
+      "content_en": "Full news content for the second item in English...",
+      "date_en": "April 30, 2026",
+
+      "title_ar": "حضور جلفا في معرض إكسبو طهران الدولي السابع",
+      "excerpt_ar": "المشاركة في معرض القدرات التصديرية العظيم لإيران (إيران إكسبو)...",
+      "content_ar": "النص الكامل للخبر الثاني باللغة العربية...",
+      "date_ar": "٣٠ أبريل ٢٠٢٦",
+
+      "title_fr": "Jolfa à la 7e Exposition internationale de Téhéran",
+      "excerpt_fr": "Participation à la grande exposition des capacités d'exportation de l'Iran (Iran Expo)...",
+      "content_fr": "Le texte complet de la deuxième actualité en français...",
+      "date_fr": "30 Avr 2026",
+
+      "title_ru": "Jolfa на 7-й международной выставке Экспо в Тегеране",
+      "excerpt_ru": "Участие в великой выставке экспортных возможностей Ирана (Iran Expo)...",
+      "content_ru": "Полный текст второй новости на русском языке...",
+      "date_ru": "30 Апр 2026"
+    },
+    {
+      "id": "3",
+      "image": "/Image/New/News/exhibition-mazesta.png",
+
+      "title_fa": "حضور جلفا در نمایشگاه بین المللی گلفود 2026 دبی",
+      "excerpt_fa": "شرکت عصر طلایی برتر اسپادانا در نمایشگاه بزرگ صنایع غذایی و نوشیدنی دبی حضور یافت...",
+      "content_fa": "متن کامل خبر به زبان فارسی در اینجا قرار می‌گیرد...",
+      "date_fa": "۱۴۰۴/۱۲/۰۵",
+
+      "title_en": "Jolfa's Presence at Gulfood 2026 Dubai",
+      "excerpt_en": "Asr Talaei Bartar Espadana company participated in the great food industry exhibition...",
+      "content_en": "Full news content in English goes here...",
+      "date_en": "Feb 24, 2026",
+
+      "title_ar": "حضور جلفا في معرض جلفود 2026 الدولي في دبي",
+      "excerpt_ar": "شاركت شركة عصر طلائي برتر إسبادانا في المعرض الكبير لصناعة الأغذية والمشروبات...",
+      "content_ar": "النص الكامل للخبر باللغة العربية يوضع هنا...",
+      "date_ar": "٢٤ فبراير ٢٠٢٦",
+
+      "title_fr": "Présence de Jolfa au salon Gulfood 2026 à Dubaï",
+      "excerpt_fr": "La société Asr Talaei Bartar Espadana a participé à la grande exposition de l'industrie alimentaire...",
+      "content_fr": "Le texte complet de l'actualité en français va ici...",
+      "date_fr": "24 Fév 2026",
+
+      "title_ru": "Участие Jolfa в международной выставке Gulfood 2026 в Дубае",
+      "excerpt_ru": "Компания Asr Talaei Bartar Espadana приняла участие в крупнейшей выставке пищевой промышленности...",
+      "content_ru": "Полный текст новости на русском языке находится здесь...",
+      "date_ru": "24 Фев 2026"
+    }
+  ]
+}
