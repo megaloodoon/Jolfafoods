@@ -17,6 +17,8 @@ const DICTIONARY = {
     blockCheese: "پنیرهای قالبی",
     otherCheese: "سایر پنیرها",
     creams: "خامه‌ها",
+    sauces: "سس‌ها",
+    butters: "کره‌ها",
     allProducts: "محصولات",
   },
   en: {
@@ -30,6 +32,8 @@ const DICTIONARY = {
     blockCheese: "Block Cheeses",
     otherCheese: "Other Cheeses",
     creams: "Creams",
+    sauces: "Sauces",
+    butters: "Butters",
     allProducts: "Products",
   },
   ar: {
@@ -43,6 +47,8 @@ const DICTIONARY = {
     blockCheese: "جبن قوالب",
     otherCheese: "أجبان أخرى",
     creams: "قشطة",
+    sauces: "صلصات",
+    butters: "زبدة",
     allProducts: "منتجات",
   },
   fr: {
@@ -56,6 +62,8 @@ const DICTIONARY = {
     blockCheese: "Fromages en Bloc",
     otherCheese: "Autres Fromages",
     creams: "Crèmes",
+    sauces: "Sauces",
+    butters: "Beurres",
     allProducts: "Produits",
   },
   ru: {
@@ -69,6 +77,8 @@ const DICTIONARY = {
     blockCheese: "Кусковой Сыр",
     otherCheese: "Другие Сыры",
     creams: "Сливки",
+    sauces: "Соусы",
+    butters: "Масла",
     allProducts: "Продукты",
   },
 };
@@ -117,14 +127,12 @@ export default function Productsj({ lang = "fa" }) {
 
   return (
     <section
-      /* تغییر رنگ و فاصله از بالا هنگام انتخاب دسته‌بندی */
       className={`w-full flex flex-col items-center transition-all duration-500 min-h-screen ${
         activeCategory
-          ? "bg-[#d8e6fe] pt-4 xs:pt-4 sm:pt-6 md:pt-9 lg:pt-10" /* اگر دسته‌بندی انتخاب شده: پدینگ بالا برای فاصله از نوبار */
-          : "bg-white -mt-4 sm:-mt-8" /* اگر بنر هست: همان مارجین منفی قبلی */
+          ? "bg-[#d8e6fe] pt-1 xs:pt-1 sm:pt-2 md:pt-2 lg:pt-2"
+          : "bg-white -mt-4 sm:-mt-8"
       }`}
     >
-      {/* ارسال مقدار متغیر به showBanner بر اساس انتخاب یا عدم انتخاب دسته‌بندی */}
       <CategoryNav
         currentLang={currentLang}
         t={t}

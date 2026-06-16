@@ -48,8 +48,23 @@ export default function NewsListClient({ newsList, locale }) {
           return (
             <div
               key={news.id}
-              className="grid grid-cols-1 md:grid-cols-2 rounded-[2rem] overflow-hidden bg-[#e8f1ff] min-h-[300px]"
+              className="grid grid-cols-1 md:grid-cols-2 rounded-[1rem] overflow-hidden bg-[#e8f1ff] min-h-[300px]"
             >
+              {/* بخش تصویر */}
+              <div
+                className={`relative h-64 md:h-auto ${
+                  isTextFirst ? "md:order-2" : "md:order-1"
+                }`}
+              >
+                <Image
+                  src={news.image}
+                  alt={title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+
               {/* بخش متن */}
               <div
                 className={`relative p-8 md:p-12 flex flex-col justify-center ${
@@ -83,21 +98,6 @@ export default function NewsListClient({ newsList, locale }) {
                     {t.readMore}
                   </Link>
                 </div>
-              </div>
-
-              {/* بخش تصویر */}
-              <div
-                className={`relative h-64 md:h-auto ${
-                  isTextFirst ? "md:order-2" : "md:order-1"
-                }`}
-              >
-                <Image
-                  src={news.image}
-                  alt={title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
               </div>
             </div>
           );

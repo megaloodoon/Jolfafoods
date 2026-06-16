@@ -6,7 +6,7 @@ export default function DoostaneBaJolfaPage() {
     <main dir="rtl" className="w-full bg-[rgb(216,230,254)] pb-0 font-sans">
       
       {/* بخش گرافیکی بالای صفحه */}
-      <section className="relative w-full h-[50vh] md:h-[70vh] overflow-hidden flex items-end justify-center bg-white">
+      <section className="relative w-full overflow-hidden flex items-end justify-center bg-white">
         {/* لایه ۱: بک‌گراند آبی */}
         <div
           className="absolute inset-0 w-full h-full z-0 bg-cover bg-center bg-no-repeat"
@@ -17,17 +17,15 @@ export default function DoostaneBaJolfaPage() {
         />
 
         {/* لایه ۲: عکس اصلی به صورت تمام صفحه */}
-        <div className="absolute inset-0 z-20 w-full h-full">
+        <div className="relative z-20 w-full h-full flex justify-center items-center">
           <img
             src="/Image/New/Friendly.png"
             alt="بنر صفحه دوستانه با جلفا"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-auto object-contain object-center"
           />
         </div>
-
-        {/* لایه ۳: هاله سفید در پایین عکس (قوی‌تر شده برای اتصال بهتر) */}
-        <div className="absolute inset-x-0 bottom-0 h-[50%] z-30 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
       </section>
+
 
       {/* بخش محتوا: شروع با هاله سفید و پایان با رنگ آبی */}
       <section className="relative w-full bg-gradient-to-b from-white via-white/60 to-[rgb(216,230,254)] overflow-hidden z-40 -mt-16 md:-mt-24 py-16 md:py-24 pb-24 md:pb-32">

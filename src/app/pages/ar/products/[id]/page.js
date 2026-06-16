@@ -24,7 +24,7 @@ export default async function ProductDetail({ params }) {
           <div className="grid gap-6 p-5 sm:p-7 md:grid-cols-[360px,1fr] md:gap-8">
             
             {/* Image */}
-            <div className="overflow-hidden rounded-xl bg-black/5 dark:bg-white/5">
+            <div className="overflow-hidden rounded-xl bg-white">
               <Image
                 src={product.image}
                 alt={product.name}

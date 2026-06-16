@@ -24,7 +24,7 @@ export default function PageEN() {
       name: "Cream",
       sizeClass: "w-10 xs:w-12 sm:w-16 md:w-20 lg:w-28 xl:w-36",
     },
-  ]; 
+  ];
   return (
     <main dir="ltr" className="flex min-h-screen flex-col font-sans bg-white">
       {/* Hero Section */}
@@ -114,7 +114,7 @@ export default function PageEN() {
       </div>
 
       {/* Recipes Section */}
-      <div className="py-10 text-center bg-none sm:bg-[url('/Image/New/Backgrounds/Home-recepie.png')] bg-cover bg-center bg-no-repeat">
+      <div className="py-10 text-center bg-none sm:bg-[url('/Image/New/Backgrounds/Home-recepie.png')] sm:bg-[length:50%] bg-center bg-repeat">
         <h3 className="text-2xl md:text-4xl font-bold text-[#1a4b8c] mb-10">
           Tips and Tricks with Jolfa Recipes
         </h3>
