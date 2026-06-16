@@ -28,7 +28,7 @@ export default function DoostaneBaJolfaPage() {
 
 
       {/* بخش محتوا: شروع با هاله سفید و پایان با رنگ آبی */}
-      <section className="relative w-full bg-gradient-to-b from-white via-white/60 to-[rgb(216,230,254)] overflow-hidden z-40 -mt-16 md:-mt-24 py-16 md:py-24 pb-24 md:pb-32">
+      <section className="relative w-full overflow-hidden z-40 -mt-16 md:-mt-24 py-16 md:py-24 pb-24 md:pb-32">
         
         {/* لایه نقطه‌چین‌ها (چپ) */}
         <div

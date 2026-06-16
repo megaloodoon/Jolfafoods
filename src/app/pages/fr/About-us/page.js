@@ -30,7 +30,7 @@ export default function AboutUsFr() {
                   Notre Histoire
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 La société Asre Talaei Bartar Spadana a été créée en 2018 et a
                 commencé son activité dans le domaine des produits laitiers.
                 Elle est spécialisée dans la production de fromage à pizza de
@@ -67,7 +67,7 @@ export default function AboutUsFr() {
                   Développement & Technologie
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 Nous pensons qu'une qualité durable nécessite une innovation
                 continue. Notre département de Recherche et Développement (R&D),
                 utilisant les dernières technologies, s'efforce constamment de
@@ -90,7 +90,7 @@ export default function AboutUsFr() {
                   Qualité et Innovation
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 En utilisant des matières premières fraîches et des machines
                 industrielles de pointe, la société s'efforce d'offrir des
                 fromages de la plus haute qualité. En phase avec la science
@@ -126,7 +126,7 @@ export default function AboutUsFr() {
                   Présence sur le Marché Mondial
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 La qualité de nos produits a franchi les frontières. Jolfa Food
                 occupe fièrement une place de choix sur les marchés
                 internationaux. Notre présence active aux événements les plus

@@ -126,13 +126,13 @@ export default function Home() {
       </div>
 
       {/* فوت و فن با رسپی های جلفا */}
-      <div className="py-10 text-center bg-none sm:bg-[url('/Image/New/Backgrounds/Home-recepie.png')] sm:bg-[length:50%] bg-center bg-repeat">
+      <div className="py-10 text-center bg-none sm:bg-[url('/Image/New/Backgrounds/Home-recepie.png')] sm:bg-[length:70%] bg-center bg-no-repeat">
         <h3 className="text-2xl md:text-4xl font-bold text-[#1a4b8c] mb-10">
           فوت و فن با رسپی های جلفا
         </h3>
 
         {/* تغییرات در این قسمت اعمال شد */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-۲0 md:gap-60 px-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-60 px-4">
           <div className="flex flex-col items-center gap-4 text-[#1a4b8c]">
             <Image
               src="/Image/New/Icons/fast-icon.svg"

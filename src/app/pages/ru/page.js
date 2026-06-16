@@ -112,7 +112,7 @@ export default function PageRU() {
         <div className="absolute left-0 w-full h-[30px] md:h-[50px] bg-[url('/Image/New/Backgrounds/down_cream.svg')] bg-repeat-x bg-top z-10 top-full -mt-1 bg-[length:auto_100%]"></div>
       </div>
 
-      <div className="py-10 text-center bg-none sm:bg-[url('/Image/New/Backgrounds/Home-recepie.png')] sm:bg-[length:50%] bg-center bg-repeat">
+      <div className="py-10 text-center bg-none sm:bg-[url('/Image/New/Backgrounds/Home-recepie.png')] sm:bg-[length:70%] bg-center bg-no-repeat">
         <h3 className="text-2xl md:text-4xl font-bold text-[#1a4b8c] mb-10">
           Секреты с рецептами Jolfa
         </h3>

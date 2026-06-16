@@ -30,7 +30,7 @@ export default function AboutUsRu() {
                   Наша история
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 Компания Asre Talaei Bartar Spadana была основана в 2018 году и
                 начала свою деятельность в сфере молочной продукции. Компания
                 специализируется на производстве высококачественного сыра для
@@ -67,7 +67,7 @@ export default function AboutUsRu() {
                   Развитие и технологии
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 Мы верим, что стабильное качество требует постоянных инноваций.
                 Наш отдел исследований и разработок (R&D), используя новейшие
                 мировые технологии, постоянно стремится производить продукцию
@@ -90,7 +90,7 @@ export default function AboutUsRu() {
                   Качество и инновации
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 Используя свежее сырье и передовое промышленное оборудование,
                 компания стремится предлагать потребителям сыры для пиццы самого
                 высокого качества. Идя в ногу с современной наукой, мы постоянно
@@ -125,7 +125,7 @@ export default function AboutUsRu() {
                   Присутствие на мировом рынке
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 Непревзойденное качество нашей продукции вышло за пределы
                 границ. Jolfa Food занимает особое место на международных
                 рынках. Наше участие в престижных мероприятиях пищевой

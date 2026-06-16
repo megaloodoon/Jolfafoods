@@ -34,7 +34,7 @@ export default function AboutUsFa() {
                   پیشینه ی ما
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 شرکت عصر طلایی برتر اسپادانا در سال ۱۳۹۷ تأسیس شد و فعالیت خود
                 را در حوزه انواع محصولات لبنی آغاز کرد. این شرکت به طور تخصصی در
                 تولید پنیر پیتزای باکیفیت فعالیت میکند و توانسته است محصولات خود
@@ -73,7 +73,7 @@ export default function AboutUsFa() {
                   توسعه و فناوری
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 در شرکت عصر طلایی برتر اسپادانا، ما معتقدیم که کیفیت پایدار
                 نیازمند نوآوری مداوم است. واحد تحقیق و توسعه (R&D) ما با
                 بهره‌گیری از جدیدترین تکنولوژی‌های روز دنیا و آزمایشگاه‌های
@@ -100,8 +100,8 @@ export default function AboutUsFa() {
                   کیفیت و نوآوری
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
-                شرکت عصر طلایی برتر اسپادانا با بهره گیری از انواع مواد اولیه ی
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
+                شرکت عصر طلایی برتر اسپادانا با بهره گیری از انواع مواد اولیه
                 تازه و انواع ماشین آلات پیشرفته ی صنعتی در تلاش است تا با کیفیت
                 ترین و سالم ترین پنیرهای پیتزای به مصرف کنندگان داخلی و خارجی
                 عرضه نماید. در همین راستا‍،همواره و همگام با علم روز دنیا ،به
@@ -137,7 +137,7 @@ export default function AboutUsFa() {
                   حضور در بازار جهانی
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 کیفیت بی‌نظیر محصولات ما مرزها را درنوردیده است. جلفا فود با
                 افتخار توانسته است جایگاه ویژه‌ای در بازارهای بین‌المللی کسب کند
                 و استانداردهای جهانی را با موفقیت پشت سر بگذارد. حضور فعال و

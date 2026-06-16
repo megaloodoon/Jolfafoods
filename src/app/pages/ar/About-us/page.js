@@ -30,7 +30,7 @@ export default function AboutUsAr() {
                   تاريخنا
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 تأسست شركة عصر طلائي برتر إسبادانا في عام 2018 وبدأت نشاطها في
                 مجال منتجات الألبان. تتخصص الشركة في إنتاج جبنة البيتزا عالية
                 الجودة وتمكنت من تقديم منتجات فريدة في هذه الفئة. بالإضافة إلى
@@ -66,7 +66,7 @@ export default function AboutUsAr() {
                   التطوير والتكنولوجيا
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 في شركة عصر طلائي برتر إسبادانا، نؤمن بأن الجودة المستدامة تتطلب
                 ابتكاراً مستمراً. يسعى قسم البحث والتطوير (R&D) لدينا دائماً
                 لإنتاج منتجات تلبي أعلى معايير الجودة باستخدام أحدث التقنيات.
@@ -88,7 +88,7 @@ export default function AboutUsAr() {
                   الجودة والابتكار
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 باستخدام المواد الخام الطازجة والآلات الصناعية المتقدمة، تسعى
                 الشركة لتقديم أعلى جودة وأكثر أنواع جبن البيتزا صحية للمستهلكين.
                 وفي هذا الصدد، نعمل باستمرار على ترقية تركيبة الإنتاج الخاصة بنا
@@ -123,7 +123,7 @@ export default function AboutUsAr() {
                   الحضور في السوق العالمية
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 الجودة الاستثنائية لمنتجاتنا تجاوزت الحدود. تفخر جلفا فود
                 بمكانتها الخاصة في الأسواق الدولية واجتياز المعايير العالمية
                 بنجاح. إن حضورنا الفعال في أرقى الفعاليات الغذائية، مثل معرض

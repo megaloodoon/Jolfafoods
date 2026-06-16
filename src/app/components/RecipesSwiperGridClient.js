@@ -35,7 +35,7 @@ export default function RecipesSwiperGridClient({
 
   return (
     <div
-      className="w-full flex flex-col items-center bg-[#f7f8fa]"
+      className="w-full flex flex-col items-center bg-white"
       style={{
         backgroundImage:
           "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')",
@@ -51,11 +51,9 @@ export default function RecipesSwiperGridClient({
         />
       </div>
 
-      {/* 2. بخش محتوا 
-          تغییرات: اضافه شدن z-10 و مارجین منفی (-mt-24 تا -mt-64) برای بالا کشیدن محتوا روی عکس
-      */}
+      {/* 2. بخش محتوا */}
       <div className="relative z-10 w-full pb-12 flex-grow -mt-40 xs:-mt-24 sm:-mt-44 md:-mt-56 lg:-mt-80 xl:-mt-[450px] xxlg:-mt-[500px] 2xl:-mt-[550px]">
-        {/* لایه پترن پس‌زمینه (فقط برای بخش محتوا) */}
+        {/* لایه پترن پس‌زمینه */}
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
@@ -68,8 +66,8 @@ export default function RecipesSwiperGridClient({
 
         {/* کانتینر اصلی محتوا */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] relative z-20">
-          {/* سرتیتر: استفاده از رنگ سفید یا سایه برای خوانایی بهتر روی عکس بنر */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-[#183f8b] mb-10 md:mb-14 drop-shadow-md bg-white/60 w-fit mx-auto px-6 py-2 rounded-2xl backdrop-blur-sm">
+          {/* سرتیتر */}
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-[#183f8b] mb-10 md:mb-14 drop-shadow-md bg-white/70 w-fit mx-auto px-8 py-3 rounded-2xl backdrop-blur-md border border-gray-200">
             {t.title}
           </h2>
 
@@ -78,11 +76,11 @@ export default function RecipesSwiperGridClient({
             modules={[Pagination]}
             pagination={{ clickable: true }}
             spaceBetween={20}
-            className="w-full pb-16 recipes-swiper"
+            className="w-full pb-20 recipes-swiper"
           >
             {pages.map((page, idx) => (
-              <SwiperSlide key={idx}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mt-4">
+              <SwiperSlide key={idx} className="py-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
                   {page.map((r) => {
                     const slug = r.slug || `recipe-${r.id}`;
                     const suf = SUFFIX_MAP[locale] || "";
@@ -92,30 +90,36 @@ export default function RecipesSwiperGridClient({
                     return (
                       <div
                         key={slug}
-                        className="bg-white rounded-xl shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col p-4 transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_8px_25px_-5px_rgba(0,0,0,0.15)]"
+                        // --- تغییر در این خط: استفاده از border-gray-200 و سایه پایه قوی‌تر برای تمایز از پس‌زمینه سفید ---
+                        className="group relative bg-white/95 backdrop-blur-xl border border-gray-200 rounded-[2rem] p-5 flex flex-col overflow-hidden transition-all duration-500 hover:-translate-y-3 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.12)] hover:shadow-[0_20px_50px_-15px_rgba(24,63,139,0.2)] hover:border-[#183f8b]/20"
                       >
-                        <div className="w-full aspect-[4/3] relative mb-4 rounded-lg overflow-hidden bg-gray-100">
+                        {/* --- بخش تصویر --- */}
+                        <div className="w-full aspect-[4/3] relative mb-5 rounded-2xl overflow-hidden bg-gray-100">
                           {r.thumbnail || r.image ? (
                             <img
                               src={r.thumbnail || r.image}
                               alt={title}
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                             />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
                               بدون تصویر
                             </div>
                           )}
+
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
 
-                        <h3 className="text-lg md:text-xl font-bold text-[#183f8b] mb-6 text-center flex-grow">
+                        {/* --- عنوان --- */}
+                        <h3 className="text-lg md:text-xl font-extrabold text-[#183f8b] mb-6 text-center flex-grow transition-colors duration-300 group-hover:text-[#fbb03b] px-2">
                           {title}
                         </h3>
 
+                        {/* --- دکمه --- */}
                         <div className="flex justify-center w-full pb-2">
                           <Link
                             href={`/pages/${locale}/Doostane-ba-Jolfa/recipes/${slug}`}
-                            className="bg-[#fbb03b] hover:bg-[#e09b30] text-white font-semibold py-2 px-8 rounded-full transition-colors duration-300 text-sm md:text-base inline-block"
+                            className="bg-gradient-to-r from-[#fbb03b] to-[#f39c12] hover:from-[#f39c12] hover:to-[#e67e22] text-white font-bold py-3 px-10 rounded-full transition-all duration-300 shadow-[0_4px_15px_-3px_rgba(251,176,59,0.4)] hover:shadow-[0_8px_25px_-5px_rgba(251,176,59,0.6)] transform group-hover:-translate-y-1 text-sm md:text-base inline-block"
                           >
                             {t.viewMore}
                           </Link>
@@ -135,17 +139,19 @@ export default function RecipesSwiperGridClient({
           bottom: 0px !important;
         }
         .recipes-swiper .swiper-pagination-bullet {
-          background-color: #4b5563;
-          opacity: 0.4;
-          width: 10px;
-          height: 10px;
+          background-color: #cbd5e1;
+          opacity: 0.8;
+          width: 8px;
+          height: 8px;
           margin: 0 6px !important;
-          transition: all 0.3s ease;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          border-radius: 10px;
         }
         .recipes-swiper .swiper-pagination-bullet-active {
-          background-color: #374151;
-          opacity: 0.9;
-          transform: scale(1.2);
+          background-color: #183f8b;
+          opacity: 1;
+          width: 24px;
+          background-image: linear-gradient(to right, #183f8b, #3b82f6);
         }
       `}</style>
     </div>

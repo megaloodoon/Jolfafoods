@@ -30,7 +30,7 @@ export default function AboutUsEn() {
                   Our History
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 Asre Talaei Bartar Spadana Company was established in 2018 and
                 started its activity in the field of dairy products. The company
                 specializes in the production of high-quality pizza cheese and
@@ -69,7 +69,7 @@ export default function AboutUsEn() {
                   Development & Technology
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 At Asre Talaei Bartar Spadana, we believe that sustainable
                 quality requires continuous innovation. Our Research and
                 Development (R&D) department, utilizing the latest global
@@ -94,7 +94,7 @@ export default function AboutUsEn() {
                   Quality & Innovation
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 Utilizing a variety of fresh raw materials and advanced
                 industrial machinery, Asre Talaei Bartar Spadana strives to
                 offer the highest quality and healthiest pizza cheeses to
@@ -131,7 +131,7 @@ export default function AboutUsEn() {
                   Global Market Presence
                 </h2>
               </div>
-              <p className="text-base md:text-lg leading-8 text-blue-50 text-justify">
+              <p className="text-base md:text-lg leading-2 text-blue-50 text-justify">
                 The unparalleled quality of our products has crossed borders.
                 Jolfa Food proudly holds a special place in international
                 markets, successfully meeting global standards. Our active
