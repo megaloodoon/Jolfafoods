@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import ScrollReveal from "./ScrollReveal"; // مسیر را بر اساس پروژه خود تنظیم کنید
 
 const GlobalSearch = dynamic(() => import("@/app/components/GlobalSearch"), {
   ssr: false,
@@ -81,7 +82,6 @@ export default function LanguageNav() {
     },
   }[currentLang];
 
-  // تعریف لیست زبان‌ها به همراه آدرس عکس پرچم
   const langNames = [
     { code: "fa", name: "فارسی", flag: "/Image/Flag/Iran.png" },
     { code: "en", name: "English", flag: "/Image/Flag/United_Kingdom.png" },
@@ -97,144 +97,153 @@ export default function LanguageNav() {
     setMobileOpen(false);
   }, [pathname]);
 
+  // رفع باگ: اضافه شدن Cleanup برای جلوگیری از قفل ماندن اسکرول در صورت Unmount
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "";
     }
+    
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [mobileOpen]);
 
   return (
     <nav className="nav w-full bg-[#154994] text-white py-1 xs:py-1 sm:py-2 md:py-2 lg:py-4 relative z-50 shadow-md">
-      <div className="container mx-auto px-4 flex items-center justify-between min-h-[30px] md:min-h-[40px] lg:min-h-[40px]">
-        {/* === بخش چپ === */}
-        <div className="flex-1 flex items-center justify-start lg:hidden">
-          <button
-            onClick={() => setMobileOpen(true)}
-            className="p-2 hover:bg-white/10 rounded-lg transition-colors"
-          >
-            <Image
-              src="/Image/hamburger-png-white.png"
-              alt="menu"
-              width={30}
-              height={30}
-            />
-          </button>
-        </div>
-
-        <div className="hidden lg:flex flex-1 gap-8 items-center justify-start">
-          <Link
-            href={`${base}/Contact-us`}
-            className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
-          >
-            {labels.contact}
-          </Link>
-          <Link
-            href={`${base}/About-us`}
-            className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
-          >
-            {labels.about}
-          </Link>
-        </div>
-
-        {/* === بخش مرکزی (لوگو) === */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-1/2 z-[60]">
-          <Link href={base} className="block">
-            <Image
-              src="/Image/Jolfa-logo.png"
-              alt="Jolfa Foods"
-              width={140}
-              height={70}
-              priority
-              className="w-[100px] xs:w-[80px] md:w-[110px] h-auto object-contain drop-shadow-xl"
-            />
-          </Link>
-        </div>
-
-        {/* === بخش راست === */}
-        <div className="hidden lg:flex flex-1 gap-6 items-center justify-end">
-          <Link
-            href={`${base}/products`}
-            className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
-          >
-            {labels.products}
-          </Link>
-
-          {/* دراپ‌داون دوستانه با جلفا (دسکتاپ) */}
-          <div className="relative group">
-            <Link
-              href={`${base}/Doostane-ba-Jolfa`}
-              className="font-semibold text-base text-white hover:text-blue-200 transition-colors flex items-center gap-1 py-2"
+      {/* اعمال ScrollReveal برای ورود نرم هدر از بالا به پایین */}
+      <ScrollReveal animation="fade-down" duration={800}>
+        <div className="container mx-auto px-4 flex items-center justify-between min-h-[30px] md:min-h-[40px] lg:min-h-[40px]">
+          {/* === بخش چپ === */}
+          <div className="flex-1 flex items-center justify-start lg:hidden">
+            <button
+              onClick={() => setMobileOpen(true)}
+              className="p-2 hover:bg-white/10 rounded-lg transition-colors"
             >
-              {labels.doostane}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 transition-transform group-hover:rotate-180"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </Link>
-
-            {/* زیرمنوهای دسکتاپ */}
-            <ul className="absolute right-0 mt-0 w-48 bg-white text-[#1a4b8c] rounded-lg shadow-xl list-none py-2 z-50 border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-              <li>
-                <Link
-                  href={`${base}/Doostane-ba-Jolfa/Articles`}
-                  className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
-                >
-                  {labels.articles}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`${base}/Doostane-ba-Jolfa/recipes`}
-                  className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
-                >
-                  {labels.recipes}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`${base}/Doostane-ba-Jolfa/News`}
-                  className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
-                >
-                  {labels.news}
-                </Link>
-              </li>
-            </ul>
+              <Image
+                src="/Image/hamburger-png-white.png"
+                alt="menu"
+                width={30}
+                height={30}
+              />
+            </button>
           </div>
 
-          {/* دراپ‌داون زبان */}
-          <div className="relative">
-            <button
-              aria-haspopup="listbox"
-              onClick={() => setOpen((s) => !s)}
-              className="font-semibold text-base text-white hover:text-blue-200 transition-colors flex items-center gap-1"
+          <div className="hidden lg:flex flex-1 gap-8 items-center justify-start">
+            <Link
+              href={`${base}/Contact-us`}
+              className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
             >
-              Language
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
+              {labels.contact}
+            </Link>
+            <Link
+              href={`${base}/About-us`}
+              className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
+            >
+              {labels.about}
+            </Link>
+          </div>
 
-            {open && (
-              <ul className="absolute right-0 mt-3 w-36 bg-white text-gray-800 rounded-lg shadow-xl list-none py-2 z-50 border border-gray-100">
+          {/* === بخش مرکزی (لوگو) === */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-1/2 z-[60]">
+            <Link href={base} className="block">
+              <Image
+                src="/Image/Jolfa-logo.png"
+                alt="Jolfa Foods"
+                width={140}
+                height={70}
+                priority
+                className="w-[100px] xs:w-[80px] md:w-[110px] h-auto object-contain drop-shadow-xl transition-transform hover:scale-105 duration-300"
+              />
+            </Link>
+          </div>
+
+          {/* === بخش راست === */}
+          <div className="hidden lg:flex flex-1 gap-6 items-center justify-end">
+            <Link
+              href={`${base}/products`}
+              className="font-semibold text-base text-white hover:text-blue-200 transition-colors"
+            >
+              {labels.products}
+            </Link>
+
+            {/* دراپ‌داون دوستانه با جلفا */}
+            <div className="relative group">
+              <Link
+                href={`${base}/Doostane-ba-Jolfa`}
+                className="font-semibold text-base text-white hover:text-blue-200 transition-colors flex items-center gap-1 py-2"
+              >
+                {labels.doostane}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 transition-transform group-hover:rotate-180"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Link>
+
+              <ul className="absolute right-0 mt-0 w-48 bg-white text-[#1a4b8c] rounded-lg shadow-xl list-none py-2 z-50 border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                <li>
+                  <Link
+                    href={`${base}/Doostane-ba-Jolfa/Articles`}
+                    className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
+                  >
+                    {labels.articles}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${base}/Doostane-ba-Jolfa/recipes`}
+                    className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
+                  >
+                    {labels.recipes}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${base}/Doostane-ba-Jolfa/News`}
+                    className="block px-4 py-2 text-sm hover:bg-[#f0f4f8] transition-colors"
+                  >
+                    {labels.news}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* دراپ‌داون زبان (تبدیل به انیمیشن CSS به جای رندر شرطی) */}
+            <div className="relative">
+              <button
+                aria-haspopup="listbox"
+                onClick={() => setOpen((s) => !s)}
+                className="font-semibold text-base text-white hover:text-blue-200 transition-colors flex items-center gap-1"
+              >
+                Language
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`h-4 w-4 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.064a.75.75 0 111.12 1l-4.25 4.66a.75.75 0 01-1.12 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <ul 
+                className={`absolute right-0 mt-3 w-36 bg-white text-gray-800 rounded-lg shadow-xl list-none py-2 z-50 border border-gray-100 transition-all duration-300 origin-top transform ${
+                  open ? "opacity-100 visible scale-y-100 translate-y-0" : "opacity-0 invisible scale-y-95 -translate-y-2"
+                }`}
+              >
                 {langNames.map((lang) => (
                   <li key={lang.code}>
                     <Link
@@ -256,54 +265,54 @@ export default function LanguageNav() {
                   </li>
                 ))}
               </ul>
-            )}
+            </div>
+
+            <button
+              onClick={() => setSearchOpen(true)}
+              aria-label="Open search"
+              className="p-2 text-white hover:text-blue-200 hover:bg-white/10 rounded-full transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z"
+                />
+              </svg>
+            </button>
           </div>
 
-          <button
-            onClick={() => setSearchOpen(true)}
-            aria-label="Open search"
-            className="p-2 text-white hover:text-blue-200 hover:bg-white/10 rounded-full transition-colors"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div className="flex flex-1 lg:hidden items-center justify-end">
+            <button
+              onClick={() => setSearchOpen(true)}
+              aria-label="Open search"
+              className="p-2 text-white hover:bg-white/10 rounded-full transition-colors"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-
-        <div className="flex flex-1 lg:hidden items-center justify-end">
-          <button
-            onClick={() => setSearchOpen(true)}
-            aria-label="Open search"
-            className="p-2 text-white hover:bg-white/10 rounded-full transition-colors"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
+      </ScrollReveal>
 
       {/* منوی کشویی موبایل */}
       {mobileOpen && (
@@ -367,7 +376,7 @@ export default function LanguageNav() {
                   {labels.doostane}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-5 w-5 transition-transform ${doostaneOpen ? "rotate-180 text-blue-600" : "text-gray-400"}`}
+                    className={`h-5 w-5 transition-transform duration-300 ${doostaneOpen ? "rotate-180 text-blue-600" : "text-gray-400"}`}
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >

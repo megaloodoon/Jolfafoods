@@ -1,9 +1,10 @@
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal"; // ایمپورت کامپوننت انیمیشن
 
 const getSubCategoryKey = (product, category) => {
   if (category === "cheese") {
-    if ([1, 2, 3, 14].includes(product.id)) return "gratedCheese";
-    if ([7, 12, 9].includes(product.id)) return "blockCheese";
+    if ([1, 2, 3, 14, 18, 19].includes(product.id)) return "gratedCheese";
+    if ([7, 12, 9, 17].includes(product.id)) return "blockCheese";
     return "otherCheese";
   }
   if (category === "cream") return "creams";
@@ -67,43 +68,48 @@ export default function ProductGrid({
           const items = groupedProducts[subCategoryKey];
           return (
             <div key={subCategoryKey} className="mb-10 xs:mb-16">
-              <h2 className="text-xl xs:text-2xl md:text-3xl font-bold text-[#1a4b8c] mb-6 mt-4 xs:mb-8 border-b-2 border-[#1a4b8c]/20 pb-4 inline-block">
-                {t[subCategoryKey]}
-              </h2>
+              {/* انیمیشن برای عنوان دسته‌بندی */}
+              <ScrollReveal delay={100}>
+                <h2 className="text-xl xs:text-2xl md:text-3xl font-bold text-[#1a4b8c] mb-6 mt-4 xs:mb-8 border-b-2 border-[#1a4b8c]/20 pb-4 inline-block">
+                  {t[subCategoryKey]}
+                </h2>
+              </ScrollReveal>
 
               <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-5 md:gap-8 justify-items-center">
-                {items.map((product) => (
-                  <Link
-                    key={product.id}
-                    href={`/pages/${currentLang}/products/${product.id}`}
-                    className="group flex flex-col w-full max-w-[320px] bg-white rounded-2xl xs:rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 xs:hover:-translate-y-2 pb-4 xs:pb-6"
-                  >
-                    <div className="relative aspect-square flex justify-center items-center p-4 xs:p-6 sm:p-8 bg-white overflow-hidden">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-110"
-                      />
-                    </div>
+                {items.map((product, index) => (
+                  // پراپ key به اینجا منتقل شد و یک delay داینامیک بر اساس index دادیم
+                  <ScrollReveal key={product.id} delay={(index % 3) * 100}>
+                    <Link
+                      href={`/pages/${currentLang}/products/${product.id}`}
+                      className="group flex flex-col w-full max-w-[320px] bg-white rounded-2xl xs:rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 xs:hover:-translate-y-2 pb-4 xs:pb-6"
+                    >
+                      <div className="relative aspect-square flex justify-center items-center p-4 xs:p-6 sm:p-8 bg-white overflow-hidden">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
 
-                    <div className="flex flex-col items-center justify-center px-3 xs:px-4 mt-auto">
-                      <h3 className="font-bold text-center text-gray-800 text-base xs:text-lg sm:text-xl group-hover:text-[#1a4b8c] transition-colors line-clamp-2">
-                        {getLocalizedTitle(product)}
-                      </h3>
+                      <div className="flex flex-col items-center justify-center px-3 xs:px-4 mt-auto">
+                        <h3 className="font-bold text-center text-gray-800 text-base xs:text-lg sm:text-xl group-hover:text-[#1a4b8c] transition-colors line-clamp-2">
+                          {getLocalizedTitle(product)}
+                        </h3>
 
-                      <button className="mt-3 xs:mt-4 bg-[#fdb714] text-white px-4 xs:px-6 py-1.5 rounded-full text-xs xs:text-sm font-bold shadow-md">
-                        {currentLang === "fa"
-                          ? "مشاهده بیشتر"
-                          : currentLang === "en"
-                            ? "Read More"
-                            : currentLang === "ar"
-                              ? "اقرأ المزيد"
-                              : currentLang === "fr"
-                                ? "Voir Plus"
-                                : "Подробнее"}
-                      </button>
-                    </div>
-                  </Link>
+                        <button className="mt-3 xs:mt-4 bg-[#fdb714] text-white px-4 xs:px-6 py-1.5 rounded-full text-xs xs:text-sm font-bold shadow-md">
+                          {currentLang === "fa"
+                            ? "مشاهده بیشتر"
+                            : currentLang === "en"
+                              ? "Read More"
+                              : currentLang === "ar"
+                                ? "اقرأ المزيد"
+                                : currentLang === "fr"
+                                  ? "Voir Plus"
+                                  : "Подробнее"}
+                        </button>
+                      </div>
+                    </Link>
+                  </ScrollReveal>
                 ))}
               </div>
             </div>

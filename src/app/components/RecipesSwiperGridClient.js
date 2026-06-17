@@ -52,7 +52,7 @@ export default function RecipesSwiperGridClient({
       </div>
 
       {/* 2. بخش محتوا */}
-      <div className="relative z-10 w-full pb-12 flex-grow -mt-40 xs:-mt-24 sm:-mt-44 md:-mt-56 lg:-mt-80 xl:-mt-[450px] xxlg:-mt-[500px] 2xl:-mt-[550px]">
+      <div className="relative z-10 w-full pb-12 flex-grow -mt-40 xs:-mt-24 sm:-mt-44 md:-mt-56 lg:-mt-[350px] xl:-mt-[450px] xxlg:-mt-[500px] 2xl:-mt-[550px]">
         {/* لایه پترن پس‌زمینه */}
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none"

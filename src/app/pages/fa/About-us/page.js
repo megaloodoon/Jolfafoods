@@ -1,27 +1,25 @@
+import ScrollReveal from "@/app/components/ScrollReveal"; // ایمپورت کامپوننت انیمیشن
+
 export default function AboutUsFa() {
   return (
     <main dir="rtl" className="w-full font-sans text-neutral-800 bg-white ">
       {/* هدر اصلی (عکس کارخانه با متن روی آن) */}
-      <section
-        className="relative w-full h-[50vh] md:h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/Image/About-Us/Factory.png')" }}
+      <ScrollReveal
+        className="relative w-full h-[50vh] md:h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat bg-[url('/Image/About-Us/Factory.png')]"
       >
         <div className="absolute inset-0 bg-black/30"></div>
         <h1 className="relative z-10 text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg text-center px-4">
           درباره ی ما بیشتر بدانید
         </h1>
-      </section>
+      </ScrollReveal>
 
       {/* بخش توضیحات زیگزاگی با پس‌زمینه */}
       <section
-        className="w-full py-16 xs:-mt-3 md:py-24 font-kalame text-white relative overflow-hidden bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/Image/About-Us/About-us-background.png')",
-        }}
+        className="w-full py-16 xs:-mt-3 md:py-24 font-kalame text-white relative overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/Image/About-Us/About-us-background.png')]"
       >
         <div className="max-w-6xl mx-auto px-6 md:px-10 flex flex-col gap-20">
           {/* آیتم 1: پیشینه ی ما */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <ScrollReveal delay={100} className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex flex-col gap-5">
               {/* آیکون و تیتر در یک خط */}
               <div className="flex items-center gap-4">
@@ -51,10 +49,10 @@ export default function AboutUsFa() {
                 className="w-full h-auto object-cover rounded-2xl "
               />
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* آیتم 2: توسعه و فناوری */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <ScrollReveal delay={200} className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="p-4 order-last md:order-first">
               <img
                 src="/Image/About-Us/tech-image.png"
@@ -85,10 +83,10 @@ export default function AboutUsFa() {
                 سلیقه و نیازهای متنوع مشتریان عزیزمان خلق کنیم.
               </p>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* آیتم 3: کیفیت و نوآوری */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <ScrollReveal delay={100} className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex flex-col gap-5">
               <div className="flex items-center gap-4">
                 <img
@@ -115,10 +113,10 @@ export default function AboutUsFa() {
                 className="w-full h-auto object-cover rounded-2xl"
               />
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* آیتم 4: حضور در بازار جهانی */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <ScrollReveal delay={200} className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="p-4 order-last md:order-first">
               <img
                 src="/Image/About-Us/global-image.png"
@@ -149,12 +147,12 @@ export default function AboutUsFa() {
                 دنیا هدیه دهند.
               </p>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* بخش افتخارات با پس‌زمینه */}
-      <div className="relative z-10 flex flex-col w-full bg-[#fbe1ac] -mt-4 xs:-mt-1 sm:-mt-4 md:-mt-1 lg:-mt-2 xxlg:-mt-4 xxxlg:-mt-4 mb-10 sm:mb-16 px-4 sm:px-6 md:px-8 py-10 xs:py-2 sm:py-2.5 md:py-3 lg:py-4 text-center">
+      <ScrollReveal delay={100} className="relative z-10 flex flex-col w-full bg-[#fbe1ac] -mt-4 xs:-mt-1 sm:-mt-4 md:-mt-1 lg:-mt-2 xxlg:-mt-4 xxxlg:-mt-4 mb-10 sm:mb-16 px-4 sm:px-6 md:px-8 py-10 xs:py-2 sm:py-2.5 md:py-3 lg:py-4 text-center">
         {/* لبه تزئینی بالا */}
         <div className="absolute left-0 w-full h-[30px] md:h-[50px] bg-[url('/Image/New/Backgrounds/up_cream.svg')] bg-repeat-x bg-bottom z-10 bottom-full translate-y-1 bg-[length:auto_100%]"></div>
 
@@ -179,16 +177,16 @@ export default function AboutUsFa() {
 
         {/* لبه تزئینی پایین */}
         <div className="absolute left-0 w-full h-[30px] md:h-[50px] bg-[url('/Image/New/Backgrounds/down_cream.svg')] bg-repeat-x bg-top z-10 top-full -translate-y-1 bg-[length:auto_100%]"></div>
-      </div>
+      </ScrollReveal>
 
       {/* بخش عکس افتخارات (تندیس ها و لوح ها) */}
-      <section className="w-full md:bg-transparent -mt-10 pb-10 md:pb-0">
+      <ScrollReveal delay={200} className="w-full md:bg-transparent -mt-10 pb-10 md:pb-0">
         <img
           src="/Image/About-Us/Awards.png"
           alt="Jolfa Foods Awards"
           className="w-full h-auto object-cover max-h-[800px]"
         />
-      </section>
+      </ScrollReveal>
     </main>
   );
 }
