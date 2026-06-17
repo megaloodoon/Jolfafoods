@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import ScrollReveal from "@/app/components/ScrollReveal"; // ایمپورت کامپوننت انیمیشن
 
 // Swiper styles
 import "swiper/css";
@@ -22,7 +23,7 @@ const PRODUCTS_DATA = [
     textBox: {
       top: "28%",
       left: "52%",
-      width: "42%", // عرض کادر را کمی تنظیم کردیم تا بهتر بنشیند
+      width: "42%",
     },
     lang: {
       fa: {
@@ -106,7 +107,7 @@ const PRODUCTS_DATA = [
       },
       ru: {
         title: "Плавленый сырный соус для пиццы",
-        desc: "Соус из плавленного сыра для пиццы, благодаря своей уникальной рецептуре, является не просто приправой, а секретом великолепного вкуса в самых разнообразных сэндвичах, классических гамбургерах и современных закусках. Плавленный сыр, используемый в этом продукте, помимо создания глубокого и стойкого послевкусия, является богатым источником кальция и молочных белков. Благодаря точному процессу пастеризации и использованию стандартного сырья, этот соус обладает высокой пищевой ценностью, способствует укреплению костей и обеспечивает организм энергией на весь день.",
+        desc: "Соус из плавленного сыра для пиццы, благодаря своей уникальной рецептуре, является не просто приправой, а секретом великолепного вкуса в самых разнообразных сэндвичах, классических гамбургерах и современных закусках. Плавленный сыр, используемый в этом продукте, помимо создания глубокого и стойкого послевкусия, является богатым источником кальция и молочных белков. Благодаря точному процессу пастеризации и использования стандартного сырья, этот соус обладает высокой пищевой ценностью, способствует укреплению костей и обеспечивает организм энергией на весь день.",
       },
     },
   },
@@ -189,126 +190,130 @@ export default function LatestProducts({ lang = "fa" }) {
         }}
       >
         {/* Title */}
-        <div
-          className="relative text-center w-full flex items-center justify-center bg-center bg-no-repeat bg-contain py-4 sm:py-8 md:py-12"
-          style={{
-            backgroundImage: "url('/Image/New/Backgrounds/Home-recepie.png')",
-          }}
-        >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a4b8c] drop-shadow-sm">
-            {SECTION_TITLE[lang] || SECTION_TITLE.en}
-          </h2>
-        </div>
+        <ScrollReveal animation="fade-down" duration={800}>
+          <div
+            className="relative text-center w-full flex items-center justify-center bg-center bg-no-repeat bg-contain py-4 sm:py-8 md:py-12"
+            style={{
+              backgroundImage: "url('/Image/New/Backgrounds/Home-recepie.png')",
+            }}
+          >
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a4b8c] drop-shadow-sm">
+              {SECTION_TITLE[lang] || SECTION_TITLE.en}
+            </h2>
+          </div>
+        </ScrollReveal>
 
-        {PRODUCTS_DATA.map((p) => {
+        {PRODUCTS_DATA.map((p, index) => {
           const t = p.lang[lang] || p.lang.en;
 
           if (p.special) {
             return (
-              <div
-                key={p.id}
-                className="flex flex-col items-center pt-4 md:pt-10"
-              >
-                <img
-                  src={p.image}
-                  className="w-full max-w-4xl z-10 relative"
-                  alt={t.title}
-                />
-                <div
-                  className="w-full max-w-6xl p-6 sm:p-16 text-center flex flex-col justify-center min-h-[180px] sm:min-h-[220px] xs:mt-4 mt-10 sm:mt-8 pt-16 sm:pt-32 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('/Image/New/LatestProducts-Grill-mozarella-background.png')",
-                  }}
-                >
-                  <h3 className="text-xl sm:text-3xl font-bold text-[#c4122f] mb-2 sm:mb-4 drop-shadow-sm">
-                    {t.title}
-                  </h3>
-                  <p className="text-gray-900 font-kalame text-xs sm:text-base md:text-lg leading-relaxed sm:leading-loose drop-shadow-sm max-w-4xl mx-auto">
-                    {t.desc}
-                  </p>
+              <ScrollReveal key={p.id} animation="fade-up" delay={index * 100}>
+                <div className="flex flex-col items-center pt-4 md:pt-10">
+                  <img
+                    src={p.image}
+                    className="w-full max-w-4xl z-10 relative"
+                    alt={t.title}
+                  />
+                  <div
+                    className="w-full max-w-6xl p-6 sm:p-16 text-center flex flex-col justify-center min-h-[180px] sm:min-h-[220px] xs:mt-4 mt-10 sm:mt-8 pt-16 sm:pt-32 bg-cover bg-center"
+                    style={{
+                      backgroundImage:
+                        "url('/Image/New/LatestProducts-Grill-mozarella-background.png')",
+                    }}
+                  >
+                    <h3 className="text-xl sm:text-3xl font-bold text-[#c4122f] mb-2 sm:mb-4 drop-shadow-sm">
+                      {t.title}
+                    </h3>
+                    <p className="text-gray-900 font-kalame text-xs sm:text-base md:text-lg leading-relaxed sm:leading-loose drop-shadow-sm max-w-4xl mx-auto">
+                      {t.desc}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             );
           }
 
           return (
-            <div
-              key={p.id}
-              className="relative w-full bg-cover"
-              style={{
-                backgroundImage:
-                  "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')",
-              }}
-            >
-              <img src={p.image} className="w-full h-auto" alt={t.title} />
-
-              {/* کادر متنی اصلاح شده */}
+            <ScrollReveal key={p.id} animation="fade-up" delay={index * 100}>
               <div
-                className="absolute flex flex-col gap-0.5 -mt-1 xs:-mt-[8px] sm:-mt-3 md:-mt-[13px] lg:-mt-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+                className="relative w-full bg-cover"
                 style={{
-                  top: p.textBox.top,
-                  left:
-                    rtl && p.textBox.rtlLeft
-                      ? p.textBox.rtlLeft
-                      : p.textBox.left,
-                  width: p.textBox.width,
-                  maxHeight: "65%", // افزایش ارتفاع مجاز برای جا شدن متن کامل
+                  backgroundImage:
+                    "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')",
                 }}
               >
-                <div className="w-full">
-                  <h3
-                    className={`font-bold text-[6px] min-[400px]:text-[8px] sm:text-[11px] lg:text-[16px] xl:text-[18px] text-[#1a4b8c] leading-tight sm:leading-normal mb-1 ${rtl ? "text-right" : "text-left"}`}
-                  >
-                    {t.title}
-                  </h3>
+                <img src={p.image} className="w-full h-auto" alt={t.title} />
 
-                  <p
-                    className={`text-[4px] min-[400px]:text-[6px] xs:text-[5.2px] sm:text-[8px] md:text-[10px] lg:text-[14px] xl:text-[18px] text-gray-700 leading-tight sm:leading-snug ${rtl ? "text-right" : "text-left"}`}
-                  >
-                    {t.desc}
-                  </p>
+                {/* کادر متنی اصلاح شده */}
+                <div
+                  className="absolute flex flex-col gap-0.5 -mt-1 xs:-mt-[8px] sm:-mt-3 md:-mt-[13px] lg:-mt-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+                  style={{
+                    top: p.textBox.top,
+                    left:
+                      rtl && p.textBox.rtlLeft
+                        ? p.textBox.rtlLeft
+                        : p.textBox.left,
+                    width: p.textBox.width,
+                    maxHeight: "65%", // افزایش ارتفاع مجاز برای جا شدن متن کامل
+                  }}
+                >
+                  <div className="w-full">
+                    <h3
+                      className={`font-bold text-[6px] min-[400px]:text-[8px] sm:text-[11px] lg:text-[16px] xl:text-[18px] text-[#1a4b8c] leading-tight sm:leading-normal mb-1 ${rtl ? "text-right" : "text-left"}`}
+                    >
+                      {t.title}
+                    </h3>
+
+                    <p
+                      className={`text-[4px] min-[400px]:text-[6px] xs:text-[5.2px] sm:text-[8px] md:text-[10px] lg:text-[14px] xl:text-[18px] text-gray-700 leading-tight sm:leading-snug ${rtl ? "text-right" : "text-left"}`}
+                    >
+                      {t.desc}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           );
         })}
 
         {/* Swiper Gallery */}
-        <div
-          className="pt-10 md:pt-16 relative px-4 sm:px-12 xs:pt-[6px] bg-cover"
-          style={{
-            backgroundImage:
-              "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')",
-          }}
-        >
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            autoplay={{ delay: 3500, disableOnInteraction: false }}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+        <ScrollReveal animation="fade-up" duration={800} delay={200}>
+          <div
+            className="pt-10 md:pt-16 relative px-4 sm:px-12 xs:pt-[6px] bg-cover"
+            style={{
+              backgroundImage:
+                "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')",
             }}
-            className="w-full pb-10"
           >
-            {GALLERY_DATA.map((g) => {
-              const galleryTitle = g.lang[lang] || g.lang.en;
-              return (
-                <SwiperSlide key={g.id}>
-                  <div className="rounded-3xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-                    <img
-                      src={g.image}
-                      className="w-full h-full xs:h-[450px] sm:h-[500px] md:h-[600px] lg:h-[650px] object-cover group-hover:scale-105 transition-transform duration-500 rounded-3xl"
-                      alt={galleryTitle}
-                    />
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
+            <Swiper
+              modules={[Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
+              breakpoints={{
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+              className="w-full pb-10"
+            >
+              {GALLERY_DATA.map((g) => {
+                const galleryTitle = g.lang[lang] || g.lang.en;
+                return (
+                  <SwiperSlide key={g.id}>
+                    <div className="rounded-3xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                      <img
+                        src={g.image}
+                        className="w-full h-full xs:h-[450px] sm:h-[500px] md:h-[600px] lg:h-[650px] object-cover group-hover:scale-105 transition-transform duration-500 rounded-3xl"
+                        alt={galleryTitle}
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

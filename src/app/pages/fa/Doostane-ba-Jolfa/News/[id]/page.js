@@ -142,7 +142,7 @@ export default async function SingleNewsPage({ params }) {
               <div className="w-24 h-1.5 bg-gradient-to-r from-[#1e3a8a] to-[#60a5fa] rounded-full mb-12 animate-enter delay-200"></div>
 
               {/* متن خبر با تایپوگرافی مدرن */}
-              <div className="prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-slate-700 leading-[2.2] text-justify font-serif animate-enter delay-300">
+              <div className="prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-slate-700 leading-[2.2] text-justify font-kalame animate-enter delay-300">
                 <p className="whitespace-pre-line">
                   {content}
                 </p>
