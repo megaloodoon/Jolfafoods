@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal"; // ایمپورت کامپوننت ا
 
 const getSubCategoryKey = (product, category) => {
   if (category === "cheese") {
-    if ([1, 2, 3, 14, 18, 19].includes(product.id)) return "gratedCheese";
+    if ([1, 2, 3, 14, 18, 19,21].includes(product.id)) return "gratedCheese";
     if ([7, 12, 9, 17].includes(product.id)) return "blockCheese";
     return "otherCheese";
   }

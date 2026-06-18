@@ -139,7 +139,7 @@ export default function Home() {
           </h3>
         </ScrollReveal>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-۲0 md:gap-60 px-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-60 px-4">
           <ScrollReveal
             delay={100}
             className="flex flex-col items-center gap-4 text-[#1a4b8c]"

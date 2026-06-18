@@ -185,7 +185,7 @@ export default function LatestProducts({ lang = "fa" }) {
         className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16 bg-center"
         style={{
           backgroundImage:
-            "url('/Image/New/Backgrounds/LatestProducts-pattern-background3.svg')",
+            "url('/Image/New/Backgrounds/LatestProducts-pattern-background5.svg')",
           backgroundSize: "50%",
         }}
       >
@@ -222,12 +222,14 @@ export default function LatestProducts({ lang = "fa" }) {
                         "url('/Image/New/LatestProducts-Grill-mozarella-background.png')",
                     }}
                   >
-                    <h3 className="text-xl sm:text-3xl font-bold text-[#c4122f] mb-2 sm:mb-4 drop-shadow-sm">
-                      {t.title}
-                    </h3>
-                    <p className="text-gray-900 font-kalame text-xs sm:text-base md:text-lg leading-relaxed sm:leading-loose drop-shadow-sm max-w-4xl mx-auto">
-                      {t.desc}
-                    </p>
+                    <div className="-mt-8 xs:-mt-10 sm:-mt-20 md:-mt-24">
+                      <h3 className="text-xl sm:text-3xl font-bold text-[#c4122f] mb-2 sm:mb-4 drop-shadow-sm">
+                        {t.title}
+                      </h3>
+                      <p className="text-gray-900 font-kalame text-xs sm:text-base md:text-lg leading-relaxed sm:leading-loose drop-shadow-sm max-w-4xl mx-auto">
+                        {t.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>
@@ -247,7 +249,7 @@ export default function LatestProducts({ lang = "fa" }) {
 
                 {/* کادر متنی اصلاح شده */}
                 <div
-                  className="absolute flex flex-col gap-0.5 -mt-1 xs:-mt-[8px] sm:-mt-3 md:-mt-[13px] lg:-mt-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+                  className="absolute flex flex-col gap-0.5 -mt-1 xs:-mt-[18px] sm:-mt-10 md:-mt-12 lg:-mt-16 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
                   style={{
                     top: p.textBox.top,
                     left:
@@ -266,7 +268,7 @@ export default function LatestProducts({ lang = "fa" }) {
                     </h3>
 
                     <p
-                      className={`text-[4px] min-[400px]:text-[6px] xs:text-[5.2px] sm:text-[8px] md:text-[10px] lg:text-[14px] xl:text-[18px] text-gray-700 leading-tight sm:leading-snug ${rtl ? "text-right" : "text-left"}`}
+                      className={`text-[4px] min-[400px]:text-[7px] xs:text-[6.2px] sm:text-[10px] md:text-[13px] lg:text-[17px] xl:text-[20px] text-gray-700 leading-tight sm:leading-snug ${rtl ? "text-right" : "text-left"}`}
                     >
                       {t.desc}
                     </p>
@@ -301,7 +303,7 @@ export default function LatestProducts({ lang = "fa" }) {
                 const galleryTitle = g.lang[lang] || g.lang.en;
                 return (
                   <SwiperSlide key={g.id}>
-                    <div className="rounded-3xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div className="rounded-3xl xs:p-6 sm:p-0 overflow-hidden group hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                       <img
                         src={g.image}
                         className="w-full h-full xs:h-[450px] sm:h-[500px] md:h-[600px] lg:h-[650px] object-cover group-hover:scale-105 transition-transform duration-500 rounded-3xl"

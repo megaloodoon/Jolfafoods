@@ -16,6 +16,7 @@ module.exports = {
       screens: {
         xxs: "288px",
         xs: "360px",
+        gx: "1150px",
         xxlg: "1450px",
         xxxlg: "2000px",
       },
@@ -24,6 +25,6 @@ module.exports = {
   plugins: [require("daisyui"), "@tailwindcss/typography"],
   daisyui: {
     themes: false, // غیرفعال کردن تم‌های پیش‌فرض
-    logs: false,   // غیرفعال کردن پیام‌های کنسول/ترمینال
+    logs: false, // غیرفعال کردن پیام‌های کنسول/ترمینال
   },
 };

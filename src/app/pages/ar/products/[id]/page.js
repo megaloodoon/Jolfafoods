@@ -4,7 +4,7 @@ import styles from "@/app/styles/products.module.css";
 import { getAllProducts, getProductById } from "@/app/lib/cheeseData";
 
 export default async function ProductDetail({ params }) {
-  const product = await getProductById(params.id);
+  const product = await getProductById((await params).id);
 
   if (!product) {
     return (
@@ -22,7 +22,6 @@ export default async function ProductDetail({ params }) {
       <div className="mx-auto max-w-6xl">
         <div className="rounded-2xl border border-black/5 bg-white/80 shadow-[0_18px_45px_rgba(0,0,0,0.08)] backdrop-blur-md dark:border-white/10 dark:bg-[#0b1230]/70 dark:shadow-[0_18px_48px_rgba(0,0,0,0.45)]">
           <div className="grid gap-6 p-5 sm:p-7 md:grid-cols-[360px,1fr] md:gap-8">
-            
             {/* Image */}
             <div className="overflow-hidden rounded-xl bg-white">
               <Image
@@ -38,11 +37,8 @@ export default async function ProductDetail({ params }) {
             {/* Content */}
             <div className="flex flex-col">
               <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
-                {product.name}
+               {title}
               </h1>
-              <p className="mt-2 text-sm sm:text-base font-medium text-neutral-500 dark:text-neutral-300">
-                {title}
-              </p>
 
               <p className="mt-4 text-base leading-7 text-neutral-700 dark:text-neutral-200">
                 {description}

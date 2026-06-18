@@ -3,17 +3,13 @@ import Link from "next/link";
 export default function DoostaneBaJolfaPage() {
   return (
     // بک‌گراند اصلی را به رنگ نهایی در می‌آوریم تا پایین صفحه یکدست شود
-    <main dir="rtl" className="w-full bg-[rgb(216,230,254)] pb-0 font-sans">
+    <main dir="rtl" className="w-full bg-[rgb(255,255,255)] pb-0 font-sans">
       
       {/* بخش گرافیکی بالای صفحه */}
       <section className="relative w-full overflow-hidden flex items-end justify-center bg-white">
         {/* لایه ۱: بک‌گراند آبی */}
         <div
           className="absolute inset-0 w-full h-full z-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url('/Image/New/Backgrounds/Friendly-background.svg')",
-          }}
         />
 
         {/* لایه ۲: عکس اصلی به صورت تمام صفحه */}
@@ -50,7 +46,7 @@ export default function DoostaneBaJolfaPage() {
 
         {/* کانتینر محتوای اصلی */}
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-3xl md:text-5xl font-black text-[#1a4b8c] mb-12 md:mb-20 drop-shadow-sm pt-8 md:pt-12">
+          <h1 className="text-3xl md:text-5xl font-kalame text-[#1a4b8c] mb-12 md:mb-20 drop-shadow-sm pt-8 md:pt-12">
             دوستانه با جلفا
           </h1>
 

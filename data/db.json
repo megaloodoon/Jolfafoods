@@ -402,7 +402,42 @@
       "descriptionRu": "Сыр для пиццы Топпинг Ragheb — это коммерческий продукт компании Asr-e Talaei-e Bartar Espadana, который широко используется во многих ресторанах и крупных сетях быстрого питания. Благодаря хорошей тягучести, приятному вкусу и аромату, этот сыр является отличным выбором для приготовления различных видов пиццы и фастфуда. Топпинг Ragheb отлично плавится при выпекании, придавая блюду аппетитный и привлекательный вид. Высокое качество делает его востребованным на профессиональных кухнях. Продукт поставляется в упаковках по 2000 грамм.",
       "titleFa": "پنیر پیتزای تاپینگ راغب",
       "descriptionFa": "پنیر پیتزای تاپینگ راغب یکی از محصولات تجاری شرکت عصر طلایی برتر اسپادانا است که به‌طور گسترده در رستوران‌ها و فست‌فودهای زنجیره‌ای بزرگ مورد استفاده قرار می‌گیرد. این پنیر به دلیل کشسانی مطلوب، طعم دلپذیر و عطر مناسب، انتخابی عالی برای تهیه انواع پیتزا و غذاهای فست‌فودی است. تاپینگ راغب هنگام پخت به‌خوبی ذوب می‌شود و ظاهر خوش‌رنگ و اشتهابرانگیزی به غذا می‌بخشد. کیفیت و عملکرد مناسب این محصول باعث شده در آشپزخانه‌های حرفه‌ای کاربرد گسترده‌ای داشته باشد. این محصول در بسته‌بندی‌های ۲۰۰۰ گرمی عرضه می‌گردد."
-    }
+    },
+    {
+      "brandId": "jolfa",
+      "id": 20,
+      "category": "sauce",
+      "name": "Kraft Sandwich Sauce",
+      "image": "/Image/Prudoct/sauce-kraft-sandwich.webp",
+      "title": "سس ساندویچ کرافت",
+      "titleEn": "Kraft Sandwich Sauce",
+      "titleAr": "صلصة ساندويتش كرافت",
+      "titleFr": "Sauce Sandwich Kraft",
+      "titleRu": "Соус для сэндвичей Kraft",
+      "description": "سس ساندویچ کرافت محصولی کاملاً انحصاری با فرمولاسیونی ویژه از شرکت عصر طلایی برتر اسپادانا است که نمونه مشابه آن در کشور یافت نمی‌شود. این سس بر پایه پنیر پیتزای پروسس تولید شده و با طعمی استثنایی، انتخابی عالی برای مزه‌دار کردن انواع سس‌های ترکیبی به شمار می‌آید. همچنین این چاشنی خاص در کنار پاستا، انواع ساندویچ و اسنک‌ها طعمی متفاوت و حرفه‌ای به غذاها می‌بخشد و کیفیتی ممتاز ایجاد می‌کند.",
+      "descriptionEn": "Kraft Sandwich Sauce is a fully exclusive product with a special formulation developed by Asr Talaei Bartar Espadana Company, with no similar product available in the country. Produced based on processed pizza cheese, this sauce delivers an exceptional flavor and is an excellent choice for enhancing a variety of blended sauces. It also pairs perfectly with pasta, sandwiches, and snacks, adding a distinctive and professional taste while elevating the overall food quality.",
+      "descriptionAr": "صلصة ساندويتش كرافت هي منتج حصري تماماً بتركيبة خاصة من شركة عصر طلائي برتر إسبادانا، ولا يوجد لها مثيل في البلاد. تُنتج هذه الصلصة على أساس جبن البيتزا المعالج وتتميز بطعم استثنائي يجعلها خياراً مثالياً لتعزيز نكهة مختلف الصلصات المركبة. كما تضيف هذه التتبيلة المميزة مذاقاً احترافياً ومختلفاً عند تقديمها مع الباستا وأنواع الساندويتشات والوجبات الخفيفة.",
+      "descriptionFr": "La sauce sandwich Kraft est un produit totalement exclusif avec une formulation spéciale développée par la société Asr Talaei Bartar Espadana, sans équivalent sur le marché national. Produite à base de fromage pizza transformé, cette sauce offre une saveur exceptionnelle et constitue un excellent choix pour aromatiser diverses sauces combinées. Elle accompagne également parfaitement les pâtes, les sandwichs et les snacks en apportant une touche gustative distinctive et professionnelle.",
+      "descriptionRu": "Соус для сэндвичей Kraft — это полностью эксклюзивный продукт со специальной рецептурой компании Asr Talaei Bartar Espadana, не имеющий аналогов в стране. Соус производится на основе переработанного пицца‑сыра и обладает исключительным вкусом, что делает его отличным выбором для придания аромата различным комбинированным соусам. Он также прекрасно подходит к пасте, сэндвичам и закускам, придавая блюдам особый и профессиональный вкус."
+    },
+    {
+  "brandId": "mazesta",
+  "id": 21,
+  "category": "cheese",
+  "name": "Mazesta Mozzarella Pizza Cheese",
+  "image": "/Image/Prudoct/mazesta-mozzarella-grated-2000g.webp",
+  "title": "پنیر پیتزا موزارلا مازستا",
+  "titleEn": "Mazesta Mozzarella Pizza Cheese",
+  "titleAr": "جبنة بيتزا موزاريلا مازستا",
+  "titleFr": "Fromage Pizza Mozzarella Mazesta",
+  "titleRu": "Пицца‑сыр Моцарелла Mazesta",
+  "description": "پنیر پیتزا موزارلا مازستا یکی از محصولات باکیفیت و تخصصی شرکت عصر طلایی برتر اسپادانا است که با استفاده از مواد اولیه مرغوب و فناوری‌های پیشرفته تولید می‌شود. این پنیر به صورت رنده‌شده عرضه شده و در بسته‌بندی ۲۰۰۰ گرمی (۲ کیلوگرمی) ارائه می‌گردد تا استفاده از آن برای رستوران‌ها، فست‌فودها و مصارف حرفه‌ای آسان و سریع باشد. بافت کشسان عالی، ذوب یکنواخت، رنگ طلایی اشتهابرانگیز پس از پخت و طعم دلپذیر از ویژگی‌های برجسته این محصول است. پنیر موزارلا مازستا انتخابی ایده‌آل برای تهیه انواع پیتزا، لازانیا، پاستا، گراتن و دیگر غذاهای ایتالیایی محسوب می‌شود و کیفیتی حرفه‌ای به غذاهای شما می‌بخشد.",
+  "descriptionEn": "Mazesta Mozzarella Pizza Cheese is a premium specialty product from Asr Talaei Bartar Espadana Company, produced using high‑quality ingredients and advanced dairy technology. This cheese is offered in grated form and packaged in a 2000‑gram (2 kg) pack, making it highly convenient for restaurants, fast‑food kitchens, and professional culinary use. Its excellent stretch, smooth melting performance, appetizing golden color after baking, and rich flavor make it an outstanding choice for pizza preparation. Mazesta Mozzarella is also ideal for lasagna, pasta, gratins, and many Italian‑style dishes, bringing a professional taste and texture to every recipe.",
+  "descriptionAr": "جبنة بيتزا موزاريلا مازستا هي أحد المنتجات المميزة لشركة عصر طلائي برتر إسبادانا، ويتم إنتاجها باستخدام مكونات عالية الجودة وتقنيات حديثة في صناعة الألبان. تُقدم هذه الجبنة مبشورة في عبوة بوزن 2000 غرام (2 كغ)، مما يجعلها خياراً عملياً للمطاعم ومطابخ الوجبات السريعة والاستخدامات المهنية. تتميز بمرونة ممتازة عند الذوبان، وانصهار متجانس، ولون ذهبي جذاب بعد الخَبز، بالإضافة إلى نكهة غنية ولذيذة. تُعد موزاريلا مازستا خياراً مثالياً لتحضير البيتزا واللازانيا والباستا والغراتان والعديد من الأطباق الإيطالية.",
+  "descriptionFr": "Le fromage pizza mozzarella Mazesta est un produit de haute qualité développé par la société Asr Talaei Bartar Espadana à partir d’ingrédients sélectionnés et de technologies modernes de transformation laitière. Ce fromage est proposé râpé dans un emballage de 2000 grammes (2 kg), ce qui le rend particulièrement pratique pour les restaurants, les cuisines professionnelles et les établissements de restauration rapide. Sa texture filante exceptionnelle, sa fonte homogène, sa couleur dorée appétissante après cuisson et sa saveur riche en font un choix idéal pour la préparation de pizzas. Il convient également parfaitement aux lasagnes, pâtes, gratins et à de nombreux plats d’inspiration italienne.",
+  "descriptionRu": "Пицца‑сыр Моцарелла Mazesta — это высококачественный продукт компании Asr Talaei Bartar Espadana, произведённый из отборных ингредиентов с использованием современных технологий молочной промышленности. Сыр предлагается в тёртом виде в упаковке 2000 г (2 кг), что делает его удобным для ресторанов, фаст‑фудов и профессиональной кухни. Он отличается отличной тягучестью, равномерным плавлением, аппетитной золотистой корочкой после запекания и насыщенным вкусом. Моцарелла Mazesta идеально подходит для приготовления пиццы, лазаньи, пасты, гратенов и других блюд итальянской кухни."
+}
+
   ],
   "banners": [
     {

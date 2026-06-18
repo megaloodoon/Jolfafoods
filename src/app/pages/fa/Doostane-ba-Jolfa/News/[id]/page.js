@@ -134,7 +134,7 @@ export default async function SingleNewsPage({ params }) {
               </div>
 
               {/* عنوان اصلی خبر */}
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.2] md:leading-[1.3] mb-12 animate-enter delay-200 tracking-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl text-slate-900 leading-[1.2] md:leading-[1.3] mb-12 animate-enter delay-200 tracking-tight">
                 {title}
               </h1>
               

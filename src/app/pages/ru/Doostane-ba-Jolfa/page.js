@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function DoostaneBaJolfaPageRU() {
   return (
-    <main dir="ltr" className="w-full bg-[rgb(216,230,254)] pb-0 font-sans">
+    <main dir="ltr" className="w-full bg-[rgb(255,255,255)] pb-0 font-sans">
       {/* Banner Section */}
       <section className="relative w-full overflow-hidden flex items-end justify-center bg-white">
         <div
@@ -22,7 +22,7 @@ export default function DoostaneBaJolfaPageRU() {
       </section>
 
       {/* Content Section */}
-      <section className="relative w-full bg-gradient-to-b from-white via-white/60 to-[rgb(216,230,254)] overflow-hidden z-40 -mt-16 md:-mt-24 py-16 md:py-24 pb-24 md:pb-32">
+      <section className="relative w-full bg-white overflow-hidden z-40 -mt-16 md:-mt-24 py-16 md:py-24 pb-24 md:pb-32">
         <div
           className="absolute top-0 left-0 h-full w-1/2 z-0 pointer-events-none bg-contain bg-left bg-no-repeat opacity-70"
           style={{
@@ -39,7 +39,7 @@ export default function DoostaneBaJolfaPageRU() {
         />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-3xl md:text-5xl font-black text-[#1a4b8c] mb-12 md:mb-20 drop-shadow-sm pt-8 md:pt-12">
+          <h1 className="text-3xl md:text-5xl font-kalame text-[#1a4b8c] mb-12 md:mb-20 drop-shadow-sm pt-8 md:pt-12">
             Дружелюбно с Jolfa
           </h1>
 

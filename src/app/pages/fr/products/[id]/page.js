@@ -4,7 +4,7 @@ import { getAllProducts, getProductById } from "@/app/lib/cheeseData";
 import Image from "next/image";
 
 export default async function ProductDetail({ params }) {
-  const product = await getProductById(params.id);
+  const product = await getProductById((await params).id);
 
   if (!product) {
     return <section className={styles.wrapper}>Produit introuvable.</section>;
@@ -37,11 +37,8 @@ export default async function ProductDetail({ params }) {
             {/* Content */}
             <div className="flex flex-col">
               <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
-                {product.name}
-              </h1>
-              <p className="mt-2 text-sm sm:text-base font-medium text-neutral-500 dark:text-neutral-300">
                 {title}
-              </p>
+              </h1>
 
               <p className="mt-4 text-base leading-7 text-neutral-700 dark:text-neutral-200">
                 {description}
