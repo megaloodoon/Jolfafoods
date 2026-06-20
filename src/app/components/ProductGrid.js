@@ -41,7 +41,7 @@ export default function ProductGrid({
       case "ru":
         return product.titleRu || product.title;
       default:
-        return product.title || product.name;
+        return product.titleFa || product.name;
     }
   };
 
