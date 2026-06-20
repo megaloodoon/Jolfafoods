@@ -27,9 +27,12 @@ export default function NewsListClient({ newsList, locale }) {
   const suffix = SUFFIX_MAP[locale] || "fa";
   const t = TRANSLATIONS[locale] || TRANSLATIONS.fa;
 
-  // محاسبه پجینیشن
-  const totalPages = Math.ceil(newsList.length / itemsPerPage);
-  const currentNews = newsList.slice(
+  // ۱. مرتب‌سازی اخبار: آیدی‌های بزرگتر (جدیدتر) در ابتدا قرار می‌گیرند
+  const sortedNewsList = [...newsList].sort((a, b) => b.id - a.id);
+
+  // ۲. محاسبه پجینیشن بر اساس لیست مرتب شده
+  const totalPages = Math.ceil(sortedNewsList.length / itemsPerPage);
+  const currentNews = sortedNewsList.slice(
     currentPage * itemsPerPage,
     (currentPage + 1) * itemsPerPage,
   );

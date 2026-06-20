@@ -31,7 +31,7 @@ const PRODUCTS_DATA = [
         desc: "سس پنیر چدار جلفا یک تجربه‌ی فوق‌العاده است که به تنهایی می‌تواند استانداردهای یک دورهمی یا میزبانی حرفه‌ای را ارتقا دهد. این سس، فراتر از یک چاشنی ساده، یک کاتالیزور طعم برای انواع تنقلات، فست‌فودهای مدرن و حتی بشقاب‌های لذیذ خانگی می باشد که بر پایه‌ی پنیر چدار اصیل، با بافتی یکنواخت و مخملی تولید می گردد.",
       },
       en: {
-        title: "Cheddar Pizza Cheese Sauce",
+        title: "Cheddar Cheese Sauce",
         desc: "Jolfa Cheddar Cheese Sauce is an extraordinary experience that can single-handedly elevate the standards of any gathering or professional hosting. More than just a simple condiment, this sauce acts as a flavor catalyst for various snacks, modern fast foods, and even delicious homemade dishes, produced from authentic cheddar cheese with a smooth and velvety texture.",
       },
       ar: {
@@ -62,7 +62,7 @@ const PRODUCTS_DATA = [
         desc: "خامه جلفا محصولی باکیفیت و اصیل است که با بافت نرم و طعم طبیعی خود، تجربه متفاوتی را در آشپزی رقم می‌زند. این خامه با ایجاد بافتی نرم و لطیف در انواع پاستا، سوپ‌ها و سس‌ها، انتخابی ایده‌آل برای ارتقای طعم غذاهاست. همچنین در صنعت شیرینی‌پزی و تولید بستنی، گزینه‌ای بی‌نقص برای دستیابی به ساختاری کرمی و کیفیتی ماندگار محسوب می‌شود.",
       },
       en: {
-        title: "Full Fat Cream",
+        title: "Pasteurized Cream",
         desc: "Jolfa Cream is a high-quality and authentic product that, with its soft texture and natural taste, creates a unique culinary experience. By providing a smooth and delicate texture in various pastas, soups, and sauces, it is an ideal choice for enhancing food flavors. Furthermore, in the confectionery and ice cream industry, it is a perfect option for achieving a creamy structure and lasting quality.",
       },
       ar: {
@@ -94,7 +94,7 @@ const PRODUCTS_DATA = [
         desc: "سس پنیر پیتزای پروسس با فرمولاسیونی خاص، طعم‌دهنده‌ای ایده‌آل برای ارتقای مزه‌ی ساندویچ‌ها، همبرگرها و انواع اسنک‌هاست. پنیر پروسس به کار رفته در این محصول ضمن ایجاد طعمی عمیق و ماندگار، منبعی غنی از کلسیم و پروتئین‌های لبنی ضروری است و مصرف آن علاوه بر تأمین انرژی روزانه، نقش مؤثری در تقویت سلامت استخوان‌ها و بهبود تغذیه ایفا می‌کند.",
       },
       en: {
-        title: "Pizza Processed Cheese Sauce",
+        title: "Processed Pizza Cheese Sauce",
         desc: "Processed Pizza Cheese Sauce, with its special formulation, is an ideal flavor enhancer for elevating the taste of sandwiches, hamburgers, and various snacks. The processed cheese used in this product, while creating a deep and lasting flavor, is a rich source of calcium and essential dairy proteins, and its consumption plays an effective role in strengthening bone health and improving nutrition, in addition to providing daily energy.",
       },
       ar: {
@@ -121,7 +121,7 @@ const PRODUCTS_DATA = [
         desc: "پنیر موزارلا کبابی جلفا، ترکیبی برگزیده، مغذی و هیجان‌انگیز است که حال و هوای باربیکیو و دورهمی‌های فضای باز را دگرگون می‌کند. این پنیر بهترین انتخاب برای سرو در کنار انواع سبزیجات گریل شده، استیک‌ها و حتی به عنوان یک میان‌وعده مستقل و گرم می‌باشد. این پنیر  بر پایه‌ی شیر تازه و با تکنولوژی پیشرفته تولید شده که دارای بافتی منسجم است و در اثر حرارت، لایه‌ی بیرونی آن ترد و طلایی شده در حالی که مغز آن نرم و لذیذ باقی می‌ماند.همچنین به دلیل فرآیند پخت اختصاصی، جایگزینی عالی برای پروتئین‌های گوشتی در رژیم‌های گیاه‌خواری محسوب می‌شود",
       },
       en: {
-        title: "Grill Mozzarella",
+        title: "Grilled Mozzarella Cheese",
         desc: "Jolfa Grilled Mozzarella Cheese is a selected, nutritious, and exciting combination that transforms the atmosphere of barbecues and outdoor gatherings. It is an excellent choice to serve alongside a variety of grilled vegetables, steaks, or even as a warm, standalone snack.Produced from fresh milk using advanced technology, this cheese features a firm and cohesive texture. When exposed to heat, its outer layer becomes crispy and golden, while the inside remains soft and delicious. Thanks to its specialized cooking process, it is also considered an excellent alternative to meat proteins in vegetarian diets.",
       },
       ar: {
@@ -181,14 +181,16 @@ export default function LatestProducts({ lang = "fa" }) {
 
   return (
     <section className="w-full py-6 sm:py-16 overflow-hidden">
-      <div
-        className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16 bg-center"
-        style={{
-          backgroundImage:
-            "url('/Image/New/Backgrounds/LatestProducts-pattern-background5.svg')",
-          backgroundSize: "50%",
-        }}
-      >
+   <div
+  className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16"
+  style={{
+    backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg'), url('/Image/New/Backgrounds/LatestProducts-pattern-background5.svg')",
+    backgroundSize: "50%, 30%", /* سایز عکس اول 35 درصد، عکس دوم cover (پر کردن کل صفحه) */
+    backgroundPosition: "center, center", /* موقعیت عکس اول، موقعیت عکس دوم */
+    backgroundRepeat: "repeat, repeat" /* جلوگیری از تکرار شدن عکس‌ها */
+  }}
+>
+
         {/* Title */}
         <ScrollReveal animation="fade-down" duration={800}>
           <div

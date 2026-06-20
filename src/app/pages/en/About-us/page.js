@@ -9,7 +9,7 @@ export default function AboutUsEn() {
       >
         <div className="absolute inset-0 bg-black/30"></div>
         <h1 className="relative z-10 text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg text-center px-4">
-          Know More About Us
+           More About Us
         </h1>
       </ScrollReveal>
 
