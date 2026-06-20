@@ -45,7 +45,7 @@ export default function RecipesSwiperGridClient({
       {/* 1. بخش تصویر بنر */}
       <div className="w-full relative">
         <img
-          src="/Image/New/recipes.png"
+          src="/Image/New/recipes2.png"
           alt={t.title}
           className="w-full h-auto object-cover"
         />

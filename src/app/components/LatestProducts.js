@@ -28,23 +28,23 @@ const PRODUCTS_DATA = [
     lang: {
       fa: {
         title: "سس پنیر پیتزای پروسس چدار",
-        desc: "سس پنیر چدار جلفا یک تجربه‌ی فوق‌العاده غنی و هیجان‌انگیز است که به تنهایی می‌تواند استانداردهای یک دورهمی یا میزبانی حرفه‌ای را ارتقا دهد. این سس، فراتر از یک چاشنی ساده، یک کاتالیزور طعم برای انواع تنقلات، فست‌فودهای مدرن و حتی بشقاب‌های لذیذ خانگی است.این محصول بر پایه‌ی پنیر چدار اصیل، با بافتی یکنواخت و مخملی تولید شده و در دماهای مختلف، پایداری ساختاری خود را حفظ می‌کند.",
+        desc: "سس پنیر چدار جلفا یک تجربه‌ی فوق‌العاده است که به تنهایی می‌تواند استانداردهای یک دورهمی یا میزبانی حرفه‌ای را ارتقا دهد. این سس، فراتر از یک چاشنی ساده، یک کاتالیزور طعم برای انواع تنقلات، فست‌فودهای مدرن و حتی بشقاب‌های لذیذ خانگی می باشد که بر پایه‌ی پنیر چدار اصیل، با بافتی یکنواخت و مخملی تولید می گردد.",
       },
       en: {
         title: "Cheddar Pizza Cheese Sauce",
-        desc: "Jolfa Cheddar Cheese Sauce is an exceptionally rich and exciting experience that alone can elevate the standards of any gathering or professional hosting. More than just a simple condiment, this sauce acts as a flavor catalyst for a wide range of snacks, modern fast foods, and even delicious homemade dishes. The product is based on authentic cheddar cheese, produced with a smooth and velvety texture, and maintains its structural stability across different temperatures.",
+        desc: "Jolfa Cheddar Cheese Sauce is an extraordinary experience that can single-handedly elevate the standards of any gathering or professional hosting. More than just a simple condiment, this sauce acts as a flavor catalyst for various snacks, modern fast foods, and even delicious homemade dishes, produced from authentic cheddar cheese with a smooth and velvety texture.",
       },
       ar: {
         title: "صلصة جبن الشيدر للبيتزا",
-        desc: "صلصة جبن الشيدر «جلفا» هي تجربة غنية ومثيرة للغاية يمكنها وحدها أن ترتقي بمعايير أي تجمع أو ضيافة احترافية. هذه الصلصة ليست مجرد إضافة بسيطة، بل هي محفّز للنكهة لمجموعة متنوعة من الوجبات الخفيفة، والوجبات السريعة الحديثة، وحتى الأطباق المنزلية الشهية. يعتمد هذا المنتج على جبن الشيدر الأصلي، وقد صُنِع بقوام متجانس ومخملي، مع الحفاظ على ثباته البنيوي في درجات حرارة مختلفة.",
+        desc: "صلصة جبن الشيدر من جلفا هي تجربة استثنائية يمكنها بمفردها الارتقاء بمعايير أي تجمع أو ضيافة احترافية. هذه الصلصة هي أكثر من مجرد تتبيلة بسيطة، فهي محفز للنكهة لأنواع الوجبات الخفيفة والوجبات السريعة الحديثة وحتى الأطباق المنزلية الشهية، حيث تُنتج من جبن الشيدر الأصلي بقوام متجانس ومخملي.",
       },
       fr: {
         title: "Sauce cheddar pour pizza",
-        desc: "La sauce au fromage cheddar Jolfa est une expérience exceptionnellement riche et passionnante qui, à elle seule, peut élever les standards de toute réunion ou réception professionnelle. Bien plus qu’un simple condiment, cette sauce agit comme un catalyseur de saveurs pour une grande variété de collations, de fast‑foods modernes et même de plats maison délicieux. Ce produit est élaboré à base de véritable fromage cheddar, avec une texture homogène et veloutée, tout en conservant sa stabilité structurelle à différentes températures.",
+        desc: "La sauce au fromage cheddar Jolfa est une expérience extraordinaire qui peut à elle seule élever les standards de toute réunion ou réception professionnelle. Bien plus qu'un simple condiment, cette sauce agit comme un catalyseur de saveurs pour divers snacks, fast-foods modernes et même de délicieux plats faits maison, produite à partir de véritable fromage cheddar avec une texture lisse et veloutée.",
       },
       ru: {
         title: "Сырный соус чеддер для пиццы",
-        desc: "Соус из сыра чеддер «Jolfa» — это исключительно насыщенный и захватывающий гастрономический опыт, который сам по себе способен повысить уровень любой встречи или профессионального приема. Этот соус — не просто приправа, а настоящий катализатор вкуса для различных закусок, современных фаст‑фудов и даже изысканных домашних блюд. Продукт создан на основе настоящего сыра чеддер, имеет однородную бархатистую текстуру и сохраняет структурную стабильность при различных температурах.",
+        desc: "Сырный соус Чеддер от Jolfa — это необыкновенный опыт, который сам по себе способен поднять стандарты любой вечеринки или профессионального приема. Этот соус — больше чем просто приправа, это катализатор вкуса для закусок, современного фаст-фуда и изысканных домашних блюд, созданный на основе настоящего сыра чеддер с однородной бархатистой текстурой.",
       },
     },
   },
@@ -59,23 +59,23 @@ const PRODUCTS_DATA = [
     lang: {
       fa: {
         title: "خامه پاستوریزه پرچرب",
-        desc: "خامه جلفا تجربه‌ای لطیف و خوش‌طعم از یک خامه‌ی باکیفیت و اصیل است؛ جایی که بافت نرم و کرمی آن با طعم طبیعی و دل‌نشینش ترکیب می‌شود و هر غذا یا دسر را به سطحی متفاوت از طعم و مزه می‌رساند.بافت یکدست و کرمی آن، طعمی غنی و طبیعی به انواع پاستا، سوپ‌های کرمی و سس‌ها می‌بخشد و در شیرینی‌پزی نیز، انتخابی ایده‌آل برای تهیه انواع کیک، رول، دسر و فیلینگ‌های لطیف است. همچنین در تولید بستنی، این خامه با ایجاد ساختاری نرم و خامه‌ای، تجربه‌ای ماندگار از یک بستنی باکیفیت را رقم می‌زند.",
+        desc: "خامه جلفا محصولی باکیفیت و اصیل است که با بافت نرم و طعم طبیعی خود، تجربه متفاوتی را در آشپزی رقم می‌زند. این خامه با ایجاد بافتی نرم و لطیف در انواع پاستا، سوپ‌ها و سس‌ها، انتخابی ایده‌آل برای ارتقای طعم غذاهاست. همچنین در صنعت شیرینی‌پزی و تولید بستنی، گزینه‌ای بی‌نقص برای دستیابی به ساختاری کرمی و کیفیتی ماندگار محسوب می‌شود.",
       },
       en: {
         title: "Full Fat Cream",
-        desc: "Jolfa Cream offers a delicate and flavorful experience of high-quality, authentic cream; a place where its smooth, creamy texture blends with a natural, pleasant taste to elevate any dish or dessert to a whole new level of flavor. Its uniform and creamy consistency imparts a rich, natural taste to various pastas, creamy soups, and sauces. In pastry making, it is an ideal choice for preparing cakes, rolls, desserts, and delicate fillings. Furthermore, in ice cream production, this cream creates a smooth and creamy structure, ensuring a lasting experience of premium quality ice cream.",
+        desc: "Jolfa Cream is a high-quality and authentic product that, with its soft texture and natural taste, creates a unique culinary experience. By providing a smooth and delicate texture in various pastas, soups, and sauces, it is an ideal choice for enhancing food flavors. Furthermore, in the confectionery and ice cream industry, it is a perfect option for achieving a creamy structure and lasting quality.",
       },
       ar: {
         title: "قشطة كاملة الدسم",
-        desc: "تُعدّ كريمة «جلفا» تجربة ناعمة ولذيذة تعكس جودة الكريمة الأصيلة؛ حيث يمتزج قوامها الكريمي الناعم مع طعمها الطبيعي والساحر، ليرتقي بكل طبق أو حلوى إلى مستوى مختلف تماماً من المذاق. يمنح قوامها المتجانس والكريمي نكهة غنية وطبيعية لمختلف أنواع الباستا، والشوربات الكريمية، والصلصات. وفي عالم الحلويات، تُعد خياراً مثالياً لتحضير أنواع الكيك، واللفائف (رولز)، والحلويات، والحشوات الرقيقة. كما تساهم هذه الكريمة في إنتاج الآيس كريم من خلال خلق بنية ناعمة وكريمية، مما يمنح تجربة لا تُنسى لآيس كريم عالي الجودة.",
+        desc: "كريمة جلفا هي منتج عالي الجودة وأصيل، يخلق تجربة طهي مختلفة بفضل قوامها الناعم وطعمها الطبيعي. تُعد هذه الكريمة خياراً مثالياً لتحسين نكهة الأطعمة من خلال إضفاء قوام ناعم ولطيف على أنواع الباستا والشوربات والصلصات. كما تُعتبر خياراً لا يشوبه شائبة في صناعة الحلويات والآيس كريم للحصول على بنية كريمية وجودة تدوم طويلاً.",
       },
       fr: {
         title: "Crème entière",
-        desc: "La crème Jolfa est une expérience délicate et savoureuse, reflet d’une crème authentique et de haute qualité ; là où sa texture onctueuse et crémeuse se marie à son goût naturel et plaisant pour porter chaque plat ou dessert à un niveau de saveur supérieur. Sa consistance homogène et crémeuse apporte une saveur riche et naturelle aux pâtes, aux soupes veloutées et aux sauces. En pâtisserie, elle constitue un choix idéal pour la confection de gâteaux, de roulés, de desserts et de garnitures délicates. De plus, dans la fabrication de glaces, cette crème crée une structure souple et crémeuse, offrant ainsi une expérience mémorable de crème glacée haut de gamme.",
+        desc: "La crème Jolfa est un produit authentique et de haute qualité qui, grâce à sa texture douce et son goût naturel, crée une expérience culinaire unique. En apportant une texture lisse et délicate aux pâtes, soupes et sauces, elle est le choix idéal pour rehausser les saveurs. De plus, dans l'industrie de la pâtisserie et des glaces, c'est une option parfaite pour obtenir une structure crémeuse et une qualité durable.",
       },
       ru: {
         title: "Жирные сливки",
-        desc: "Сливки «Jolfa» — это нежный и изысканный вкус высококачественных натуральных сливок; здесь мягкая кремовая текстура сочетается с приятным естественным вкусом, выводя любое блюдо или десерт на совершенно новый уровень. Их однородная кремовая консистенция придает насыщенный и натуральный вкус различным видам пасты, крем-супам и соусам. В кондитерском деле это идеальный выбор для приготовления тортов, рулетов, десертов и нежных начинок. Также при производстве мороженого эти сливки создают мягкую кремовую структуру, обеспечивая незабываемое впечатление от продукта премиального качества.",
+        desc: "Сливки Jolfa — это высококачественный и аутентичный продукт, который благодаря своей мягкой текстуре и натуральному вкусу создает уникальный кулинарный опыт. Обеспечивая нежную консистенцию в пастах, супах и соусах, они являются идеальным выбором для улучшения вкуса блюд. Кроме того, в кондитерской промышленности и производстве мороженого это безупречный вариант для достижения кремовой структуры и неизменного качества.",
       },
     },
   },
@@ -91,23 +91,23 @@ const PRODUCTS_DATA = [
     lang: {
       fa: {
         title: "سس پنیر پیتزای پروسس",
-        desc: "سس پنیر پیتزای پروسس با بهره‌گیری از فرمولاسیونی منحصربه‌فرد، نه‌تنها یک چاشنی، بلکه رازی برای درخشش طعم در انواع ساندویچ‌های لذیذ، همبرگرهای کلاسیک و اسنک‌های مدرن به شمار می‌رود.پنیر پروسس به کار رفته در این محصول، علاوه بر ایجاد طعمی عمیق و ماندگار، منبعی غنی از کلسیم و پروتئین‌های لبنی است. به دلیل فرآیند پاستوریزاسیون دقیق و استفاده از مواد اولیه استاندارد، این سس دارای ارزش غذایی بالایی بوده و به تقویت سلامت استخوان‌ها و تامین انرژی روزانه کمک می‌کند.",
+        desc: "سس پنیر پیتزای پروسس با فرمولاسیونی خاص، طعم‌دهنده‌ای ایده‌آل برای ارتقای مزه‌ی ساندویچ‌ها، همبرگرها و انواع اسنک‌هاست. پنیر پروسس به کار رفته در این محصول ضمن ایجاد طعمی عمیق و ماندگار، منبعی غنی از کلسیم و پروتئین‌های لبنی ضروری است و مصرف آن علاوه بر تأمین انرژی روزانه، نقش مؤثری در تقویت سلامت استخوان‌ها و بهبود تغذیه ایفا می‌کند.",
       },
       en: {
         title: "Pizza Processed Cheese Sauce",
-        desc: "Processed Pizza Cheese Sauce, utilizing a unique formulation, is not merely a condiment but a secret for flavor excellence in various delicious sandwiches, classic hamburgers, and modern snacks. The processed cheese used in this product, besides creating a deep and lasting flavor, is a rich source of calcium and dairy proteins. Due to the precise pasteurization process and the use of standardized raw materials, this sauce possesses high nutritional value and contributes to strengthening bone health and providing daily energy.",
+        desc: "Processed Pizza Cheese Sauce, with its special formulation, is an ideal flavor enhancer for elevating the taste of sandwiches, hamburgers, and various snacks. The processed cheese used in this product, while creating a deep and lasting flavor, is a rich source of calcium and essential dairy proteins, and its consumption plays an effective role in strengthening bone health and improving nutrition, in addition to providing daily energy.",
       },
       ar: {
         title: "صلصة جبن البيتزا المطبوخة",
-        desc: "تُعتبر صلصة جبن البيتزا المطبوخ (البروسس)، بفضل تركيبتها الفريدة، ليست مجرد چاشنی، بل سراً لتألق النكهة في مختلف أنواع السندويشات اللذيذة، والبرجر الكلاسيكي، والوجبات الخفيفة العصرية. إن جبن البروسس المستخدم في هذا المنتج، بالإضافة إلى منحه طعماً عميقاً ومستداماً، يُعد مصدراً غنياً بالكالسيوم وبروتينات الألبان. ونظراً لعملية البسترة الدقيقة واستخدام مواد أولية معيارية، تتميز هذه الصلصة بقيمة غذائية عالية وتساهم في تعزيز صحة العظام وإمداد الجسم بالطاقة اليومية.",
+        desc: "تعتبر صلصة جبن البيتزا المطبوخة (البروسس)، بتركيبتها الخاصة، نكهة مثالية لتحسين طعم السندويشات والبرغر ومختلف أنواع الوجبات الخفيفة. إن جبن البروسس المستخدم في هذا المنتج، إلى جانب منحه طعماً عميقاً ومستداماً، يعد مصدراً غنياً بالكالسيوم وبروتينات الحليب الأساسية، ويلعب استهلاكه دوراً فعالاً في تعزيز صحة العظام وتحسين التغذية، بالإضافة إلى توفير الطاقة اليومية.",
       },
       fr: {
         title: "Sauce fromage fondu pour pizza",
-        desc: "La sauce au fromage à pizza fondu, grâce à sa formulation unique, n’est pas seulement un condiment, mais le secret de l’éclat gustatif de divers sandwichs délicieux, de hamburgers classiques et de snacks modernes. Le fromage fondu utilisé dans ce produit, en plus de créer une saveur profonde et persistante, est une source riche en calcium et en protéines laitières. Grâce à un processus de pasteurisation rigoureux et à l’utilisation de matières premières standardisées, cette sauce possède une haute valeur nutritionnelle et aide à renforcer la santé osseuse tout en fournissant l’énergie quotidienne nécessaire.",
+        desc: "La sauce au fromage fondu pour pizza, avec sa formulation spéciale, est un rehausseur de goût idéal pour sublimer les sandwichs, les hamburgers et divers snacks. Le fromage fondu utilisé dans ce produit, tout en créant une saveur profonde et persistante, est une source riche en calcium et en protéines laitières essentielles, et sa consommation joue un rôle efficace dans le renforcement de la santé osseuse et l'amélioration de la nutrition, en plus de fournir l'énergie quotidienne.",
       },
       ru: {
         title: "Плавленый сырный соус для пиццы",
-        desc: "Соус из плавленного сыра для пиццы, благодаря своей уникальной рецептуре, является не просто приправой, а секретом великолепного вкуса в самых разнообразных сэндвичах, классических гамбургерах и современных закусках. Плавленный сыр, используемый в этом продукте, помимо создания глубокого и стойкого послевкусия, является богатым источником кальция и молочных белков. Благодаря точному процессу пастеризации и использования стандартного сырья, этот соус обладает высокой пищевой ценностью, способствует укреплению костей и обеспечивает организм энергией на весь день.",
+        desc: "Соус из плавленного сыра для пиццы благодаря своей специальной рецептуре является идеальным усилителем вкуса для сэндвичей, гамбургеров и различных закусок. Плавленый сыр, используемый в этом продукте, создавая глубокий и стойкий вкус, является богатым источником кальция и необходимых молочных белков, а его употребление играет важную роль в укреплении здоровья костей и улучшении питания, помимо обеспечения организма ежедневной энергией.",
       },
     },
   },
@@ -262,13 +262,27 @@ export default function LatestProducts({ lang = "fa" }) {
                 >
                   <div className="w-full">
                     <h3
-                      className={`font-bold text-[6px] min-[400px]:text-[8px] sm:text-[11px] lg:text-[16px] xl:text-[18px] text-[#1a4b8c] leading-tight sm:leading-normal mb-1 ${rtl ? "text-right" : "text-left"}`}
+                      className={`font-bold text-[6px] min-[400px]:text-[8px] 
+                      ${rtl ? "xs:text-[7.5px]" : "xs:text-[6.2px]"}
+                      ${rtl ? "sm:text-[13px]" : "sm:text-[11px]"}  
+                      ${rtl ? "md:text-[17px]" : "md:text-[14px]"}  
+                      ${rtl ? "lg:text-[21px]" : "lg:text-[18px]"} 
+                      ${rtl ? "xl:text-[26px]" : "xl:text-[23px]"} 
+                        text-[#1a4b8c] leading-tight sm:leading-normal mb-1 ${rtl ? "text-right" : "text-left"}`}
                     >
                       {t.title}
                     </h3>
 
                     <p
-                      className={`text-[4px] min-[400px]:text-[7px] xs:text-[6.2px] sm:text-[10px] md:text-[13px] lg:text-[17px] xl:text-[20px] text-gray-700 leading-tight sm:leading-snug ${rtl ? "text-right" : "text-left"}`}
+                      className={`text-[4px] min-[400px]:text-[7px] 
+                        ${rtl ? "xs:text-[7.5px]" : "xs:text-[6.2px]"}
+                      ${rtl ? "sm:text-[12px]" : "sm:text-[10px]"}  
+                      ${rtl ? "md:text-[16px]" : "md:text-[13px]"}  
+                      ${rtl ? "lg:text-[20px]" : "lg:text-[17px]"} 
+                      ${rtl ? "xl:text-[25px]" : "xl:text-[22px]"} 
+                     text-gray-700 leading-tight sm:leading-snug ${
+                       rtl ? "text-right" : "text-left"
+                     }`}
                     >
                       {t.desc}
                     </p>
