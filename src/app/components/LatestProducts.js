@@ -83,7 +83,7 @@ const PRODUCTS_DATA = [
     id: "pizza-sauce",
     image: "/Image/New/LatestProducts-third.png",
     textBox: {
-      top: "32%",
+      top: "28%",
       left: "52%",
       rtlLeft: "50%",
       width: "42%",
@@ -184,8 +184,8 @@ export default function LatestProducts({ lang = "fa" }) {
    <div
   className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16"
   style={{
-    backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg'), url('/Image/New/Backgrounds/LatestProducts-pattern-background5.svg')",
-    backgroundSize: "50%, 30%", /* سایز عکس اول 35 درصد، عکس دوم cover (پر کردن کل صفحه) */
+    backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg'), url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')",
+    backgroundSize: "70%, 60%", /* سایز عکس اول 35 درصد، عکس دوم cover (پر کردن کل صفحه) */
     backgroundPosition: "center, center", /* موقعیت عکس اول، موقعیت عکس دوم */
     backgroundRepeat: "repeat, repeat" /* جلوگیری از تکرار شدن عکس‌ها */
   }}
@@ -264,7 +264,7 @@ export default function LatestProducts({ lang = "fa" }) {
                 >
                   <div className="w-full">
                     <h3
-                      className={`font-bold text-[6px] min-[400px]:text-[8px] 
+                      className={`font-bold text-[6px] min-[400px]:text-[9px] 
                       ${rtl ? "xs:text-[7.5px]" : "xs:text-[6.2px]"}
                       ${rtl ? "sm:text-[13px]" : "sm:text-[11px]"}  
                       ${rtl ? "md:text-[17px]" : "md:text-[14px]"}  
@@ -276,10 +276,10 @@ export default function LatestProducts({ lang = "fa" }) {
                     </h3>
 
                     <p
-                      className={`text-[4px] min-[400px]:text-[7px] 
+                      className={`text-[4px] min-[400px]:text-[9px] 
                         ${rtl ? "xs:text-[7.5px]" : "xs:text-[6.2px]"}
                       ${rtl ? "sm:text-[12px]" : "sm:text-[10px]"}  
-                      ${rtl ? "md:text-[16px]" : "md:text-[13px]"}  
+                      ${rtl ? "md:text-[15px]" : "md:text-[13px]"}  
                       ${rtl ? "lg:text-[20px]" : "lg:text-[17px]"} 
                       ${rtl ? "xl:text-[25px]" : "xl:text-[22px]"} 
                      text-gray-700 leading-tight sm:leading-snug ${

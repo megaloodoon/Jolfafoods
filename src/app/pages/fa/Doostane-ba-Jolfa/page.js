@@ -46,7 +46,7 @@ export default function DoostaneBaJolfaPage() {
 
         {/* کانتینر محتوای اصلی */}
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-3xl md:text-5xl font-kalame text-[#1a4b8c] mb-12 md:mb-20 drop-shadow-sm pt-8 md:pt-12">
+          <h1 className="text-3xl md:text-5xl font-kalame text-[#1a4b8c] mb-12 md:mb-20 drop-shadow-sm pt-8 md:pt-1">
             دوستانه با جلفا
           </h1>
 

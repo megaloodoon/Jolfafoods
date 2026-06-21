@@ -1,111 +1,116 @@
 import { getArticleById } from "@/app/lib/cheeseData";
-import { Calendar, Clock, ChevronRight } from "lucide-react";
+import { Calendar, Clock, ChevronRight, ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 export default async function ArticlePage(props) {
+  // دریافت اطلاعات مقاله (Server Side)
   const { id } = await props.params;
-
-  // دریافت دیتا
   const article = await getArticleById("ru", id);
 
-  // اگر مقاله پیدا نشد
   if (!article) {
     return (
-      <div className="flex items-center justify-center min-h-[50vh]">
-        <div className="text-xl font-bold text-red-500">Статья не найдена</div>
+      <div className="min-h-screen flex items-center justify-center bg-[#FDF8F0]">
+        <div className="p-10 text-center text-xl font-bold text-red-500 bg-white rounded-2xl shadow-sm">
+          Статья не найдена
+        </div>
       </div>
     );
   }
 
-  // === استخراج ایمن اطلاعات (شبیه کد خودتان) ===
+  // مقداردهی متغیرهای روسی
   const title = article.titleRu || article.title || "Без названия";
   const summary =
     article.summaryRu || article.description || article.summary || "";
   const content = article.contentRu || article.content || "";
-  const image = article.image || null;
-  const category = article.category || "Главная";
 
-  // === تنظیم تاریخ ===
-  // اگر تاریخ وجود نداشت، تاریخ فعلی را می‌گیرد تا ارور ندهد
+  // تنظیم تاریخ با فرمت روسی
   const rawDate =
     article.createdAt || article.date || article.updatedAt || new Date();
-  let publishDate = "";
-  try {
-    publishDate = new Date(rawDate).toLocaleDateString("ru-RU", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  } catch (e) {
-    publishDate = "Недавно"; // اگر فرمت تاریخ به مشکل خورد
-  }
+  const publishDate = new Date(rawDate).toLocaleDateString("ru-RU", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   return (
-    <main className="min-h-screen transition-colors duration-300 ">
-      <article
-        dir="ltr"
-        className="max-w-4xl mx-auto px-4 sm:px-6 py-12 md:py-16"
-      >
-        {/* === HEADER === */}
-        <header className="mb-10 text-center md:text-left">
-          {/* Breadcrumb / Category */}
-          <div className="inline-flex items-center gap-1 mb-6 px-3 py-1 rounded-full text-xs font-bold tracking-wide text-amber-700 bg-amber-100 dark:text-amber-400 dark:bg-amber-900/30">
-            <span>Статьи</span>
-            <ChevronRight className="w-3 h-3" />
-            <span>{category}</span>
-          </div>
+    <main className="min-h-screen bg-[#FDF8F0] text-[#333] selection:bg-[#FFB03A]/30 selection:text-[#153B75]">
+      {/* بخش عکس هیرو (Hero Image) */}
+      <div className="relative h-[45vh] md:h-[55vh] w-full overflow-hidden bg-[#153B75]">
+        <div className="absolute inset-0 bg-black/40 z-10" />
+        {article.image && (
+          <img
+            src={article.image}
+            alt={title}
+            className="absolute inset-0 object-cover w-full h-full transform hover:scale-105 transition-transform duration-1000 ease-out"
+          />
+        )}
+      </div>
 
-          {/* Title */}
-          <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-50 leading-tight mb-6 tracking-tight">
-            {title}
-          </h1>
+      {/* کانتینر اصلی محتوا (Overlapping the Hero Image) */}
+      <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-28 pb-20">
+        {/* کارت شیشه‌ای (Glassmorphism) */}
+        <div className="bg-white/95 backdrop-blur-2xl rounded-3xl shadow-[0_20px_50px_rgba(21,59,117,0.1)] p-6 sm:p-8 md:p-12 border border-white/50 relative overflow-hidden">
+          <div className="relative z-10">
+            {/* اطلاعات متای مقاله */}
+            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm font-medium mb-8">
+              <div className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full text-[#153B75] bg-[#E4F0FB]">
+                <span>Статьи</span>
+                <ChevronRight className="w-3 h-3" />
+                <span>{article.category || "Главная"}</span>
+              </div>
 
-          {/* Metadata */}
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-3 text-slate-500 dark:text-slate-400 text-sm border-b border-slate-200 dark:border-slate-800 pb-8">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-amber-500" />
-              <span>{publishDate}</span>
+              <div className="flex items-center gap-2 text-slate-500">
+                <Calendar className="w-4 h-4 text-[#FFB03A]" />
+                <span>{publishDate}</span>
+              </div>
+
+              <div className="flex items-center gap-2 text-slate-500">
+                <Clock className="w-4 h-4 text-[#FFB03A]" />
+                <span>Время чтения: {article.readingTime || "2"} мин</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 text-amber-500" />
-              <span>Время чтения: {article.readingTime || "5"} мин</span>
-            </div>
-          </div>
-        </header>
 
-        {/* === IMAGE === */}
-        {image && (
-          <figure className="relative w-full aspect-video mb-12 overflow-hidden rounded-2xl shadow-xl dark:shadow-none ring-1 ring-slate-900/5 dark:ring-white/10 group">
-            <img
-              src={image}
-              alt={title}
-              className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            {/* عنوان مقاله */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#153B75] leading-tight mb-8">
+              {title}
+            </h1>
+
+            {/* باکس خلاصه مقاله */}
+            {summary && (
+              <div className="mb-10 p-6 md:p-8 bg-[#FDF8F0] rounded-r-2xl border-l-4 border-[#FFB03A] shadow-sm">
+                <p className="text-lg md:text-xl font-medium leading-relaxed text-[#555] text-justify">
+                  {summary}
+                </p>
+              </div>
+            )}
+
+            {/* محتوای اصلی مقاله */}
+            <div
+              className="
+                prose prose-lg md:prose-xl max-w-none 
+                prose-headings:text-[#153B75] prose-headings:font-bold prose-headings:tracking-tight
+                prose-p:text-[#444] prose-p:text-justify prose-p:leading-loose
+                prose-a:text-[#FFB03A] prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#e59b2d]
+                prose-img:rounded-2xl prose-img:shadow-lg prose-img:my-8
+                prose-blockquote:border-l-4 prose-blockquote:border-[#FFB03A]/50 prose-blockquote:bg-[#FDF8F0] prose-blockquote:py-3 prose-blockquote:pl-5 prose-blockquote:rounded-r-xl
+                prose-li:marker:text-[#FFB03A]
+              "
+              dangerouslySetInnerHTML={{ __html: content }}
             />
-          </figure>
-        )}
 
-        {/* === SUMMARY === */}
-        {summary && (
-          <div className="mb-10 p-6 md:p-8 bg-slate-50 dark:bg-slate-800/40 rounded-xl border-l-4 border-amber-500">
-            <p className="text-lg md:text-xl font-medium leading-relaxed text-slate-700 dark:text-slate-200 text-justify">
-              {summary}
-            </p>
+            {/* دکمه بازگشت به مقالات */}
+            <div className="mt-16 pt-8 border-t border-slate-100 flex items-center justify-start">
+              <Link
+                href="/pages/ru/Doostane-ba-Jolfa/Articles"
+                className="group flex items-center gap-2 px-6 py-3 bg-[#E4F0FB] text-[#153B75] rounded-full text-sm font-bold hover:bg-[#153B75] hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
+              >
+                <ArrowLeft className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" />
+                <span>Вернуться к статьям</span>
+              </Link>
+            </div>
           </div>
-        )}
-
-        {/* === CONTENT === */}
-        <div
-          className="
-            prose prose-lg md:prose-xl max-w-none 
-            prose-slate dark:prose-invert
-            prose-headings:font-bold prose-headings:tracking-tight
-            prose-a:text-amber-600 dark:prose-a:text-amber-500 prose-a:no-underline hover:prose-a:underline
-            prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8
-            prose-blockquote:border-l-4 prose-blockquote:border-amber-500/50 prose-blockquote:bg-slate-50 dark:prose-blockquote:bg-slate-800/20 prose-blockquote:py-2 prose-blockquote:pl-4
-            prose-li:marker:text-amber-500
-          "
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
-      </article>
+        </div>
+      </div>
     </main>
   );
 }

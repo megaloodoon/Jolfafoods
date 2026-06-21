@@ -6,8 +6,7 @@ export default async function ArticlesPage() {
 
   return (
     <main>
-      <section className="max-w-6xl mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-4">Статьи</h1>
+      <section dir="ltr">
         <ArticlesListClient articles={articles} locale="ru" basePath="/pages/ru/Doostane-ba-Jolfa/Articles" />
       </section>
     </main>
