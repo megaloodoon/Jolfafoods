@@ -61,7 +61,7 @@ export default function ArticlesListClient({
           <div className="relative w-full mx-auto">
             {/* پترن گوشه راست پایین */}
             {/* مقادیر right و bottom را می‌توانید برای جابجایی دقیق پترن تنظیم کنید */}
-            <div className="absolute -bottom-8 -right-8 sm:-bottom-12 sm:-right-12 w-20 h-20 sm:w-32 sm:h-32 z-0">
+            <div className="absolute -bottom-14 -right-12 sm:-bottom-20 sm:-right-20 w-20 h-20 sm:w-32 sm:h-32 z-0">
               <img
                 src="/Image/New/Backgrounds/pattern.svg" // آدرس عکس پترن خود را اینجا قرار دهید
                 alt="Pattern"
@@ -88,7 +88,7 @@ export default function ArticlesListClient({
       </div>
 
       {/* گرید مقاله‌ها */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 bg-gradient-to-b from-white to-[#fff0f0e9]">
+      <div className="max-w-6xl mx-auto xs:max-w-[380px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-5xl xl:max-w-6xl 2xl:max-w-[1300px] px-4 sm:px-6 relative z-10 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {results.map((a, index) => {
             // انتخاب زبان
