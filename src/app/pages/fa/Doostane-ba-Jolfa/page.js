@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function DoostaneBaJolfaPage() {
   return (
     // بک‌گراند اصلی را به رنگ نهایی در می‌آوریم تا پایین صفحه یکدست شود
-    <main dir="rtl" className="w-full bg-[rgb(255,255,255)] pb-0 font-sans">
+    <main dir="rtl" className="w-full bg-[rgb(255,255,255)] pb-0 font-kalame">
       
       {/* بخش گرافیکی بالای صفحه */}
       <section className="relative w-full overflow-hidden flex items-end justify-center bg-white">

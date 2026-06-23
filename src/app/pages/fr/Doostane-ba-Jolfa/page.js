@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function DoostaneBaJolfaPageFR() {
   return (
     <main dir="ltr" className="w-full bg-[rgb(255,255,255)] pb-0 font-sans">
-      
       {/* Banner Section */}
       <section className="relative w-full overflow-hidden flex items-end justify-center bg-white">
         <div
           className="absolute inset-0 w-full h-full z-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/Image/New/Backgrounds/Friendly-background.svg')",
+            backgroundImage:
+              "url('/Image/New/Backgrounds/Friendly-background.svg')",
           }}
         />
         <div className="relative z-20 w-full h-full flex justify-center items-center">
@@ -22,14 +22,23 @@ export default function DoostaneBaJolfaPageFR() {
       </section>
 
       {/* Content Section */}
-      <section className="relative w-full bg-white overflow-hidden z-40 -mt-16 md:-mt-24 py-16 md:py-24 pb-24 md:pb-32">
+      <section className="relative w-full overflow-hidden z-40 -mt-16 md:-mt-24 py-16 md:py-24 pb-24 md:pb-32">
+        {/* لایه نقطه‌چین‌ها (چپ) */}
         <div
           className="absolute top-0 left-0 h-full w-1/2 z-0 pointer-events-none bg-contain bg-left bg-no-repeat opacity-70"
-          style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')" }}
+          style={{
+            backgroundImage:
+              "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')",
+          }}
         />
+
+        {/* لایه نقطه‌چین‌ها (راست) */}
         <div
           className="absolute top-0 right-0 h-full w-1/2 z-0 pointer-events-none bg-contain bg-right bg-no-repeat opacity-70"
-          style={{ backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')" }}
+          style={{
+            backgroundImage:
+              "url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')",
+          }}
         />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -38,19 +47,46 @@ export default function DoostaneBaJolfaPageFR() {
           </h1>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-24">
-            <Link href="/pages/fr/Doostane-ba-Jolfa/recipes" className="flex flex-col items-center group">
-              <img src="/Image/New/Icons/Recipes.png" alt="Icône Recettes" className="w-36 h-36 md:w-44 md:h-44 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md" />
-              <h2 className="mt-4 text-2xl md:text-3xl font-bold text-[#1a4b8c]">Recettes</h2>
+            <Link
+              href="/pages/fr/Doostane-ba-Jolfa/recipes"
+              className="flex flex-col items-center group"
+            >
+              <img
+                src="/Image/New/Icons/Recipes.png"
+                alt="Icône Recettes"
+                className="w-36 h-36 md:w-44 md:h-44 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
+              />
+              <h2 className="mt-4 text-2xl md:text-3xl font-bold text-[#1a4b8c]">
+                Recettes
+              </h2>
             </Link>
 
-            <Link href="/pages/fr/Doostane-ba-Jolfa/News" className="flex flex-col items-center group">
-              <img src="/Image/New/Icons/News.png" alt="Icône Actualités" className="w-36 h-36 md:w-44 md:h-44 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md" />
-              <h2 className="mt-4 text-2xl md:text-3xl font-bold text-[#1a4b8c]">Actualités</h2>
+            <Link
+              href="/pages/fr/Doostane-ba-Jolfa/News"
+              className="flex flex-col items-center group"
+            >
+              <img
+                src="/Image/New/Icons/News.png"
+                alt="Icône Actualités"
+                className="w-36 h-36 md:w-44 md:h-44 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
+              />
+              <h2 className="mt-4 text-2xl md:text-3xl font-bold text-[#1a4b8c]">
+                Actualités
+              </h2>
             </Link>
 
-            <Link href="/pages/fr/Doostane-ba-Jolfa/Articles" className="flex flex-col items-center group">
-              <img src="/Image/New/Icons/Articles.png" alt="Icône Articles" className="w-36 h-36 md:w-44 md:h-44 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md" />
-              <h2 className="mt-4 text-2xl md:text-3xl font-bold text-[#1a4b8c]">Articles</h2>
+            <Link
+              href="/pages/fr/Doostane-ba-Jolfa/Articles"
+              className="flex flex-col items-center group"
+            >
+              <img
+                src="/Image/New/Icons/Articles.png"
+                alt="Icône Articles"
+                className="w-36 h-36 md:w-44 md:h-44 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
+              />
+              <h2 className="mt-4 text-2xl md:text-3xl font-bold text-[#1a4b8c]">
+                Articles
+              </h2>
             </Link>
           </div>
         </div>

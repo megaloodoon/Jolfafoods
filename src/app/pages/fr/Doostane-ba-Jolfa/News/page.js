@@ -25,7 +25,7 @@ export default async function NewsPageFr() {
         <div className="absolute inset-0 bg-blue-900/40"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-lg text-center px-4">
-            Read more Jolfa's News
+            Actualités
           </h1>
         </div>
       </section>

@@ -184,8 +184,8 @@ export default function LatestProducts({ lang = "fa" }) {
    <div
   className="max-w-7xl mx-auto px-4 space-y-10 md:space-y-16"
   style={{
-    backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg'), url('/Image/New/Backgrounds/LatestProducts-pattern-background.svg')",
-    backgroundSize: "70%, 60%", /* سایز عکس اول 35 درصد، عکس دوم cover (پر کردن کل صفحه) */
+    backgroundImage: "url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg'), url('/Image/New/Backgrounds/LatestProducts-pattern-background2.svg')",
+    backgroundSize: "70%, 70%", /* سایز عکس اول 35 درصد، عکس دوم cover (پر کردن کل صفحه) */
     backgroundPosition: "center, center", /* موقعیت عکس اول، موقعیت عکس دوم */
     backgroundRepeat: "repeat, repeat" /* جلوگیری از تکرار شدن عکس‌ها */
   }}
